@@ -21,7 +21,13 @@ class ProductSeeder extends Seeder
 
         // for ($i = 0;  $i < count($result["shop"]["categories"]); $i++)
         // var_dump($result["shop"]["offers"]["offer"][0]["name"]);
-        dd((string)$xmlObject->shop->categories->category[0]); 
-        // dd($result->shop->categories->category[0]); 
+
+        $all_cat = []; 
+        for  ($i = 0; $i < count($xmlObject->shop->categories->category); $i++)
+            $all_cat[(string)$xmlObject->shop->categories->category[$i]["id"]] = ["name" => (string)$xmlObject->shop->categories->category[$i], "parentId" => (string)$xmlObject->shop->categories->category[$i]["parentId"]];
+
+        for ($i = 0; $i < count($xmlObject->shop->offers->offer); $i++){
+            echo (string)$xmlObject->shop->offers->offer[$i]->picture;
+        }
     }
 }
