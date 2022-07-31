@@ -19,15 +19,21 @@ class ProductSeeder extends Seeder
         $jsonFormatData = json_encode($xmlObject);
         $result = json_decode($jsonFormatData, false);
 
-        // for ($i = 0;  $i < count($result["shop"]["categories"]); $i++)
-        // var_dump($result["shop"]["offers"]["offer"][0]["name"]);
-
+        $result = [];
         $all_cat = []; 
         for  ($i = 0; $i < count($xmlObject->shop->categories->category); $i++)
             $all_cat[(string)$xmlObject->shop->categories->category[$i]["id"]] = ["name" => (string)$xmlObject->shop->categories->category[$i], "parentId" => (string)$xmlObject->shop->categories->category[$i]["parentId"]];
 
         for ($i = 0; $i < count($xmlObject->shop->offers->offer); $i++){
-            echo (string)$xmlObject->shop->offers->offer[$i]->picture;
+            $result[] = [
+                "name" => (string)$xmlObject->shop->offers->offer[$i]->name,
+                "manufacture_status" => "В наличии",
+                "insklad" => (int)$xmlObject->shop->offers->offer[$i]->quantity,
+                "sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
+                "brand" => (string)$xmlObject->shop->offers->offer[$i]->vendor,
+            ];
         }
+
+        dd($result);
     }
 }
