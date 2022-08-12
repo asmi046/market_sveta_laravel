@@ -45,8 +45,21 @@ class ProductSeeder extends Seeder
                 "title_seo" => "",
                 "description_seo" => "",
             ];
+
+            for ($j = 0; $j<count($xmlObject->shop->offers->offer->param); $j++) 
+            {
+                $name = first_upper((string)$xmlObject->shop->offers->offer->param[$j]["name"]);
+                $value = (string)$xmlObject->shop->offers->offer->param[$j];
+                echo $name." -> ".$value."\n\r";
+
+                if ($name === "Страна происхождения") $result["state"] = $value;
+            }
+
+            var_dump($result);
+
+            if ($i == 2) break;
         }
 
-        dd($result);
+        // dd($result);
     }
 }
