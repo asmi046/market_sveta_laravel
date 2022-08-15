@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
+use DB;
+
 class ProductSeeder extends Seeder
 {
     /**
@@ -20,13 +22,17 @@ class ProductSeeder extends Seeder
         $result = json_decode($jsonFormatData, false);
 
         $result = [];
+        $params = [];
+        $pictures = [];
+
         $all_cat = []; 
         for  ($i = 0; $i < count($xmlObject->shop->categories->category); $i++)
             $all_cat[(string)$xmlObject->shop->categories->category[$i]["id"]] = ["name" => (string)$xmlObject->shop->categories->category[$i], "parentId" => (string)$xmlObject->shop->categories->category[$i]["parentId"]];
 
-        for ($i = 0; $i < count($xmlObject->shop->offers->offer); $i++){
+        for ($i = 0; $i < count($xmlObject->shop->offers->offer); $i++)
+        {
             $first_picture = $xmlObject->shop->offers->offer[$i]->picture;
-            $first_picture = (is_array($first_picture))?(string)$first_picture[0]:(string)$first_picture;    
+            $first_picture = (count($xmlObject->shop->offers->offer[$i]->picture) > 1)?(string)$first_picture[0]:(string)$first_picture;    
             
             $cat1 = $all_cat[(int)$xmlObject->shop->offers->offer[$i]->categoryId];
 
@@ -50,6 +56,11 @@ class ProductSeeder extends Seeder
                 "state" => "",
                 "collection" => "",
                 "style" => "",
+                "form" => "",
+                "arm_color" => "",
+                "plaf_color" => "",
+                "arm_material" => "",
+                "plaf_material" => "",
                 "quote" => (string)$xmlObject->shop->offers->offer[$i]->name,
                 "description" => "Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name,
                 "cat1" => $cat1["name"],
@@ -61,23 +72,65 @@ class ProductSeeder extends Seeder
                 "description_seo" => "Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name,
             ];
 
-            for ($j = 0; $j<count($xmlObject->shop->offers->offer->param); $j++) 
-            {
-                $name = first_upper((string)$xmlObject->shop->offers->offer->param[$j]["name"]);
-                $value = (string)$xmlObject->shop->offers->offer->param[$j];
-                echo $name." -> ".$value."\n\r";
+            
 
+            for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->param); $j++) 
+            {
+                $name = first_upper((string)$xmlObject->shop->offers->offer[$i]->param[$j]["name"]);
+                $value = (string)$xmlObject->shop->offers->offer[$i]->param[$j];
+                
+                $params[] = [
+                    "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
+                    "name" => $name,
+                    "value" => $value,
+                    "subcat" => "",
+                ];
                 if ($name === "Страна происхождения") $tmp["state"] = $value;
                 if ($name === "Коллекция") $tmp["collection"] = $value;
                 if ($name === "Стиль") $tmp["style"] = $value;
+                if ($name === "Форма") $tmp["form"] = $value;
+                if ($name === "Цвет арматуры") $tmp["arm_color"] = $value;
+                if ($name === "Цвет плафона") $tmp["plaf_color"] = $value;
+                if ($name === "Материал арматуры") $tmp["arm_material"] = $value;
+                if ($name === "Материал плафона") $tmp["plaf_material"] = $value;
+            }
+
+            if (count($xmlObject->shop->offers->offer[$i]->picture) > 1)  {
+                for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++) 
+                    $pictures[] = [
+                        "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
+                        "img_name" => $xmlObject->shop->offers->offer[$i]->picture[$j],
+                        "alt" => (string)$xmlObject->shop->offers->offer[$i]->name . " Изображение №" . ($j + 1),
+                        "title" => (string)$xmlObject->shop->offers->offer[$i]->name . " Изображение №" . ($j + 1),
+                        "order" => $j,
+                    ];
+            } else {
+                $pictures[] = [
+                    "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
+                    "img_name" => $first_picture,
+                    "alt" => (string)$xmlObject->shop->offers->offer[$i]->name,
+                    "title" => (string)$xmlObject->shop->offers->offer[$i]->name,
+                    "order" => 0,
+                ];
             }
 
             $result[] = $tmp;
 
-            var_dump($result);
+            // var_dump($result);
 
-            if ($i == 2) break;
+            
+            echo (string)$xmlObject->shop->offers->offer[$i]->name."\n\r";
+            echo "sku: ".(string)$xmlObject->shop->offers->offer[$i]->vendorCode ."\n\r";
+            echo "Параметров: ".count($xmlObject->shop->offers->offer[$i]->param)."\n\r";
+            echo "Картинок: ".count($xmlObject->shop->offers->offer[$i]->picture)."\n\r";
+            echo "---------\n\r";
+            
+            // if ($i == 2) break;
         }
+
+        DB::table("products")->insert($result);
+        DB::table("properties")->insert($params);
+        DB::table("images")->insert($pictures);
 
         // dd($result);
     }
