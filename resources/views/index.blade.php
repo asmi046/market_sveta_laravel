@@ -6,24 +6,19 @@
     <div class="_container">
         <div class="info-sl__row d-flex">
 
-            <div class="info-sl__slider slider _swiper">
-                <div class="slider__item">
-                    <img src="img/sl-1.jpg" alt="">
-                </div>
-
-                <!-- <div class="slider__item">
-                    <img src="img/sl-1.jpg" alt="">
-                </div>
-
-                <div class="slider__item">
-                    <img src="img/sl-1.jpg" alt="">
-                </div> -->
+            <div class="info-sl__slider slider _swiper main_banner">
+                @foreach ($banners["main_banner"] as $item)
+                    <div class="slider__item">
+                        <img src="img/{{$item["img_name"]}}" alt="">
+                    </div>
+                @endforeach
+                
             </div>
 
-            <div class="info-sl__images d-flex">
+            <div class="info-sl__images d-flex ">
 
                 <div class="info-sl__img-item img-item-l">
-                    <img src="img/info-sl-1.jpg" alt="">
+                    <img src="img/{{$banners["info_slider_top"][0]["img_name"]}}" alt="">
                     <!-- <div class="img-l">
                         <p>Светильники <span>до 10 000 рублей</span></p>
                         <a href="#" class="btn">Смотреть</a>
@@ -31,7 +26,7 @@
                 </div>
 
                 <div class="info-sl__img-item img-item-r">
-                    <img src="img/info-sl-2.jpg" alt="">
+                    <img src="img/{{$banners["info_slider_bottom"][0]["img_name"]}}" alt="">
                     <!-- <p>CYBER MONDAY <span>до -80%</span></p> -->
                 </div>
 
@@ -133,14 +128,7 @@
 
         </div>
 
-        <div class="popular__baner">
-            <!-- <div class="popular__baner-text">
-                <h2>ПРЕИМУЩЕСТВА <br>
-                    В СТИЛЕ <span>VELE LUCE</span>
-                </h2>
-                <a href="#" class="btn">Смотреть</a>
-            </div> -->
-        </div>
+        <div class="popular__baner" style = "background-image: url(img/{{$banners["action_banner"][0]["img_name"]}})"></div>
 
     </div>
 </section>
@@ -203,7 +191,7 @@
         <div class="prod-card d-flex">
 
             <div class="sale-baner">
-                <img src="img/sale-baner.jpg" alt="">
+                <img src="img/{{$banners["sale_banner"][0]["img_name"]}}" alt="">
             </div>
 
             <div class="prod-card__column">

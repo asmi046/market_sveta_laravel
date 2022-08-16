@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name', 400)->comment('Наименование');
+            $table->string('slug', 400)->comment('Slug (для URL)');
             $table->float('price', 8, 2)->comment('Основная цена');
             $table->float('price_old', 8, 2)->comment('Цена до скидки');
             $table->string('manufacture_status', 30)->comment('Статус товара');

@@ -6,6 +6,8 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
 
+use Illuminate\Support\Str;
+
 use DB;
 
 class ProductSeeder extends Seeder
@@ -46,6 +48,7 @@ class ProductSeeder extends Seeder
                 
             $tmp = [
                 "name" => (string)$xmlObject->shop->offers->offer[$i]->name,
+                "slug" => Str::slug($xmlObject->shop->offers->offer[$i]->name, '-'),
                 "price" => 1000,
                 "price_old" => 1000,
                 "manufacture_status" => "В наличии",

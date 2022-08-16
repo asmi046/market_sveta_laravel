@@ -4002,7 +4002,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .popular__baner {
-  background: url("../img/popular-br.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 283px;
