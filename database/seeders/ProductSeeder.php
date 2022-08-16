@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Storage;
 
 use DB;
 
@@ -31,8 +32,6 @@ class ProductSeeder extends Seeder
 
         for ($i = 0; $i < count($xmlObject->shop->offers->offer); $i++)
         {
-            $first_picture = $xmlObject->shop->offers->offer[$i]->picture;
-            $first_picture = (count($xmlObject->shop->offers->offer[$i]->picture) > 1)?(string)$first_picture[0]:(string)$first_picture;    
             
             $cat1 = $all_cat[(int)$xmlObject->shop->offers->offer[$i]->categoryId];
 
@@ -67,7 +66,7 @@ class ProductSeeder extends Seeder
                 "cat2" => (!empty($cat2))?$cat2["name"]:"",
                 "cat3" => (!empty($cat3))?$cat3["name"]:"",
                 "cat4" => (!empty($cat4))?$cat4["name"]:"",
-                "img" => basename($first_picture),
+                "img" => "",
                 "title_seo" => (string)$xmlObject->shop->offers->offer[$i]->name,
                 "description_seo" => "Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name,
             ];
@@ -95,24 +94,23 @@ class ProductSeeder extends Seeder
                 if ($name === "Материал плафона") $tmp["plaf_material"] = $value;
             }
 
-            if (count($xmlObject->shop->offers->offer[$i]->picture) > 1)  {
                 for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++) 
+                {
+                    $ext = pathinfo($xmlObject->shop->offers->offer[$i]->picture[$j], PATHINFO_EXTENSION);
+                    $img_name = (string)$xmlObject->shop->offers->offer[$i]->vendorCode."_".$j.".".$ext;
+                    if ($j == 0) $tmp["img"] = $img_name; 
                     $pictures[] = [
                         "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
-                        "img_name" => $xmlObject->shop->offers->offer[$i]->picture[$j],
+                        "img_name" => $img_name,
                         "alt" => (string)$xmlObject->shop->offers->offer[$i]->name . " Изображение №" . ($j + 1),
                         "title" => (string)$xmlObject->shop->offers->offer[$i]->name . " Изображение №" . ($j + 1),
                         "order" => $j,
                     ];
-            } else {
-                $pictures[] = [
-                    "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
-                    "img_name" => $first_picture,
-                    "alt" => (string)$xmlObject->shop->offers->offer[$i]->name,
-                    "title" => (string)$xmlObject->shop->offers->offer[$i]->name,
-                    "order" => 0,
-                ];
-            }
+
+                    Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
+                }    
+
+            
 
             $result[] = $tmp;
 
