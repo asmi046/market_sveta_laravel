@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\IndexController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ContactsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,4 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/', [IndexController::class, "index"])->name("home");
 Route::get('/product/{slug}', [ProductController::class, "index"])->name("product");
+Route::get('/contacts', [ContactsController::class, "index"])->name("contacts");

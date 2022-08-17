@@ -2,7 +2,7 @@
 	<div class="_container">
 
 		<div class="header__row-top d-flex">
-			<a href="#" class="header__logo logo-icon"></a>
+			<a href="{{route('home')}}" class="header__logo logo-icon"></a>
 
 			<div class="header__middle d-flex">
 				<div class="header__search search">
