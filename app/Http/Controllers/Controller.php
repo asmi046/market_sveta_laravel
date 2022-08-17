@@ -22,7 +22,7 @@ class Controller extends BaseController
 
         $rout_name = \Request::route()->getName();
     
-        $banners = Baner::where("page", $rout_name)->get();
+        $banners = Baner::where("page", $rout_name)->orWhere("page", 'all')->get();
 
         $banner_areas = [];
 

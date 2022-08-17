@@ -18,6 +18,14 @@ class BanerSeeder extends Seeder
     {
         $all_banners = [
             [
+                "img_name" => "top_line.jpg",
+                "page" => "all",
+                "page_area" => "top_line",
+                "title" => "Баннер 1",
+                "sub_title" => "Баннер 1",
+                "order" => 0,
+            ],
+            [
                 "img_name" => "sl-1.jpg",
                 "page" => "home",
                 "page_area" => "main_banner",
@@ -50,7 +58,7 @@ class BanerSeeder extends Seeder
                 "order" => 0,
             ],
             [
-                "img_name" => "popular-br.jpg",
+                "img_name" => "action-line.jpg",
                 "page" => "home",
                 "page_area" => "action_banner",
                 "title" => "",
@@ -58,7 +66,7 @@ class BanerSeeder extends Seeder
                 "order" => 0,
             ],
             [
-                "img_name" => "sale-baner.jpg",
+                "img_name" => "sale.jpg",
                 "page" => "home",
                 "page_area" => "sale_banner",
                 "title" => "",

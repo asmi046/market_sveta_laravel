@@ -64,7 +64,7 @@
 				<div class="footer__payment-methods">
 					<p class="footer__payment-methods-text">Способы оплаты</p>
 					<div class="footer__payment-methods-img">
-						<img src="img/mir.jpg" alt="">
+						<img src="{{asset('img/mir.jpg')}}" alt="">
 					</div>
 				</div>
 			</div>

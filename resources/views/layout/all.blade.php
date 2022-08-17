@@ -5,7 +5,7 @@
 <body>
 	<div class="wrapper">
 		@include('parts.header_index')
-		<main class="main-page page">
+		<main class="page">
             
             @yield('content');
 
