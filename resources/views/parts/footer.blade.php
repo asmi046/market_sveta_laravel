@@ -11,7 +11,7 @@
 				</form>
 
 				<div class="header__callback callback d-flex">
-					<p><a href="tel:88007006045" class="callback__phone">8 (800) 700-60-45</a></p>
+					<p><a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a></p>
 					<a href="#callback" class="callback__popup _popup-link">Заказать обратный звонок</a>
 				</div>
 
@@ -48,8 +48,8 @@
 				<div class="footer__social-network">
 					<p class="footer__social-network-text">СОЦИАЛЬНЫЕ СЕТИ</p>
 					<div class="footer__social-network-block">
-						<a href="#" class="footer__social-network-link social-network-link-01"></a>
-						<a href="#" class="footer__social-network-link social-network-link-02"></a>
+						<a href="{{Config::get('contact.vk')}}" class="footer__social-network-link social-network-link-01"></a>
+						<a href="{{Config::get('contact.tg')}}" class="footer__social-network-link social-network-link-02"></a>
 					</div>
 				</div>
 			</div>

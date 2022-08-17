@@ -13,7 +13,7 @@
 
 				<div class="header__contacts d-flex">
 					<div class="header__callback callback d-flex">
-						<p><a href="tel:88007006045" class="callback__phone">8 (800) 700-60-45</a></p>
+						<p><a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a></p>
 						<a href="#callback" class="callback__popup _popup-link">Заказать обратный звонок</a>
 					</div>
 
