@@ -5,12 +5,14 @@
 			<a href="{{route('home')}}" class="header__logo logo-icon"></a>
 
 			<div class="header__middle d-flex">
-				<div class="header__search search">
+				{{-- <div class="header__search search">
 					<input type="text" placeholder="Поиск по сайту" class="search__input input">
 					<button type="submit" tabindex="2" id="searchsubmit" class="sub-search search__btn" value=""></button>
 				</div>
-				<button class="mob-search"></button>
+				<button class="mob-search"></button> --}}
 
+				<search-component></search-component>
+				
 				<div class="header__contacts d-flex">
 					<div class="header__callback callback d-flex">
 						<p><a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a></p>

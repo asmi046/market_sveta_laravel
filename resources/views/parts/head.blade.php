@@ -11,4 +11,6 @@
 	<link rel="icon" type="image/png" href="{{asset('img/favicons/icon.svg')}}" sizes="any">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	@vite(["resources/css/app.css","resources/js/app.js", "public/css/style.min.css"])
 </head>
