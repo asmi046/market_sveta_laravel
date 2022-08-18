@@ -16,6 +16,7 @@ class BanerSeeder extends Seeder
      */
     public function run()
     {
+        echo env("PICT",1);
         $all_banners = [
             [
                 "img_name" => "top_line.jpg",

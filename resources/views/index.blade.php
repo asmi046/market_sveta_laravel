@@ -194,86 +194,10 @@
                 <img src="img/banners/{{$banners["sale_banner"][0]["img_name"]}}" alt="">
             </div>
 
-            <div class="prod-card__column">
-                <div class="prod-card__body d-flex">
-                    <a href="#" class="prod-card__favorites-icon favorites-icon"></a>
-                    <a href="#" class="prod-card__img">
-                        <img src="img/product/pr-08.jpg" alt="">
-                    </a>
-                    <div class="prod-card__text">
-                        <div class="prod-card__text-sale">Акция</div>
-                        <h4 class="prod-card__text-title">
-                            Подвесной светильник Lightstar Escica 806010
-                        </h4>
-                        <div class="prod-card__inner d-flex">
-                            <p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-                            <p class="prod-card__avail">В наличии</p>
-                        </div>
-                        <div class="prod-card__old-price-block d-flex">
-                            <div class="prod-card__old-price rub">14 520</div>
-                            <div class="prod-card__sale-icon">-60%</div>
-                        </div>
-                    </div>
-                    <div class="prod-card__price-item d-flex">
-                        <p class="prod-card__price rub">6 463 </p>
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="prod-card__column">
-                <div class="prod-card__body d-flex">
-                    <a href="#" class="prod-card__favorites-icon favorites-icon"></a>
-                    <a href="#" class="prod-card__img">
-                        <img src="img/product/pr-08.jpg" alt="">
-                    </a>
-                    <div class="prod-card__text">
-                        <div class="prod-card__text-sale">Акция</div>
-                        <h4 class="prod-card__text-title">
-                            Подвесной светильник Lightstar Escica 806010
-                        </h4>
-                        <div class="prod-card__inner d-flex">
-                            <p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-                            <p class="prod-card__avail">В наличии</p>
-                        </div>
-                        <div class="prod-card__old-price-block d-flex">
-                            <div class="prod-card__old-price rub">14 520</div>
-                            <div class="prod-card__sale-icon">-60%</div>
-                        </div>
-                    </div>
-                    <div class="prod-card__price-item d-flex">
-                        <p class="prod-card__price rub">6 463 </p>
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="prod-card__column">
-                <div class="prod-card__body d-flex">
-                    <a href="#" class="prod-card__favorites-icon favorites-icon"></a>
-                    <a href="#" class="prod-card__img">
-                        <img src="img/product/pr-08.jpg" alt="">
-                    </a>
-                    <div class="prod-card__text">
-                        <div class="prod-card__text-sale">Акция</div>
-                        <h4 class="prod-card__text-title">
-                            Подвесной светильник Lightstar Escica 806010
-                        </h4>
-                        <div class="prod-card__inner d-flex">
-                            <p class="prod-card__manuf">Lightstar (ИТАЛИЯ)</p>
-                            <p class="prod-card__avail">В наличии</p>
-                        </div>
-                        <div class="prod-card__old-price-block d-flex">
-                            <div class="prod-card__old-price rub">14 520</div>
-                            <div class="prod-card__sale-icon">-60%</div>
-                        </div>
-                    </div>
-                    <div class="prod-card__price-item d-flex">
-                        <p class="prod-card__price rub">6 463 </p>
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
-            </div>
+            @foreach ($sale_elements as $item)
+                <x-tovar-card :minfo="$item"></x-tovar-card>    
+            @endforeach
+            
 
         </div>
 

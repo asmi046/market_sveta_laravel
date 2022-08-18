@@ -45,12 +45,13 @@ class ProductSeeder extends Seeder
             
             if (!empty($cat3["parentId"]))
                 $cat4 = $all_cat[$cat3["parentId"]];
-                
+            
+            $price_to = 1000 + rand(100, 8000);    
             $tmp = [
                 "name" => (string)$xmlObject->shop->offers->offer[$i]->name,
                 "slug" => Str::slug($xmlObject->shop->offers->offer[$i]->name, '-'),
-                "price" => 1000,
-                "price_old" => 1000,
+                "price" => $price_to,
+                "price_old" => !empty(rand(0,1))?$price_to+rand(100, 2800):0,
                 "manufacture_status" => "В наличии",
                 "insklad" => (int)$xmlObject->shop->offers->offer[$i]->quantity,
                 "sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
@@ -110,7 +111,7 @@ class ProductSeeder extends Seeder
                         "order" => $j,
                     ];
 
-                    Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
+                    //Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
                 }    
 
             
