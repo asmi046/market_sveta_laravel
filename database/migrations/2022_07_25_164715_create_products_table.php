@@ -43,8 +43,8 @@ return new class extends Migration
 
             $table->string('img', 500)->comment('Основное изображение');
 
-            $table->text('title_seo')->comment('SEO заголовок');
-            $table->text('description_seo')->comment('SEO описание');
+            $table->string('title_seo', 100)->comment('SEO заголовок');
+            $table->string('description_seo', 300)->comment('SEO описание');
         });
     }
 

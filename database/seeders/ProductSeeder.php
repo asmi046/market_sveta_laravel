@@ -27,10 +27,24 @@ class ProductSeeder extends Seeder
         $result = [];
         $params = [];
         $pictures = [];
+        $categories = [];
 
         $all_cat = []; 
         for  ($i = 0; $i < count($xmlObject->shop->categories->category); $i++)
+        {
             $all_cat[(string)$xmlObject->shop->categories->category[$i]["id"]] = ["name" => (string)$xmlObject->shop->categories->category[$i], "parentId" => (string)$xmlObject->shop->categories->category[$i]["parentId"]];
+            
+            $categories[] = [
+                "baseid" => (int)$xmlObject->shop->categories->category[$i]["id"],
+                "parentid" => (int)$xmlObject->shop->categories->category[$i]["parentId"],
+                "name" => (string)$xmlObject->shop->categories->category[$i],
+                "slug" => Str::slug((string)$xmlObject->shop->categories->category[$i]),
+                "description" => "",
+                "title_seo" => (string)$xmlObject->shop->categories->category[$i]." - Купить с доставкой по России",
+                "description_seo" => (string)$xmlObject->shop->categories->category[$i]." - Купить с доставкой по России"
+            ];
+
+        }
 
         for ($i = 0; $i < count($xmlObject->shop->offers->offer); $i++)
         {
@@ -133,6 +147,7 @@ class ProductSeeder extends Seeder
         DB::table("products")->insert($result);
         DB::table("properties")->insert($params);
         DB::table("images")->insert($pictures);
+        DB::table("categorys")->insert($categories);
 
         // dd($result);
     }
