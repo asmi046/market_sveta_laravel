@@ -7,9 +7,11 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Product;
 
+use App\Filters\ProductFilter;
+
 class CategoryController extends Controller
 {
-    public function index($slug) {
+    public function index($slug, ProductFilter $request) {
         $categoryInfo = Category::where('slug', $slug)->take(1)->get();
         
         if($categoryInfo->isEmpty()) abort('404');
@@ -21,7 +23,7 @@ class CategoryController extends Controller
         $catProducts = Product::where('cat1', $categoryInfo->baseid)
         ->orWhere('cat2', $categoryInfo->baseid)
         ->orWhere('cat3', $categoryInfo->baseid)
-        ->orWhere('cat4', $categoryInfo->baseid)->paginate(48);
+        ->orWhere('cat4', $categoryInfo->baseid)->filter($request)->paginate(48);
 
         // dd($categoryInfo, $catProducts, $subCat, $categoryInfo->baseid);
 

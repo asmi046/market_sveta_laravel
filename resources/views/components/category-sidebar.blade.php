@@ -60,10 +60,12 @@
                 </div>
 
                 <div class="page__sidebar-navigation-col page__sidebar-navigation-col-price">
+                    
                     <div class="page__sidebar-navigation-block-name d-flex">
                         <div class="page__sidebar-navigation-name">ЦЕНА</div>
                     </div>
-                    <form class="page__sidebar-navigation-col-price-selects">
+                    <form method="GET" action="{{url()->current()}}" class="page__sidebar-navigation-col-price-selects">
+                        <input type="text" name="style" value="">
                         <div class="page__sidebar-navigation-col-price-selects-col">
                             <div class="page__sidebar-navigation-col-price-selects-text">от</div>
                             <input type="number" class="page__sidebar-navigation-col-price-selects-input" name="num"
@@ -76,6 +78,8 @@
                                 min="1" max="1000000" value="2">
                             <div class="page__sidebar-navigation-col-price-selects-text">руб</div>
                         </div>
+                        <br>
+                        <button type ="submit">Отправить</button>
                     </form>
                     <form class="page__sidebar-navigation-col-price-switch d-flex">
                         <div class="page__sidebar-navigation-col-price-switch-col">
