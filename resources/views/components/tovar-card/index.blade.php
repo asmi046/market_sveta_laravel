@@ -1,4 +1,4 @@
-<div class="prod-card__column">
+<div class="main-prod-card__column">
     <div class="prod-card__body d-flex">
         <x-favorit :isactive="false"></x-favorit>
         <a href="#" class="prod-card__img">

@@ -32,14 +32,15 @@ return new class extends Migration
             $table->string('plaf_color', 60)->comment('Цвет плафона');
             $table->string('arm_material', 60)->comment('Материал арматуры');
             $table->string('plaf_material', 60)->comment('Материал плафона');
+            $table->string('mesto', 100)->comment('Место использования');
 
             $table->string('quote', 80)->comment('Цитата');
             $table->text('description')->comment('Описание');
 
-            $table->string('cat1', 150)->comment('Категория 1');
-            $table->string('cat2', 150)->comment('Категория 2');
-            $table->string('cat3', 150)->comment('Категория 3');
-            $table->string('cat4', 150)->comment('Категория 4');
+            $table->integer('cat1')->comment('Категория 1');
+            $table->integer('cat2')->comment('Категория 2');
+            $table->integer('cat3')->comment('Категория 3');
+            $table->integer('cat4')->comment('Категория 4');
 
             $table->string('img', 500)->comment('Основное изображение');
 

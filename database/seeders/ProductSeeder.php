@@ -38,7 +38,7 @@ class ProductSeeder extends Seeder
                 "baseid" => (int)$xmlObject->shop->categories->category[$i]["id"],
                 "parentid" => (int)$xmlObject->shop->categories->category[$i]["parentId"],
                 "name" => (string)$xmlObject->shop->categories->category[$i],
-                "slug" => Str::slug((string)$xmlObject->shop->categories->category[$i]),
+                "slug" => Str::slug((string)$xmlObject->shop->categories->category[$i])."-".(int)$xmlObject->shop->categories->category[$i]["id"],
                 "description" => "",
                 "title_seo" => (string)$xmlObject->shop->categories->category[$i]." - Купить с доставкой по России",
                 "description_seo" => (string)$xmlObject->shop->categories->category[$i]." - Купить с доставкой по России"
@@ -78,12 +78,13 @@ class ProductSeeder extends Seeder
                 "plaf_color" => "",
                 "arm_material" => "",
                 "plaf_material" => "",
+                "mesto" => "",
                 "quote" => (string)$xmlObject->shop->offers->offer[$i]->name,
                 "description" => "Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name,
-                "cat1" => $cat1["name"],
-                "cat2" => (!empty($cat2))?$cat2["name"]:"",
-                "cat3" => (!empty($cat3))?$cat3["name"]:"",
-                "cat4" => (!empty($cat4))?$cat4["name"]:"",
+                "cat1" => (int)$cat1["parentId"],
+                "cat2" => (!empty($cat2))?(int)$cat2["parentId"]:0,
+                "cat3" => (!empty($cat3))?(int)$cat3["parentId"]:0,
+                "cat4" => (!empty($cat4))?(int)$cat4["parentId"]:0,
                 "img" => "",
                 "title_seo" => (string)$xmlObject->shop->offers->offer[$i]->name,
                 "description_seo" => "Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name,
@@ -110,6 +111,7 @@ class ProductSeeder extends Seeder
                 if ($name === "Цвет плафона") $tmp["plaf_color"] = $value;
                 if ($name === "Материал арматуры") $tmp["arm_material"] = $value;
                 if ($name === "Материал плафона") $tmp["plaf_material"] = $value;
+                if ($name === "Назначение помещения") $tmp["mesto"] = $value;
             }
 
                 for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++) 

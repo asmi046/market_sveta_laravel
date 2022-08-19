@@ -3881,7 +3881,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 145px;
   height: 145px;
   background: #F4F4F4;
-  border-radius: 50%;
   overflow: hidden;
   margin-bottom: 10px;
 }
