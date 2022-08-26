@@ -12,6 +12,7 @@ use App\Filters\ProductFilter;
 class CategoryController extends Controller
 {
     public function index($slug, ProductFilter $request) {
+        // dd($request->request->query);
         $categoryInfo = Category::where('slug', $slug)->take(1)->get();
         
         if($categoryInfo->isEmpty()) abort('404');

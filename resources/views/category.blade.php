@@ -16,8 +16,9 @@
 
             <div class="page__body d-flex">
 
-                <x-category-sidebar></x-category-sidebar>
+                {{-- <x-category-sidebar></x-category-sidebar> --}}
 
+                @livewire('category-filter', ['sub_cat' => $sub_cat, 'cat_id' => $category->baseid, 'cat_name'=>$category->name])
                 <main class="page__main main">
 
                     <x-subcat-slider :subcat="$sub_cat"></x-subcat-slider>

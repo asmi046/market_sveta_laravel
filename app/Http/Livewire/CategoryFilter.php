@@ -26,7 +26,7 @@ class CategoryFilter extends Component
         $catProducts = Product::where('cat1', $this->cat_id)
         ->orWhere('cat2', $this->cat_id)
         ->orWhere('cat3', $this->cat_id)
-        ->orWhere('cat4', $this->cat_id)->paginate(48);
+        ->orWhere('cat4', $this->cat_id)->filter($pf)->paginate(48);
 
         dd($requMain->query,  $sql, $catProducts);
     }
