@@ -951,6 +951,8 @@ body.ie ._ibg img {
   display: flex;
   position: relative;
 }
+
+
 ._swiper.swiper-container-vertical .swiper-wrapper {
   flex-direction: column;
 }

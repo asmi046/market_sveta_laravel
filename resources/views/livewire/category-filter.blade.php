@@ -17,7 +17,7 @@
     
                     <div class="page__sidebar-navigation-col">
                         <div class="page__sidebar-navigation-block-name d-flex">
-                            <div wire:click="get_filter" class="page__sidebar-navigation-name">Категории</div>
+                            <div wire:click="do_do" class="page__sidebar-navigation-name">Категории</div>
                         </div>
                         <ul class="page__sidebar-navigation-menu sidebar-navigation-catMenu">
                             @foreach ($sub_cat as $item)
@@ -94,7 +94,7 @@
                         </div>
                     </div>
     
-                    @livewire('property-property-multy-select', ["property_name" => 'style'])
+                    @livewire('property-property-multy-select', ["property_name" => 'style', 'all_list' => $this->filter_zn])
     
                     <div class="page__sidebar-navigation-col spollers-block__item">
                         <div class="page__sidebar-navigation-name spollers-block__title" data-spoller>МЕСТО ПРИМЕНЕНИЯ
