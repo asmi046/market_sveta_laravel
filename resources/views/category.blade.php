@@ -18,7 +18,7 @@
 
                 {{-- <x-category-sidebar></x-category-sidebar> --}}
 
-                @livewire('category-filter', ['sub_cat' => $sub_cat, 'cat_id' => $category->baseid, 'cat_name'=>$category->name])
+                @livewire('category-filter', ['sub_cat' => $sub_cat, 'cat_id' => $category->baseid, 'cat_name'=>$category->name, 'cat_url'=> url()->current()])
                 <main class="page__main main">
 
                     <x-subcat-slider :subcat="$sub_cat"></x-subcat-slider>

@@ -25,9 +25,20 @@
                             </ul>
                         </div>
         
-                        <form method="GET" action="{{url()->current()}}">
+                        <form method="GET" action="{{$cat_url}}">
                             @livewire('property-price-select')
-                            @livewire('property-property-multy-select', ["property_name" => 'style'])
+                            @livewire('property-property-multy-select', ["property_name" => 'brand', 'property_text' => "Бренд"])
+                            @livewire('property-property-multy-select', ["property_name" => 'style', 'property_text' => "Стиль"])
+                            @livewire('property-property-multy-select', ["property_name" => 'state', 'property_text' => "Страна"])
+                            @livewire('property-property-multy-select', ["property_name" => 'forma', 'property_text' => "Форма"])
+                            @livewire('property-property-multy-select', ["property_name" => 'arm_color', 'property_text' => "Цвет арматуры"])
+                            @livewire('property-property-multy-select', ["property_name" => 'plaf_color', 'property_text' => "Цвент плафона"])
+                            @livewire('property-property-multy-select', ["property_name" => 'arm_material', 'property_text' => "Материал арматуры"])
+                            @livewire('property-property-multy-select', ["property_name" => 'plaf_material', 'property_text' => "Материал плафона"])
+                            
+                            <div class="">
+                                <button type="submit" class="btn">Выбрать</button>
+                            </div>
                         </form>
         
                     </div>
