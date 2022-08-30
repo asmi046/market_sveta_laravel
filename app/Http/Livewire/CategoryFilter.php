@@ -18,11 +18,9 @@ class CategoryFilter extends Component
     public $cat_name;
     public $sub_cat;
 
-    public $filter_zn = [
-        "style" => []
-    ];
+    public $filter_zn = [];
 
-    private function get_filter() {
+    public function get_filter() {
         $requMain = new Request();
         // $requMain->query->add(['style'=>'хай-тек']);
 
@@ -49,7 +47,7 @@ class CategoryFilter extends Component
 
     public function render()
     {
-        $this->get_filter();
-        return view('livewire.category-filter', ['filter_zn' => $this->filter_zn]);
+
+        return view('livewire.category-filter');
     }
 }

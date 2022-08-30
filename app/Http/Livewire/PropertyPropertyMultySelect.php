@@ -24,11 +24,6 @@ class PropertyPropertyMultySelect extends Component
 
     public function filterUpdatet($filterValues) {
         $this->param_list = $filterValues[$this->property_name];
-        dd($this->property_name, $this->param_list);
-    }
-
-    public function mount() {
-        $this->param_list = $this->all_list[$this->property_name];
     }
     
     public function render()

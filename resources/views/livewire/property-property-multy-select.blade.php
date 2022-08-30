@@ -2,7 +2,7 @@
     <div wire:click="toggleElement" class="page__sidebar-navigation-name spollers-block__title @if ($show) _active @endif"  >СТИЛЬ</div>
     
 
-        <div class="page__sidebar-navigation-body spollers-block__body @if ($show) _showed @endif">
+        <div class="page__sidebar-navigation-body spollers-block__body @if ($show) _showed @else _no_showed @endif">
 
             <div class="page__sidebar-navigation-body-menu">
 
