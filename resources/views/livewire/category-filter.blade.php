@@ -5,9 +5,9 @@
                 Загружаем фильтры...
             </div>
 
-            @if (!empty($filter_zn))
             
-                <div class="page__sidebar-navigation">
+            
+                <div wire:loading.remove  class="page__sidebar-navigation">
                     <div class="spollers-block" data-spollers data-one-spoller>
         
                         <div class="page__sidebar-navigation-col">
@@ -45,7 +45,7 @@
         
                 </div>
 
-            @endif
+           
         </div>
     
     </aside>

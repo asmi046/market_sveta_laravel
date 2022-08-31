@@ -1,10 +1,12 @@
 
 
     <div style="@if (empty($param_list)) display:none; @endif" class="page__sidebar-navigation-col spollers-block__item">
+
+
         <div wire:click="toggleElement" class="page__sidebar-navigation-name spollers-block__title @if ($show) _active @endif"  >{{ $property_text }}</div>
         
 
-            <div class="page__sidebar-navigation-body spollers-block__body @if ($show) _showed @else _no_showed @endif">
+            <div class="page__sidebar-navigation-body spollers-block__body @if ($show) _showed @endif">
 
                 <div class="page__sidebar-navigation-body-menu">
 
