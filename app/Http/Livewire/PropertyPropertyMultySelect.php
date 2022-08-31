@@ -33,7 +33,7 @@ class PropertyPropertyMultySelect extends Component
     public function filterUpdatet($filterValues, $ext) {
         $this->param_list = $filterValues[$this->property_name];
         $this->extend_request = isset($ext[$this->property_name])?$ext[$this->property_name]:[];
-        
+        $this->show = !empty($this->extend_request)?true:false;
     }
 
     public function render() {
