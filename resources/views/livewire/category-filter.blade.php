@@ -26,6 +26,7 @@
                         </div>
         
                         <form method="GET" action="{{$cat_url}}">
+                               
                             @livewire('property-price-select')
                             @livewire('property-property-multy-select', ["property_name" => 'brand', 'property_text' => "Бренд"])
                             @livewire('property-property-multy-select', ["property_name" => 'style', 'property_text' => "Стиль"])
