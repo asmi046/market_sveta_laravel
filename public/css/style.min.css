@@ -5695,7 +5695,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   line-height: 20px;
 }
 
+.similar-products {
+  padding: 25px 0 50px 0;
+}
 
+.similar-products__title {
+  margin-bottom: 30px;
+}
 
 
 

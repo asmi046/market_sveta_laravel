@@ -352,9 +352,142 @@
                 </p>
               </div>
 
+
           </div>
         </section>
 
-        
+        <section id="similar-products" class="similar-products">
+          <div class="_container">
+
+          <h2 class="similar-products__title">Похожие товары</h2>
+
+            <div class="prod-card d-flex">
+
+              <div class="main-prod-card__column">
+                <div class="prod-card__body d-flex">
+                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
+                  <a href="#" class="prod-card__img">
+                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
+                  </a>
+                  <div class="prod-card__text">
+                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
+                    <div class="prod-card__inner d-flex">
+                      <p class="prod-card__manuf">Varton (Россия)</p>
+                      <p class="prod-card__avail active"> Под заказ </p>
+                    </div>
+                    <div class="prod-card__old-price-block d-flex">
+                      <div class="prod-card__old-price rub">1709</div>
+                      <div class="prod-card__sale-icon">-43%</div>
+                    </div>
+                  </div>
+                  <div class="prod-card__price-item d-flex">
+                    <p class="prod-card__price rub">1196</p>
+                    <a href="#" class="btn">В корзину</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-prod-card__column">
+                <div class="prod-card__body d-flex">
+                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
+                  <a href="#" class="prod-card__img">
+                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
+                  </a>
+                  <div class="prod-card__text">
+                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
+                    <div class="prod-card__inner d-flex">
+                      <p class="prod-card__manuf">Varton (Россия)</p>
+                      <p class="prod-card__avail active"> Под заказ </p>
+                    </div>
+                    <div class="prod-card__old-price-block d-flex">
+                      <div class="prod-card__old-price rub">1709</div>
+                      <div class="prod-card__sale-icon">-43%</div>
+                    </div>
+                  </div>
+                  <div class="prod-card__price-item d-flex">
+                    <p class="prod-card__price rub">1196</p>
+                    <a href="#" class="btn">В корзину</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-prod-card__column">
+                <div class="prod-card__body d-flex">
+                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
+                  <a href="#" class="prod-card__img">
+                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
+                  </a>
+                  <div class="prod-card__text">
+                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
+                    <div class="prod-card__inner d-flex">
+                      <p class="prod-card__manuf">Varton (Россия)</p>
+                      <p class="prod-card__avail active"> Под заказ </p>
+                    </div>
+                    <div class="prod-card__old-price-block d-flex">
+                      <div class="prod-card__old-price rub">1709</div>
+                      <div class="prod-card__sale-icon">-43%</div>
+                    </div>
+                  </div>
+                  <div class="prod-card__price-item d-flex">
+                    <p class="prod-card__price rub">1196</p>
+                    <a href="#" class="btn">В корзину</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-prod-card__column">
+                <div class="prod-card__body d-flex">
+                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
+                  <a href="#" class="prod-card__img">
+                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
+                  </a>
+                  <div class="prod-card__text">
+                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
+                    <div class="prod-card__inner d-flex">
+                      <p class="prod-card__manuf">Varton (Россия)</p>
+                      <p class="prod-card__avail active"> Под заказ </p>
+                    </div>
+                    <div class="prod-card__old-price-block d-flex">
+                      <div class="prod-card__old-price rub">1709</div>
+                      <div class="prod-card__sale-icon">-43%</div>
+                    </div>
+                  </div>
+                  <div class="prod-card__price-item d-flex">
+                    <p class="prod-card__price rub">1196</p>
+                    <a href="#" class="btn">В корзину</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-prod-card__column">
+                <div class="prod-card__body d-flex">
+                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
+                  <a href="#" class="prod-card__img">
+                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
+                  </a>
+                  <div class="prod-card__text">
+                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
+                    <div class="prod-card__inner d-flex">
+                      <p class="prod-card__manuf">Varton (Россия)</p>
+                      <p class="prod-card__avail active"> Под заказ </p>
+                    </div>
+                    <div class="prod-card__old-price-block d-flex">
+                      <div class="prod-card__old-price rub">1709</div>
+                      <div class="prod-card__sale-icon">-43%</div>
+                    </div>
+                  </div>
+                  <div class="prod-card__price-item d-flex">
+                    <p class="prod-card__price rub">1196</p>
+                    <a href="#" class="btn">В корзину</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
 
 @endsection
