@@ -11,6 +11,11 @@
                     
                     <div class="page__sidebar-navigation-body-menu-options options">
                         
+                        <label v-for="(item, key, index) in values" :key="item" :data-index="index" class="page__sidebar-navigation-body-menu-options-item options__item">
+                                <input  type="checkbox" :value="key" :name="propertyName+'[]'" class="page__sidebar-navigation-body-menu-options-item-input options__input" >
+                                <span class="page__sidebar-navigation-body-menu-options-item-input-text options__text">
+                                <span class="page__sidebar-navigation-body-menu-options-item-input-text-main options__text-main">{{key}}</span>{{item}}</span>
+                        </label>
                         
                     </div>
                 </div>
@@ -23,11 +28,12 @@
 export default {
     data() {
         return{
+            showedList:[],
             showBody:false,
             searchStr:""
         }
     },
-    props:['propertyText', 'propertyName']
+    props:['propertyText', 'propertyName', 'values']
 }
 </script>
 

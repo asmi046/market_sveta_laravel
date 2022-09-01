@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Api\V1\ApiIndexController; 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/get_category_filter', function() {
+Route::get('/get_category_filter/{catid}', [ApiIndexController::class, "get_category_filter"])->name("apihome");
 
-});

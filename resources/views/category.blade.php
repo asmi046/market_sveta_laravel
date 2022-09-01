@@ -25,6 +25,7 @@
                     cat-list="{{$sub_cat->toJson()}}" 
                     cat-url="{{url()->current()}}" 
                     cat-name="{{$category->name}}" 
+                    cat-id="{{$category->baseid}}" 
                 ></category-filter>
 
                 <main class="page__main main">

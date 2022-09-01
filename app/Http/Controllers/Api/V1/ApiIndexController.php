@@ -1,36 +1,28 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Controllers\Api\v1;
 
-use Livewire\Component;
-use Livewire\WithPagination;
-
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Filters\ProductFilter;
 
+use App\Filters\ProductFilter;
 use App\Models\Product;
 
-class CategoryFilter extends Component
+class ApiIndexController extends Controller
 {
-    use WithPagination;
-    
-    public $cat_id;
-    public $cat_url;
-    public $cat_name;
-    public $sub_cat;
+    public function index() {
+        return ["eee" => "rrrttt"];
+    }
 
-    public $filter_zn = [];
-    public $extend_request = [];
-
-    public function get_filter(Request $rq) {
+    public function get_category_filter($catid, Request $request) {
         $requMain = new Request();
         // $requMain->query->add(['style'=>'хай-тек']);
 
         $pf = new ProductFilter($requMain);
-        $catProducts = Product::where('cat1', $this->cat_id)
-        ->orWhere('cat2', $this->cat_id) 
-        ->orWhere('cat3', $this->cat_id)
-        ->orWhere('cat4', $this->cat_id)->filter($pf)->get();
+        $catProducts = Product::where('cat1', $catid)
+        ->orWhere('cat2', $catid) 
+        ->orWhere('cat3', $catid)
+        ->orWhere('cat4', $catid)->filter($pf)->get();
 
         $brand = [];
         $style = [];
@@ -73,25 +65,16 @@ class CategoryFilter extends Component
             } 
         }
         
-        $this->filter_zn["style"] = $style;
-        $this->filter_zn["brand"] = $brand;
-        $this->filter_zn["state"] = $state;
-        $this->filter_zn["forma"] = $forma;
-        $this->filter_zn["arm_color"] = $arm_color;
-        $this->filter_zn["plaf_color"] = $plaf_color;
-        $this->filter_zn["arm_material"] = $arm_material;
-        $this->filter_zn["plaf_material"] = $plaf_material;
+        $filter_zn["style"] = $style;
+        $filter_zn["brand"] = $brand;
+        $filter_zn["state"] = $state;
+        $filter_zn["forma"] = $forma;
+        $filter_zn["arm_color"] = $arm_color;
+        $filter_zn["plaf_color"] = $plaf_color;
+        $filter_zn["arm_material"] = $arm_material;
+        $filter_zn["plaf_material"] = $plaf_material;
+        $filter_zn["max_price"] = $max_price;
 
-        $this->emit('filterUpdatet', $this->filter_zn, $this->extend_request);
-    }
-
-    public function do_do() {
-        $this->emit('filterUpdatet', $this->filter_zn, $this->extend_request);
-    }
-
-    public function render(Request $rq)
-    {   
-        $this->extend_request = $rq->query();
-        return view('livewire.category-filter');
+        return $filter_zn;
     }
 }
