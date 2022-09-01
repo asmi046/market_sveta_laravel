@@ -18,7 +18,15 @@
 
                 {{-- <x-category-sidebar></x-category-sidebar> --}}
 
-                @livewire('category-filter', ['sub_cat' => $sub_cat, 'cat_id' => $category->baseid, 'cat_name'=>$category->name, 'cat_url'=> url()->current()])
+                {{-- @livewire('category-filter', ['sub_cat' => $sub_cat, 'cat_id' => $category->baseid, 'cat_name'=>$category->name, 'cat_url'=> url()->current()]) --}}
+                
+                <category-filter 
+                    home-rout="{{ route('home') }}" 
+                    cat-list="{{$sub_cat->toJson()}}" 
+                    cat-url="{{url()->current()}}" 
+                    cat-name="{{$category->name}}" 
+                ></category-filter>
+
                 <main class="page__main main">
 
                     <x-subcat-slider :subcat="$sub_cat"></x-subcat-slider>
