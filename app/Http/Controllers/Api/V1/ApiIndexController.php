@@ -15,7 +15,23 @@ class ApiIndexController extends Controller
     }
 
     public function get_sorted_category_filter($catid,Request $request) {
-         return !empty($request->get('filter_empty'))?$request->get('filter_empty'):[];
+         
+
+        $requMain = new Request();
+    
+        $requMain->query->add((array)json_decode($request->get('filter')));
+        
+
+        $pf = new ProductFilter($requMain);
+        $catProducts = Product::where('cat1', $catid)
+        ->orWhere('cat2', $catid) 
+        ->orWhere('cat3', $catid)
+        ->orWhere('cat4', $catid)->filter($pf)->get();
+
+        
+        return $catProducts;
+
+        return !empty($request->get('filter'))? gettype ((array)json_decode($request->get('filter'))) :[];
     }
 
     public function get_category_filter($catid, Request $request) {

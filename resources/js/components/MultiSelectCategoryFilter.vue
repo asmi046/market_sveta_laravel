@@ -12,7 +12,7 @@
                     <div class="page__sidebar-navigation-body-menu-options options">
                         
                         <label v-for="(item, key, index) in showedList" :key="item" :data-index="index" class="page__sidebar-navigation-body-menu-options-item options__item">
-                                <input @change="chengeList(key)" v-model="selectedElement"  type="checkbox" :value="key" :name="propertyName+'[]'" class="page__sidebar-navigation-body-menu-options-item-input options__input" >
+                                <input @change="chengeList($event)" v-model="selectedElement"  type="checkbox" :value="key" :name="propertyName+'[]'" class="page__sidebar-navigation-body-menu-options-item-input options__input" >
                                 <span class="page__sidebar-navigation-body-menu-options-item-input-text options__text">
                                 <span class="page__sidebar-navigation-body-menu-options-item-input-text-main options__text-main">{{key}}</span>{{item}}</span>
                         </label>
@@ -36,6 +36,8 @@ export default {
             selectedElement:[]
         }
     },
+
+    emits: ['chengeList'],
     props:['propertyText', 'propertyName', 'values'],
 
     mounted: function() {
@@ -62,8 +64,8 @@ export default {
         }
     },
     methods: {
-        chengeList(item) {
-            console.log(this.selectedElement)
+        chengeList(event) {
+            this.$emit('chengeList', event.target, this.selectedElement, this.propertyName);
         },
 
     }

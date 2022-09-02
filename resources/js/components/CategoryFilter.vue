@@ -1,5 +1,5 @@
 <template>
-    <aside class="page__sidebar">   
+    <aside id="cat_filter" class="page__sidebar">   
         <div v-show="filterList.length == 0" class="filter_loading">
             Фильтр загружается...
         </div>
@@ -24,19 +24,19 @@
                     <form method="GET" :action="catUrl">   
                         <price-select-category-filter></price-select-category-filter>
 
-                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.brand.length != 0" property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
-                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.style.length != 0" property-name="style" property-text="Стиль" :values="filterList.style"></multy-select-category-filter>
-                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.state.length != 0" property-name="state" property-text="Страна" :values="filterList.state"></multy-select-category-filter>
-                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.forma.length != 0" property-name="forma" property-text="Форма" :values="filterList.forma"></multy-select-category-filter>
-                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.arm_color.length != 0" property-name="arm_color" property-text="Цвет арматуры" :values="filterList.arm_color"></multy-select-category-filter>
-                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.plaf_color.length != 0" property-name="plaf_color" property-text="Цвент плафона" :values="filterList.plaf_color"></multy-select-category-filter>
-                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.arm_material.length != 0" property-name="arm_material" property-text="Материал арматуры" :values="filterList.arm_material"></multy-select-category-filter>
-                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.plaf_material.length != 0" property-name="plaf_material" property-text="Материал плафона" :values="filterList.plaf_material"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.brand.length != 0" property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.style.length != 0" property-name="style" property-text="Стиль" :values="filterList.style"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.state.length != 0" property-name="state" property-text="Страна" :values="filterList.state"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.forma.length != 0" property-name="forma" property-text="Форма" :values="filterList.forma"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.arm_color.length != 0" property-name="arm_color" property-text="Цвет арматуры" :values="filterList.arm_color"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.plaf_color.length != 0" property-name="plaf_color" property-text="Цвент плафона" :values="filterList.plaf_color"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.arm_material.length != 0" property-name="arm_material" property-text="Материал арматуры" :values="filterList.arm_material"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.plaf_material.length != 0" property-name="plaf_material" property-text="Материал плафона" :values="filterList.plaf_material"></multy-select-category-filter>
                         
                         <div class="filter_controll">
                             <button class="btn full_width" type="submit" >Выбрать</button>
                             <button class="btn empty_btn full_width" @click.prevent="clearFilter">Сбросить фильтр</button>
-                            <button class="btn empty_btn full_width" @click.prevent="test">Test</button>
+                            <!-- <button class="btn empty_btn full_width" @click.prevent="test">Test</button> -->
                         </div>
                     </form>
 
@@ -57,8 +57,8 @@ export default {
         return {
             filterList:[],
             filterListEmpty:[],
+            selectedParam:{},
             mainCatList:JSON.parse(this.catList)
-
         }
     },
 
@@ -81,13 +81,13 @@ export default {
     }, 
 
     methods: {
-        test() {
+        get_pre_filter() {
             let prefix_api_url = document.location.protocol+"//"+document.location.host
 
             axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId, {
                 params: {
                     filter_empty:this.filterListEmpty,
-                    filter:this.filterList
+                    filter:this.selectedParam
                 }
             })
             .then((response) => {
@@ -98,7 +98,15 @@ export default {
 
         clearFilter: () => {
             window.location.href = window.location.protocol+"//"+window.location.host+window.location.pathname
+        },
+
+        chengeList(element, list, item) {
+            this.selectedParam[item] = list
+            this.get_pre_filter()
+            console.log(element.getBoundingClientRect())
+            console.log(document.getElementById("cat_filter").getBoundingClientRect())
         }
+
     }
 }
 </script>
