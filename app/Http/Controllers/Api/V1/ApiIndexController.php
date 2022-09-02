@@ -15,7 +15,7 @@ class ApiIndexController extends Controller
     }
 
     public function get_sorted_category_filter($catid,Request $request) {
-        // return empty($request)?:;
+         return !empty($request->get('data'))?$request->get('data'):[];
     }
 
     public function get_category_filter($catid, Request $request) {
@@ -37,32 +37,55 @@ class ApiIndexController extends Controller
         $arm_material = [];
         $plaf_material = [];
 
+        $empty_brand = [];
+        $empty_style = [];
+        $empty_state = [];
+        $empty_forma = [];
+        $empty_arm_color = [];
+        $empty_plaf_color = [];
+        $empty_arm_material = [];
+        $empty_plaf_material = [];
+
         $max_price = 0;
 
         foreach ($catProducts as $elem) {
             if (!empty($elem->style))
+            {
                 $style[$elem->style] = (empty($style[$elem->style]))?1:$style[$elem->style]+1; 
-            
+            }
+
             if (!empty($elem->brand))
-                $brand[$elem->brand] = (empty($brand[$elem->brand]))?1:$brand[$elem->brand]+1; 
+            {
+                $brand[$elem->brand] = (empty($brand[$elem->brand]))?1:$brand[$elem->brand]+1;
+            }    
             
             if (!empty($elem->state))
-                $state[$elem->state] = (empty($state[$elem->state]))?1:$state[$elem->state]+1; 
+                {
+                    $state[$elem->state] = (empty($state[$elem->state]))?1:$state[$elem->state]+1;
+                } 
             
             if (!empty($elem->forma))
-                $forma[$elem->forma] = (empty($forma[$elem->forma]))?1:$forma[$elem->forma]+1; 
+                {
+                    $forma[$elem->forma] = (empty($forma[$elem->forma]))?1:$forma[$elem->forma]+1;
+                } 
             
             if (!empty($elem->arm_color))
-                $arm_color[$elem->arm_color] = (empty($arm_color[$elem->arm_color]))?1:$arm_color[$elem->arm_color]+1; 
+                {
+                    $arm_color[$elem->arm_color] = (empty($arm_color[$elem->arm_color]))?1:$arm_color[$elem->arm_color]+1;
+                } 
             
             if (!empty($elem->plaf_color))
-                $plaf_color[$elem->plaf_color] = (empty($plaf_color[$elem->plaf_color]))?1:$plaf_color[$elem->plaf_color]+1; 
+                {
+                    $plaf_color[$elem->plaf_color] = (empty($plaf_color[$elem->plaf_color]))?1:$plaf_color[$elem->plaf_color]+1;
+                } 
             
             if (!empty($elem->arm_material))
-                $arm_material[$elem->arm_material] = (empty($arm_material[$elem->arm_material]))?1:$arm_material[$elem->arm_material]+1; 
+                {
+                    $arm_material[$elem->arm_material] = (empty($arm_material[$elem->arm_material]))?1:$arm_material[$elem->arm_material]+1;} 
             
             if (!empty($elem->plaf_material))
-                $plaf_material[$elem->plaf_material] = (empty($plaf_material[$elem->plaf_material]))?1:$plaf_material[$elem->plaf_material]+1; 
+                {
+                    $plaf_material[$elem->plaf_material] = (empty($plaf_material[$elem->plaf_material]))?1:$plaf_material[$elem->plaf_material]+1; }
         
             if ($max_price < $elem->price) {
                 $max_price = $elem->price;
@@ -79,6 +102,6 @@ class ApiIndexController extends Controller
         $filter_zn["plaf_material"] = $plaf_material;
         $filter_zn["max_price"] = $max_price;
 
-        return $filter_zn;
+        return ["incount" => $filter_zn, "empty" => $empty_filter];
     }
 }

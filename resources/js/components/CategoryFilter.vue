@@ -36,6 +36,7 @@
                         <div class="filter_controll">
                             <button class="btn full_width" type="submit" >Выбрать</button>
                             <button class="btn empty_btn full_width" @click.prevent="clearFilter">Сбросить фильтр</button>
+                            <button class="btn empty_btn full_width" @click.prevent="test">Test</button>
                         </div>
                     </form>
 
@@ -79,8 +80,18 @@ export default {
 
     methods: {
         test() {
-            console.log(allLibs.getRequestParam());
-        },
+            let prefix_api_url = document.location.protocol+"//"+document.location.host
+
+            axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId, {
+                params: {
+                    data:this.filterList
+                }
+            })
+            .then((response) => {
+                console.log(response.data);
+            })
+            .catch(error => console.log(error));
+            },
 
         clearFilter: () => {
             window.location.href = window.location.protocol+"//"+window.location.host+window.location.pathname
