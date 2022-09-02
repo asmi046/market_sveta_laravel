@@ -56,6 +56,7 @@ export default {
     data() {
         return {
             filterList:[],
+            filterListEmpty:[],
             mainCatList:JSON.parse(this.catList)
 
         }
@@ -73,7 +74,8 @@ export default {
         console.log(prefix_api_url+'/api/v1/get_category_filter/'+this.catId)
         axios.get(prefix_api_url+'/api/v1/get_category_filter/'+this.catId)
         .then((response) => {
-            this.filterList = response.data;
+            this.filterList = response.data.incount;
+            this.filterListEmpty = response.data.empty
         })
         .catch(error => console.log(error));
     }, 
@@ -84,7 +86,8 @@ export default {
 
             axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId, {
                 params: {
-                    data:this.filterList
+                    filter_empty:this.filterListEmpty,
+                    filter:this.filterList
                 }
             })
             .then((response) => {
