@@ -14,6 +14,10 @@ class ApiIndexController extends Controller
         return ["eee" => "rrrttt"];
     }
 
+    public function get_sorted_category_filter($catid,Request $request) {
+        // return empty($request)?:;
+    }
+
     public function get_category_filter($catid, Request $request) {
         $requMain = new Request();
         // $requMain->query->add(['style'=>'хай-тек']);

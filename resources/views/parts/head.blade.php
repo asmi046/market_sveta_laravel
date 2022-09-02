@@ -17,5 +17,6 @@
 			"resources/js/app.js", 
 			"resources/js/lib/lib.js", 
 			"public/css/style.min.css", 
+			"public/css/interface.css", 
 			"public/css/filter.style.css"])
 </head>

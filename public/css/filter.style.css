@@ -39,3 +39,11 @@
         padding-bottom: 16px;
     }  
 }
+
+.filter_controll {
+    width:100%
+}
+
+.filter_controll .btn{
+    margin-bottom: 20px;
+}

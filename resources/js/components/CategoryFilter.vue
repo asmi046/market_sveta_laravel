@@ -24,18 +24,18 @@
                     <form method="GET" :action="catUrl">   
                         <price-select-category-filter></price-select-category-filter>
 
-                        <multy-select-category-filter property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
-                        <multy-select-category-filter property-name="style" property-text="Стиль" :values="filterList.style"></multy-select-category-filter>
-                        <multy-select-category-filter property-name="state" property-text="Страна" :values="filterList.state"></multy-select-category-filter>
-                        <multy-select-category-filter property-name="forma" property-text="Форма" :values="filterList.forma"></multy-select-category-filter>
-                        <multy-select-category-filter property-name="arm_color" property-text="Цвет арматуры" :values="filterList.arm_color"></multy-select-category-filter>
-                        <multy-select-category-filter property-name="plaf_color" property-text="Цвент плафона" :values="filterList.plaf_color"></multy-select-category-filter>
-                        <multy-select-category-filter property-name="arm_material" property-text="Материал арматуры" :values="filterList.arm_material"></multy-select-category-filter>
-                        <multy-select-category-filter property-name="plaf_material" property-text="Материал плафона" :values="filterList.plaf_material"></multy-select-category-filter>
+                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.brand.length != 0" property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
+                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.style.length != 0" property-name="style" property-text="Стиль" :values="filterList.style"></multy-select-category-filter>
+                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.state.length != 0" property-name="state" property-text="Страна" :values="filterList.state"></multy-select-category-filter>
+                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.forma.length != 0" property-name="forma" property-text="Форма" :values="filterList.forma"></multy-select-category-filter>
+                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.arm_color.length != 0" property-name="arm_color" property-text="Цвет арматуры" :values="filterList.arm_color"></multy-select-category-filter>
+                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.plaf_color.length != 0" property-name="plaf_color" property-text="Цвент плафона" :values="filterList.plaf_color"></multy-select-category-filter>
+                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.arm_material.length != 0" property-name="arm_material" property-text="Материал арматуры" :values="filterList.arm_material"></multy-select-category-filter>
+                        <multy-select-category-filter v-show="filterList.length!= 0 && filterList.plaf_material.length != 0" property-name="plaf_material" property-text="Материал плафона" :values="filterList.plaf_material"></multy-select-category-filter>
                         
-                        <div class="">
-                            <button type="submit" class="btn">Выбрать</button>
-                            <button class="btn" @click.prevent="clearFilter">Сбросить фильтр</button>
+                        <div class="filter_controll">
+                            <button class="btn full_width" type="submit" >Выбрать</button>
+                            <button class="btn empty_btn full_width" @click.prevent="clearFilter">Сбросить фильтр</button>
                         </div>
                     </form>
 

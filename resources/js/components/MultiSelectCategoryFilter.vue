@@ -11,8 +11,8 @@
                     
                     <div class="page__sidebar-navigation-body-menu-options options">
                         
-                        <label v-for="(item, key, index) in values" :key="item" :data-index="index" class="page__sidebar-navigation-body-menu-options-item options__item">
-                                <input  type="checkbox" :value="key" :name="propertyName+'[]'" class="page__sidebar-navigation-body-menu-options-item-input options__input" >
+                        <label v-for="(item, key, index) in showedList" :key="item" :data-index="index" class="page__sidebar-navigation-body-menu-options-item options__item">
+                                <input @change="chengeList(key)" v-model="selectedElement"  type="checkbox" :value="key" :name="propertyName+'[]'" class="page__sidebar-navigation-body-menu-options-item-input options__input" >
                                 <span class="page__sidebar-navigation-body-menu-options-item-input-text options__text">
                                 <span class="page__sidebar-navigation-body-menu-options-item-input-text-main options__text-main">{{key}}</span>{{item}}</span>
                         </label>
@@ -25,15 +25,48 @@
 </template>
 
 <script>
+import { watch } from '@vue/runtime-core'
+import allLibs from '../lib/lib.js'
 export default {
     data() {
         return{
-            showedList:[],
+            showedList:this.values,
             showBody:false,
-            searchStr:""
+            searchStr:"",
+            selectedElement:[]
         }
     },
-    props:['propertyText', 'propertyName', 'values']
+    props:['propertyText', 'propertyName', 'values'],
+
+    mounted: function() {
+        let allGetKey = allLibs.getRequestParam()
+
+        if (allGetKey[this.propertyName] != undefined)
+            {
+                this.selectedElement = Array.from(allGetKey[this.propertyName])
+            }
+    },
+
+    watch: {
+
+        values(newVal) {
+            this.showedList = newVal;
+        },
+
+        searchStr(newVal) {
+            this.showedList = {};
+            for (let k in this.values) {
+                if (k.indexOf(newVal) >= 0) 
+                this.showedList[k] = this.values[k]; 
+            }
+        }
+    },
+    methods: {
+        chengeList(item) {
+            console.log(this.selectedElement)
+        },
+
+    }
 }
 </script>
 

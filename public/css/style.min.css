@@ -279,6 +279,11 @@ h4 {
   border-radius: 15px;
 }
 
+.btn:hover {
+  background-color: #e1a923;
+  transition: .5s ease-in-out;
+}
+
 .btn.fw {
   width: 100%;
 }
@@ -5206,7 +5211,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .page__sidebar-navigation-col {
-  margin-bottom: 23px;
+  margin-bottom: 15px;
 }
 
 .page__sidebar-navigation-block-name {
