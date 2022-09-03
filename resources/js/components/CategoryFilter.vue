@@ -4,6 +4,8 @@
             Фильтр загружается...
         </div>
 
+        <pre-search-informer :dom-element="clicedElement" :element-count="preSerchCount"></pre-search-informer>
+
         <div v-show="filterList.length != 0" class="page__sidebar-body">
             <div class="page__sidebar-navigation">
                 <div class="spollers-block" data-spollers data-one-spoller>
@@ -22,7 +24,7 @@
 
 
                     <form method="GET" :action="catUrl">   
-                        <price-select-category-filter></price-select-category-filter>
+                        <price-select-category-filter ></price-select-category-filter>
 
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.brand.length != 0" property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.style.length != 0" property-name="style" property-text="Стиль" :values="filterList.style"></multy-select-category-filter>
@@ -49,7 +51,7 @@
 <script>
 import PriceSelectCategoryFilter from '../components/PriceSelectCategoryFilter.vue'
 import MultySelectCategoryFilter from '../components/MultiSelectCategoryFilter.vue'
-import allLibs from '../lib/lib.js'
+import PreSearchInformer from '../components/PreSearchInformer.vue'
 
 export default {
 
@@ -58,13 +60,16 @@ export default {
             filterList:[],
             filterListEmpty:[],
             selectedParam:{},
-            mainCatList:JSON.parse(this.catList)
+            mainCatList:JSON.parse(this.catList),
+            clicedElement:{},
+            preSerchCount:0
         }
     },
 
     components: {
         PriceSelectCategoryFilter,
-        MultySelectCategoryFilter
+        MultySelectCategoryFilter,
+        PreSearchInformer
     },
 
     props:['homeRout', 'catList', 'catUrl', 'catName', 'catId'],
@@ -92,6 +97,7 @@ export default {
             })
             .then((response) => {
                 console.log(response.data);
+                this.preSerchCount=response.data.length
             })
             .catch(error => console.log(error));
             },
@@ -103,8 +109,8 @@ export default {
         chengeList(element, list, item) {
             this.selectedParam[item] = list
             this.get_pre_filter()
-            console.log(element.getBoundingClientRect())
-            console.log(document.getElementById("cat_filter").getBoundingClientRect())
+            this.clicedElement = element
+            console.log(element)
         }
 
     }

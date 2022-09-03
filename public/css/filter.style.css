@@ -50,21 +50,37 @@
 
 /* Подсказка */
 
+.page__sidebar {
+    position: relative;
+}
+
+.triangle {
+    background-color: #FFB400;
+    position: absolute;
+    left: -30px;
+    top:calc(50% - 10px)
+}
+
+.triangle:after {
+    content: "";
+    position: absolute; 
+    left: 10px; 
+    border: 10px solid transparent; 
+    border-right: 10px solid #FFB400;
+}
+
 .flter_pods {
     position: absolute;
     width: 100px;
     height: 65px;
-    background-color: #D3820F;
+    background-color: #FFB400;
     color:white;
     text-align: center;
     right:calc(0px - 100px);
     z-index: 10000000;
     padding: 5px;
   }
-  
-  .flter_pods .loader_info{
-    display: none;
-  }
+
   
   .loader_white {
     width: 50px;
