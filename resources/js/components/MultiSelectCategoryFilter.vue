@@ -46,6 +46,7 @@ export default {
         if (allGetKey[this.propertyName] != undefined)
             {
                 this.selectedElement = Array.from(allGetKey[this.propertyName])
+                this.showBody = true;
             }
     },
 

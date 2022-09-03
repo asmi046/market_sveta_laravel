@@ -19,7 +19,7 @@ export default {
     data() {
         return{
             loadet:false,
-            showed:true,
+            showed:false,
             coord_top:0
         }
     },
@@ -31,7 +31,7 @@ export default {
             let inp = this.domElement.getBoundingClientRect()
             let win = document.getElementById("cat_filter_form").getBoundingClientRect()
             this.coord_top = (inp.top - win.top)-33
-            console.log(this.coord_top.top)
+            this.showed=true;
         }
     }
 }
