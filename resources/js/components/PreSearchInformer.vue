@@ -29,7 +29,7 @@ export default {
     watch:{
         domElement() {
             let inp = this.domElement.getBoundingClientRect()
-            let win = document.getElementById("cat_filter").getBoundingClientRect()
+            let win = document.getElementById("cat_filter_form").getBoundingClientRect()
             this.coord_top = (inp.top - win.top)-33
             console.log(this.coord_top.top)
         }

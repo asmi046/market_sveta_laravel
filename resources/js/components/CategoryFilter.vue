@@ -4,8 +4,7 @@
             Фильтр загружается...
         </div>
 
-        <pre-search-informer :dom-element="clicedElement" :element-count="preSerchCount"></pre-search-informer>
-
+        
         <div v-show="filterList.length != 0" class="page__sidebar-body">
             <div class="page__sidebar-navigation">
                 <div class="spollers-block" data-spollers data-one-spoller>
@@ -23,7 +22,9 @@
                     </div>
 
 
-                    <form method="GET" :action="catUrl">   
+                    <form method="GET" :action="catUrl" class = "page__sidebar_form" id="cat_filter_form">   
+                        <pre-search-informer :dom-element="clicedElement" :element-count="preSerchCount"></pre-search-informer>
+
                         <price-select-category-filter ></price-select-category-filter>
 
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.brand.length != 0" property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
