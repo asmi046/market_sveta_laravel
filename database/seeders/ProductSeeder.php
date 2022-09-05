@@ -127,7 +127,7 @@ class ProductSeeder extends Seeder
                         "order" => $j,
                     ];
 
-                    //Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
+                    Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
                 }    
 
             
