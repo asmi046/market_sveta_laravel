@@ -25,7 +25,7 @@
                     <form method="GET" :action="catUrl" class = "page__sidebar_form" id="cat_filter_form">   
                         <pre-search-informer :dom-element="clicedElement" :element-count="preSerchCount"></pre-search-informer>
 
-                        <price-select-category-filter ></price-select-category-filter>
+                        <price-select-category-filter @chenge-price="chengePrice"></price-select-category-filter>
 
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.brand.length != 0" property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.style.length != 0" property-name="style" property-text="Стиль" :values="filterList.style"></multy-select-category-filter>
@@ -98,7 +98,34 @@ export default {
             })
             .then((response) => {
                 console.log(response.data);
-                this.preSerchCount=response.data.length
+                this.preSerchCount=response.data.products.length
+                // this.filterList=response.data.filter
+
+                if (this.clicedElement.dataset.razdel != "style")
+                    this.filterList.style = response.data.filter.style
+                
+                if (this.clicedElement.dataset.razdel != "brand")
+                    this.filterList.brand = response.data.filter.brand
+                
+                if (this.clicedElement.dataset.razdel != "state")
+                    this.filterList.state = response.data.filter.state
+                
+                if (this.clicedElement.dataset.razdel != "forma")
+                    this.filterList.forma = response.data.filter.forma
+                
+                if (this.clicedElement.dataset.razdel != "arm_color")
+                    this.filterList.arm_color = response.data.filter.arm_color
+                
+                if (this.clicedElement.dataset.razdel != "plaf_color")
+                    this.filterList.plaf_color = response.data.filter.plaf_color
+                
+                if (this.clicedElement.dataset.razdel != "arm_material")
+                    this.filterList.arm_material = response.data.filter.arm_material
+                
+                if (this.clicedElement.dataset.razdel != "plaf_material")
+                    this.filterList.plaf_material = response.data.filter.plaf_material
+                
+                
             })
             .catch(error => console.log(error));
             },
@@ -111,7 +138,15 @@ export default {
             this.selectedParam[item] = list
             this.get_pre_filter()
             this.clicedElement = element
-            console.log(element)
+            console.log(element.dataset.razdel)
+        },
+
+        chengePrice(element, min, max, sale) {
+            this.selectedParam["minprice"] = min
+            this.selectedParam["maxprice"] = max
+            this.selectedParam["insales"] = (sale)?"on":""
+            this.get_pre_filter()
+            this.clicedElement = element
         }
 
     }

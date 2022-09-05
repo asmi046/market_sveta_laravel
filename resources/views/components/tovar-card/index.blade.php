@@ -1,7 +1,7 @@
 <div class="main-prod-card__column">
     <div class="prod-card__body d-flex">
         <x-favorit :isactive="false"></x-favorit>
-        <a href="#" class="prod-card__img">
+        <a href="{{route('product', $minfo->slug)}}" class="prod-card__img">
             <img src="{{Storage::url('public/products_galery/'.$minfo->img)}}" alt="Купить {{$minfo->name}}">
         </a>
         <div class="prod-card__text">

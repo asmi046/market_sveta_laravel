@@ -29,9 +29,42 @@ class ApiIndexController extends Controller
         ->orWhere('cat4', $catid)->filter($pf)->get();
 
         
-        return $catProducts;
+        $zap_filter = json_decode($request->get('filter_empty'));
 
-        return !empty($request->get('filter'))? gettype ((array)json_decode($request->get('filter'))) :[];
+        foreach ($catProducts as $elem) {
+            if (!empty($elem->style))
+                $zap_filter->style->{$elem->style} = $zap_filter->style->{$elem->style}+1; 
+      
+
+            if (!empty($elem->brand))
+                $zap_filter->brand->{$elem->brand} = $zap_filter->brand->{$elem->brand}+1;
+   
+            
+            if (!empty($elem->state))
+                $zap_filter->state->{$elem->state} = $zap_filter->state->{$elem->state}+1;
+    
+            
+            if (!empty($elem->forma))
+                $zap_filter->forma->{$elem->forma} = $zap_filter->forma->{$elem->forma}+1;
+            
+            if (!empty($elem->arm_color))
+                $zap_filter->arm_color->{$elem->arm_color} = $zap_filter->arm_color->{$elem->arm_color}+1;
+                
+            
+            if (!empty($elem->plaf_color))
+                $zap_filter->plaf_color->{$elem->plaf_color} = $zap_filter->plaf_color->{$elem->plaf_color}+1;
+            
+            if (!empty($elem->arm_material))
+                $zap_filter->arm_material->{$elem->arm_material} = $zap_filter->arm_material->{$elem->arm_material}+1;
+            
+            if (!empty($elem->plaf_material))
+                $zap_filter->plaf_material->{$elem->plaf_material} = $zap_filter->plaf_material->{$elem->plaf_material}+1; 
+             
+        }
+
+    
+        
+        return array("products"=>$catProducts, "filter"=>$zap_filter);
     }
 
     public function get_category_filter($catid, Request $request) {

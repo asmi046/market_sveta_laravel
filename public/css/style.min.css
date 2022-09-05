@@ -479,6 +479,7 @@ textarea {
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
+input[type=number]:focus,
 textarea:focus {
   outline: none;
 }
@@ -3929,6 +3930,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   position: absolute;
   top: 25%;
   right: 5%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 8%);
 }
 
 .img-l p {
@@ -3956,6 +3959,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .img-item-r span {
   font-size: 37.38px;
   font-weight: 400;
+}
+
+.main_slider__item {
+  box-shadow: 0 0 10px rgb(0 0 0 / 8%);
 }
 
 .slider__item p {
@@ -4187,6 +4194,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .prod-card__price-item {
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .popular__baner {
@@ -5225,16 +5233,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   line-height: 35px;
 }
 
-.page__sidebar-navigation-menu {
-  padding: 13px 0;
-}
 
 .sidebar-navigation-catMenu-item-link {
   display: block;
   font-size: 14px;
   line-height: 26px;
   color: #161615;
-  padding-left: 33px;
+  padding-left: 20px;
 }
 
 .sidebar-navigation-catMenu-item-link:hover {
@@ -5283,12 +5288,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-right: 10px;
 }
 
-.page__sidebar-navigation-col-price {
-  padding: 14px;
-  border: 0.4px solid #d2d1d1;
-  border-radius: 10px;
-  margin-left: -14px;
-}
+
 
 .page__sidebar-navigation-col-price .page__sidebar-navigation-name {
   margin-bottom: 17px;
@@ -5312,6 +5312,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border: 0.5px solid #ffb400;
   border: 0.5px solid #d2d1d1;
   margin-right: 10px;
+  font-size: 12px;
 }
 
 .page__sidebar-navigation-col-price-selects-col:last-child {
@@ -5320,7 +5321,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .page__sidebar-navigation-col-price-selects-text {
   font-size: 14px;
-  color: #161615;
+  color: gray;
 }
 
 .page__sidebar-navigation-col-price-selects-input {
@@ -5340,7 +5341,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #161615;
 }
 
-.page__sidebar-navigation-body-menu-options::-webkit-scrollbar-thumb {
+.page__sidebar-navigation-menu::-webkit-scrollbar-thumb,
+.page__sidebar-navigation-body-menu-options::-webkit-scrollbar-thumb 
+{
   width: 5px;
   border-radius: 2.5px;
   background: #dde5ec;

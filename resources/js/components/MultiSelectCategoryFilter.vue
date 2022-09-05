@@ -11,8 +11,8 @@
                     
                     <div class="page__sidebar-navigation-body-menu-options options">
                         
-                        <label v-for="(item, key, index) in showedList" :key="item" :data-index="index" class="page__sidebar-navigation-body-menu-options-item options__item">
-                                <input @change="chengeList($event)" v-model="selectedElement"  type="checkbox" :value="key" :name="propertyName+'[]'" class="page__sidebar-navigation-body-menu-options-item-input options__input" >
+                        <label v-for="(item, key, index) in showedList" :key="key" :data-index="index" class="page__sidebar-navigation-body-menu-options-item options__item">
+                                <input :disabled="item==0" @change="chengeList($event)" v-model="selectedElement" :data-razdel="propertyName" type="checkbox" :value="key" :name="propertyName+'[]'" class="page__sidebar-navigation-body-menu-options-item-input options__input" >
                                 <span class="page__sidebar-navigation-body-menu-options-item-input-text options__text">
                                 <span class="page__sidebar-navigation-body-menu-options-item-input-text-main options__text-main">{{key}}</span>{{item}}</span>
                         </label>

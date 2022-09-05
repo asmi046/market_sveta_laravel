@@ -8,7 +8,7 @@
 
             <div class="info-sl__slider slider _swiper main_banner">
                 @foreach ($banners["main_banner"] as $item)
-                    <div class="slider__item">
+                    <div class="slider__item main_slider__item">
                         <img src="img/banners/{{$item["img_name"]}}" alt="">
                     </div>
                 @endforeach

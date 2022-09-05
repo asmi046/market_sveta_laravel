@@ -32,4 +32,19 @@ class ProductFilter extends QueryFilter {
         if (!empty($arm_material))
             $this->builder->whereIn("arm_material", $arm_material);
     }
+
+    public function minprice($minprice) {
+        if (!empty($minprice))
+            $this->builder->where("price", '>', $minprice);
+    }
+
+    public function maxprice($maxprice) {
+        if (!empty($maxprice))
+            $this->builder->where("price", '<', $maxprice);
+    }
+
+    public function insales($insales = "off") {
+        if ($insales === 'on')
+            $this->builder->where("price_old", '>', 0);
+    }
 }
