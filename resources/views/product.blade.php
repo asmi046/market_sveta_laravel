@@ -28,7 +28,7 @@
               <div class="swiper-button swiper-button-next select-prod-sl__small-next"></div>
 							<div class="swiper-button swiper-button-prev select-prod-sl__small-prev"></div>
             <!-- </div> -->
-            <div thumbsSlider="" class="select-prod-sl__small-slider swiper mySwiper">
+            <div class="select-prod-sl__small-slider swiper prodSlSmall">
               <div class="swiper-wrapper">
                 <div class="select-prod-sl__small-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
@@ -45,7 +45,7 @@
                 <div class="select-prod-sl__small-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
                 </div>
-                <div class="select-prod-sl__small-slide swiper-slide">
+                <!-- <div class="select-prod-sl__small-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
                 </div>
                 <div class="select-prod-sl__small-slide swiper-slide">
@@ -53,19 +53,19 @@
                 </div>
                 <div class="select-prod-sl__small-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
+                </div> -->
                 <!-- <div class="select-prod-sl__small-slideswiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
                 </div> -->
-                <div class="select-prod-sl__small-slide swiper-slide">
+                <!-- <div class="select-prod-sl__small-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
 
-          <div class="select-prod-sl__big">
-            <div thumbsSlider="" class="swiper mySwiper2">
+          <div class="select-prod-sl__big swiper prodSlBig">
+            <!-- <div class="swiper prodSlBig"> -->
               <div class="swiper-wrapper">
                 <div class="select-prod-sl__big-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
@@ -82,7 +82,7 @@
                 <div class="select-prod-sl__big-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
                 </div>
-                <div class="select-prod-sl__big-slide swiper-slide">
+                <!-- <div class="select-prod-sl__big-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
                 </div>
                 <div class="select-prod-sl__big-slide swiper-slide">
@@ -90,15 +90,15 @@
                 </div>
                 <div class="select-prod-sl__big-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
+                </div> -->
                 <!-- <div class="select-prod-sl__big-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
                 </div> -->
-                <div class="select-prod-sl__big-slide swiper-slide">
+                <!-- <div class="select-prod-sl__big-slide swiper-slide">
                   <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                </div>
+                </div> -->
               </div>
-            </div>
+            <!-- </div> -->
           </div> 
         </div>
   
@@ -488,43 +488,5 @@
 
           </div>
         </section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    var swiper = new Swiper(".mySwiper", {
-      observer: true,
-	    observeParents: true,
-	    slidesPerView: 1,
-	    spaceBetween: 0, //отступ в пикселях
-	    autoHeight: true,
-	    speed: 2500,
-      direction: "vertical",
-      spaceBetween: 13.5,
-      slidesPerView: 5,
-      freeMode: true,
-      loop: true,
-      watchSlidesProgress: true,
-      navigation: {
-		    nextEl: '.swiper-button-next',
-		    prevEl: '.swiper-button-prev',
-	    },
-      // controller: {
-      //   control: swiper2
-      // },
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      // observer: true,
-	    observeParents: true,
-	    slidesPerView: 1,
-	    spaceBetween: 0, //отступ в пикселях
-      speed: 2500,
-	    // autoHeight: true,
-	    // effect:'fade',
-      loop: true,
-    });
-    swiper.controller.control = swiper2;
-    swiper2.controller.control = swiper;
-  });
-</script>
 
 @endsection
