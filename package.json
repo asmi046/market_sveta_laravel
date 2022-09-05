@@ -8,6 +8,7 @@
         "composer_remove": "ssh u0743099@ftp.light-snab.ru \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php composer.phar dumpauto\"",
         "composer_install": "ssh u0743099@ftp.light-snab.ru \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php composer.phar install\"",
         "pull_rep": "ssh u0743099@ftp.light-snab.ru \"cd www/lr.marketsveta.su && git pull\"",
+        "send_vite_build": "scp -C -r public/build u0743099@ftp.light-snab.ru:www/lr.marketsveta.su/public",
 
         "migrate_rep": "ssh u0743099@ftp.light-snab.ru \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan migrate\"",
         "rollback_rep": "ssh u0743099@ftp.light-snab.ru \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan migrate:rollback\"",
