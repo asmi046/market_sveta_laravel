@@ -11,7 +11,10 @@
 				</div>
 				<button class="mob-search"></button> --}}
 
-				<search-component></search-component>
+				<div id="search_app" class="header__search search">
+					<search-component></search-component>
+				</div>
+				
 				
 				<div class="header__contacts d-flex">
 					<div class="header__callback callback d-flex">

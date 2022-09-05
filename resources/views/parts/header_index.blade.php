@@ -1,5 +1,6 @@
 @include('parts.top_sale')
-@include('parts.top_menu')
+
+<x-top-menu></x-top-menu>
 
 @include('parts.main_head')
 

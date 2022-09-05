@@ -9,14 +9,21 @@ import axios from 'axios'
 
 import VueAxios from 'vue-axios'
 
-const app = createApp({
+
+const app_filter = createApp({
     components:{
-       SearchComponent,
-       CategoryFilter,
-       
+       CategoryFilter       
     }
 })
 
-app.use(VueAxios, axios)
+app_filter.use(VueAxios, axios)
+app_filter.mount("#sb_app");
 
-app.mount("#app");
+const app_search = createApp({
+    components:{
+       SearchComponent       
+    }
+})
+
+app_search.use(VueAxios, axios)
+app_search.mount("#search_app");

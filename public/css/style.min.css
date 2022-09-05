@@ -367,6 +367,40 @@ input[type=checkbox]:checked+.switch-block__label {
   position: relative;
 }
 
+
+.contacts_data {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contacts_phone {
+  font-size: 32px;
+  line-height: 0.8;
+}
+
+.contacts_phone a{ 
+  font-weight: 700;
+}
+
+.phone_subtitle {
+  font-size: 12px;
+}
+
+.contacts_email {
+  font-size: 18px;
+}
+
+.contacts_adress {
+  font-size: 18px;
+}
+
+.block__map {
+  width: 100%;
+  height: 400px;
+}
+
+/* Стили текста */
+
 .select__item {
   position: relative;
 }
@@ -378,6 +412,10 @@ input[type=checkbox]:checked+.switch-block__label {
   cursor: pointer;
   border-radius: 4px;
 }
+
+/*END Стили текста  END*/
+
+
 
 @media (max-width: 991.98px) {
   .select__title {
@@ -3961,7 +3999,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-weight: 400;
 }
 
-.main_slider__item {
+.main_slider__item img {
   box-shadow: 0 0 10px rgb(0 0 0 / 8%);
 }
 
@@ -5711,15 +5749,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: 30px;
 }
 
+Cnbkb ntrcnf
 
+.text_style {
+  width: 100%;
+  font-size: 14px;
+}
 
-
-
-
-
-
-
-
+.text_style p{
+  margin: 10px 0;
+}
 
 
 @media (max-width: 1500px) {
