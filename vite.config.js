@@ -9,10 +9,24 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-                "resources/js/lib/lib.js", 
+                
                 "public/css/style.min.css", 
                 "public/css/interface.css", 
-                "public/css/filter.style.css"
+                "public/css/filter.style.css",
+
+                "resources/js/lib/lib.js",
+                "public/js/dynamic_adapt.js",
+
+                "public/js/modules/dynamic_adapt.js",
+                "public/js/modules/forms.js",
+                "public/js/modules/functions.js",
+                "public/js/modules/map.js",
+                "public/js/modules/regular.js",
+                "public/js/modules/script.js",
+                "public/js/modules/scroll.js",
+                "public/js/modules/sliders.js",
+
+                "public/js/libs/swiper.min.js",
             ],
             refresh: true,
         }),
