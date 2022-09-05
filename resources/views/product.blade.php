@@ -2,158 +2,159 @@
 @section('title', $product[0]->title_seo)
 
 @section('content')
-        <section id="select-prod" class="select-prod">
-          <div class="_container">
-              <div class="breadcrumb">
-                <ul>
-                  <li><a href="#">Назад</a></li>
-                  <li><a href="#">Маркет</a></li>
-                  <li><a href="#">Света</a></li>
-                  <li><a href="#">Каталог</a></li>
-                  <li><a href="#">Светильники</a></li>
-                  <li><a href="#">Подвесные</a></li>
-                  <li>Подвесной светильник SLV Forchini 1001701</li>
-                </ul>
-              </div>
 
-              <h1>{{$product[0]->name}}</h1>
+  <section id="select-prod" class="select-prod">
+    <div class="_container">
+      <div class="breadcrumb">
+        <ul>
+          <li><a href="#">Назад</a></li>
+          <li><a href="#">Маркет</a></li>
+          <li><a href="#">Света</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Светильники</a></li>
+          <li><a href="#">Подвесные</a></li>
+          <li>Подвесной светильник SLV Forchini 1001701</li>
+        </ul>
+      </div>
 
-              <div class="select-prod-block d-flex">
+      <h1>{{$product[0]->name}}</h1>
+
+      <div class="select-prod-block d-flex">
                     
-                <div class="select-prod-sl">   
-                    <script>
-                        document.addEventListener('DOMContentLoaded', () => {
-                            var swiper = new Swiper(".mySwiper", {
-                                direction: "vertical",
-                                spaceBetween: 10,
-                                slidesPerView: 4,
-                                freeMode: true,
-                                watchSlidesProgress: true,
-                                
-                            });
-                            // var swiper2 = new Swiper(".mySwiper2", {
-                            // loop: true,
-                            // spaceBetween: 10,
-                            // navigation: {
-                            //     nextEl: ".swiper-button-next",
-                            //     prevEl: ".swiper-button-prev",
-                            // },
-                            // thumbs: {
-                            //     swiper: swiper,
-                            // },
-                            // });
-                        });
-                    </script>
-                        <div class="pg_thumb">
-                            <div thumbsSlider="" class="swiper mySwiper">
-                                <div class="swiper-wrapper">
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                                      </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-    
-                        <!-- <div class="pg_img">
-                          {{-- <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                                <div class="swiper-wrapper">
-                                  <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                  </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                          </div> --}}
-                        </div> -->
+        <div class="select-prod-sl">  
 
-                    <div class="select-prod-info">
-
-                      <div class="select-prod-info__price-block">
-                        <div class="select-prod-info__price-block-inner d-flex">
-                          <div class="select-prod-info__price-block-price rub">10 100</div>
-                          <div class="select-prod-info__price-block-avail">На складе 10 шт.</div>
-                        </div>
-                        <div class="select-prod-info__price-block-buttons">
-                          <div class="select-prod-info__price-block-buttons-inner d-flex">
-                            <button class="select-prod-info__price-block-buttons-btn btn">ДОБАВИТЬ В КОРЗИНУ</button>
-                            <a href="" class="select-prod-info__price-block-buttons-faw"></a>
-                          </div>
-                          <button class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</button>
-                        </div>
-                      </div>
-
-                      <div class="select-prod-info__notification d-flex">
-                        <div class="select-prod-info__notification-item select-prod-info__notification-item_icon-01">Тех. характеристики</div>
-                        <div class="select-prod-info__notification-item select-prod-info__notification-item_icon-02">7 дней на возврат</div>
-                      </div>
-
-                      <div class="select-prod-info__delivery">
-                        <h3 class="select-prod-info__delivery-title">Информация о доставке</h3>
-                        <div class="select-prod-info__delivery-wrap">
-                        <div class="select-prod-info__delivery-item">
-                          <p class="select-prod-info__delivery-item-text select-prod-info__delivery-item-icon-01">Курск</p>
-                          <a href="#" class="select-prod-info__delivery-item-text-link">Изменить</a>
-                        </div>
-                        <div class="select-prod-info__delivery-item">
-                          <p class="select-prod-info__delivery-item-text select-prod-info__delivery-item-icon-02">Доставка</p>
-                          <p class="select-prod-info__delivery-item-text">3-7 дней, по тарифам ТК</p>
-                          <a href="#" class="select-prod-info__delivery-item-text-link">Подробнее о доставке</a>
-                        </div>
-                        <p class="select-prod-info__delivery-item-clasific">Точный срок доставки уточним при оформлении заказа</p>
-                        </div>
-                      </div>
-
-                      <div class="select-prod-info__guarantee">
-                        <h3 class="select-prod-info__guarantee-title">
-                          6 месяцев гарантии <br>
-                          с момента покупки 
-                        </h3>
-                        <p class="select-prod-info__guarantee-subtitle">
-                          18 месяцев <a href="#" class="select-prod-info__guarantee-subtitle-link">расширенной гарантии</a> на светильники при 
-                          условии монтажа нашим специалистом.
-                        </p>
-                        <p class="select-prod-info__guarantee-subtitle">
-                          <a href="#" class="select-prod-info__guarantee-subtitle-link">Стоимость услуг по установке светильников</a>
-                        </p>
-                      </div>
-
-                    </div>
+          <div class="select-prod-sl__small">
+            <!-- <div class="select-prod-sl__small-buttonBlk"> -->
+              <div class="swiper-button swiper-button-next select-prod-sl__small-next"></div>
+							<div class="swiper-button swiper-button-prev select-prod-sl__small-prev"></div>
+            <!-- </div> -->
+            <div thumbsSlider="" class="select-prod-sl__small-slider swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="select-prod-sl__small-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="select-prod-sl__small-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="select-prod-sl__small-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="select-prod-sl__small-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="select-prod-sl__small-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="select-prod-sl__small-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="select-prod-sl__small-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="select-prod-sl__small-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <!-- <div class="select-prod-sl__small-slideswiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div> -->
+                <div class="select-prod-sl__small-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                </div>
               </div>
+            </div>
+          </div>
+
+          <div class="select-prod-sl__big">
+            <div thumbsSlider="" class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <!-- <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div> -->
+                <div class="select-prod-sl__big-slide swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+  
+      <div class="select-prod-info">
+
+        <div class="select-prod-info__price-block">
+          <div class="select-prod-info__price-block-inner d-flex">
+            <div class="select-prod-info__price-block-price rub">10 100</div>
+            <div class="select-prod-info__price-block-avail">На складе 10 шт.</div>
+          </div>
+          <div class="select-prod-info__price-block-buttons">
+            <div class="select-prod-info__price-block-buttons-inner d-flex">
+              <button class="select-prod-info__price-block-buttons-btn btn">ДОБАВИТЬ В КОРЗИНУ</button>
+              <a href="" class="select-prod-info__price-block-buttons-faw"></a>
+            </div>
+            <button class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</button>
+          </div>
+        </div>
+
+        <div class="select-prod-info__notification d-flex">
+          <div class="select-prod-info__notification-item select-prod-info__notification-item_icon-01">Тех. характеристики</div>
+          <div class="select-prod-info__notification-item select-prod-info__notification-item_icon-02">7 дней на возврат</div>
+        </div>
+
+        <div class="select-prod-info__delivery">
+          <h3 class="select-prod-info__delivery-title">Информация о доставке</h3>
+          <div class="select-prod-info__delivery-wrap">
+            <div class="select-prod-info__delivery-item">
+              <p class="select-prod-info__delivery-item-text select-prod-info__delivery-item-icon-01">Курск</p>
+              <a href="#" class="select-prod-info__delivery-item-text-link">Изменить</a>
+            </div>
+            <div class="select-prod-info__delivery-item">
+              <p class="select-prod-info__delivery-item-text select-prod-info__delivery-item-icon-02">Доставка</p>
+              <p class="select-prod-info__delivery-item-text">3-7 дней, по тарифам ТК</p>
+              <a href="#" class="select-prod-info__delivery-item-text-link">Подробнее о доставке</a>
+            </div>
+            <p class="select-prod-info__delivery-item-clasific">Точный срок доставки уточним при оформлении заказа</p>
+          </div>
+        </div>
+
+        <div class="select-prod-info__guarantee">
+          <h3 class="select-prod-info__guarantee-title">
+            6 месяцев гарантии <br>
+            с момента покупки 
+          </h3>
+          <p class="select-prod-info__guarantee-subtitle">
+            18 месяцев <a href="#" class="select-prod-info__guarantee-subtitle-link">расширенной гарантии</a> на светильники при 
+            условии монтажа нашим специалистом.
+          </p>
+          <p class="select-prod-info__guarantee-subtitle">
+            <a href="#" class="select-prod-info__guarantee-subtitle-link">Стоимость услуг по установке светильников</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
 
               <div class="select-prod__specifications">
                 <h2 class="select-prod__specifications-title">Технические характеристики</h2>
@@ -488,6 +489,42 @@
           </div>
         </section>
 
-
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    var swiper = new Swiper(".mySwiper", {
+      observer: true,
+	    observeParents: true,
+	    slidesPerView: 1,
+	    spaceBetween: 0, //отступ в пикселях
+	    autoHeight: true,
+	    speed: 2500,
+      direction: "vertical",
+      spaceBetween: 13.5,
+      slidesPerView: 5,
+      freeMode: true,
+      loop: true,
+      watchSlidesProgress: true,
+      navigation: {
+		    nextEl: '.swiper-button-next',
+		    prevEl: '.swiper-button-prev',
+	    },
+      // controller: {
+      //   control: swiper2
+      // },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      // observer: true,
+	    observeParents: true,
+	    slidesPerView: 1,
+	    spaceBetween: 0, //отступ в пикселях
+      speed: 2500,
+	    // autoHeight: true,
+	    // effect:'fade',
+      loop: true,
+    });
+    swiper.controller.control = swiper2;
+    swiper2.controller.control = swiper;
+  });
+</script>
 
 @endsection
