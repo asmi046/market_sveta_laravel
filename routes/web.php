@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\TextPagesController;
+use App\Http\Controllers\BascetController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +28,5 @@ Route::get('/aktsii', [TextPagesController::class, "aktsii"])->name("aktsii");
 Route::get('/brands', [TextPagesController::class, "brands"])->name("brands");
 Route::get('/about', [TextPagesController::class, "about"])->name("about");
 Route::get('/dostavka', [TextPagesController::class, "dostavka"])->name("dostavka");
+
+Route::get('/bascet', [BascetController::class, "index"])->name("bascet");
