@@ -24,87 +24,50 @@
         <div class="select-prod-sl">  
 
           <div class="select-prod-sl__small">
-            <!-- <div class="select-prod-sl__small-buttonBlk"> -->
-              <div class="swiper-button swiper-button-next select-prod-sl__small-next"></div>
-							<div class="swiper-button swiper-button-prev select-prod-sl__small-prev"></div>
-            <!-- </div> -->
-            <div class="select-prod-sl__small-slider swiper prodSlSmall">
-              <div class="swiper-wrapper">
-                <div class="select-prod-sl__small-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </div>
-                <div class="select-prod-sl__small-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div class="select-prod-sl__small-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="select-prod-sl__small-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="select-prod-sl__small-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <!-- <div class="select-prod-sl__small-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </div>
-                <div class="select-prod-sl__small-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="select-prod-sl__small-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div> -->
-                <!-- <div class="select-prod-sl__small-slideswiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </div> -->
-                <!-- <div class="select-prod-sl__small-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                </div> -->
+            <div class="swiper-button swiper-button-next select-prod-sl__small-next"></div>
+						<div class="swiper-button swiper-button-prev select-prod-sl__small-prev"></div>
+            <div class="select-prod-sl__small-slider slider _swiper prodSlSmall">
+              <div class="select-prod-sl__small-slide slider__slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="select-prod-sl__small-slide slider__slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="select-prod-sl__small-slide slider__slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="select-prod-sl__small-slide slider__slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+              <div class="select-prod-sl__small-slide slider__slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
               </div>
             </div>
           </div>
 
-          <div class="select-prod-sl__big swiper prodSlBig">
-            <!-- <div class="swiper prodSlBig"> -->
-              <div class="swiper-wrapper">
-                <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </div>
-                <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <!-- <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </div>
-                <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div> -->
-                <!-- <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </div> -->
-                <!-- <div class="select-prod-sl__big-slide swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                </div> -->
-              </div>
-            <!-- </div> -->
-          </div> 
+          <div class="select-prod-sl__big slider _swiper prodSlBig">
+            <div class="select-prod-sl__big-slide slider__slide">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="select-prod-sl__big-slide slider__slide">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="select-prod-sl__big-slide slider__slide">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="select-prod-sl__big-slide slider__slide">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            <div class="select-prod-sl__big-slide slider__slide">
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+          </div>
+
         </div>
   
       <div class="select-prod-info">
 
-        <div class="select-prod-info__price-block">
+        <div class="select-prod-info__price-block select-prod-info__column">
           <div class="select-prod-info__price-block-inner d-flex">
             <div class="select-prod-info__price-block-price rub">10 100</div>
             <div class="select-prod-info__price-block-avail">На складе 10 шт.</div>
@@ -118,12 +81,12 @@
           </div>
         </div>
 
-        <div class="select-prod-info__notification d-flex">
+        <div class="select-prod-info__notification select-prod-info__column d-flex">
           <div class="select-prod-info__notification-item select-prod-info__notification-item_icon-01">Тех. характеристики</div>
           <div class="select-prod-info__notification-item select-prod-info__notification-item_icon-02">7 дней на возврат</div>
         </div>
 
-        <div class="select-prod-info__delivery">
+        <div class="select-prod-info__delivery select-prod-info__column">
           <h3 class="select-prod-info__delivery-title">Информация о доставке</h3>
           <div class="select-prod-info__delivery-wrap">
             <div class="select-prod-info__delivery-item">
@@ -139,7 +102,7 @@
           </div>
         </div>
 
-        <div class="select-prod-info__guarantee">
+        <div class="select-prod-info__guarantee select-prod-info__column">
           <h3 class="select-prod-info__guarantee-title">
             6 месяцев гарантии <br>
             с момента покупки 

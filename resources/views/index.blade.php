@@ -6,7 +6,7 @@
     <div class="_container">
         <div class="info-sl__row d-flex">
 
-            <div class="info-sl__slider slider _swiper main_banner">
+            <div class="info-sl__slider main_banner infoSlBg slider _swiper">
                 @foreach ($banners["main_banner"] as $item)
                     <div class="slider__item main_slider__item">
                         <img src="img/banners/{{$item["img_name"]}}" alt="">

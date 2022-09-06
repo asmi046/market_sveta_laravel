@@ -61,7 +61,7 @@ if (sliderScrollItems.length > 0) {
 // function sliders_bild_callback(params) { }
 
 // Сюда пишем класс нашего слайдера и меняем переменную
-let sliderBg = new Swiper('.info-sl__slider', {
+let infoSlBg = new Swiper('.infoSlBg', {
 	// effect: 'fade',
 	autoplay: {
 		delay: 3000,
@@ -184,13 +184,13 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 	autoHeight: true,
 	speed: 2500,
 	direction: "vertical",
-	spaceBetween: 13.5,
-	slidesPerView: 5,
+	spaceBetween: 10,
+	slidesPerView: 3,
 	freeMode: true,
 	loop: true,
-	controller: {
-		control: prodSlBig
-	},
+	// controller: {
+	// 	control: prodSlBig
+	// },
 	// watchSlidesProgress: true,
 	watchOverflow: true,
 	slideToClickedSlide: true,
@@ -198,27 +198,39 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-	/*
 	breakpoints: {
-		320: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+		// 320: {
+		// 	slidesPerView: 1,
+		// 	spaceBetween: 0,
+		// 	autoHeight: true,
+		// },
+		// 768: {
+		// 	slidesPerView: 2,
+		// 	spaceBetween: 20,
+		// },
+		// 992: {
+		// 	slidesPerView: 3,
+		// 	spaceBetween: 20,
+		// },
+		1160: {
+			// direction: "vertical",
+			spaceBetween: 13.5,
+			slidesPerView: 5,
 		},
-		768: {
-			slidesPerView: 2,
-			spaceBetween: 20,
-		},
-		992: {
-			slidesPerView: 3,
-			spaceBetween: 20,
-		},
-		1268: {
+		900: {
+			// direction: "vertical",
+			spaceBetween: 13.5,
 			slidesPerView: 4,
-			spaceBetween: 30,
+		},
+		461: {
+			// direction: "vertical",
+			slidesPerView: 5,
+		},
+		361: {
+			// direction: "vertical",
+			slidesPerView: 4,
 		},
 	},
-	*/
 	on: {
 		lazyImageReady: function () {
 			ibg();
