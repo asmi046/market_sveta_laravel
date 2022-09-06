@@ -18,4 +18,5 @@ use App\Http\Controllers\Api\V1\ApiIndexController;
 
 Route::get('/get_category_filter/{catid}', [ApiIndexController::class, "get_category_filter"])->name("apihome");
 Route::get('/get_sorted_category_filter/{catid}', [ApiIndexController::class, "get_sorted_category_filter"])->name("sortedfilter");
+Route::get('/get_search_pds', [ApiIndexController::class, "get_search_pds"])->name("searchpds");
 

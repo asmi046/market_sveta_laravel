@@ -11,9 +11,7 @@
 				</div>
 				<button class="mob-search"></button> --}}
 
-				<div id="search_app" class="header__search search">
-					<search-component></search-component>
-				</div>
+				<x-main-search></x-main-search>
 				
 				
 				<div class="header__contacts d-flex">

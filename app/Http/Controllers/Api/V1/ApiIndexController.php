@@ -7,11 +7,36 @@ use Illuminate\Http\Request;
 
 use App\Filters\ProductFilter;
 use App\Models\Product;
+use App\Models\Category;
+use Illuminate\Support\Facades\Storage;
 
 class ApiIndexController extends Controller
 {
-    public function index() {
-        return ["eee" => "rrrttt"];
+    public function get_search_pds(Request $request) {
+        
+        $result_array = ["products" => [], "categories" => [], "img_prefix" => Storage::url('public/products_galery/')];
+
+        $search_str = $request->get('search_str');
+        
+        if (empty($search_str)) return $result_array;
+
+        $products = Product::where('name', 'LIKE', "%".$search_str."%")
+        ->orWhere('collection', 'LIKE', "%".$search_str."%")
+        ->orWhere('description', 'LIKE', "%".$search_str."%")
+        ->orWhere('sku', 'LIKE', "%".$search_str."%")
+        ->take(70)
+        ->get();
+
+        $result_array["products"] = $products;
+
+        $cat = Category::where('name', 'LIKE', "%".$search_str."%")
+        ->orWhere('description', 'LIKE', "%".$search_str."%")
+        ->take(20)
+        ->get();
+
+        $result_array["categories"] = $cat;
+
+        return $result_array;
     }
 
     public function get_sorted_category_filter($catid,Request $request) {
