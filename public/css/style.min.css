@@ -349,6 +349,10 @@ input[type=checkbox]:checked+.switch-block__label {
   border: 0.5px solid #bababa;
 }
 
+.animated_bg {
+  transition: background 0.5s ease!important;
+}
+
 .search__btn {
   background-color: #FFB400;
   border: none;
@@ -360,7 +364,6 @@ input[type=checkbox]:checked+.switch-block__label {
   width: 52px;
   height: 100%;
   border-radius: 0 11.5px 11.5px 0;
-  transition: background 0.5s ease;
 }
 .search__btn:hover { 
   background-color: #E13510;
@@ -3428,9 +3431,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #fff;
 }
 
-.header-top-index a:hover{
-  text-decoration: underline;
-}
 
 .header-top-index ul li a:hover {
   border-bottom: 2px solid #fff;
@@ -3652,12 +3652,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   align-items: center;
 }
 
+.menu__list a:hover { 
+  color:#E13510
+}
+
 .menu__catalogy a {
   color: black;
   font-weight: 700;
   padding: 18px 20px;
   background-color: #FFB400;
-  transition: background 0.5s ease;
 }
 
 .menu__catalogy a:hover { 
@@ -3680,8 +3683,33 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-image: url("../img/icons/cat_menu_btn_hover.svg");
 }
 
+.menu__shares a:after {
+  content: "";
+  float: right;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/icons/percent.svg");
+  background-size: cover;
+}
+
+.menu__shares a:hover:after {
+  content: "";
+  background-image: url("../img/icons/percent_hover.svg");
+ 
+}
+
 .menu__shares a {
-  color: #E13510;
+  background-color: #FFB400;
+  color: black;
+  position: relative;
+}
+
+.menu__shares a:hover {
+  background-color: #E13510;
+  color: white;
 }
 
 .icon-menu {
@@ -4261,6 +4289,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-repeat: no-repeat;
   min-height: 283px;
   position: relative;
+  border-radius: 11px;
 }
 
 .popular__baner-text {

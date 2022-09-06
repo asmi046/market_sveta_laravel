@@ -4,7 +4,7 @@
 
 @include('parts.main_head')
 
-@include('parts.catalog_menu')
+<x-catalog-menu></x-catalog-menu>
 
 @include('parts.mobile_menu')
 

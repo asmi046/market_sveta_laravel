@@ -4,7 +4,7 @@
     <div class = "sub-load"></div>
 	<div class = "sub-sclose"></div>
     
-    <button type="submit" tabindex="2" id="searchsubmit" class="sub-search search__btn" value=""></button>
+    <button type="submit" tabindex="2" id="searchsubmit" class="sub-search search__btn animated_bg" value=""></button>
 
     <div class="preSearchWrap">
         <div class="preSearchWrap_panel">
