@@ -18,5 +18,7 @@
 			"resources/js/lib/lib.js", 
 			"public/css/style.min.css", 
 			"public/css/interface.css", 
-			"public/css/filter.style.css"])
+			"public/css/filter.style.css",
+			"public/css/mainsearch.css"
+			])
 </head>

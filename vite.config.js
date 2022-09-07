@@ -13,6 +13,7 @@ export default defineConfig({
                 "public/css/style.min.css", 
                 "public/css/interface.css", 
                 "public/css/filter.style.css",
+                "public/css/mainsearch.css",
 
                 "resources/js/lib/lib.js",
                 "public/js/dynamic_adapt.js",
@@ -25,6 +26,7 @@ export default defineConfig({
                 "public/js/modules/script.js",
                 "public/js/modules/scroll.js",
                 "public/js/modules/sliders.js",
+                "public/js/modules/mainsearch.js",
 
                 "public/js/libs/swiper.min.js",
             ],

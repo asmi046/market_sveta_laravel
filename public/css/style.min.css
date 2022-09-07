@@ -338,7 +338,6 @@ input[type=checkbox]:checked+.switch-block__label {
   width: 100%;
   height: 35px;
   border-radius: 11.5px;
-  overflow: hidden;
 }
 
 .search__input {
@@ -350,9 +349,12 @@ input[type=checkbox]:checked+.switch-block__label {
   border: 0.5px solid #bababa;
 }
 
+.animated_bg {
+  transition: background 0.5s ease!important;
+}
+
 .search__btn {
   background-color: #FFB400;
-  /* background-color: red; */
   border: none;
   width: 25px;
   height: 25px;
@@ -361,6 +363,10 @@ input[type=checkbox]:checked+.switch-block__label {
   right: 0;
   width: 52px;
   height: 100%;
+  border-radius: 0 11.5px 11.5px 0;
+}
+.search__btn:hover { 
+  background-color: #E13510;
 }
 
 .select {
@@ -546,6 +552,7 @@ textarea.input {
 
 ::-webkit-input-placeholder {
   color: #464545;
+  font-weight: normal;
 }
 
 ::-moz-placeholder {
@@ -864,6 +871,7 @@ input::-webkit-inner-spin-button {
   clear: both;
 }
 
+.arial,
 .rub:after {
   content: "₽";
   font-family: arial;
@@ -3423,6 +3431,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #fff;
 }
 
+
 .header-top-index ul li a:hover {
   border-bottom: 2px solid #fff;
   padding-bottom: 2px;
@@ -3584,7 +3593,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .search__input {
   height: 35px;
-  border: 1px solid #e0e1e3;
+  border: 1px solid lightgray;
   border-radius: 13px;
   padding-left: 14px;
   font-size: 12px;
@@ -3643,9 +3652,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   align-items: center;
 }
 
+.menu__list a:hover { 
+  color:#E13510
+}
+
 .menu__catalogy a {
-  color: #E13510;
-  padding: 18px 10px;
+  color: black;
+  font-weight: 700;
+  padding: 18px 20px;
+  background-color: #FFB400;
+}
+
+.menu__catalogy a:hover { 
+  background-color: #E13510;
+  color:white;
 }
 
 .menu__catalogy a:before {
@@ -3656,11 +3676,40 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-right: 10px;
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNS4xMzciIGhlaWdodD0iMTIuMTA1IiB2aWV3Qm94PSIwIDAgMTUuMTM3IDEyLjEwNSI+DQogIDxnIGlkPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjF8xMyIgZGF0YS1uYW1lPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjCAxMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIzMi40MTYgLTIwOC4xMjQpIj4NCiAgICA8bGluZSBpZD0i0JvQuNC90LjRj18zIiBkYXRhLW5hbWU9ItCb0LjQvdC40Y8gMyIgeDI9IjEzLjEzNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjMzLjQxNiAyMDkuMTI0KSIgZmlsbD0iI2UxMzUxMCIgc3Ryb2tlPSIjZTEzNTEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICAgIDxsaW5lIGlkPSLQm9C40L3QuNGPXzQiIGRhdGEtbmFtZT0i0JvQuNC90LjRjyA0IiB4Mj0iMTMuMTM3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzMuNDE2IDIxOS4yMjkpIiBmaWxsPSIjZTEzNTEwIiBzdHJva2U9IiNlMTM1MTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgPGxpbmUgaWQ9ItCb0LjQvdC40Y9fNSIgZGF0YS1uYW1lPSLQm9C40L3QuNGPIDUiIHgyPSI3LjkzNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjMzLjQxNiAyMTQuMTc2KSIgZmlsbD0iI2UxMzUxMCIgc3Ryb2tlPSIjZTEzNTEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8L2c+DQo8L3N2Zz4NCg==");
+  background-image: url("../img/icons/cat_menu_btn.svg");
+}
+
+.menu__catalogy a:hover:before { 
+  background-image: url("../img/icons/cat_menu_btn_hover.svg");
+}
+
+.menu__shares a:after {
+  content: "";
+  float: right;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/icons/percent.svg");
+  background-size: cover;
+}
+
+.menu__shares a:hover:after {
+  content: "";
+  background-image: url("../img/icons/percent_hover.svg");
+ 
 }
 
 .menu__shares a {
-  color: #E13510;
+  background-color: #FFB400;
+  color: black;
+  position: relative;
+}
+
+.menu__shares a:hover {
+  background-color: #E13510;
+  color: white;
 }
 
 .icon-menu {
@@ -4240,6 +4289,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-repeat: no-repeat;
   min-height: 283px;
   position: relative;
+  border-radius: 11px;
 }
 
 .popular__baner-text {
