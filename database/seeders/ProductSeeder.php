@@ -51,23 +51,17 @@ class ProductSeeder extends Seeder
             'https://marketsveta.su/product_base/xml/100731.xml',	
             'https://marketsveta.su/product_base/xml/100735.xml',	
             'https://marketsveta.su/product_base/xml/100741.xml',	
-            // 'https://marketsveta.su/product_base/xml/100745.xml',	//---
             'https://marketsveta.su/product_base/xml/100752.xml',	
             'https://marketsveta.su/product_base/xml/100753.xml',	
             'https://marketsveta.su/product_base/xml/100758.xml',	
             'https://marketsveta.su/product_base/xml/100759.xml', 	
             'https://marketsveta.su/product_base/xml/100766.xml',	
             'https://marketsveta.su/product_base/xml/100767.xml',	
-            // 'https://marketsveta.su/product_base/xml/100774.xml', //---	
             'https://marketsveta.su/product_base/xml/100775.xml',	
             'https://marketsveta.su/product_base/xml/100777.xml',	
             'https://marketsveta.su/product_base/xml/100778.xml',	
-            // 'https://marketsveta.su/product_base/xml/100782.xml',	//---
-            // 'https://marketsveta.su/product_base/xml/100795.xml',	//---
             'https://marketsveta.su/product_base/xml/100798.xml',	
             'https://marketsveta.su/product_base/xml/100802.xml',	
-            // 'https://marketsveta.su/product_base/xml/100810.xml',	//---
-            // 'https://marketsveta.su/product_base/xml/100814.xml',	//---
             'https://marketsveta.su/product_base/xml/100816.xml',	
             'https://marketsveta.su/product_base/xml/100817.xml',	
             'https://marketsveta.su/product_base/xml/100821.xml',	
@@ -83,12 +77,18 @@ class ProductSeeder extends Seeder
             'https://marketsveta.su/product_base/xml/125845.xml',	
             'https://marketsveta.su/product_base/xml/127107.xml',	
             'https://marketsveta.su/product_base/xml/127750.xml',
-            
+
+            // 'https://marketsveta.su/product_base/xml/100745.xml',	//---
+            // 'https://marketsveta.su/product_base/xml/100774.xml',    //---	
+            // 'https://marketsveta.su/product_base/xml/100810.xml',	//---
+            // 'https://marketsveta.su/product_base/xml/100814.xml',	//---
+            // 'https://marketsveta.su/product_base/xml/100782.xml',	//---
+            // 'https://marketsveta.su/product_base/xml/100795.xml',	//---
         ];
 
             for ($i=0; $i<count($adding_files); $i++ ) {
-                // add_tovar_in_file($adding_files[$i], false);
-                add_picture($adding_files[$i]);
+                add_tovar_in_file($adding_files[$i], false);
+                // add_picture($adding_files[$i]);
             }
 
 

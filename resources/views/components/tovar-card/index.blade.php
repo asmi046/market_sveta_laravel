@@ -2,7 +2,11 @@
     <div class="prod-card__body d-flex">
         <x-favorit :isactive="false"></x-favorit>
         <a href="{{route('product', $minfo->slug)}}" class="prod-card__img">
-            <img src="{{Storage::url('public/products_galery/'.$minfo->img)}}" alt="Купить {{$minfo->name}}">
+            @if(Storage::disk('local')->exists('public/products_galery/'.$minfo->img))
+                <img src="{{Storage::url('public/products_galery/'.$minfo->img)}}" alt="Купить {{$minfo->name}}">
+            @else
+                <img src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$minfo->name}}">
+            @endif
         </a>
         <div class="prod-card__text">
             {{-- <div class="prod-card__text-sale">Акция</div> --}}
