@@ -5839,6 +5839,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin: 10px 0;
 }
 
+.select-prod-sl__small .swiper-slide-thumb-active {
+  border: 1px solid #FFB400;
+}
+
+.select-prod-sl__small .swiper-slide {
+  width: 100% !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1500px) {
   ._container {
