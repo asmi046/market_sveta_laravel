@@ -126,15 +126,25 @@ let infoSlBg = new Swiper('.infoSlBg', {
 
 // Сюда пишем класс нашего слайдера и меняем переменную
 let prodSlBig = new Swiper('.prodSlBig', {
-	// observer: true,
-	// observeParents: true,
+	observer: true,
+	observeParents: true,
+	// observeSlideChildren: true,
 	slidesPerView: 1,
 	spaceBetween: 0, //отступ в пикселях
-	speed: 2500,
+	speed: 1500,
 	// autoHeight: true,
-	// effect:'fade',
+	effect: 'fade',
+	fadeEffect: {
+		crossFade: true
+	},
+	thumbs: {
+		swiper: {
+			el: '.prodSlSmall',
+			slidesPerView: 6,
+		}
+	},
 	loop: true,
-	initialSlide: 0,
+	// initialSlide: 0,
 	/*
 	breakpoints: {
 		320: {
@@ -165,8 +175,6 @@ let prodSlBig = new Swiper('.prodSlBig', {
 	//scrollbar: {
 	//	el: '.swiper-scrollbar',
 	//},
-	// swiper.controller.control = swiper2;
-	// swiper2.controller.control = swiper;
 });
 
 // Сюда пишем класс нашего слайдера и меняем переменную
@@ -181,13 +189,13 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 	observeParents: true,
 	slidesPerView: 1,
 	spaceBetween: 0, //отступ в пикселях
-	autoHeight: true,
-	speed: 2500,
+	// autoHeight: true,
+	speed: 1500,
 	direction: "vertical",
 	spaceBetween: 10,
 	slidesPerView: 3,
-	freeMode: true,
-	loop: true,
+	// freeMode: true,
+	// loop: true,
 	// controller: {
 	// 	control: prodSlBig
 	// },
@@ -199,22 +207,12 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 		prevEl: '.swiper-button-prev',
 	},
 	breakpoints: {
-		// 320: {
-		// 	slidesPerView: 1,
-		// 	spaceBetween: 0,
-		// 	autoHeight: true,
-		// },
-		// 768: {
-		// 	slidesPerView: 2,
-		// 	spaceBetween: 20,
-		// },
-		// 992: {
-		// 	slidesPerView: 3,
-		// 	spaceBetween: 20,
-		// },
-		1160: {
+		361: {
 			// direction: "vertical",
-			spaceBetween: 13.5,
+			slidesPerView: 4,
+		},
+		461: {
+			// direction: "vertical",
 			slidesPerView: 5,
 		},
 		900: {
@@ -222,13 +220,10 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 			spaceBetween: 13.5,
 			slidesPerView: 4,
 		},
-		461: {
+		1160: {
 			// direction: "vertical",
+			spaceBetween: 13.5,
 			slidesPerView: 5,
-		},
-		361: {
-			// direction: "vertical",
-			slidesPerView: 4,
 		},
 	},
 	on: {
@@ -241,3 +236,6 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+
+// prodSlSmall.controller.control = prodSlBig;
+// prodSlBig.controller.control = prodSlSmall;
