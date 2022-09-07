@@ -148,6 +148,7 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+  color:#E13510;
 }
 
 ul li {
@@ -518,6 +519,12 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  height: 48px!important;
+  padding: 14px 18px;
+  border: 1px solid #dbe0e5;
+  border-radius: 8px;
+
 }
 
 input[type=text]:focus,
@@ -3387,6 +3394,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /*Popup-CSS*/
+
+
+.popup_city .popup__body{
+  padding: 30px  20px 20px 20px;
+  width:90%;
+  max-width: 420px;
+  background-color: white;
+}
+
+.popup_city .popup__body h2{ 
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
 .header-top {
   background: #D2D1D1;
 }
@@ -5427,6 +5449,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #161615;
 }
 
+.all_city_list::-webkit-scrollbar-thumb,
 .page__sidebar-navigation-menu::-webkit-scrollbar-thumb,
 .page__sidebar-navigation-body-menu-options::-webkit-scrollbar-thumb {
   width: 5px;

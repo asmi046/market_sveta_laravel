@@ -2,7 +2,7 @@
 	<div class="_container">
 		<div class="header-top__inner">
 			<div class="location-block d-flex">
-				<a href="#" class="location-block__link location-block__link_01">Курск</a>
+				<a href="#city" class="location-block__link location-block__link_01 _popup-link">Курск</a>
 				<a href="{{route('dostavka')}}" class="location-block__link location-block__link_02">Доставка</a>
 			</div>
 			<ul>

@@ -29,17 +29,8 @@
 	</div>
 </div>
 
-<!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
-<!-- =============================================================================================================================== -->
+<x-city-popup></x-city-popup>
 
-
-<div class="popup popup_popup">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
-</div>
 <!-- =============================================================================================================================== -->
 
 <div class="popup popup_massagename-message">
