@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             // $table->foreignId('product_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->string('product_sku', 50)->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->string('product_sku', 150)->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('name', 200)->comment('Наименование характеристики');
             $table->string('value', 200)->comment('Значение  характеристики');
             $table->string('subcat', 200)->comment('Подкатегория');

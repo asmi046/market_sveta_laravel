@@ -22,7 +22,7 @@ return new class extends Migration
             $table->float('price_old', 8, 2)->comment('Цена до скидки');
             $table->string('manufacture_status', 30)->comment('Статус товара');
             $table->integer('insklad')->comment('На складе');
-            $table->string('sku', 50)->comment('Артикул');
+            $table->string('sku', 150)->comment('Артикул');
             $table->string('brand', 100)->comment('Бренд');
             $table->string('state', 100)->comment('Страна');
             $table->string('collection', 100)->comment('Коллекция');
@@ -34,7 +34,7 @@ return new class extends Migration
             $table->string('plaf_material', 60)->comment('Материал плафона');
             $table->string('mesto', 100)->comment('Место использования');
 
-            $table->string('quote', 80)->comment('Цитата');
+            $table->string('quote', 400)->comment('Цитата');
             $table->text('description')->comment('Описание');
 
             $table->integer('cat1')->comment('Категория 1');
