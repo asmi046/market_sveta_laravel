@@ -5,17 +5,8 @@
 
   <section id="select-prod" class="select-prod">
     <div class="_container">
-      <div class="breadcrumb">
-        <ul>
-          <li><a href="#">Назад</a></li>
-          <li><a href="#">Маркет</a></li>
-          <li><a href="#">Света</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Светильники</a></li>
-          <li><a href="#">Подвесные</a></li>
-          <li>Подвесной светильник SLV Forchini 1001701</li>
-        </ul>
-      </div>
+      
+      <x-breadcrumbs :pagename="$product[0]->name" :simple="false" :catnames="$catnames"></x-breadcrumbs>
 
       <h1>{{$product[0]->name}}</h1>
 
