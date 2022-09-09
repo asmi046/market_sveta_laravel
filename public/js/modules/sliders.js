@@ -126,24 +126,25 @@ let infoSlBg = new Swiper('.infoSlBg', {
 
 // Сюда пишем класс нашего слайдера и меняем переменную
 let prodSlBig = new Swiper('.prodSlBig', {
-	observer: true,
-	observeParents: true,
-	// observeSlideChildren: true,
+	// observer: true,
+	// observeParents: true,
 	slidesPerView: 1,
 	spaceBetween: 0, //отступ в пикселях
 	speed: 1500,
-	// autoHeight: true,
 	effect: 'fade',
 	fadeEffect: {
 		crossFade: true
 	},
-	thumbs: {
-		swiper: {
-			el: '.prodSlSmall',
-			slidesPerView: 6,
-		}
-	},
-	loop: true,
+	// thumbs: {
+	// 	swiper: {
+	// 		el: '.prodSlSmall',
+	// 		slidesPerView: 'auto',
+	// 	}
+	// },
+	// loop: true,
+	// thumbs: {
+	// 	swiper: prodSlSmall
+	// }
 	// initialSlide: 0,
 	/*
 	breakpoints: {
@@ -166,11 +167,11 @@ let prodSlBig = new Swiper('.prodSlBig', {
 		},
 	},
 	*/
-	on: {
-		lazyImageReady: function () {
-			ibg();
-		},
-	}
+	// on: {
+	// 	lazyImageReady: function () {
+	// 		ibg();
+	// 	},
+	// }
 	// And if we need scrollbar
 	//scrollbar: {
 	//	el: '.swiper-scrollbar',
@@ -185,8 +186,8 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 	// 	disableOnInteraction: false,
 	// },
 
-	observer: true,
-	observeParents: true,
+	// observer: true,
+	// observeParents: true,
 	slidesPerView: 1,
 	spaceBetween: 0, //отступ в пикселях
 	// autoHeight: true,
@@ -195,17 +196,21 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 	spaceBetween: 10,
 	slidesPerView: 3,
 	// freeMode: true,
+	// grabCursor: true,
 	// loop: true,
 	// controller: {
 	// 	control: prodSlBig
 	// },
 	// watchSlidesProgress: true,
-	watchOverflow: true,
+	// watchOverflow: true,
 	slideToClickedSlide: true,
+	// allowTouchMove: false,
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+	centeredSlides: true,
+	// initialSlide: 2,
 	breakpoints: {
 		361: {
 			// direction: "vertical",
@@ -237,5 +242,5 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 	//},
 });
 
-// prodSlSmall.controller.control = prodSlBig;
-// prodSlBig.controller.control = prodSlSmall;
+prodSlSmall.controller.control = prodSlBig;
+prodSlBig.controller.control = prodSlSmall;
