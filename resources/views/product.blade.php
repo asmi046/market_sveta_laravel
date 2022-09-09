@@ -48,8 +48,10 @@
 
         <div class="select-prod-info__price-block select-prod-info__column">
           <div class="select-prod-info__price-block-inner d-flex">
-            <div class="select-prod-info__price-block-price rub">10 100</div>
-            <div class="select-prod-info__price-block-avail">На складе 10 шт.</div>
+            <div class="select-prod-info__price-block-price price_formator rub">{{$product[0]->price}}</div>
+            <div class="select-prod-info__price-block-avail">
+              <x-tovar-card.nal :insklad="$product[0]->insklad" ></x-tovar-card.nal>
+            </div>
           </div>
           <div class="select-prod-info__price-block-buttons">
             <div class="select-prod-info__price-block-buttons-inner d-flex">
