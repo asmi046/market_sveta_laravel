@@ -16,7 +16,7 @@ export default defineConfig({
                 "public/css/mainsearch.css",
 
                 "resources/js/lib/lib.js",
-                "public/js/dynamic_adapt.js",
+                // "public/js/dynamic_adapt.js",
 
                 "public/js/modules/dynamic_adapt.js",
                 "public/js/modules/forms.js",
@@ -31,6 +31,8 @@ export default defineConfig({
                 "public/js/libs/swiper.min.js",
             ],
             refresh: true,
+            mode:'production'
+
         }),
     ],
 

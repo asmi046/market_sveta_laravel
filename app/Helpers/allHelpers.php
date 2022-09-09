@@ -26,17 +26,13 @@ if (!function_exists("get_cat_img_url")) {
     }
 }
 
-
-if (!function_exists("add_tovar_in_file")) { 
-    function add_tovar_in_file($file_url, $load_img=true) {
+if (!function_exists("add_category_in_file")) { 
+    function add_category_in_file($file_url) {
         $xmlFile = file_get_contents($file_url);
         $xmlObject = simplexml_load_string($xmlFile);
         $jsonFormatData = json_encode($xmlObject);
         $result = json_decode($jsonFormatData, false);
 
-        $result = [];
-        $params = [];
-        $pictures = [];
         $categories = [];
         $all_cat = []; 
 
@@ -54,6 +50,34 @@ if (!function_exists("add_tovar_in_file")) {
                 "description_seo" => (string)$xmlObject->shop->categories->category[$i]." - Купить с доставкой по России"
             ];
 
+            echo (string)$xmlObject->shop->categories->category[$i]."\n\r";
+        }
+
+        foreach (array_chunk($categories, 1000) as $t)  
+        {
+            DB::table("categorys")->insert($t); 
+        }
+
+    }
+}
+
+if (!function_exists("add_tovar_in_file")) { 
+    function add_tovar_in_file($file_url, $load_img=true) {
+        $xmlFile = file_get_contents($file_url);
+        $xmlObject = simplexml_load_string($xmlFile);
+        $jsonFormatData = json_encode($xmlObject);
+        $result = json_decode($jsonFormatData, false);
+
+        $result = [];
+        $params = [];
+        $pictures = [];
+        
+        $all_cat = []; 
+
+        for  ($i = 0; $i < count($xmlObject->shop->categories->category); $i++)
+        {
+            $all_cat[(string)$xmlObject->shop->categories->category[$i]["id"]] = ["name" => (string)$xmlObject->shop->categories->category[$i], "parentId" => (string)$xmlObject->shop->categories->category[$i]["parentId"]];
+            
         }
 
         for ($i = 0; $i < count($xmlObject->shop->offers->offer); $i++)
@@ -175,13 +199,6 @@ if (!function_exists("add_tovar_in_file")) {
         foreach (array_chunk($pictures, 1000) as $t)  
         {
             DB::table("images")->insert($t); 
-        }
-
-        //DB::table("categorys")->insert($categories);
-
-        foreach (array_chunk($categories, 1000) as $t)  
-        {
-            DB::table("categorys")->insert($t); 
         }
     
     }

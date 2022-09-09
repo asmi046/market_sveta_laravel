@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class PropertySeeder extends Seeder
+class CategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class PropertySeeder extends Seeder
      */
     public function run()
     {
-        //
+        add_category_in_file('https://marketsveta.su/product_base/xml/100795.xml');
     }
 }
