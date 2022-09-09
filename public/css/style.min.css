@@ -4240,6 +4240,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 14px;
   line-height: 18px;
   color: green;
+  font-weight: 600;
 }
 
 .prod-card__avail.active {
