@@ -45,10 +45,10 @@ class Product extends Model
     }
 
     public function product_images() {
-        return $this->hasMany(Image::Class, 'sku', 'product_sku');
+        return $this->hasMany(Image::class, 'product_sku', 'sku');
     } 
 
     public function product_propertys() {
-        return $this->hasMany(Property::Class, 'sku', 'product_sku');
+        return $this->hasMany(Property::class, 'product_sku', 'sku');
     } 
 }

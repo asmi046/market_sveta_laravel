@@ -27,46 +27,28 @@
             <div class="swiper-button swiper-button-next select-prod-sl__small-next"></div>
 						<div class="swiper-button swiper-button-prev select-prod-sl__small-prev"></div>
             <div class="select-prod-sl__small-slider slider _swiper prodSlSmall">
-              <div class="select-prod-sl__small-slide slider__slide">
-                <img src="{{asset('img\slider-product/sl-prod-min-01.jpg')}}" />
-              </div>
-              <div class="select-prod-sl__small-slide slider__slide">
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-              </div>
-              <div class="select-prod-sl__small-slide slider__slide">
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-              </div>
-              <div class="select-prod-sl__small-slide slider__slide">
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-              </div>
-              <div class="select-prod-sl__small-slide slider__slide">
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-              </div>
-              <div class="select-prod-sl__small-slide slider__slide">
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-              </div>
+              @foreach ($images as $item)
+                <div class="select-prod-sl__small-slide slider__slide">
+                  @if(Storage::disk('local')->exists('public/products_galery/'.$item->img_name))
+                      <img src="{{Storage::url('public/products_galery/'.$item->img_name)}}" alt="Купить {{$item->alt}}">
+                  @else
+                      <img src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$item->alt}}">
+                  @endif
+                </div>
+              @endforeach
             </div>
           </div>
 
           <div class="select-prod-sl__big slider _swiper prodSlBig">
-            <div class="select-prod-sl__big-slide slider__slide">
-              <img src="{{asset('img\slider-product/sl-prod-01.jpg')}}" />
-            </div>
-            <div class="select-prod-sl__big-slide slider__slide">
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            </div>
-            <div class="select-prod-sl__big-slide slider__slide">
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </div>
-            <div class="select-prod-sl__big-slide slider__slide">
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </div>
-            <div class="select-prod-sl__big-slide slider__slide">
-              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-            </div>
-            <div class="select-prod-sl__big-slide slider__slide">
-              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-            </div>
+            @foreach ($images as $item)
+              <div class="select-prod-sl__big-slide slider__slide">
+                @if(Storage::disk('local')->exists('public/products_galery/'.$item->img_name))
+                    <img src="{{Storage::url('public/products_galery/'.$item->img_name)}}" alt="Купить {{$item->alt}}">
+                @else
+                    <img src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$item->alt}}">
+                @endif
+              </div>
+            @endforeach
           </div>
 
         </div>

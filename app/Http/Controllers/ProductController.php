@@ -16,7 +16,7 @@ class ProductController extends Controller
         $images = $prosuct->first()->product_images;
         $propertys = $prosuct->first()->product_propertys;
         
-        dd($prosuct, $prosuct->first(), $images, $propertys);
+        // dd($images, $propertys);
 
         return view("product", ["product" => $prosuct, "images" => $images, "propertys" => $propertys]);
     }
