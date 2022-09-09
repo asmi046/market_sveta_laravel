@@ -9,11 +9,9 @@ class Property extends Model
 {
     use HasFactory;
     protected $fillable = [
-        "img_name",
-        "page",
-        "page_area",
-        "title", 
-        "sub_title",
-        "order"
+        "product_sku",
+        "name",
+        "value",
+        "subcat"
     ];
 }
