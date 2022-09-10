@@ -124,28 +124,72 @@ let infoSlBg = new Swiper('.infoSlBg', {
 	//},
 });
 
+
+// Сюда пишем класс нашего слайдера и меняем переменную
+let prodSlSmall = new Swiper('.prodSlSmall', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	speed: 1500,
+	direction: "vertical",
+	spaceBetween: 10,
+	slidesPerView: 3,
+	freeMode: true,
+	// grabCursor: true, // менять иконку курсора
+	// mousewheel: true, // можно прокручивать изображения колёсиком мыши
+	// loopedSlides: 5,
+	// grabCursor: true,
+	// controller: {
+	// 	control: prodSlBig
+	// },
+	// watchSlidesProgress: true,
+	// watchOverflow: true,
+	slideToClickedSlide: true,
+	centerInsufficientSlides: true,
+	simulateTouch: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		361: {
+			slidesPerView: 4,
+		},
+		461: {
+			slidesPerView: 5,
+		},
+		900: {
+			spaceBetween: 13.5,
+			slidesPerView: 4,
+		},
+		1160: {
+			spaceBetween: 13.5,
+			slidesPerView: 5,
+		},
+	},
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+
+
 // Сюда пишем класс нашего слайдера и меняем переменную
 let prodSlBig = new Swiper('.prodSlBig', {
-	// observer: true,
-	// observeParents: true,
 	slidesPerView: 1,
-	spaceBetween: 0, //отступ в пикселях
+	spaceBetween: 0,
 	speed: 1500,
 	effect: 'fade',
 	fadeEffect: {
 		crossFade: true
 	},
-	// thumbs: {
-	// 	swiper: {
-	// 		el: '.prodSlSmall',
-	// 		slidesPerView: 'auto',
-	// 	}
-	// },
-	// loop: true,
-	// thumbs: {
-	// 	swiper: prodSlSmall
-	// }
-	// initialSlide: 0,
+	thumbs: {
+		swiper: prodSlSmall
+	}
 	/*
 	breakpoints: {
 		320: {
@@ -178,69 +222,8 @@ let prodSlBig = new Swiper('.prodSlBig', {
 	//},
 });
 
-// Сюда пишем класс нашего слайдера и меняем переменную
-let prodSlSmall = new Swiper('.prodSlSmall', {
-	// effect: 'fade',
-	// autoplay: {
-	// 	delay: 1300,
-	// 	disableOnInteraction: false,
-	// },
+// prodSlSmall.controller.control = prodSlBig;
+// prodSlBig.controller.control = prodSlSmall;
 
-	// observer: true,
-	// observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 0, //отступ в пикселях
-	// autoHeight: true,
-	speed: 1500,
-	direction: "vertical",
-	spaceBetween: 10,
-	slidesPerView: 3,
-	// freeMode: true,
-	// grabCursor: true,
-	// loop: true,
-	// controller: {
-	// 	control: prodSlBig
-	// },
-	// watchSlidesProgress: true,
-	// watchOverflow: true,
-	slideToClickedSlide: true,
-	// allowTouchMove: false,
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	centeredSlides: true,
-	// initialSlide: 2,
-	breakpoints: {
-		361: {
-			// direction: "vertical",
-			slidesPerView: 4,
-		},
-		461: {
-			// direction: "vertical",
-			slidesPerView: 5,
-		},
-		900: {
-			// direction: "vertical",
-			spaceBetween: 13.5,
-			slidesPerView: 4,
-		},
-		1160: {
-			// direction: "vertical",
-			spaceBetween: 13.5,
-			slidesPerView: 5,
-		},
-	},
-	on: {
-		lazyImageReady: function () {
-			ibg();
-		},
-	}
-	// And if we need scrollbar
-	//scrollbar: {
-	//	el: '.swiper-scrollbar',
-	//},
-});
-
-prodSlSmall.controller.control = prodSlBig;
-prodSlBig.controller.control = prodSlSmall;
+// var thumbs = document.querySelectorAll('.prodSlSmall .slider__slide');
+// thumbs.forEach(el => el.addEventListener('mouseenter', function () { prodSlSmall.slideTo(el.dataset.swiperSlideIndex) }));
