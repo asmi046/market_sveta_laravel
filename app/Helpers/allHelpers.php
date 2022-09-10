@@ -14,6 +14,55 @@ if (!function_exists("first_upper")) {
 
 }
 
+if (!function_exists("property_section")) { 
+    function property_section($propertys) {
+        $result_array = [];
+
+        $partArray = [
+            "Основные" => ["Бренд", "Степень защиты ip", "Страна происхождения","Коллекция", "Артикул"],
+            "Внешний вид" => ["Стиль", "Форма", "Цвет арматуры","Коллекция", "Цвет плафона"],
+            "Материалы" => ["Материал арматуры", "Материал плафона"],
+            "Размеры" => ["Ширина/диаметр", "Высота"],
+            "Лампы" => ["Тип лампы", "Мощность лампы", "Мощность общая", "Напряжение", "Количество ламп", "Тип цоколя", "Лампы в комплекте", "Подсветка"],
+            "Упаковка" => ["Количество грузовых мест", "Объем коробки", "Вес коробки", "Размер коробки (ДхШхВ)"],
+        ];
+
+        for ($i = 0; $i<count($propertys); $i++) {
+            
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Основные"])) 
+            {
+                $result_array["Основные"][] = $propertys[$i];
+                continue;
+            }
+            
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Внешний вид"])) 
+            {
+                $result_array["Внешний вид"][] = $propertys[$i];
+                continue;
+            }
+            
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Материалы"])) 
+            {
+                $result_array["Материалы"][] = $propertys[$i];
+                continue;
+            }
+
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Размеры"])) 
+            {
+                $result_array["Размеры"][] = $propertys[$i];
+                continue;
+            }
+            
+
+
+            $result_array["Другие характеристики"][] = $propertys[$i];
+
+        }
+
+        return $result_array;
+    }
+}
+
 if (!function_exists("get_cat_img_url")) { 
     function get_cat_img_url($slug) {
         $allCatPhoto = [

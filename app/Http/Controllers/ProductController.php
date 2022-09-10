@@ -14,7 +14,7 @@ class ProductController extends Controller
         if($prosuct->isEmpty()) abort('404');
 
         $images = $prosuct->first()->product_images;
-        $propertys = $prosuct->first()->product_propertys;
+        $propertys = property_section($prosuct->first()->product_propertys);
         $categories_name = [
             "cat1" => $prosuct->first()->cat_name_cat1,
             "cat2" => $prosuct->first()->cat_name_cat2,
@@ -23,7 +23,7 @@ class ProductController extends Controller
         ];
         
         
-        //  dd($categories_name["cat2"]->slug);
+        //  dd($propertys["Основные"][0]->name);
 
         return view("product", ["product" => $prosuct, "images" => $images, "propertys" => $propertys, "catnames" =>  $categories_name]);
     }
