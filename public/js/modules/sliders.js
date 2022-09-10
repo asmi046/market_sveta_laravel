@@ -144,8 +144,8 @@ let prodSlSmall = new Swiper('.prodSlSmall', {
 	// watchSlidesProgress: true,
 	// watchOverflow: true,
 	slideToClickedSlide: true,
-	centerInsufficientSlides: true,
-	simulateTouch: true,
+	// centerInsufficientSlides: true,
+	// simulateTouch: true,
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
