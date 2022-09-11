@@ -1,0 +1,199 @@
+.bascet {
+    width: 100%;
+    display: flex;
+    min-height: 100px;
+}
+
+.bascet_tovar {
+    
+    flex: 3;
+}
+
+.bascet_form {
+    flex:1;
+    max-width: 320px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+    margin-left: 40px;
+    padding: 20px;
+    border-radius: 11px;
+}
+
+.bascet_form h2{ 
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.bascet_form form input,
+.bascet_form form textarea
+{ 
+    width:100%;
+    margin: 10px 0;
+}
+
+.bascet_form form textarea {
+    min-height: 100px;
+}
+
+.bascet_form form .policy a{
+    text-decoration: underline;
+
+}
+
+.bascet_form form .policy {
+    margin: 10px;
+    font-size: 12px;
+} 
+
+.bascet_tovar .control{ 
+    width: 100%;
+    display: flex;
+}
+
+.bascet_tovar .control .clear_bascet_btn{ 
+    color:#a90707;  
+    margin-left: auto;
+    position: relative;
+}
+
+.bascet_tovar .control .clear_bascet_btn:hover span{ 
+    border-bottom: 1px dashed #a90707;
+}
+
+.bascet_tovar .control .clear_bascet_btn:before{ 
+    content: "";
+    position: absolute;
+    left:-30px;
+    top:-7px;
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/trash-bascet.svg);
+    background-size: cover;
+
+}
+
+/* Список товаров */
+
+.tovar_list {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.tovar_list { 
+    width: 100%;
+    min-height: 50px;
+    border-radius: 11px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+}
+
+.tovar_list .tovar{
+    display: flex; 
+    padding: 20px;
+}
+
+.tovar_list .tovar .tovar_all_blk{ 
+    display: flex;
+}
+
+.tovar_list .tovar .tovar_all_blk *{
+    margin: auto 0 auto 0;
+} 
+
+.tovar_list .tovar .picture_blk{ 
+    width:50px;
+    height:50px;
+}
+
+.tovar_list .tovar .picture_blk img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tovar_list .tovar .name_blk{ 
+    padding:  0 30px;
+    flex-direction: column;
+    text-align: center;
+    text-align: left;
+}
+
+.tovar_list .tovar .name_blk h2{ 
+    font-size: 18px;
+    font-weight: 900;
+    margin: auto 0 auto 0;
+}
+
+.tovar_list .tovar .name_blk p{ 
+    margin: auto 0 auto 0;    
+}
+
+.tovar_list .tovar .price_blk{ 
+    width:100px;
+    margin: 0 0 0 auto;
+}
+
+.tovar_list .tovar .couint_blk{ 
+    width:85px;
+    margin: 0 0 0 0;
+}
+
+.tovar_list .tovar .couint_blk input{ 
+    width:100%;
+}
+
+.tovar_list .tovar .summ_blk{ 
+    width:100px;
+    margin: 0 0 0 0;
+}
+
+/* Итог корзины */
+
+.itogo {
+    width:100%;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.itogo .itogo_price_count{ 
+    width: 50%;
+    min-width: 320px;
+    min-height: 50px;
+    background-color: #f2f3f5;
+    border-radius: 11px;
+    padding: 20px;
+    margin: 0 0 0 auto;
+}
+
+.itogo .itogo_price_count .itogo_row_final{
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+} 
+
+.itogo .itogo_price_count .itogo_row{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.itogo .itogo_price_count .itogo_row .text{ 
+    margin: 0 auto 0 0;
+}
+
+.itogo .itogo_price_count .itogo_row .text span{ 
+    font-weight: 900;
+}
+
+.itogo .itogo_price_count .itogo_row .razd{ 
+    border-bottom: 1px dotted gray;
+    flex-grow:1
+}
+
+.itogo .itogo_price_count .itogo_row .p_price{ 
+    margin: 0 0 auto 0;
+}

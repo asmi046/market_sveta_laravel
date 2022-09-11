@@ -19,6 +19,7 @@
 			"public/css/style.min.css", 
 			"public/css/interface.css", 
 			"public/css/filter.style.css",
-			"public/css/mainsearch.css"
+			"public/css/mainsearch.css",
+			"public/css/bascet.css"
 			])
 </head>

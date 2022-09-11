@@ -14,9 +14,9 @@ export default defineConfig({
                 "public/css/interface.css", 
                 "public/css/filter.style.css",
                 "public/css/mainsearch.css",
+                "public/css/bascet.css",
 
                 "resources/js/lib/lib.js",
-                // "public/js/dynamic_adapt.js",
 
                 "public/js/modules/dynamic_adapt.js",
                 "public/js/modules/forms.js",
