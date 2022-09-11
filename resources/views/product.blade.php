@@ -15,8 +15,8 @@
         <div class="select-prod-sl">  
 
           <div class="select-prod-sl__small">
-            <div class="swiper-button swiper-button-next select-prod-sl__small-next"></div>
-						<div class="swiper-button swiper-button-prev select-prod-sl__small-prev"></div>
+            <div class="swiper-button swiper-button-next select-prod-sl__small-prev"></div>
+						<div class="swiper-button swiper-button-prev select-prod-sl__small-next"></div>
             <div class="select-prod-sl__small-slider slider _swiper prodSlSmall">
               @foreach ($images as $item)
                 <div class="select-prod-sl__small-slide slider__slide">
