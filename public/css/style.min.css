@@ -348,6 +348,7 @@ input[type=checkbox]:checked+.switch-block__label {
   padding-left: 14px;
   background: #fff;
   border: 0.5px solid #bababa;
+  height: 35px!important;
 }
 
 .animated_bg {
@@ -521,7 +522,7 @@ textarea {
   -moz-appearance: none;
   appearance: none;
 
-  height: 48px !important;
+  height: 48px;
   padding: 14px 18px;
   border: 1px solid #dbe0e5;
   border-radius: 8px;
@@ -5542,7 +5543,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .select-prod-info__price-block {
   padding: 15.7px 40px 37px 40px;
-  border: 0.4px solid #d2d1d1;
+  box-shadow: 0 0 10px rgb(0 0 0 / 7%);
   border-radius: 15px;
 }
 
@@ -5650,7 +5651,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .select-prod-info__delivery {
   padding: 24.6px 15px 21px 40px;
-  border: 0.4px solid #d2d1d1;
+  border: 0.4px solid #dbe0e5;
   border-radius: 15px;
   margin-bottom: 26px;
 }
@@ -5824,7 +5825,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .select-prod-sl__small-slide {
   border-radius: 15px;
-  border: 1px solid #707070;
+  border: 1px solid #dbe0e5;
   overflow: hidden;
   cursor: pointer;
 }
@@ -5833,7 +5834,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 657px;
   height: 657px;
   border-radius: 15px;
-  border: 1px solid #707070;
+  border: 1px solid #dbe0e5;
   overflow: hidden;
 }
 

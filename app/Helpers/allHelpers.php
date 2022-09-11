@@ -52,6 +52,18 @@ if (!function_exists("property_section")) {
                 $result_array["Размеры"][] = $propertys[$i];
                 continue;
             }
+
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Лампы"])) 
+            {
+                $result_array["Лампы"][] = $propertys[$i];
+                continue;
+            }
+
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Упаковка"])) 
+            {
+                $result_array["Упаковка"][] = $propertys[$i];
+                continue;
+            }
             
 
 

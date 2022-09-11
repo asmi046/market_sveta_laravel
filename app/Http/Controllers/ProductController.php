@@ -22,9 +22,10 @@ class ProductController extends Controller
             "cat4" => $prosuct->first()->cat_name_cat4,
         ];
         
-        
+        $up_sale = Product::where('cat1', $prosuct[0]->cat1)->take(5)->get();
+
         //  dd($propertys["Основные"][0]->name);
 
-        return view("product", ["product" => $prosuct, "images" => $images, "propertys" => $propertys, "catnames" =>  $categories_name]);
+        return view("product", ["product" => $prosuct, "images" => $images, "propertys" => $propertys, "catnames" =>  $categories_name, "upsale" => $up_sale]);
     }
 }

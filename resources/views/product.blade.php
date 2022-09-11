@@ -109,25 +109,6 @@
                     <x-property-part :name="$key" :prop="$value"></x-property-part>
                   @endforeach
 
-
-                  <!-- <div class="select-prod__specifications-column">
-                    <h4 class="select-prod__specifications-column-title">Размеры</h4>
-                    <div class="select-prod__specifications-card">
-
-                      <div class="select-prod__specifications-card-list d-flex">
-                        <div class="select-prod__specifications-card-list-item">Высота, мм</div>
-                        <div class="select-prod__specifications-card-list-item">400</div>
-                      </div>
-
-                      <div class="select-prod__specifications-card-list d-flex">
-                        <div class="select-prod__specifications-card-list-item">Диаметр, мм</div>
-                        <div class="select-prod__specifications-card-list-item">560</div>
-                      </div>
-
-                    </div>
-                    </div>
-                  </div> -->
-
                 </div>
 
               </div>
@@ -135,12 +116,7 @@
               <div class="select-prod__description">
                 <h2 class="select-prod__description-title">Описание</h2>
                 <p class="select-prod__description-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus tempore consequatur facilis, expedita minima blanditiis in, 
-                  maxime distinctio hic quasi exercitationem saepe eaque non. Repellendus amet quam dolor nemo? Alias!
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus tempore consequatur facilis, expedita minima blanditiis in, 
-                  maxime distinctio hic quasi exercitationem saepe eaque non. Repellendus amet quam dolor nemo? Alias!
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus tempore consequatur facilis, expedita minima blanditiis in, 
-                  maxime distinctio hic quasi exercitationem saepe eaque non. Repellendus amet quam dolor nemo? Alias!
+                  {{$product[0]->description}}
                 </p>
               </div>
 
@@ -154,127 +130,9 @@
           <h2 class="similar-products__title">Похожие товары</h2>
 
             <div class="prod-card d-flex">
-
-              <div class="main-prod-card__column">
-                <div class="prod-card__body d-flex">
-                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
-                  <a href="#" class="prod-card__img">
-                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
-                  </a>
-                  <div class="prod-card__text">
-                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
-                    <div class="prod-card__inner d-flex">
-                      <p class="prod-card__manuf">Varton (Россия)</p>
-                      <p class="prod-card__avail active"> Под заказ </p>
-                    </div>
-                    <div class="prod-card__old-price-block d-flex">
-                      <div class="prod-card__old-price rub">1709</div>
-                      <div class="prod-card__sale-icon">-43%</div>
-                    </div>
-                  </div>
-                  <div class="prod-card__price-item d-flex">
-                    <p class="prod-card__price rub">1196</p>
-                    <a href="#" class="btn">В корзину</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="main-prod-card__column">
-                <div class="prod-card__body d-flex">
-                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
-                  <a href="#" class="prod-card__img">
-                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
-                  </a>
-                  <div class="prod-card__text">
-                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
-                    <div class="prod-card__inner d-flex">
-                      <p class="prod-card__manuf">Varton (Россия)</p>
-                      <p class="prod-card__avail active"> Под заказ </p>
-                    </div>
-                    <div class="prod-card__old-price-block d-flex">
-                      <div class="prod-card__old-price rub">1709</div>
-                      <div class="prod-card__sale-icon">-43%</div>
-                    </div>
-                  </div>
-                  <div class="prod-card__price-item d-flex">
-                    <p class="prod-card__price rub">1196</p>
-                    <a href="#" class="btn">В корзину</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="main-prod-card__column">
-                <div class="prod-card__body d-flex">
-                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
-                  <a href="#" class="prod-card__img">
-                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
-                  </a>
-                  <div class="prod-card__text">
-                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
-                    <div class="prod-card__inner d-flex">
-                      <p class="prod-card__manuf">Varton (Россия)</p>
-                      <p class="prod-card__avail active"> Под заказ </p>
-                    </div>
-                    <div class="prod-card__old-price-block d-flex">
-                      <div class="prod-card__old-price rub">1709</div>
-                      <div class="prod-card__sale-icon">-43%</div>
-                    </div>
-                  </div>
-                  <div class="prod-card__price-item d-flex">
-                    <p class="prod-card__price rub">1196</p>
-                    <a href="#" class="btn">В корзину</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="main-prod-card__column">
-                <div class="prod-card__body d-flex">
-                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
-                  <a href="#" class="prod-card__img">
-                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
-                  </a>
-                  <div class="prod-card__text">
-                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
-                    <div class="prod-card__inner d-flex">
-                      <p class="prod-card__manuf">Varton (Россия)</p>
-                      <p class="prod-card__avail active"> Под заказ </p>
-                    </div>
-                    <div class="prod-card__old-price-block d-flex">
-                      <div class="prod-card__old-price rub">1709</div>
-                      <div class="prod-card__sale-icon">-43%</div>
-                    </div>
-                  </div>
-                  <div class="prod-card__price-item d-flex">
-                    <p class="prod-card__price rub">1196</p>
-                    <a href="#" class="btn">В корзину</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="main-prod-card__column">
-                <div class="prod-card__body d-flex">
-                  <a href="#" class="prod-card__favorites-icon favorites-icon"></a> 
-                  <a href="#" class="prod-card__img">
-                    <img src="/storage/products_galery/V1-R0-70034-80000-2003640_0.jpg" alt="Купить Встраиваемый светильник Varton V1-R0-70034-80000-2003640">
-                  </a>
-                  <div class="prod-card__text">
-                    <h4 class="prod-card__text-title"> Встраиваемый светильник Varton V1-R0-70034-80000-2003640 </h4>
-                    <div class="prod-card__inner d-flex">
-                      <p class="prod-card__manuf">Varton (Россия)</p>
-                      <p class="prod-card__avail active"> Под заказ </p>
-                    </div>
-                    <div class="prod-card__old-price-block d-flex">
-                      <div class="prod-card__old-price rub">1709</div>
-                      <div class="prod-card__sale-icon">-43%</div>
-                    </div>
-                  </div>
-                  <div class="prod-card__price-item d-flex">
-                    <p class="prod-card__price rub">1196</p>
-                    <a href="#" class="btn">В корзину</a>
-                  </div>
-                </div>
-              </div>
-
+              @foreach ($upsale as $item)
+                <x-tovar-card :minfo="$item"></x-tovar-card>    
+              @endforeach
             </div>
 
           </div>
