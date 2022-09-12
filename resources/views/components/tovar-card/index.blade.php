@@ -22,7 +22,7 @@
         </div>
         <div class="prod-card__price-item d-flex">
             <p class="prod-card__price rub">{{$minfo->price}}</p>
-            <a href="#" class="btn">В корзину</a>
+            <a href="#" data-prodid="{{$minfo->sku}}" data-tiken="{{ csrf_token() }}" class="btn to_bascet">В корзину</a>
         </div>
     </div>
 </div>

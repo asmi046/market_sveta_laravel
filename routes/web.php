@@ -30,3 +30,4 @@ Route::get('/about', [TextPagesController::class, "about"])->name("about");
 Route::get('/dostavka', [TextPagesController::class, "dostavka"])->name("dostavka");
 
 Route::get('/bascet', [BascetController::class, "index"])->name("bascet");
+Route::post('/bascet/add', [BascetController::class, "add"])->name("bascet_add");

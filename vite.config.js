@@ -27,6 +27,7 @@ export default defineConfig({
                 "public/js/modules/scroll.js",
                 "public/js/modules/sliders.js",
                 "public/js/modules/mainsearch.js",
+                "public/js/modules/bascet.js",
 
                 "public/js/libs/swiper.min.js",
             ],
