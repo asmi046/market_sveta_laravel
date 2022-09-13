@@ -31,3 +31,5 @@ Route::get('/dostavka', [TextPagesController::class, "dostavka"])->name("dostavk
 
 Route::get('/bascet', [BascetController::class, "index"])->name("bascet");
 Route::post('/bascet/add', [BascetController::class, "add"])->name("bascet_add");
+Route::get('/bascet/get', [BascetController::class, "get_all"])->name("bascet_get");
+Route::delete('/bascet/clear', [BascetController::class, "clear"])->name("bascet_clear");

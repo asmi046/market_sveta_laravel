@@ -40,4 +40,9 @@ class Cart extends Model
         }
     }
 
+    public static function delete_tovar($product_id) {
+        $element = self::where(["session_id" => session()->getId(), "product_sku" => $product_id])->first();
+        $element->delete();
+    }
+
 }
