@@ -16,7 +16,7 @@ class BascetController extends Controller
         $product_id = $request->input('product_id');
         $_token = $request->input('_token');
         
-        // Cart::add($product_id);
+        Cart::add($product_id);
 
         return array($product_id, $_token);
     }
