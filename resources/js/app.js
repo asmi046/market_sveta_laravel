@@ -4,6 +4,7 @@ import {createApp} from 'vue/dist/vue.esm-bundler';
 
 import CategoryFilter from "./components/CategoryFilter.vue"
 import CitySelect from "./components/CitySelect.vue"
+import Bascet from "./components/bascet/Bascet.vue"
 
 import axios from 'axios'
 
@@ -27,3 +28,12 @@ const city_select = createApp({
 
 city_select.use(VueAxios, axios)
 city_select.mount("#city_select");
+
+const bascet_page = createApp({
+    components:{
+        Bascet      
+    }
+})
+
+bascet_page.use(VueAxios, axios)
+bascet_page.mount("#bascet_page");

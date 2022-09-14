@@ -23,6 +23,7 @@ class BascetController extends Controller
 
     public function get_all() {
         $cart_product = Cart::where("session_id", session()->getId())->get(); 
+        dd($cart_product);
         return $cart_product;
     }
 

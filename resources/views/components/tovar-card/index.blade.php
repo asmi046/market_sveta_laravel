@@ -1,5 +1,8 @@
-<div class="main-prod-card__column">
+<div data-prodid="{{$minfo->sku}}" class="main-prod-card__column">
     <div class="prod-card__body d-flex">
+        <div class="bascet_count">
+            В корзине <span>0</span> шт
+        </div>
         <x-favorit :isactive="false"></x-favorit>
         <a href="{{route('product', $minfo->slug)}}" class="prod-card__img">
             @if(Storage::disk('local')->exists('public/products_galery/'.$minfo->img))
@@ -21,8 +24,9 @@
             <x-tovar-card.action :price="$minfo->price" :oldprice="$minfo->price_old"></x-tovar-card.action>
         </div>
         <div class="prod-card__price-item d-flex">
-            <p class="prod-card__price rub">{{$minfo->price}}</p>
-            <a href="#" data-prodid="{{$minfo->sku}}" data-tiken="{{ csrf_token() }}" class="btn to_bascet">В корзину</a>
+            <p class="prod-card__price price_formator rub">{{$minfo->price}}</p>
+            <a href="#" data-prodid="{{$minfo->sku}}" class="card_to_bascet_btn btn to_bascet">В корзину</a>
+            <a href="{{route('bascet')}}" class="card_bascet_btn btn">Оформить</a>
         </div>
     </div>
 </div>

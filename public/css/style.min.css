@@ -4192,10 +4192,34 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   flex-direction: column;
   border: 1px solid #d2d1d1;
   border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.card_bascet_btn {
+  display: none;
+}
+
+.prod-card__body .bascet_count{
+  display: none;
+  background-color: #FFB400;
+  color: white;
+  position: absolute;
+  top:0;
+  left: 0;
+  border-radius: 0 0 10px 0;
+  font-size: 12px;
+  padding:5px 10px;
+  cursor:pointer;
+
+}
+
+.main-prod-card__column.in-bascet .prod-card__body .bascet_count {
+  display: block;
 }
 
 .prod-card__img {
-  max-height: 270px;
+  min-height: 210px;
   overflow: hidden;
   margin-bottom: 23px;
 }
@@ -5319,6 +5343,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   flex: 0 1 24.8%;
   padding: 0 6.5px;
   margin-bottom: 20px;
+}
+
+.main-prod-card__column.in-bascet .prod-card__body{ 
+  border-color: #FFB400;
 }
 
 .cardImage {
