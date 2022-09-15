@@ -139,6 +139,7 @@
 .tovar_list .tovar .couint_blk{ 
     width:85px;
     margin: 0 0 0 0;
+    padding:  0 10px;
 }
 
 .tovar_list .tovar .couint_blk input{ 

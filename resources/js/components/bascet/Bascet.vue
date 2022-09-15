@@ -1,27 +1,32 @@
 <template>
-    <div class="bascet">
+    <div  v-show="bascetList.length != 0" class="bascet">
         <div class="bascet_tovar">
             <div class="control">
-                <a class="clear_bascet_btn" href="#"><span>Очистить корзину</span></a>
+                <a @click.prevent="clearBascet()" class="clear_bascet_btn" href="#"><span>Очистить корзину</span></a>
             </div>
 
             <div class="tovar_list">
-                <div class="tovar">
+                
+                <div v-for="(item) in bascetList" :key="item.product_sku" class="tovar">
                     <div class="tovar_all_blk picture_blk">
-                        <img src="" alt="">
+                        <img :src="'/storage/products_galery/'+item.img" alt="">
                     </div>
                     <div class="tovar_all_blk name_blk">
-                        <h2>Люстра на штанге Covali PL-59936</h2>
-                        <p>Covali (Россия) Артикул: PL-59936</p>
+                        <h2>{{item.name}}</h2>
+                        <p>{{item.brand}} ({{item.state}}) Артикул: {{item.product_sku}}</p>
                     </div>
                     <div class="tovar_all_blk price_blk">
-                        <span class="rub price_formator">7516</span>
+                        <span class="rub price_formator">{{Number(item.price).toLocaleString('ru-RU')}}</span>
                     </div>
                     <div class="tovar_all_blk couint_blk">
-                        <input type="number" value="1">
+                        <div class="number_wrapper">
+                            <span @click="item.quentity--; updateBascet()" class="number_btn val_down">-</span>
+                            <input type="number" :value="item.quentity">
+                            <span @click="item.quentity++; updateBascet()" class="number_btn val_upp">+</span>
+                        </div>
                     </div>
                     <div class="tovar_all_blk summ_blk">
-                        <span class="rub price_formator">207516</span>
+                        <span class="rub price_formator">{{Number(parseFloat(item.quentity)*parseFloat(item.price)).toLocaleString('ru-RU')}}</span>
                     </div>
                 </div>
             </div>
@@ -29,15 +34,15 @@
             <div class="itogo">
                 <div class="itogo_price_count">
                     <div class="itogo_row">
-                        <span class="text">Товары (<span>5</span>)</span>
+                        <span class="text">Товары (<span>{{count}}</span>)</span>
                         <span class="razd"></span>
-                        <span class="p_price rub price_formator">1325</span>
+                        <span class="p_price rub price_formator">{{Number(subtotal).toLocaleString('ru-RU')}}</span>
                     </div>
 
                     <div class="itogo_row itogo_row_final">
                         <span class="text">Итого</span>
                         <span class="razd"></span>
-                        <span class="p_price rub price_formator">1325</span>
+                        <span class="p_price rub price_formator">{{Number(subtotal).toLocaleString('ru-RU')}}</span>
                     </div>
                 </div>
             </div>
@@ -57,19 +62,51 @@
             </form>
         </div>
     </div>
+    <h3 v-show="bascetList.length == 0" >Ваша корзина пуста</h3>
 </template>
 
 <script>
 export default {
     data() {
         return {
-
+            bascetList:[],
+            count:0,
+            subtotal:0
         }
     },
 
     mounted: function() {
+        axios.get('/bascet/get/')
+            .then((response) => {
+                this.bascetList = response.data
+                this.updateBascet()
+            })
+            .catch(error => console.log(error));
+    },
+    methods: {
+        updateBascet() {
+            if (this.bascetList.length == 0) return;
+            this.count = 0;
+            this.subtotal = 0;
+            for (let i = 0; i<this.bascetList.length; i++) {
+                this.count+=this.bascetList[i].quentity
+                this.subtotal+=parseFloat(this.bascetList[i].quentity)*parseFloat(this.bascetList[i].price)
+            }
+        },
 
+        clearBascet() {
+            axios.delete('/bascet/clear/', {
+                _token: document.querySelector('meta[name="_token"]').content
+            })
+            .then(() => {
+                this.count = 0
+                this.subtotal = 0
+                this.bascetList = []
+            })
+            .catch(error => console.log(error));
+        }
     }
+
 }
 </script>
 

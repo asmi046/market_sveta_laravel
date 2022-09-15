@@ -9,7 +9,6 @@ function bascet_to_page() {
                 
             })
             .then((response) => {
-                console.log(response.data); 
                 if (response.data.length != 0)
                     for (let element of response.data) {
                         let card = document.querySelector('.main-prod-card__column[data-prodid="'+element.product_sku+'"]')

@@ -22,8 +22,7 @@ class BascetController extends Controller
     }
 
     public function get_all() {
-        $cart_product = Cart::where("session_id", session()->getId())->get(); 
-        dd($cart_product);
+        $cart_product = Cart::select("carts.*", "products.img", "products.name", "products.state", "products.brand")->leftJoin("products", "products.sku", "=", "carts.product_sku")->where("carts.session_id", session()->getId())->get(); 
         return $cart_product;
     }
 

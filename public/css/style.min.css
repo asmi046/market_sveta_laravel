@@ -537,6 +537,32 @@ textarea:focus {
   outline: none;
 }
 
+.number_wrapper {
+  border:1px solid #f2f3f5;
+  border-radius: 6px;
+  display: flex;
+  max-height: 30px;
+  overflow: hidden;
+}
+
+.number_wrapper .number_btn {
+  background-color: #f2f3f5;
+  height: 100%;
+  display: block;
+  padding: 0 5px;
+  line-height: 30px;
+  cursor:pointer;
+
+}
+
+.number_wrapper .number_btn:hover { 
+  background-color: #FFB400;
+}
+
+.number_wrapper input[type='number'] { 
+  text-align: center;
+}
+
 .input {
   display: flex;
   width: 100%;
@@ -4220,6 +4246,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .prod-card__img {
   min-height: 210px;
+  height: 210px;
   overflow: hidden;
   margin-bottom: 23px;
 }
