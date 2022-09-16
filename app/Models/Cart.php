@@ -45,4 +45,10 @@ class Cart extends Model
         $element->delete();
     }
 
+    public static function update_tovar($product_id, $quentity) {
+        $element = self::where(["session_id" => session()->getId(), "product_sku" => $product_id])->first();
+        $element->quentity = $quentity;
+        $element->save();
+    }
+
 }

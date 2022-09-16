@@ -4,6 +4,23 @@
     min-height: 100px;
 }
 
+.bascet_lader {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.bascet_lader span{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/icons/loader.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .bascet_tovar {
     
     flex: 3;
@@ -106,6 +123,25 @@
 .tovar_list .tovar .picture_blk{ 
     width:50px;
     height:50px;
+}
+
+.tovar_list .tovar .dll_blk { 
+    width:20px;
+    height:50px;
+}
+
+.tovar_list .tovar .dll_blk span{  
+    width:15px;
+    height: 15px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/icons/close.svg);
+    cursor:pointer;
+}
+
+.tovar_list .tovar .dll_blk span:hover{ 
+    background-image: url(../img/icons/close_hover.svg);
 }
 
 .tovar_list .tovar .picture_blk img{
