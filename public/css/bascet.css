@@ -1,10 +1,23 @@
 /* Значек карзины */
 
+.header__bascket .bascet_counter {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    font-size: 8px;
+    text-align: center;
+    line-height: 14px;
+}
+
 .header__bascket {
     font-size: 16px;
     font-weight: 500;
     display: flex;
     align-items: center;
+    position: relative;
   }
 
 .header__bascket:before {

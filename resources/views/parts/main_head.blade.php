@@ -15,7 +15,7 @@
 					</div>
 
 					<a href="#" class="header__favorites">Избранное</a>
-					<a href="{{route('bascet')}}" class="header__bascket">Корзина</a>
+					<a href="{{route('bascet')}}" class="header__bascket"> <span class="bascet_counter">0</span> Корзина</a>
 				</div>
 
 			</div>
