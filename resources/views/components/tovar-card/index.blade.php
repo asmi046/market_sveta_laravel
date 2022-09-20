@@ -1,7 +1,7 @@
 <div data-prodid="{{$minfo->sku}}" class="main-prod-card__column">
     <div class="prod-card__body d-flex">
         <div class="bascet_count">
-            В корзине <span>0</span> шт
+            В корзине <span>1</span> шт
         </div>
         <x-favorit :isactive="false"></x-favorit>
         <a href="{{route('product', $minfo->slug)}}" class="prod-card__img">

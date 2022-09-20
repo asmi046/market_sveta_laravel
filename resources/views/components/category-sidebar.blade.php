@@ -69,7 +69,7 @@
                         <div class="page__sidebar-navigation-col-price-selects-col">
                             <div class="page__sidebar-navigation-col-price-selects-text">от</div>
                             <input type="number" class="page__sidebar-navigation-col-price-selects-input" name="num"
-                                min="1" max="1000000" value="1">
+                                min="0" max="1000000" value="1">
                             <div class="page__sidebar-navigation-col-price-selects-text">руб</div>
                         </div>
                         <div class="page__sidebar-navigation-col-price-selects-col">

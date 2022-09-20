@@ -24,7 +24,7 @@ class CategoryController extends Controller
         $catProducts = Product::where('cat1', $categoryInfo->baseid)
         ->orWhere('cat2', $categoryInfo->baseid)
         ->orWhere('cat3', $categoryInfo->baseid)
-        ->orWhere('cat4', $categoryInfo->baseid)->filter($request)->paginate(48);
+        ->orWhere('cat4', $categoryInfo->baseid)->filter($request)->paginate(48)->withQueryString();
 
         // dd($categoryInfo, $catProducts, $subCat, $categoryInfo->baseid);
 

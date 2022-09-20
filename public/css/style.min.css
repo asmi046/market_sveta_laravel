@@ -278,11 +278,12 @@ h4 {
   color: #fff;
   background: #FFB400;
   border-radius: 15px;
+  transition: background 0.5s ease !important;
 }
 
 .btn:hover {
-  background-color: #e1a923;
-  transition: .5s ease-in-out;
+  background-color: #E13510;
+  color: white;
 }
 
 .btn.fw {
@@ -4216,10 +4217,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   flex: 0 1 100%;
   padding: 10px 27px 13px 27px;
   flex-direction: column;
-  border: 1px solid #d2d1d1;
+  border: 1px solid white;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
   border-radius: 10px;
   overflow: hidden;
+}
 
+.prod-card__body:hover { 
+  box-shadow: 0 0 10px rgb(210 209 209 / 40%);
+  border: 1px solid #d2d1d1;
 }
 
 .card_bascet_btn {
@@ -4351,6 +4357,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-image: url('../img/icons/favorites.svg');
 }
 
+.favorites-icon:hover::before,
 .favorites-icon.active::before {
   background-image: url('../img/icons/favorites-fill.svg');
 }
