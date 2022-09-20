@@ -6,10 +6,12 @@
     height: 13px;
     border-radius: 10px;
     color: white;
-    background-color: green;
+    background-color: #6bb431;
     font-size: 8px;
     text-align: center;
     line-height: 14px;
+    left: 14px;
+    top: -4px;
 }
 
 .header__bascket {
