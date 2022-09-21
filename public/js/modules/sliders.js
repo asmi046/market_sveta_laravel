@@ -227,3 +227,45 @@ let prodSlBig = new Swiper('.prodSlBig', {
 
 // var thumbs = document.querySelectorAll('.prodSlSmall .slider__slide');
 // thumbs.forEach(el => el.addEventListener('mouseenter', function () { prodSlSmall.slideTo(el.dataset.swiperSlideIndex) }));
+
+
+// Сюда пишем класс нашего слайдера и меняем переменную
+let subCatInCat = new Swiper('.subCatInCat', {
+	// observer: true,
+	// observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 10, //отступ в пикселях
+	// autoHeight: true,
+	speed: 2000,
+	loop: true, //циклично
+	// Dotts
+	//pagination: {
+	//	el: '.swiper-paggination',
+	//	clickable: true,
+	//},
+	// Arrows
+	// navigation: {
+	// 	nextEl: '.swiper-button-next',
+	// 	prevEl: '.swiper-button-prev',
+	// },
+	breakpoints: {
+		640: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 6,
+		},
+		1024: {
+			slidesPerView: 5,
+		},
+	},
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
