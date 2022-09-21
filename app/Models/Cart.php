@@ -51,4 +51,8 @@ class Cart extends Model
         $element->save();
     }
 
+    public static function cart_coun() {
+        return self::where(["session_id" => session()->getId()])->sum("quentity");
+    }
+
 }

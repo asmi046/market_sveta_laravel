@@ -9,8 +9,14 @@ function bascet_to_page() {
                 
             })
             .then((response) => {
-                if (response.data.length != 0)
-                    for (let element of response.data) {
+                if (response.data.length == 0) return;
+
+                let bascet_counter = document.querySelectorAll(".bascet_counter")
+                for (let elem of bascet_counter) {
+                    elem.innerHTML = response.data.count
+                }
+
+                    for (let element of response.data.position) {
                         let card = document.querySelector('.main-prod-card__column[data-prodid="'+element.product_sku+'"]')
                         if (card != undefined)
                         {

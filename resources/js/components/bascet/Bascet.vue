@@ -95,7 +95,7 @@ export default {
         this.show_bascet = false;
         axios.get('/bascet/get/')
             .then((response) => {
-                this.bascetList = response.data
+                this.bascetList = response.data.position
                 this.updateBascet()
                 this.show_bascet = true
             })
@@ -120,6 +120,11 @@ export default {
                 count: item.quentity
             })
             .then(() => {
+                
+                let bascet_counter = document.querySelectorAll(".bascet_counter")
+                for (let elem of bascet_counter) {
+                    elem.innerHTML = this.count;
+                }
                 console.log("updatet");
             })
             .catch(error => console.log(error));
