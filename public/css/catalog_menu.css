@@ -49,9 +49,33 @@
     border-radius: 0 11px 11px 0;
 }
 
+.catalog_menu nav a.active,
 .catalog_menu nav a:hover{ 
     background-color: #FFB400;
     color:black
-
 }
 
+.sub_cat_menu_wrapper {
+    width:50%;
+    height: 100%;
+    background-color: #f2f3f5;
+    display: none;
+    flex-wrap: wrap;
+    padding: 0 1%;
+}
+
+.sub_cat_menu_wrapper .punkt h2{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 10px 0;
+} 
+
+.sub_cat_menu_wrapper .punkt{ 
+    width: 22%;
+    padding: 0 2%;
+}
+
+.sub_cat_menu_wrapper .punkt ul li{ 
+    margin: 5px 0;
+}
