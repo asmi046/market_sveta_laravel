@@ -4,6 +4,18 @@ import axios from 'axios'
 //     _token:document.querySelector('meta[name="_token"]').content,
 // }
 
+let count_in_bascet = 0
+
+function update_counter(new_count) {
+
+    let bascet_counter = document.querySelectorAll(".bascet_counter")
+    for (let elem of bascet_counter) {
+        count_in_bascet = new_count
+        elem.innerHTML = new_count
+    }
+    
+}
+
 function bascet_to_page() {
             axios.get('/bascet/get', {
                 
@@ -11,10 +23,7 @@ function bascet_to_page() {
             .then((response) => {
                 if (response.data.length == 0) return;
 
-                let bascet_counter = document.querySelectorAll(".bascet_counter")
-                for (let elem of bascet_counter) {
-                    elem.innerHTML = response.data.count
-                }
+                    update_counter(response.data.count)
 
                     for (let element of response.data.position) {
                         let card = document.querySelector('.main-prod-card__column[data-prodid="'+element.product_sku+'"]')
@@ -66,6 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     if (xhr.status == 200) {
                         let main_card = document.querySelector(".main-prod-card__column[data-prodid='"+product_id+"']");
+
+                        update_counter(count_in_bascet++)
 
                         main_card.classList.add("in-bascet")
                         main_card.querySelector(".card_to_bascet_btn").style.display = "none"
