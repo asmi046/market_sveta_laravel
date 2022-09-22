@@ -22,6 +22,7 @@
 			"public/css/interface.css", 
 			"public/css/filter.style.css",
 			"public/css/mainsearch.css",
-			"public/css/bascet.css"
+			"public/css/bascet.css",
+			"public/css/catalog_menu.css"
 			])
 </head>
