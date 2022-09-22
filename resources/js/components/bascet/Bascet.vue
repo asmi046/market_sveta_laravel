@@ -62,7 +62,7 @@
             <form action="GET">
                 <input v-model="bascetInfo.fio" name="fio" type="text" placeholder="Фамилия, Имя*">
                 <input v-model="bascetInfo.email" name="email" type="email" placeholder="e-mail">
-                <input v-model="bascetInfo.phone" name="phone" type="text" placeholder="Телефон*">
+                <input v-model="bascetInfo.phone" v-mask="{mask: '+N (NNN) NNN-NN-NN', model: 'cpf' }" name="phone" type="text" placeholder="Телефон*">
                 <textarea v-model="bascetInfo.adress" name="adress" placeholder="Адрес"></textarea>
                 <textarea v-model="bascetInfo.comment" name="comment" placeholder="Комментарий"></textarea>
                 <button @click.prevent="sendBascet()" class="btn" type="submit">Отправить</button>

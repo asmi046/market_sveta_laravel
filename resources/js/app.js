@@ -10,6 +10,7 @@ import axios from 'axios'
 
 import VueAxios from 'vue-axios'
 
+import { VMaskDirective } from 'v-slim-mask'
 
 const app_filter = createApp({
     components:{
@@ -36,4 +37,5 @@ const bascet_page = createApp({
 })
 
 bascet_page.use(VueAxios, axios)
-bascet_page.mount("#bascet_page");
+bascet_page.directive('mask', VMaskDirective)
+bascet_page.mount("#bascet_page")

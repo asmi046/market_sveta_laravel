@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (xhr.status == 200) {
                         let main_card = document.querySelector(".main-prod-card__column[data-prodid='"+product_id+"']");
 
-                        update_counter(count_in_bascet++)
+                        update_counter(parseInt(count_in_bascet)+1)
 
                         main_card.classList.add("in-bascet")
                         main_card.querySelector(".card_to_bascet_btn").style.display = "none"
