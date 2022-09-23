@@ -68,6 +68,8 @@
     flex: 3;
 }
 
+/* форма карзины */
+
 .bascet_form {
     flex:1;
     max-width: 320px;
@@ -107,6 +109,21 @@
     width: 100%;
     display: flex;
 }
+
+.errors_list {
+    width:100%;
+    padding: 10px 0;
+}
+
+.errors_list li{
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width:100%;
+    background-color: #a2182d;
+    color: white;
+}
+
 
 .bascet_tovar .control .clear_bascet_btn{ 
     color:#a90707;  

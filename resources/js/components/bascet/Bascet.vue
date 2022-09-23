@@ -65,6 +65,10 @@
                 <input v-model="bascetInfo.phone" v-mask="{mask: '+N (NNN) NNN-NN-NN', model: 'cpf' }" name="phone" type="text" placeholder="Телефон*">
                 <textarea v-model="bascetInfo.adress" name="adress" placeholder="Адрес"></textarea>
                 <textarea v-model="bascetInfo.comment" name="comment" placeholder="Комментарий"></textarea>
+                <ul v-show="errorList.length != 0" class ="errors_list">
+                    <li v-for="item in errorList" :key="item">{{item}}</li>
+                </ul>
+
                 <button @click.prevent="sendBascet()" class="btn" type="submit">Отправить</button>
                 <p class="policy">Заполняя данную форму и отправляя заказ вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
             </form>
@@ -81,6 +85,7 @@ export default {
             count:0,
             subtotal:0,
             show_bascet:false,
+            errorList:[],
             bascetInfo:{
                 fio:"",
                 email:"",
@@ -103,6 +108,15 @@ export default {
     },
     methods: {
         sendBascet() {
+
+            if (!this.fio) 
+                this.errorList.push("Поле 'Имя' не заполнено");
+
+            if (!this.phone) 
+                this.errorList.push("Поле 'Телефон' не заполнено");
+
+            if (this.errorList.length != 0 ) return;
+
             axios.post('/bascet/send/', {
                 _token: document.querySelector('meta[name="_token"]').content,
                 fio: this.bascetInfo.fio,
