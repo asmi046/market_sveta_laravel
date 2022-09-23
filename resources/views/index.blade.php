@@ -141,15 +141,15 @@
 
             <div class="selection__column">
                 <a href="#" class="cardType cardType_img-01">
-                    <div class="cardType__color-block">
+                    <div class="cardType__color-block animated_bg">
                         <p class="cardType__color-block-text">Спальня</p>
                     </div>
                 </a>
             </div>
 
-            <div class="selection__column">
+            <div class="selection__column ">
                 <a href="#" class="cardType cardType_img-02">
-                    <div class="cardType__color-block">
+                    <div class="cardType__color-block animated_bg">
                         <p class="cardType__color-block-text">КУХНЯ</p>
                     </div>
                 </a>
@@ -157,7 +157,7 @@
 
             <div class="selection__column">
                 <a href="#" class="cardType cardType_img-03">
-                    <div class="cardType__color-block">
+                    <div class="cardType__color-block animated_bg">
                         <p class="cardType__color-block-text">ГОСТИННАЯ</p>
                     </div>
                 </a>
@@ -165,7 +165,7 @@
 
             <div class="selection__column">
                 <a href="#" class="cardType cardType_img-04">
-                    <div class="cardType__color-block">
+                    <div class="cardType__color-block animated_bg">
                         <p class="cardType__color-block-text">ДЕТСКАЯ</p>
                     </div>
                 </a>
@@ -173,7 +173,7 @@
 
             <div class="selection__column">
                 <a href="#" class="cardType cardType_img-05">
-                    <div class="cardType__color-block">
+                    <div class="cardType__color-block animated_bg">
                         <p class="cardType__color-block-text">ВАННАЯ</p>
                     </div>
                 </a>

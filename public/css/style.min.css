@@ -4395,6 +4395,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 0 15px;
 }
 
+
+.selection__column:hover .cardType__color-block{
+  background-color: #FFB400;
+}
+
 .selection__column .cardType {
   height: 302px;
 }
