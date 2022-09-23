@@ -109,10 +109,12 @@ export default {
     methods: {
         sendBascet() {
 
-            if (!this.fio) 
+            this.errorList = []
+
+            if (this.bascetInfo.fio == "") 
                 this.errorList.push("Поле 'Имя' не заполнено");
 
-            if (!this.phone) 
+            if (this.bascetInfo.phone == "") 
                 this.errorList.push("Поле 'Телефон' не заполнено");
 
             if (this.errorList.length != 0 ) return;
@@ -120,7 +122,11 @@ export default {
             axios.post('/bascet/send/', {
                 _token: document.querySelector('meta[name="_token"]').content,
                 fio: this.bascetInfo.fio,
-                phone: this.bascetInfo.phone
+                email: this.bascetInfo.email,
+                phone: this.bascetInfo.phone,
+                adress: this.bascetInfo.adress,
+                comment: this.bascetInfo.comment,
+                tovars: this.bascetList,
             })
             .then((response) => {
                 console.log(response.data);
