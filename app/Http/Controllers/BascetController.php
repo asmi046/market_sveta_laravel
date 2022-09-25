@@ -32,7 +32,7 @@ class BascetController extends Controller
     }
 
     public function clear() { 
-        return Cart::where("session_id", session()->getId())->delete(); 
+        return Cart::cart_clear();
     }
 
     public function update(Request $request) {
@@ -48,5 +48,10 @@ class BascetController extends Controller
 
     public function send(BascetForm $request) {
         Mail::to("asmi046@gmail.com")->send(new BascetSend($request));
+    }
+
+    public function thencs() {
+        Cart::cart_clear();
+        return view("thencs");
     }
 }

@@ -55,4 +55,8 @@ class Cart extends Model
         return self::where(["session_id" => session()->getId()])->sum("quentity");
     }
 
+    public static function cart_clear() {
+        return self::where("session_id", session()->getId())->delete();
+    }
+
 }

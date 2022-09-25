@@ -132,6 +132,11 @@ if (!function_exists("add_tovar_in_file")) {
         $result = [];
         $params = [];
         $pictures = [];
+
+        $Place = [];
+        $Style = [];
+        $Material = [];
+        $Brand = [];
         
         $all_cat = []; 
 
@@ -185,6 +190,9 @@ if (!function_exists("add_tovar_in_file")) {
                 "description_seo" => substr("Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name, 0, 299),
             ];
 
+            $Brand[(string)$xmlObject->shop->offers->offer[$i]->vendor] = [
+                "brand" => (string)$xmlObject->shop->offers->offer[$i]->vendor
+            ];
             
 
             for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->param); $j++) 
@@ -198,15 +206,35 @@ if (!function_exists("add_tovar_in_file")) {
                     "value" => $value,
                     "subcat" => "",
                 ];
+
+                
+
                 if ($name === "Страна происхождения") $tmp["state"] = $value;
                 if ($name === "Коллекция") $tmp["collection"] = $value;
-                if ($name === "Стиль") $tmp["style"] = $value;
+                if ($name === "Стиль") {
+                    $tmp["style"] = $value;
+                    $Style[$value] = [
+                        "style" => $value
+                    ];
+                }
                 if ($name === "Форма") $tmp["form"] = $value;
                 if ($name === "Цвет арматуры") $tmp["arm_color"] = $value;
                 if ($name === "Цвет плафона") $tmp["plaf_color"] = $value;
-                if ($name === "Материал арматуры") $tmp["arm_material"] = $value;
+                if ($name === "Материал арматуры") {
+                    $tmp["arm_material"] = $value;
+                    $Material[$value] = [
+                        "material" => $value
+                    ];
+                }
+
                 if ($name === "Материал плафона") $tmp["plaf_material"] = $value;
-                if ($name === "Назначение помещения") $tmp["mesto"] = $value;
+                if ($name === "Назначение помещения") { 
+                    $tmp["mesto"] = $value;
+                    
+                    $Place[$value] = [
+                        "mesto" => $value
+                    ];
+                }
             }
 
                 for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++) 
@@ -243,7 +271,6 @@ if (!function_exists("add_tovar_in_file")) {
             // if ($i == 2) break;
         }
 
-        // DB::table("products")->insert($result);
         
         foreach (array_chunk($result, 1000) as $t)  
         {
@@ -255,8 +282,26 @@ if (!function_exists("add_tovar_in_file")) {
             DB::table("properties")->insert($t); 
         }
 
-        // DB::table("images")->insert($pictures);
-        
+        foreach (array_chunk($Place, 1000) as $t)  
+        {
+            DB::table("places")->insert($t); 
+        }
+
+        foreach (array_chunk($Style, 1000) as $t)  
+        {
+            DB::table("styles")->insert($t); 
+        }
+
+        foreach (array_chunk($Material, 1000) as $t)  
+        {
+            DB::table("materials")->insert($t); 
+        }
+
+        foreach (array_chunk($Brand, 1000) as $t)  
+        {
+            DB::table("brands")->insert($t); 
+        }
+     
         foreach (array_chunk($pictures, 1000) as $t)  
         {
             DB::table("images")->insert($t); 

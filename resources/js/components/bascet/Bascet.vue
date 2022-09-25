@@ -129,10 +129,11 @@ export default {
                 tovars: this.bascetList,
             })
             .then((response) => {
-                console.log(response.data);
+                document.location.href="/bascet/thencs"
             })
             .catch(error => console.log(error));
         },
+
         updateItem(item){
             axios.post('/bascet/update/', {
                 _token: document.querySelector('meta[name="_token"]').content,
