@@ -4,14 +4,14 @@
 <p><strong>E-mail:</strong> {{$formData['email']}}</p>
 <p><strong>Адрес:</strong> {{$formData['adress']}}</p>
 <p><strong>Комментарий:</strong> {{$formData['comment']}}</p>
-<table>
-    <thead>
+<table style="width:100%; border-top:1px solid black; border-left:1px solid black; border-spacing: 0;">
+    <thead style="text-align:left;">
         <tr>
-            <th>Картинка</th>
-            <th>Наименование</th>
-            <th>Цена</th>
-            <th>Колличество</th>
-            <th>Сумма</th>
+            <th style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">Картинка</th>
+            <th style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">Наименование</th>
+            <th style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">Цена</th>
+            <th style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">Колличество</th>
+            <th style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">Сумма</th>
         </tr>
     </thead>
     <tbody>
@@ -19,11 +19,11 @@
                
            @endforeach
             <tr>
-                <td><img src="{{asset('/storage/products_galery/'.$item["tovar_data"]["img"])}}" alt=""></td>
-                <td>{{$item["tovar_data"]["name"]}}<br/><span style="font-size:12px">{{$item["tovar_data"]["brand"]}} ({{$item["tovar_data"]["state"]}})</span></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;"><img src="{{asset('/storage/products_galery/'.$item["tovar_data"]["img"])}}" alt=""></td>
+                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["tovar_data"]["name"]}}<br/><span style="font-size:12px">{{$item["tovar_data"]["brand"]}} ({{$item["tovar_data"]["state"]}})</span></td>
+                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["tovar_data"]["price"]}}</td>
+                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["quentity"]}}</td>
+                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{(float)$item["quentity"] * (float)$item["tovar_data"]["price"]}}</td>
             </tr> 
         
     </tbody>
