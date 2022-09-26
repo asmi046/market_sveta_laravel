@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('style', 100)->comment('Стиль');
+            $table->string('slug', 150)->comment('Псевдоним для ссылки');
         });
     }
 

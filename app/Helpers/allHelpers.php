@@ -191,7 +191,8 @@ if (!function_exists("add_tovar_in_file")) {
             ];
 
             $Brand[(string)$xmlObject->shop->offers->offer[$i]->vendor] = [
-                "brand" => (string)$xmlObject->shop->offers->offer[$i]->vendor
+                "brand" => (string)$xmlObject->shop->offers->offer[$i]->vendor,
+                "slug" => Str::slug((string)$xmlObject->shop->offers->offer[$i]->vendor)
             ];
             
 
@@ -214,7 +215,8 @@ if (!function_exists("add_tovar_in_file")) {
                 if ($name === "Стиль") {
                     $tmp["style"] = $value;
                     $Style[$value] = [
-                        "style" => $value
+                        "style" => $value,
+                        "slug" => Str::slug($value)
                     ];
                 }
                 if ($name === "Форма") $tmp["form"] = $value;
@@ -223,7 +225,8 @@ if (!function_exists("add_tovar_in_file")) {
                 if ($name === "Материал арматуры") {
                     $tmp["arm_material"] = $value;
                     $Material[$value] = [
-                        "material" => $value
+                        "material" => $value,
+                        "slug" => Str::slug($value)
                     ];
                 }
 
@@ -232,7 +235,8 @@ if (!function_exists("add_tovar_in_file")) {
                     $tmp["mesto"] = $value;
                     
                     $Place[$value] = [
-                        "mesto" => $value
+                        "mesto" => $value,
+                        "slug" => Str::slug($value)
                     ];
                 }
             }
