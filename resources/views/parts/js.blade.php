@@ -13,5 +13,6 @@
 "public/js/modules/mainsearch.js",
 "public/js/modules/sliders.js",
 "public/js/modules/bascet.js",
-"public/js/modules/catalog_menu.js"
+"public/js/modules/catalog_menu.js",
+"public/js/modules/brand.js"
 ])

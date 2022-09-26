@@ -1,0 +1,62 @@
+.all_brands_in_page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand_search input{
+    width:50%;
+    min-width: 320px;
+    position: relative;
+
+    background-size: 23px 23px;
+    background-position: calc(100% - 12px) center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/lins.svg");
+}
+
+.brand_search {
+    width:100%;
+}
+
+.brand_input {
+    margin-top: 30px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand_input .brand_input_blk {
+    width:31%;
+    margin: 0 1%;
+    min-width: 300px;
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+.brand_input .brand_input_blk .alfuk{ 
+    color:#dbe0e5;
+    font-size: 72px;
+    padding: 0 20px 0 0;
+    min-width: 80px;
+}
+
+.brand_input .brand_input_blk .list{ 
+    padding:  10px 0;
+}
+
+.brand_search_result a{
+    margin: 20px 20px 10px 0;
+    display: inline-block;
+    border-bottom: 1px dashed;
+}
+
+.brand_input .brand_input_blk .list a{ 
+    margin: 0 20px 10px 0;
+}
+
+.brand_search_result a:hover,
+.brand_input .brand_input_blk .list a:hover{ 
+    color: #DD1A1E;
+    border-bottom: 1px dashed #DD1A1E;
+}

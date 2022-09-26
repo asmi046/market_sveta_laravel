@@ -8,7 +8,7 @@
 		@include('parts.header_index')
 		<main class="page">
             
-            @yield('content');
+            @yield('content')
 
 		</main>
 		@include('parts.footer')

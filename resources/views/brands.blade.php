@@ -8,6 +8,11 @@ $page_title = "Бренды";
 
 @section('content')
 
+    <script>
+        let all_brands = {!! json_encode($all_brands)!!};
+
+    </script>
+
     <section id="select-prod" class="select-prod">
         <div class="_container">
             
@@ -16,10 +21,34 @@ $page_title = "Бренды";
             <h1>{{$page_title}}</h1>
         
 
-            <div class="text_style">
-                <p>Мы всегда на связи с нашими покупателями. Связаться с нашим менеджером можно по телефону +7 (994) 444 48 44. По вопросам оформления заказа, оплаты и доставки звоните нам в рабочее время с 9:00 до 18:00.</p>
-                <p>Если вам нужна помощь в выборе светильника или вы хотите обсудить нюансы оптового сотрудничества, звоните или пишите нам на email. На ваше электронное письмо мы ответим в ближайшее рабочее время.</p>
-                <p>Наш магазин «Маркет Света» находится по адресу г. Москва, Дмитровское шоссе., 100, стр. 2. По этому адресу работает наш пункт самовывоза. Если вы хотите самостоятельно забрать свою покупку, обязательно укажите это при оформлении заказа.</p>
+            <div class="all_brands_in_page">
+                <div class="brand_search">
+                    <form action="">
+                        <input id="search_brand_input" type="text" placeholder="Введите бренд для поиска">
+                    </form>
+                    <div id="brand_search_result" class="brand_search_result">
+
+                    </div>
+                </div>
+
+                <div class="brand_input">
+                   @foreach ($all_brands as $key => $value)
+                        <div class="brand_input_blk">
+                            <div class="alfuk">
+                                {{$key}}
+                            </div>
+
+                            <div class="list">
+                                @foreach ($value as $item)
+                                    <a href="">{{$item['brand']}}</a>                                    
+                                @endforeach
+                            </div>
+                        </div>   
+                   @endforeach
+
+                     
+                </div>
+
             </div>
 
         </div>

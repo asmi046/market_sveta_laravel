@@ -15,6 +15,7 @@ export default defineConfig({
                 "public/css/filter.style.css",
                 "public/css/mainsearch.css",
                 "public/css/bascet.css",
+                "public/css/brand.css",
 
                 "resources/js/lib/lib.js",
 
@@ -28,8 +29,10 @@ export default defineConfig({
                 "public/js/modules/sliders.js",
                 "public/js/modules/mainsearch.js",
                 "public/js/modules/bascet.js",
+                "public/js/modules/brand.js",
 
                 "public/js/libs/swiper.min.js",
+                
             ],
             refresh: true,
             mode:'production'
