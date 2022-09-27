@@ -39,7 +39,7 @@ class ApiIndexController extends Controller
         return $result_array;
     }
 
-    public function get_sorted_category_filter($catid,Request $request) {
+    public function get_sorted_category_filter($catid, $mode, Request $request) {
          
 
         $requMain = new Request();
@@ -48,10 +48,14 @@ class ApiIndexController extends Controller
         
 
         $pf = new ProductFilter($requMain);
-        $catProducts = Product::where('cat1', $catid)
-        ->orWhere('cat2', $catid) 
-        ->orWhere('cat3', $catid)
-        ->orWhere('cat4', $catid)->filter($pf)->get();
+        
+        if ($mode == "brand") 
+            $catProducts = Product::where('brand', $catid)->filter($pf)->get();
+        else
+            $catProducts = Product::where('cat1', $catid)
+            ->orWhere('cat2', $catid) 
+            ->orWhere('cat3', $catid)
+            ->orWhere('cat4', $catid)->filter($pf)->get();
 
         
         $zap_filter = json_decode($request->get('filter_empty'));
@@ -92,15 +96,22 @@ class ApiIndexController extends Controller
         return array("products"=>$catProducts, "filter"=>$zap_filter);
     }
 
-    public function get_category_filter($catid, Request $request) {
+    public function get_category_filter($catid, $mode, Request $request) {
+        
         $requMain = new Request();
-        // $requMain->query->add(['style'=>'хай-тек']);
+    
+        $requMain->query->add((array)json_decode($request->get('filter')));
+
 
         $pf = new ProductFilter($requMain);
-        $catProducts = Product::where('cat1', $catid)
-        ->orWhere('cat2', $catid) 
-        ->orWhere('cat3', $catid)
-        ->orWhere('cat4', $catid)->filter($pf)->get();
+        
+        if ($mode == "brand") 
+            $catProducts = Product::where('brand', $catid)->filter($pf)->get();
+        else
+            $catProducts = Product::where('cat1', $catid)
+            ->orWhere('cat2', $catid) 
+            ->orWhere('cat3', $catid)
+            ->orWhere('cat4', $catid)->filter($pf)->get();
 
         $brand = [];
         $style = [];

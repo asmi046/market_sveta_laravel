@@ -48,6 +48,7 @@ export default {
                 this.selectedElement = Array.from(allGetKey[this.propertyName])
                 this.showBody = true;
             }
+            this.$emit('chengeList', null, this.selectedElement, this.propertyName);
     },
 
     watch: {

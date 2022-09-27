@@ -40,7 +40,7 @@ $page_title = "Бренды";
 
                             <div class="list">
                                 @foreach ($value as $item)
-                                    <a href="">{{$item['brand']}}</a>                                    
+                                    <a href="/brand/{{$item['slug']}}">{{$item['brand']}}</a>                                    
                                 @endforeach
                             </div>
                         </div>   

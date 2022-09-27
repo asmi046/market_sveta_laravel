@@ -27,6 +27,7 @@ Route::get('/opt', [TextPagesController::class, "opt_sotrudnihestvo"])->name("op
 Route::get('/pay', [TextPagesController::class, "pay"])->name("pay");
 Route::get('/aktsii', [TextPagesController::class, "aktsii"])->name("aktsii");
 Route::get('/brands', [BrandController::class, "index"])->name("brands");
+Route::get('/brand/{slug}', [BrandController::class, "brand_page"])->name("brand_page");
 Route::get('/about', [TextPagesController::class, "about"])->name("about");
 Route::get('/dostavka', [TextPagesController::class, "dostavka"])->name("dostavka");
 

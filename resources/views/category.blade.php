@@ -25,8 +25,8 @@
                         home-rout="{{ route('home') }}" 
                         cat-list="{{$sub_cat->toJson()}}" 
                         cat-url="{{url()->current()}}" 
-                        cat-name="{{$category->name}}" 
-                        cat-id="{{$category->baseid}}" 
+                        cat-id="{{$category->baseid}}"
+                        show-mode="category" 
                     ></category-filter>
                 </div>
                 

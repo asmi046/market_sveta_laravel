@@ -35,7 +35,7 @@ import allLibs from '../lib/lib.js'
 export default {
     data() {
         return {
-            minPrice:0,
+            minPrice:1,
             maxPrice:10000000,
             sale:false
         }
@@ -44,7 +44,7 @@ export default {
     mounted: function() {
         let allGetKey = allLibs.getRequestParam()
 
-        this.minPrice = (allGetKey["minprice"] != undefined)?parseInt(allGetKey["minprice"],10):0
+        this.minPrice = (allGetKey["minprice"] != undefined)?parseInt(allGetKey["minprice"],10):1
         this.maxPrice = (allGetKey["maxprice"] != undefined)?parseInt(allGetKey["maxprice"],10):10000000
         this.sale = (allGetKey["insales"] == 'on')?true:false
     },

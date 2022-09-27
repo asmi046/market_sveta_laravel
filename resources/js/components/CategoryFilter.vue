@@ -9,7 +9,7 @@
             <div class="page__sidebar-navigation">
                 <div class="spollers-block" data-spollers data-one-spoller>
         
-                    <div class="page__sidebar-navigation-col">
+                    <div v-show="mainCatList.length !=0" class="page__sidebar-navigation-col">
                         <div class="page__sidebar-navigation-block-name d-flex">
                                 <div class="page__sidebar-navigation-name">Категории</div>
                         </div>
@@ -61,7 +61,7 @@ export default {
             filterList:[],
             filterListEmpty:[],
             selectedParam:{},
-            mainCatList:JSON.parse(this.catList),
+            mainCatList:(this.catList != '')?JSON.parse(this.catList):[],
             clicedElement:{},
             preSerchCount:0
         }
@@ -73,15 +73,20 @@ export default {
         PreSearchInformer
     },
 
-    props:['homeRout', 'catList', 'catUrl', 'catName', 'catId'],
+    props:['homeRout', 'catList', 'catUrl', 'catId', 'showMode'],
 
     mounted: function() {
         let prefix_api_url = document.location.protocol+"//"+document.location.host
-        console.log(prefix_api_url+'/api/v1/get_category_filter/'+this.catId)
-        axios.get(prefix_api_url+'/api/v1/get_category_filter/'+this.catId)
+        console.log(this.selectedParam);
+        axios.get(prefix_api_url+'/api/v1/get_category_filter/'+this.catId+'/'+this.showMode, {
+            params: {
+                    filter:this.selectedParam
+            }
+        })
         .then((response) => {
-            this.filterList = response.data.incount;
+            this.filterList = response.data.incount
             this.filterListEmpty = response.data.empty
+            this.get_pre_filter()
         })
         .catch(error => console.log(error));
     }, 
@@ -90,7 +95,7 @@ export default {
         get_pre_filter() {
             let prefix_api_url = document.location.protocol+"//"+document.location.host
 
-            axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId, {
+            axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId+'/'+this.showMode, {
                 params: {
                     filter_empty:this.filterListEmpty,
                     filter:this.selectedParam
@@ -101,31 +106,33 @@ export default {
                 this.preSerchCount=response.data.products.length
                 // this.filterList=response.data.filter
 
-                if (this.clicedElement.dataset.razdel != "style")
-                    this.filterList.style = response.data.filter.style
-                
-                if (this.clicedElement.dataset.razdel != "brand")
-                    this.filterList.brand = response.data.filter.brand
-                
-                if (this.clicedElement.dataset.razdel != "state")
-                    this.filterList.state = response.data.filter.state
-                
-                if (this.clicedElement.dataset.razdel != "forma")
-                    this.filterList.forma = response.data.filter.forma
-                
-                if (this.clicedElement.dataset.razdel != "arm_color")
-                    this.filterList.arm_color = response.data.filter.arm_color
-                
-                if (this.clicedElement.dataset.razdel != "plaf_color")
-                    this.filterList.plaf_color = response.data.filter.plaf_color
-                
-                if (this.clicedElement.dataset.razdel != "arm_material")
-                    this.filterList.arm_material = response.data.filter.arm_material
-                
-                if (this.clicedElement.dataset.razdel != "plaf_material")
-                    this.filterList.plaf_material = response.data.filter.plaf_material
                 
                 
+                    if (this.clicedElement.dataset.razdel != "style")
+                        this.filterList.style = response.data.filter.style
+                    
+                    if (this.clicedElement.dataset.razdel != "brand")
+                        this.filterList.brand = response.data.filter.brand
+                    
+                    if (this.clicedElement.dataset.razdel != "state")
+                        this.filterList.state = response.data.filter.state
+                    
+                    if (this.clicedElement.dataset.razdel != "forma")
+                        this.filterList.forma = response.data.filter.forma
+                    
+                    if (this.clicedElement.dataset.razdel != "arm_color")
+                        this.filterList.arm_color = response.data.filter.arm_color
+                    
+                    if (this.clicedElement.dataset.razdel != "plaf_color")
+                        this.filterList.plaf_color = response.data.filter.plaf_color
+                    
+                    if (this.clicedElement.dataset.razdel != "arm_material")
+                        this.filterList.arm_material = response.data.filter.arm_material
+                    
+                    if (this.clicedElement.dataset.razdel != "plaf_material")
+                        this.filterList.plaf_material = response.data.filter.plaf_material
+                    
+               
             })
             .catch(error => console.log(error));
             },
@@ -136,9 +143,13 @@ export default {
 
         chengeList(element, list, item) {
             this.selectedParam[item] = list
-            this.get_pre_filter()
-            this.clicedElement = element
-            console.log(element.dataset.razdel)
+            
+            if (element != null)
+                {
+                    this.get_pre_filter()
+                    this.clicedElement = element
+                }
+                // console.log(element.dataset.razdel)
         },
 
         chengePrice(element, min, max, sale) {

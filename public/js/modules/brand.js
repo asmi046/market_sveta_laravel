@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let rezstr = ""
         for (let element of subvalse) {
            if (element.brand.toUpperCase().indexOf(searchFeild.value.toUpperCase(), 0) >= 0)
-                rezstr +="<a href='/showbrand/"+element.slug+"'>"+element.brand+"</a>" 
+                rezstr +="<a href='/brand/"+element.slug+"'>"+element.brand+"</a>" 
         }
 
         searchResult.innerHTML = rezstr 

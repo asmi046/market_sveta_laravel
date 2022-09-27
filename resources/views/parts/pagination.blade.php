@@ -1,4 +1,8 @@
-                    <nav class="pagination d-flex">
+{{-- <div class="show-link">
+    <a href="#" class="show-link__btn">Показать еще</a>
+</div> --}}
+
+<nav class="pagination d-flex">
                         <div class="pagination__nav-links d-flex">
                             <a class="pagination__back" href="{{$paginator->previousPageUrl()}}">Назад</a>
                             
