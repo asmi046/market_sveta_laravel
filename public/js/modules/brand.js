@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let searchFeild = document.getElementById("search_brand_input")
     let searchResult = document.getElementById("brand_search_result")
     
+    if (searchFeild)
     searchFeild.addEventListener("input", function (e) { 
         if (searchFeild.value == "") {
             searchResult.innerHTML = ""

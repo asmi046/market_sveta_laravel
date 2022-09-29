@@ -397,7 +397,7 @@ function fix_block(scr_fix_block, scr_value) {
 	}
 }
 
-if (!isMobile.any()) {
+// if (!isMobile.any()) {
 	//custom_scroll();
 	/*
 	window.addEventListener('wheel', scroll_animate, {
@@ -409,7 +409,8 @@ if (!isMobile.any()) {
 		passive: true
 	});
 	*/
-}
+// }
+
 function custom_scroll(event) {
 	scr_body.style.overflow = 'hidden';
 	let window_height = window.innerHeight;

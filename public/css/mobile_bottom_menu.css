@@ -1,0 +1,53 @@
+.mobile_bottom_menu {
+    width:100%;
+    position: fixed;
+    z-index: 100000;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    display: none;
+    min-height: 60px;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.mobile_bottom_menu .bm_btn {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.mobile_bottom_menu .bm_btn .icon{ 
+   width:25px; 
+   height:25px;
+   margin: 5px auto; 
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.mobile_bottom_menu .bm_btn .catalog_icon { 
+    background-image: url("../img/icons/catalog.svg");
+}
+
+.mobile_bottom_menu .bm_btn .bascet_icon { 
+    background-image: url("../img/icons/bascet.svg");
+}
+
+.mobile_bottom_menu .bm_btn .favorit_icon { 
+    background-image: url("../img/icons/favorites.svg");
+}
+
+.mobile_bottom_menu .bm_btn .main_icon { 
+    background-image: url("../img/icons/home.svg");
+}
+
+@media (max-width: 768px) { 
+    .mobile_bottom_menu {
+        display: flex;
+
+    }
+}

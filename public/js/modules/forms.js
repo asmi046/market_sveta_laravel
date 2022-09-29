@@ -183,7 +183,7 @@ function selects_close(e) {
 			const select = selects[index];
 			const select_body_options = select.querySelector('.select__options');
 			select.classList.remove('_active');
-			_slideUp(select_body_options, 100);
+			// _slideUp(select_body_options, 100);
 		}
 	}
 }
@@ -262,7 +262,7 @@ function select_actions(original, select) {
 				const select_body_options = select.querySelector('.select__options');
 				if (select != select_item.closest('.select')) {
 					select.classList.remove('_active');
-					_slideUp(select_body_options, 100);
+					// _slideUp(select_body_options, 100);
 				}
 			}
 			_slideToggle(select_body_options, 100);

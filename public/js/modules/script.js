@@ -84,8 +84,3 @@ smotScrollElems.forEach(link => {
   })
 });
 
-
-// Подсказки
-tippy('._tippy', {
-  content: "Подсказка",
-});

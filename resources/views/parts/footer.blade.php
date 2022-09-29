@@ -10,7 +10,7 @@
 					<button class="btn">Подписаться</button>
 				</form>
 
-				<div class="header__callback callback d-flex">
+				<div class="footer__callback callback d-flex">
 					<p><a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a></p>
 					<a href="#callback" class="callback__popup _popup-link">Заказать обратный звонок</a>
 				</div>

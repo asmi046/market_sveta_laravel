@@ -16,17 +16,18 @@ export default defineConfig({
                 "public/css/mainsearch.css",
                 "public/css/bascet.css",
                 "public/css/brand.css",
+                "public/css/mobile_bottom_menu.css",
 
                 "resources/js/lib/lib.js",
 
                 "public/js/modules/dynamic_adapt.js",
-                "public/js/modules/forms.js",
+                
                 "public/js/modules/functions.js",
-                "public/js/modules/map.js",
                 "public/js/modules/regular.js",
                 "public/js/modules/script.js",
                 "public/js/modules/scroll.js",
                 "public/js/modules/sliders.js",
+                "public/js/modules/forms.js",
                 "public/js/modules/mainsearch.js",
                 "public/js/modules/bascet.js",
                 "public/js/modules/brand.js",

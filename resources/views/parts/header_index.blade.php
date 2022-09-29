@@ -8,4 +8,6 @@
 
 @include('parts.mobile_menu')
 
+@include('parts.mobile-bottom-menu')
+
 @include('parts.mobile_search')

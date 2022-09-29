@@ -90,7 +90,9 @@
 
         </div>
 
-        <div class="popular__baner" style = "background-image: url(img/banners/{{$banners["action_banner"][0]["img_name"]}})"></div>
+        <div class="popular__baner">
+            <img src="{{asset('img/banners/'.$banners["action_banner"][0]["img_name"])}}" alt="">
+        </div>
 
     </div>
 </section>
