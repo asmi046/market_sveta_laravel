@@ -190,9 +190,12 @@ if (!function_exists("add_tovar_in_file")) {
                 "description_seo" => substr("Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name, 0, 299),
             ];
 
-            $Brand[(string)$xmlObject->shop->offers->offer[$i]->vendor] = [
-                "brand" => (string)$xmlObject->shop->offers->offer[$i]->vendor,
-                "slug" => Str::slug((string)$xmlObject->shop->offers->offer[$i]->vendor)
+            $Brand[] = [
+                "brand" => first_upper((string)$xmlObject->shop->offers->offer[$i]->vendor),
+                "slug" => Str::slug((string)$xmlObject->shop->offers->offer[$i]->vendor),
+                "title" => "Товары бренда ".(string)$xmlObject->shop->offers->offer[$i]->vendor,
+                "title_seo" => "Товары бренда ".(string)$xmlObject->shop->offers->offer[$i]->vendor,
+                "description_seo" => "Купить товары бренда ".(string)$xmlObject->shop->offers->offer[$i]->vendor." в магазине Market-Sveta"
             ];
             
 
@@ -214,9 +217,12 @@ if (!function_exists("add_tovar_in_file")) {
                 if ($name === "Коллекция") $tmp["collection"] = $value;
                 if ($name === "Стиль") {
                     $tmp["style"] = $value;
-                    $Style[$value] = [
-                        "style" => $value,
-                        "slug" => Str::slug($value)
+                    $Style[] = [
+                        "style" => first_upper($value),
+                        "slug" => Str::slug($value),
+                        "title" => "Светильники в стиле: ".first_upper($value),
+                        "title_seo" => "Светильники в стиле: ".first_upper($value),
+                        "description_seo" => "Купить cветильники в стиле: ".$value." в магазине Market-Sveta"
                     ];
                 }
                 if ($name === "Форма") $tmp["form"] = $value;
@@ -224,9 +230,12 @@ if (!function_exists("add_tovar_in_file")) {
                 if ($name === "Цвет плафона") $tmp["plaf_color"] = $value;
                 if ($name === "Материал арматуры") {
                     $tmp["arm_material"] = $value;
-                    $Material[$value] = [
-                        "material" => $value,
-                        "slug" => Str::slug($value)
+                    $Material[] = [
+                        "material" => first_upper($value),
+                        "slug" => Str::slug($value),
+                        "title" => "Светильники в материале - ".first_upper($value),
+                        "title_seo" => "Светильники в материале - ".first_upper($value),
+                        "description_seo" => "Купить cветильники в материале - ".first_upper($value)." в магазине Market-Sveta"
                     ];
                 }
 
@@ -234,9 +243,12 @@ if (!function_exists("add_tovar_in_file")) {
                 if ($name === "Назначение помещения") { 
                     $tmp["mesto"] = $value;
                     
-                    $Place[$value] = [
-                        "mesto" => $value,
-                        "slug" => Str::slug($value)
+                    $Place[] = [
+                        "mesto" => first_upper($value),
+                        "slug" => Str::slug($value),
+                        "title" => "Светильники для ".first_upper($value),
+                        "title_seo" => "Светильники для ".first_upper($value),
+                        "description_seo" => "Купить Светильники для ".first_upper($value)." в магазине Market-Sveta"
                     ];
                 }
             }
@@ -275,7 +287,7 @@ if (!function_exists("add_tovar_in_file")) {
             // if ($i == 2) break;
         }
 
-        
+
         foreach (array_chunk($result, 1000) as $t)  
         {
             DB::table("products")->insert($t); 
@@ -288,22 +300,22 @@ if (!function_exists("add_tovar_in_file")) {
 
         foreach (array_chunk($Place, 1000) as $t)  
         {
-            DB::table("places")->insert($t); 
+            DB::table("places")->insertOrIgnore($t); 
         }
 
         foreach (array_chunk($Style, 1000) as $t)  
         {
-            DB::table("styles")->insert($t); 
+            DB::table("styles")->insertOrIgnore($t); 
         }
 
         foreach (array_chunk($Material, 1000) as $t)  
         {
-            DB::table("materials")->insert($t); 
+            DB::table("materials")->insertOrIgnore($t); 
         }
 
         foreach (array_chunk($Brand, 1000) as $t)  
         {
-            DB::table("brands")->insert($t); 
+            DB::table("brands")->insertOrIgnore($t); 
         }
      
         foreach (array_chunk($pictures, 1000) as $t)  

@@ -93,15 +93,17 @@
     <div class="_container">
         <h2 class="new-items__title title">Распродажа</h2>
 
-        <div class="prod-card d-flex">
+        <div class="prod-card main_sales d-flex">
 
             <div class="sale-baner">
                 <img src="img/banners/{{$banners["sale_banner"][0]["img_name"]}}" alt="">
             </div>
 
-            @foreach ($sale_elements as $item)
-                <x-tovar-card :minfo="$item"></x-tovar-card>    
-            @endforeach
+            <div class="sale_tovar_wraper">
+                @foreach ($sale_elements as $item)
+                    <x-tovar-card :minfo="$item"></x-tovar-card>    
+                @endforeach
+            </div>
             
 
         </div>

@@ -16,8 +16,12 @@ return new class extends Migration
         Schema::create('places', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('mesto', 150)->comment('Место использования');
+            $table->string('mesto', 150)->comment('Место использования')->unique();
             $table->string('slug', 150)->comment('Псевдоним для ссылки');
+            
+            $table->string('title', 150)->comment('Заголовок страницы');
+            $table->string('title_seo', 100)->comment('SEO заголовок');
+            $table->string('description_seo', 300)->comment('SEO описание');
         });
     }
 
