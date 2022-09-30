@@ -9,7 +9,7 @@
     display: none;
     min-height: 60px;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 7px 10px;
 }
 
 .mobile_bottom_menu .bm_btn {
@@ -18,6 +18,16 @@
     flex-direction: column;
     justify-content: center;
     font-size: 12px;
+    width:25%;
+    text-align: center;
+}
+
+.mobile_bottom_menu .bm_btn {
+    border-right: 1px solid lightgray;
+}
+
+.mobile_bottom_menu .bm_btn:last-child {
+    border-right: none;
 }
 
 .mobile_bottom_menu .bm_btn .icon{ 
@@ -31,20 +41,22 @@
    color:#FFB400;
 }
 
-.mobile_bottom_menu .bm_btn .catalog_icon { 
-    background-image: url("../img/icons/catalog.svg");
+.bascet_blk {
+    position:relative;
 }
 
-.mobile_bottom_menu .bm_btn .bascet_icon { 
-    background-image: url("../img/icons/bascet.svg");
-}
-
-.mobile_bottom_menu .bm_btn .favorit_icon { 
-    background-image: url("../img/icons/favorites.svg");
-}
-
-.mobile_bottom_menu .bm_btn .main_icon { 
-    background-image: url("../img/icons/home.svg");
+.bascet_blk .bascet_counter {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    color: white;
+    background-color: #6bb431;
+    font-size: 8px;
+    text-align: center;
+    line-height: 12px;
+    right: -5px;
+    top: 5px;
 }
 
 @media (max-width: 768px) { 

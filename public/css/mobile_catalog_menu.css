@@ -1,0 +1,91 @@
+.mobile_catalog_menu {
+    width:100%;
+    height: calc(100% - 61px); 
+    display: flex;
+    position: fixed;
+    z-index: 90000;
+    background-color: white;
+    left:900px;
+    transition: all 0.5s ease !important;
+    padding: 45px 20px 0 20px;
+}
+
+.mobMenuWrappe {
+    width: 100%;
+}
+
+.mcm_active {
+    left:0;
+}
+
+.catalogMenuPunct {
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+  }
+  
+  .catalogMenuPunct._active .catalogMenuPunctTitle::before {
+    transform: rotate(-180deg);
+  }
+  
+  
+  .catalogMenuPunctTitle::before {
+    position: absolute;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    top: calc((100% / 2) - 8px);
+  }
+  
+  .catalogMenuPunctTitle {
+    width: 100%;
+    display: flex;
+  
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+  
+  }
+  
+  .catalogMenuPunctTitle .cmpImg {
+    max-width: 50px;
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .catalogMenuPunctTitle .cmpTitle {
+    display: flex;
+  }
+  
+  .catalogMenuPunctTitle .cmpTitle span {
+    margin: auto auto auto 0;
+  }
+  
+  
+  .catalogMenuPunctTitle .cmpImg img {
+    width: 100%;
+    margin: auto;
+  
+  }
+  
+  .catalogMenuPunctTitle_sub {
+    width: 100%
+  }
+  
+  .catalogMenuPunctTitle_sub ul {
+    margin: 5px 10px 10px 61px;
+  }
+  
+  .catalogMenuPunctTitle_sub ul li a {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .catalogMenuPunctTitle_sub ul li a:hover {
+    color: #D98600;
+  }
+  
+  .catalogMenuPunctTitle_sub ul li:first-child a {
+    color: #D98600;
+    border-bottom: 1px dotted #D98600;
+  }

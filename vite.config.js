@@ -18,6 +18,7 @@ export default defineConfig({
                 "public/css/brand.css",
                 "public/css/mobile_bottom_menu.css",
                 "public/css/icon-font.css",
+                "public/css/mobile_catalog_menu.css",
 
                 "resources/js/lib/lib.js",
 
@@ -32,6 +33,7 @@ export default defineConfig({
                 "public/js/modules/mainsearch.js",
                 "public/js/modules/bascet.js",
                 "public/js/modules/brand.js",
+                "public/js/modules/mobile_catalog_menu.js",
 
                 "public/js/libs/swiper.min.js",
                 

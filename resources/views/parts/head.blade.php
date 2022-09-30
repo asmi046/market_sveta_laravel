@@ -26,6 +26,7 @@
 			"public/css/catalog_menu.css",
 			"public/css/brand.css",
 			"public/css/mobile_bottom_menu.css",
-			"public/css/icon-font.css"
+			"public/css/icon-font.css",
+			"public/css/mobile_catalog_menu.css",
 			])
 </head>

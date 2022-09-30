@@ -34,6 +34,8 @@
 	<div class="close_catalog"></div>
 </div>
 
+<x-mobile-catalog-menu></x-mobile-catalog-menu>
+
 <header id="header-bottom" class="header-bottom">
 	<div class="_container">
 
