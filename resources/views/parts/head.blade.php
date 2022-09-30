@@ -25,6 +25,7 @@
 			"public/css/bascet.css",
 			"public/css/catalog_menu.css",
 			"public/css/brand.css",
-			"public/css/mobile_bottom_menu.css"
+			"public/css/mobile_bottom_menu.css",
+			"public/css/icon-font.css"
 			])
 </head>

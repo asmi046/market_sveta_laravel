@@ -17,6 +17,7 @@ export default defineConfig({
                 "public/css/bascet.css",
                 "public/css/brand.css",
                 "public/css/mobile_bottom_menu.css",
+                "public/css/icon-font.css",
 
                 "resources/js/lib/lib.js",
 

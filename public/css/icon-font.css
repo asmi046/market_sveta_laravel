@@ -1,0 +1,478 @@
+@font-face {
+    font-family: 'icon_font';
+    src:  url('../fonts/shop-icon/shopicon.eot?yab3gb');
+    src:  url('../fonts/shop-icon/shopicon.eot?yab3gb#iefix') format('embedded-opentype'),
+      url('../fonts/shop-icon/shopicon.ttf?yab3gb') format('truetype'),
+      url('../fonts/shop-icon/shopicon.woff?yab3gb') format('woff'),
+      url('../fonts/shop-icon/shopicon.svg?yab3gb#shopicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icon_font' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-ec_icon_abort:before {
+    content: "\e900";
+  }
+  .icon-ec_icon_abort_cube:before {
+    content: "\e901";
+  }
+  .icon-ec_icon_ar_down:before {
+    content: "\e902";
+  }
+  .icon-ec_icon_ar_left:before {
+    content: "\e903";
+  }
+  .icon-ec_icon_ar_right:before {
+    content: "\e904";
+  }
+  .icon-ec_icon_ar_upp:before {
+    content: "\e905";
+  }
+  .icon-ec_icon_arrow_gor:before {
+    content: "\e906";
+  }
+  .icon-ec_icon_babl:before {
+    content: "\e907";
+  }
+  .icon-ec_icon_babl_i:before {
+    content: "\e908";
+  }
+  .icon-ec_icon_babl_like:before {
+    content: "\e909";
+  }
+  .icon-ec_icon_babl_q:before {
+    content: "\e90a";
+  }
+  .icon-ec_icon_babl_qi:before {
+    content: "\e90b";
+  }
+  .icon-ec_icon_babls:before {
+    content: "\e90c";
+  }
+  .icon-ec_icon_bac_card:before {
+    content: "\e90d";
+  }
+  .icon-ec_icon_bag:before {
+    content: "\e90e";
+  }
+  .icon-ec_icon_bag_g:before {
+    content: "\e90f";
+  }
+  .icon-ec_icon_bag_l:before {
+    content: "\e910";
+  }
+  .icon-ec_icon_bag_u:before {
+    content: "\e911";
+  }
+  .icon-ec_icon_bag_u_g:before {
+    content: "\e912";
+  }
+  .icon-ec_icon_bag_u_l:before {
+    content: "\e913";
+  }
+  .icon-ec_icon_banck:before {
+    content: "\e914";
+  }
+  .icon-ec_icon_birka:before {
+    content: "\e915";
+  }
+  .icon-ec_icon_box:before {
+    content: "\e916";
+  }
+  .icon-ec_icon_box_down:before {
+    content: "\e917";
+  }
+  .icon-ec_icon_box_up:before {
+    content: "\e918";
+  }
+  .icon-ec_icon_calendar_7:before {
+    content: "\e919";
+  }
+  .icon-ec_icon_calendar_abort:before {
+    content: "\e91a";
+  }
+  .icon-ec_icon_calendar_check:before {
+    content: "\e91b";
+  }
+  .icon-ec_icon_calendar_dotet:before {
+    content: "\e91c";
+  }
+  .icon-ec_icon_calendar_empty:before {
+    content: "\e91d";
+  }
+  .icon-ec_icon_calendar_pluss:before {
+    content: "\e91e";
+  }
+  .icon-ec_icon_car:before {
+    content: "\e91f";
+  }
+  .icon-ec_icon_card_row:before {
+    content: "\e920";
+  }
+  .icon-ec_icon_cart:before {
+    content: "\e921";
+  }
+  .icon-ec_icon_cart_m:before {
+    content: "\e922";
+  }
+  .icon-ec_icon_cart_m_l:before {
+    content: "\e923";
+  }
+  .icon-ec_icon_cart_r:before {
+    content: "\e924";
+  }
+  .icon-ec_icon_chec:before {
+    content: "\e925";
+  }
+  .icon-ec_icon_check_abort:before {
+    content: "\e926";
+  }
+  .icon-ec_icon_check_c:before {
+    content: "\e927";
+  }
+  .icon-ec_icon_check_cube:before {
+    content: "\e928";
+  }
+  .icon-ec_icon_check_minus:before {
+    content: "\e929";
+  }
+  .icon-ec_icon_check_plus:before {
+    content: "\e92a";
+  }
+  .icon-ec_icon_cloc:before {
+    content: "\e92b";
+  }
+  .icon-ec_icon_cloud_arrow_down:before {
+    content: "\e92c";
+  }
+  .icon-ec_icon_cloud_in:before {
+    content: "\e92d";
+  }
+  .icon-ec_icon_compas:before {
+    content: "\e92e";
+  }
+  .icon-ec_icon_convert:before {
+    content: "\e92f";
+  }
+  .icon-ec_icon_cube:before {
+    content: "\e930";
+  }
+  .icon-ec_icon_din:before {
+    content: "\e931";
+  }
+  .icon-ec_icon_din_d:before {
+    content: "\e932";
+  }
+  .icon-ec_icon_doc:before {
+    content: "\e933";
+  }
+  .icon-ec_icon_doc_abort:before {
+    content: "\e934";
+  }
+  .icon-ec_icon_doc_check:before {
+    content: "\e935";
+  }
+  .icon-ec_icon_doc_line:before {
+    content: "\e936";
+  }
+  .icon-ec_icon_doc_plus:before {
+    content: "\e937";
+  }
+  .icon-ec_icon_docs_2:before {
+    content: "\e938";
+  }
+  .icon-ec_icon_document:before {
+    content: "\e939";
+  }
+  .icon-ec_icon_dot:before {
+    content: "\e93a";
+  }
+  .icon-ec_icon_dot_gr:before {
+    content: "\e93b";
+  }
+  .icon-ec_icon_down_c:before {
+    content: "\e93c";
+  }
+  .icon-ec_icon_eay:before {
+    content: "\e93d";
+  }
+  .icon-ec_icon_eay_no:before {
+    content: "\e93e";
+  }
+  .icon-ec_icon_film:before {
+    content: "\e93f";
+  }
+  .icon-ec_icon_filter:before {
+    content: "\e940";
+  }
+  .icon-ec_icon_flag:before {
+    content: "\e941";
+  }
+  .icon-ec_icon_folder_abort:before {
+    content: "\e942";
+  }
+  .icon-ec_icon_folder_plus:before {
+    content: "\e943";
+  }
+  .icon-ec_icon_folder-97:before {
+    content: "\e944";
+  }
+  .icon-ec_icon_folder-136:before {
+    content: "\e945";
+  }
+  .icon-ec_icon_gazet:before {
+    content: "\e946";
+  }
+  .icon-ec_icon_globus:before {
+    content: "\e947";
+  }
+  .icon-ec_icon_home:before {
+    content: "\e948";
+  }
+  .icon-ec_icon_img:before {
+    content: "\e949";
+  }
+  .icon-ec_icon_in:before {
+    content: "\e94a";
+  }
+  .icon-ec_icon_key:before {
+    content: "\e94b";
+  }
+  .icon-ec_icon_klutch:before {
+    content: "\e94c";
+  }
+  .icon-ec_icon_lamp:before {
+    content: "\e94d";
+  }
+  .icon-ec_icon_left_c:before {
+    content: "\e94e";
+  }
+  .icon-ec_icon_lice:before {
+    content: "\e94f";
+  }
+  .icon-ec_icon_lins:before {
+    content: "\e950";
+  }
+  .icon-ec_icon_lins_min:before {
+    content: "\e951";
+  }
+  .icon-ec_icon_lins_plas:before {
+    content: "\e952";
+  }
+  .icon-ec_icon_list:before {
+    content: "\e953";
+  }
+  .icon-ec_icon_mail:before {
+    content: "\e954";
+  }
+  .icon-ec_icon_many:before {
+    content: "\e955";
+  }
+  .icon-ec_icon_map_min_mini:before {
+    content: "\e956";
+  }
+  .icon-ec_icon_map_pin_abort:before {
+    content: "\e957";
+  }
+  .icon-ec_icon_map_pin_c:before {
+    content: "\e958";
+  }
+  .icon-ec_icon_map_pin_g:before {
+    content: "\e959";
+  }
+  .icon-ec_icon_map_pin_plus:before {
+    content: "\e95a";
+  }
+  .icon-ec_icon_menu:before {
+    content: "\e95b";
+  }
+  .icon-ec_icon_menu_4:before {
+    content: "\e95c";
+  }
+  .icon-ec_icon_mic:before {
+    content: "\e95d";
+  }
+  .icon-ec_icon_minus:before {
+    content: "\e95e";
+  }
+  .icon-ec_icon_minus_cube:before {
+    content: "\e95f";
+  }
+  .icon-ec_icon_mobile:before {
+    content: "\e960";
+  }
+  .icon-ec_icon_monitor:before {
+    content: "\e961";
+  }
+  .icon-ec_icon_nota:before {
+    content: "\e962";
+  }
+  .icon-ec_icon_out:before {
+    content: "\e963";
+  }
+  .icon-ec_icon_pay_diag:before {
+    content: "\e964";
+  }
+  .icon-ec_icon_pen:before {
+    content: "\e965";
+  }
+  .icon-ec_icon_pen_cube:before {
+    content: "\e966";
+  }
+  .icon-ec_icon_pen_line:before {
+    content: "\e967";
+  }
+  .icon-ec_icon_phone:before {
+    content: "\e968";
+  }
+  .icon-ec_icon_phone_24:before {
+    content: "\e969";
+  }
+  .icon-ec_icon_phone_arrow:before {
+    content: "\e96a";
+  }
+  .icon-ec_icon_phone_arrow_r:before {
+    content: "\e96b";
+  }
+  .icon-ec_icon_phone_call:before {
+    content: "\e96c";
+  }
+  .icon-ec_icon_phone_old:before {
+    content: "\e96d";
+  }
+  .icon-ec_icon_pin:before {
+    content: "\e96e";
+  }
+  .icon-ec_icon_pipl:before {
+    content: "\e96f";
+  }
+  .icon-ec_icon_pipl_c:before {
+    content: "\e970";
+  }
+  .icon-ec_icon_pipls:before {
+    content: "\e971";
+  }
+  .icon-ec_icon_planshet:before {
+    content: "\e972";
+  }
+  .icon-ec_icon_plas:before {
+    content: "\e973";
+  }
+  .icon-ec_icon_play:before {
+    content: "\e974";
+  }
+  .icon-ec_icon_plus_cube:before {
+    content: "\e975";
+  }
+  .icon-ec_icon_printer:before {
+    content: "\e976";
+  }
+  .icon-ec_icon_revers:before {
+    content: "\e977";
+  }
+  .icon-ec_icon_revers_revers:before {
+    content: "\e978";
+  }
+  .icon-ec_icon_right_c:before {
+    content: "\e979";
+  }
+  .icon-ec_icon_rupor:before {
+    content: "\e97a";
+  }
+  .icon-ec_icon_s:before {
+    content: "\e97b";
+  }
+  .icon-ec_icon_serv:before {
+    content: "\e97c";
+  }
+  .icon-ec_icon_share:before {
+    content: "\e97d";
+  }
+  .icon-ec_icon_shesterny:before {
+    content: "\e97e";
+  }
+  .icon-ec_icon_shit_gl:before {
+    content: "\e97f";
+  }
+  .icon-ec_icon_skrepka:before {
+    content: "\e980";
+  }
+  .icon-ec_icon_sound:before {
+    content: "\e981";
+  }
+  .icon-ec_icon_ss:before {
+    content: "\e982";
+  }
+  .icon-ec_icon_star:before {
+    content: "\e983";
+  }
+  .icon-ec_icon_styg:before {
+    content: "\e984";
+  }
+  .icon-ec_icon_suport_q:before {
+    content: "\e985";
+  }
+  .icon-ec_icon_support:before {
+    content: "\e986";
+  }
+  .icon-ec_icon_t24:before {
+    content: "\e987";
+  }
+  .icon-ec_icon_trash:before {
+    content: "\e988";
+  }
+  .icon-ec_icon_tune:before {
+    content: "\e989";
+  }
+  .icon-ec_icon_tune_gr:before {
+    content: "\e98a";
+  }
+  .icon-ec_icon_tune_gr_line:before {
+    content: "\e98b";
+  }
+  .icon-ec_icon_up_c:before {
+    content: "\e98c";
+  }
+  .icon-ec_icon_warning:before {
+    content: "\e98d";
+  }
+  .icon-ec_icon_warning_c:before {
+    content: "\e98e";
+  }
+  .icon-ec_icon_warning_i_r:before {
+    content: "\e98f";
+  }
+  .icon-ec_icon_warning_l:before {
+    content: "\e990";
+  }
+  .icon-ec_icon_warning_q:before {
+    content: "\e991";
+  }
+  .icon-ec_icon_wi_fi:before {
+    content: "\e992";
+  }
+  .icon-ec_icon_yotube:before {
+    content: "\e993";
+  }
+  .icon-ec_icon_zamok:before {
+    content: "\e994";
+  }
+  .icon-ec_icon_zamok_open:before {
+    content: "\e995";
+  }
+  
