@@ -16,10 +16,7 @@
 
             <div class="page__body d-flex">
 
-                {{-- <x-category-sidebar></x-category-sidebar> --}}
-
-                {{-- @livewire('category-filter', ['sub_cat' => $sub_cat, 'cat_id' => $category->baseid, 'cat_name'=>$category->name, 'cat_url'=> url()->current()]) --}}
-                
+             
                 <div id="sb_app">                
                     <category-filter 
                         home-rout="{{ route('home') }}" 
@@ -33,10 +30,6 @@
                 <main class="page__main main">
 
                     <x-subcat-slider :subcat="$sub_cat"></x-subcat-slider>
-
-                    <div class="page__main-banner banner">
-
-                    </div>
 
                     <div class="main-prod-card d-flex">
                         @foreach ($cat_product as $item)
