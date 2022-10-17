@@ -1,13 +1,14 @@
 .mobile_catalog_menu {
     width:100%;
     height: calc(100% - 61px); 
-    display: none;
+    display: block;
     position: fixed;
     z-index: 90000;
     background-color: white;
     left:900px;
     transition: all 0.5s ease !important;
     padding: 45px 20px 0 20px;
+    left: 110%;
 }
 
 .mobMenuWrappe {
@@ -21,8 +22,8 @@
 .catalogMenuPunct {
     width: 100%;
     border-bottom: 1px solid lightgrey;
-  }
-  
+}
+
   .catalogMenuPunct._active .catalogMenuPunctTitle::before {
     transform: rotate(-180deg);
   }

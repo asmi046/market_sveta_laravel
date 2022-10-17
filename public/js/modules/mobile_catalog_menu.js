@@ -13,7 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (showMobCataloMenuBtn)
         showMobCataloMenuBtn.onclick = (e) =>  {
+            console.log("mob_menu_open")
             e.preventDefault()
+            showMobCataloMenuBtn.classList.toggle("menu_open")
+            
+            let btnElement = showMobCataloMenuBtn.querySelector(".icon");
+            
+            btnElement.classList.remove("icon-ec_icon_abort")
+            btnElement.classList.remove("icon-ec_icon_menu")
+
+            if (showMobCataloMenuBtn.classList.contains("menu_open"))
+                btnElement.classList.add("icon-ec_icon_abort")
+            else 
+                btnElement.classList.add("icon-ec_icon_menu")
+
             mobCatalogMenu.classList.toggle("mcm_active")
         }
     

@@ -1,8 +1,9 @@
 <header id="header-top" class="header-top header-top-index">
 	<div class="_container">
 		<div class="header-top__inner">
-			<div class="location-block d-flex">
-				<a href="#city" class="location-block__link location-block__link_01 _popup-link">Курск</a>
+			<div class="location-block d-flex" id="city_select">
+				<city-select></city-select>
+				{{-- <a href="#city" class="location-block__link location-block__link_01 _popup-link">Курск</a> --}}
 				<a href="{{route('dostavka')}}" class="location-block__link location-block__link_02">Доставка</a>
 			</div>
 			<ul>

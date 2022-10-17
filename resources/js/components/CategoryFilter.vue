@@ -1,4 +1,8 @@
 <template>
+    <div class = "filter_mobile_panel">
+        Фильтры..
+    </div>
+
     <aside id="cat_filter" class="page__sidebar">   
         <div v-show="filterList.length == 0" class="filter_loading">
             Фильтр загружается...
@@ -165,5 +169,16 @@ export default {
 </script>
 
 <style>
+
+.filter_mobile_panel {
+    display: none;
+}
+
+@media (max-width: 768px) { 
+    .filter_mobile_panel {
+        display: block;
+    }
+
+}
 
 </style>
