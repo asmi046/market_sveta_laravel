@@ -13,6 +13,7 @@
         "seed_rep": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan DB:seed\"",
         "db_update": "npm run rollback_rep && npm run migrate_rep && npm run seed_rep",
         "optimized_rep": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php composer.phar update --optimize-autoloader --no-dev\"",
+        "dump_autoload": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php composer.phar dump-autoload\"",
         "storage_link": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan storage:link\"",
         "key_gen": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan key:generate\"",
         "cache_config": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan config:cache\"",
