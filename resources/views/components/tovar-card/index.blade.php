@@ -11,6 +11,10 @@
                 <img src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$minfo->name}}">
             @endif
         </a>
+        <div class="prod-card__price_blk">
+            <p class="prod-card__price price_formator rub">{{$minfo->price}}</p>
+            <x-tovar-card.action :price="$minfo->price" :oldprice="$minfo->price_old"></x-tovar-card.action>
+        </div>
         <div class="prod-card__text">
             {{-- <div class="prod-card__text-sale">Акция</div> --}}
 
@@ -21,10 +25,10 @@
                 <p class="prod-card__manuf">{{$minfo->brand}} ({{$minfo->state}})</p>
                 <x-tovar-card.nal :insklad="$minfo->insklad" ></x-tovar-card.nal>
             </div>
-            <x-tovar-card.action :price="$minfo->price" :oldprice="$minfo->price_old"></x-tovar-card.action>
+            
         </div>
         <div class="prod-card__price-item d-flex">
-            <p class="prod-card__price price_formator rub">{{$minfo->price}}</p>
+            
             <a href="#" data-prodid="{{$minfo->sku}}" class="card_to_bascet_btn btn to_bascet">В корзину</a>
             <a href="{{route('bascet')}}" class="card_bascet_btn btn">Оформить</a>
         </div>

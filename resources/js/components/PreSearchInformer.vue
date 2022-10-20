@@ -38,5 +38,9 @@ export default {
 </script>
 
 <style>
-
+@media (max-width: 768px) {  
+    .flter_pods {
+        display: none;
+    }
+}
 </style>

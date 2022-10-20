@@ -4,12 +4,19 @@
     </div>
 
     <aside v-show ="showFilterBlk" id="cat_filter" class="page__sidebar">   
+        <div class="mobile_filter_close_panel">
+                <span>Фильтры</span>
+                <div @click.prevent="showFilterBlk = !showFilterBlk" class="icon icon-ec_icon_abort"></div>
+        </div>
+        
         <div v-show="filterList.length == 0" class="filter_loading">
             Фильтр загружается...
         </div>
 
         
         <div v-show="filterList.length != 0" class="page__sidebar-body">
+
+
             <div class="page__sidebar-navigation">
                 <div class="spollers-block" data-spollers data-one-spoller>
         
@@ -41,7 +48,7 @@
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.plaf_material.length != 0" property-name="plaf_material" property-text="Материал плафона" :values="filterList.plaf_material"></multy-select-category-filter>
                         
                         <div class="filter_controll">
-                            <button class="btn full_width" type="submit" >Выбрать</button>
+                            <button class="btn full_width" type="submit" >Выбрать ({{preSerchCount}})</button>
                             <button class="btn empty_btn full_width" @click.prevent="clearFilter">Сбросить фильтр</button>
                             <!-- <button class="btn empty_btn full_width" @click.prevent="test">Test</button> -->
                         </div>
@@ -83,6 +90,7 @@ export default {
     mounted: function() {
         
         this.updateWidth()
+        console.log(this.showFilterBlk )
         window.addEventListener('resize', this.updateWidth);
 
         let prefix_api_url = document.location.protocol+"//"+document.location.host
@@ -191,7 +199,36 @@ export default {
     padding: 10px ;
 }
 
+.mobile_filter_close_panel {
+    width:100%;
+    position: fixed;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    border-bottom: 1px solid lightgray;
+    z-index: 610000;
+    background-color: white;
+    top:0;
+    left:0;
+}
+
+.mobile_filter_close_panel .icon{
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 6px);
+}
+
+.mobile_filter_close_panel .icon:hover{ 
+    color: #E13510;
+}
+
+
+
 @media (max-width: 768px) { 
+
+    .mobile_filter_close_panel {
+        display: block;
+    }
 
     .filter_mobile_panel {
         display: block;
@@ -200,13 +237,23 @@ export default {
     .page__sidebar-body {
         width: 100%;
         position: fixed;
-        top: 38px;
+        top: 35px;
         left: 0;
-        height: 96%;
+        height: calc(100% - 169px);
         background-color: white;
-        z-index: 490000;
+        z-index: 600000;
         padding: 2% 20px;
         overflow: auto;
+    }
+
+    .filter_controll {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 25px 25px 0 25px;
+        border-top: 1px solid lightgray;
+        background-color: white;
     }
 
 }

@@ -60,3 +60,9 @@
     color: #DD1A1E;
     border-bottom: 1px dashed #DD1A1E;
 }
+
+@media (max-width: 720px) { 
+    .header__bascket {
+        display: none;
+    }
+}
