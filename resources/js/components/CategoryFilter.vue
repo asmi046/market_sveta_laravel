@@ -1,9 +1,9 @@
 <template>
-    <div class = "filter_mobile_panel">
-        Фильтры..
+    <div @click.prevent="showFilterBlk = !showFilterBlk" class = "filter_mobile_panel">
+        <span class = "icon icon-ec_icon_tune_gr"></span> Фильтры 
     </div>
 
-    <aside id="cat_filter" class="page__sidebar">   
+    <aside v-show ="showFilterBlk" id="cat_filter" class="page__sidebar">   
         <div v-show="filterList.length == 0" class="filter_loading">
             Фильтр загружается...
         </div>
@@ -62,6 +62,7 @@ export default {
 
     data() {
         return {
+            showFilterBlk:true,
             filterList:[],
             filterListEmpty:[],
             selectedParam:{},
@@ -80,6 +81,10 @@ export default {
     props:['homeRout', 'catList', 'catUrl', 'catId', 'showMode'],
 
     mounted: function() {
+        
+        this.updateWidth()
+        window.addEventListener('resize', this.updateWidth);
+
         let prefix_api_url = document.location.protocol+"//"+document.location.host
         console.log(this.selectedParam);
         axios.get(prefix_api_url+'/api/v1/get_category_filter/'+this.catId+'/'+this.showMode, {
@@ -96,6 +101,12 @@ export default {
     }, 
 
     methods: {
+        updateWidth() {
+            console.log(window.innerWidth)
+            if (window.innerWidth <= 768) 
+                this.showFilterBlk = false
+            else this.showFilterBlk = true
+        },
         get_pre_filter() {
             let prefix_api_url = document.location.protocol+"//"+document.location.host
 
@@ -172,11 +183,30 @@ export default {
 
 .filter_mobile_panel {
     display: none;
+    width:100%;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    border-radius: 11px;
+    padding: 10px ;
 }
 
 @media (max-width: 768px) { 
+
     .filter_mobile_panel {
         display: block;
+    }
+
+    .page__sidebar-body {
+        width: 100%;
+        position: fixed;
+        top: 38px;
+        left: 0;
+        height: 96%;
+        background-color: white;
+        z-index: 490000;
+        padding: 2% 20px;
+        overflow: auto;
     }
 
 }

@@ -1,10 +1,10 @@
-{{-- <script src="{{asset('js/vendors.min.js')}}"></script>
-<script src="{{asset('js/app.min.js')}}"></script> --}}
+
+<script src="{{asset('js/libs/swiper.min.js')}}"></script>
 
 @vite([
-"public/js/libs/swiper.min.js",
+
 "public/js/modules/dynamic_adapt.js", 
- 
+
 "public/js/modules/functions.js",
 "public/js/modules/regular.js",
 "public/js/modules/script.js",

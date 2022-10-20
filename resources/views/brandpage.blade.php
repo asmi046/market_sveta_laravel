@@ -16,7 +16,7 @@
 
             <div class="page__body d-flex">
 
-                <div id="sb_app">                
+                <div id="sb_app"  class="sb_app">                
                     <category-filter 
                         home-rout="{{ route('home') }}" 
                         cat-list="" 

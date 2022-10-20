@@ -6063,7 +6063,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 
 
-
 @media (max-width: 1500px) {
   ._container {
     padding: 0 10px;
@@ -7326,6 +7325,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 
   .tow_coll .coll {
+    width:100%;
+  }
+
+  
+  .sb_app {
     width:100%;
   }
 }
