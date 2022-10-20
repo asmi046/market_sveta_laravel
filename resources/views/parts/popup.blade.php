@@ -28,25 +28,3 @@
 		</div>
 	</div>
 </div>
-
-<!-- =============================================================================================================================== -->
-
-<div class="popup popup_massagename-message">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
-</div>
-<!-- =============================================================================================================================== -->
-
-<div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
-</div>
-<!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> -->
-<!-- =============================================================================================================================== -->

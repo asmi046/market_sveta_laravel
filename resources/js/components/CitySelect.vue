@@ -1,5 +1,5 @@
 <template>
-    <a @click.prevent="openWin" href="#" class="location-block__link location-block__link_01 _popup-link">{{curentCity}}</a>
+    <a @click.prevent="openWin" href="#" class="location-block__link location-block__map_pin icon icon-ec_icon_map_pin_c">{{curentCity}}</a>
 
     <div  @click.self="cloaseWin()" class="popup popup_city" :class="[showWin ? 'active' : '']">
         <div class="popup__content">

@@ -4,7 +4,7 @@
 			<div class="location-block d-flex" id="city_select">
 				<city-select></city-select>
 				{{-- <a href="#city" class="location-block__link location-block__link_01 _popup-link">Курск</a> --}}
-				<a href="{{route('dostavka')}}" class="location-block__link location-block__link_02">Доставка</a>
+				<a href="{{route('dostavka')}}" class="location-block__link location-block__box icon-ec_icon_box">Доставка</a>
 			</div>
 			<ul>
 				<li><a href="{{route('about')}}">О компании</a></li>

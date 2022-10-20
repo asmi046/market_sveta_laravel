@@ -63,8 +63,8 @@
         </div>
 
         <div class="select-prod-info__notification select-prod-info__column d-flex">
-          <div class="select-prod-info__notification-item select-prod-info__notification-item_icon-01">Тех. характеристики</div>
-          <div class="select-prod-info__notification-item select-prod-info__notification-item_icon-02">7 дней на возврат</div>
+          <a href="#" class="select-prod-info__notification-item tovar_page_all_icon icon icon-ec_icon_shesterny">Тех. характеристики</a>
+          <a href="#" class="select-prod-info__notification-item tovar_page_all_icon icon icon-ec_icon_arrow_gor">7 дней на возврат</a>
         </div>
 
         <div class="select-prod-info__delivery select-prod-info__column">
