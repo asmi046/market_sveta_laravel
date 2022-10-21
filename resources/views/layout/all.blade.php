@@ -2,7 +2,7 @@
 <html lang="ru">
     @include('parts.head')
 <body>
-	<div class="wrapper" id = "app">
+	<div class="wrapper" id = "global_app">
 		@include('parts.header_index')
 		<main class="page">
             

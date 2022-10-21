@@ -69,11 +69,11 @@
 
         <div class="select-prod-info__delivery select-prod-info__column">
           <h3 class="select-prod-info__delivery-title">Информация о доставке</h3>
-          <div class="select-prod-info__delivery-wrap">
-            <div class="select-prod-info__delivery-item">
-              <p class="select-prod-info__delivery-item-text select-prod-info__delivery-item-icon-01">Курск</p>
-              <a href="#" class="select-prod-info__delivery-item-text-link">Изменить</a>
-            </div>
+          <div class="select-prod-info__delivery-wrap" >
+            
+            
+            <city-select page-mode="page"></city-select>
+   
             <div class="select-prod-info__delivery-item">
               <p class="select-prod-info__delivery-item-text select-prod-info__delivery-item-icon-02">Доставка</p>
               <p class="select-prod-info__delivery-item-text">3-7 дней, по тарифам ТК</p>

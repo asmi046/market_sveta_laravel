@@ -12,30 +12,14 @@ import VueAxios from 'vue-axios'
 
 import { VMaskDirective } from 'v-slim-mask'
 
-const app_filter = createApp({
+const global_app = createApp({
     components:{
-       CategoryFilter       
+       CategoryFilter,
+       CitySelect,
+       Bascet,    
     }
 })
 
-app_filter.use(VueAxios, axios)
-app_filter.mount("#sb_app");
-
-const city_select = createApp({
-    components:{
-        CitySelect      
-    }
-})
-
-city_select.use(VueAxios, axios)
-city_select.mount("#city_select");
-
-const bascet_page = createApp({
-    components:{
-        Bascet      
-    }
-})
-
-bascet_page.use(VueAxios, axios)
-bascet_page.directive('mask', VMaskDirective)
-bascet_page.mount("#bascet_page")
+global_app.use(VueAxios, axios)
+global_app.directive('mask', VMaskDirective)
+global_app.mount("#global_app");

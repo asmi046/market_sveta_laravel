@@ -1,5 +1,10 @@
 <template>
-    <a @click.prevent="openWin" href="#" class="location-block__link location-block__map_pin icon icon-ec_icon_map_pin_c">{{curentCity}}</a>
+    
+    <a v-if="pageMode == 'head'" @click.prevent="openWin" href="#" class="location-block__link location-block__map_pin icon icon-ec_icon_map_pin_c">{{curentCity}}</a>
+    <div v-else class="select-prod-info__delivery-item">
+        <p class="select-prod-info__delivery-item-text select-prod-info__delivery-item-icon-01">{{curentCity}}</p>
+        <a @click.prevent="openWin" href="#" class="select-prod-info__delivery-item-text-link">Изменить</a>
+    </div>
 
     <div  @click.self="cloaseWin()" class="popup popup_city" :class="[showWin ? 'active' : '']">
         <div class="popup__content">
@@ -126,11 +131,15 @@ export default {
         }
     },
 
+    
+
     mounted: function() {
         this.filtredList = this.allCity
         
         this.curentCity = (localStorage.getItem("city") != undefined)?localStorage.getItem("city"):"Москва" 
     },
+
+    props:['pageMode'],
 
     watch: {
         searchStr(newVal) {
