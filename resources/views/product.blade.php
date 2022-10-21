@@ -45,26 +45,35 @@
         </div>
   
       <div class="select-prod-info">
-
+        
+        <div class="vender_sku">
+          <p class="prod-page__manuf">{{$product[0]->brand}} ({{$product[0]->state}})</p>
+          <p class="prod-page__manuf">Артикул: {{$product[0]->sku}}</p>
+        </div>
+        
         <div class="select-prod-info__price-block select-prod-info__column">
           <div class="select-prod-info__price-block-inner d-flex">
-            <div class="select-prod-info__price-block-price price_formator rub">{{$product[0]->price}}</div>
+            <div class="price_and_sale">
+              <x-tovar-card.action :price="$product[0]->price" :oldprice="$product[0]->price_old"></x-tovar-card.action>
+              <div class="select-prod-info__price-block-price price_formator rub">{{$product[0]->price}}</div>
+            </div>
+            
             <div class="select-prod-info__price-block-avail">
               <x-tovar-card.nal :insklad="$product[0]->insklad" ></x-tovar-card.nal>
             </div>
           </div>
           <div class="select-prod-info__price-block-buttons">
             <div class="select-prod-info__price-block-buttons-inner d-flex">
-              <button class="select-prod-info__price-block-buttons-btn btn">ДОБАВИТЬ В КОРЗИНУ</button>
-              <a href="" class="select-prod-info__price-block-buttons-faw"></a>
+              <a href="#" data-prodid="{{$product[0]->sku}}" class="select-prod-info__price-block-buttons-btn btn to_bascet">ДОБАВИТЬ В КОРЗИНУ</a>
+              <a href="" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice"></a>
             </div>
             <button class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</button>
           </div>
         </div>
 
         <div class="select-prod-info__notification select-prod-info__column d-flex">
-          <a href="#" class="select-prod-info__notification-item tovar_page_all_icon icon icon-ec_icon_shesterny">Тех. характеристики</a>
-          <a href="#" class="select-prod-info__notification-item tovar_page_all_icon icon icon-ec_icon_arrow_gor">7 дней на возврат</a>
+          <a href="#product_cerecter" class="select-prod-info__notification-item tovar_page_all_icon icon icon-ec_icon_shesterny">Тех. характеристики</a>
+          <a href="{{route("vozvrat")}}" class="select-prod-info__notification-item tovar_page_all_icon icon icon-ec_icon_arrow_gor">7 дней на возврат</a>
         </div>
 
         <div class="select-prod-info__delivery select-prod-info__column">
@@ -96,18 +105,16 @@
       </div>
     </div>
 
-              <div class="select-prod__specifications">
-                <h2 class="select-prod__specifications-title">Технические характеристики</h2>
+    <div id="product_cerecter" class="select-prod__specifications">
+      <h2 class="select-prod__specifications-title">Технические характеристики</h2>
 
-                <div class="select-prod__specifications-inner">
+      <div class="select-prod__specifications-inner">
+          @foreach ($propertys as $key => $value) 
+            <x-property-part :name="$key" :prop="$value"></x-property-part>
+          @endforeach
+      </div>
 
-                  @foreach ($propertys as $key => $value) 
-                    <x-property-part :name="$key" :prop="$value"></x-property-part>
-                  @endforeach
-
-                </div>
-
-              </div>
+    </div>
 
               <div class="select-prod__description">
                 <h2 class="select-prod__description-title">Описание</h2>

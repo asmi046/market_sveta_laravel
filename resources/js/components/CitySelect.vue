@@ -10,7 +10,7 @@
         <div class="select-prod-info__delivery-item">
             <p class="select-prod-info__delivery-item-text location-block__box icon-ec_icon_box ">Доставка</p>
             <p class="select-prod-info__delivery-item-text">{{deliveryStr}}</p>
-            <a href="#" class="select-prod-info__delivery-item-text-link">Подробнее о доставке</a>
+            <a href="/dostavka" class="select-prod-info__delivery-item-text-link">Подробнее о доставке</a>
         </div>
     </div>
 

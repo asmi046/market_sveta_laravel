@@ -29,4 +29,8 @@ class TextPagesController extends Controller
     public function dostavka() {
         return view('dostavka');
     }
+    
+    public function vozvrat() {
+        return view('vozvrat');
+    }
 }

@@ -63,8 +63,11 @@
 				</ul>
 				<div class="footer__payment-methods">
 					<p class="footer__payment-methods-text">Способы оплаты</p>
-					<div class="footer__payment-methods-img">
-						<img src="{{asset('img/mir.jpg')}}" alt="">
+					<div class="footer__payment-methods-icon">
+						<img src="{{asset('img/icons/pay_system/mir.svg')}}" alt="">
+						<img src="{{asset('img/icons/pay_system/visa.svg')}}" alt="">
+						<img class="circle" src="{{asset('img/icons/pay_system/master.svg')}}" alt="">
+						<img class="circle" src="{{asset('img/icons/pay_system/maestro.svg')}}" alt="">
 					</div>
 				</div>
 			</div>
