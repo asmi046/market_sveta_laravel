@@ -74,11 +74,7 @@
             
             <city-select page-mode="page"></city-select>
    
-            <div class="select-prod-info__delivery-item">
-              <p class="select-prod-info__delivery-item-text select-prod-info__delivery-item-icon-02">Доставка</p>
-              <p class="select-prod-info__delivery-item-text">3-7 дней, по тарифам ТК</p>
-              <a href="#" class="select-prod-info__delivery-item-text-link">Подробнее о доставке</a>
-            </div>
+            
             <p class="select-prod-info__delivery-item-clasific">Точный срок доставки уточним при оформлении заказа</p>
           </div>
         </div>
