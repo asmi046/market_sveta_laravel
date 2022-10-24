@@ -11,18 +11,6 @@
 	</div>
 
 	<x-catalog-menu.submenu :menu="$menu"></x-catalog-menu.submenu>
-	{{-- <x-catalog-menu.lustri></x-catalog-menu.lustri>
-	<x-catalog-menu.swetilniki></x-catalog-menu.swetilniki>
-	<x-catalog-menu.bra></x-catalog-menu.bra>
-	<x-catalog-menu.spoti></x-catalog-menu.spoti>
-	<x-catalog-menu.nastolnie></x-catalog-menu.nastolnie>
-	<x-catalog-menu.torsheri></x-catalog-menu.torsheri>
-	<x-catalog-menu.trekovie></x-catalog-menu.trekovie>
-	<x-catalog-menu.ulihnoe></x-catalog-menu.ulihnoe>
-	<x-catalog-menu.ofisnoe></x-catalog-menu.ofisnoe>
-	<x-catalog-menu.lampohki></x-catalog-menu.lampohki>
-	<x-catalog-menu.svetodiodpds></x-catalog-menu.svetodiodpds>
-	<x-catalog-menu.elektotovari></x-catalog-menu.elektotovari> --}}
 
 	<div class="close_catalog"></div>
 </div>
