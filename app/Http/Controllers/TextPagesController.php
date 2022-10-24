@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Stock;
+
 class TextPagesController extends Controller
 {
     public function opt_sotrudnihestvo() {
@@ -15,7 +17,8 @@ class TextPagesController extends Controller
     }
 
     public function aktsii() {
-        return view('aktsii');
+        $all_stick = Stock::all();
+        return view('aktsii', ["stocks" => $all_stick]);
     }
 
     public function brands() {

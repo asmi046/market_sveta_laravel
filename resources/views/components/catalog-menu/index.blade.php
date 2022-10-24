@@ -43,7 +43,7 @@
 				<li><a href="{{route('category', "torsery-i-napolnye-svetilniki-2894")}}" class="menu__link">Торшеры</a></li>
 				<li><a href="{{route('category', "svet-dlia-ulicy-2915")}}" class="menu__link">Уличное освещение</a></li>
 				<li><a href="{{route('category', "elektroustanovka-3201")}}" class="menu__link">Электротовары</a></li>
-				<li class="menu__shares"><a href="#" class="menu__link animated_bg">Акции</a></li>
+				<li class="menu__shares"><a href="{{route('aktsii')}}" class="menu__link animated_bg">Акции</a></li>
 			</ul>
 		</div>
 

@@ -20,6 +20,7 @@ export default defineConfig({
                 "public/css/icon-font.css",
                 "public/css/mobile_catalog_menu.css",
                 "public/css/catalog_menu.css",
+                "public/css/stocks.css",
 
                 "resources/js/lib/lib.js",
 
