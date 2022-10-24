@@ -14,6 +14,26 @@ class CatalogMenuSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $all_banners = [
+            [
+                "order" => 1,
+                "title" => "Люстры",
+                "link" => "/category/potolocnye-liustry-2868",
+            ],
+            
+            [
+                "order" => 2,
+                "title" => "Светильники",
+                "link" => "/category/potolocnye-svetilniki-2872",
+            ],
+
+            [
+                "order" => 3,
+                "title" => "Бра",
+                "link" => "/category/nastennye-bra-2864",
+            ],
+        ];
+
+        DB::table("catalog_menus")->insert($all_banners);
     }
 }
