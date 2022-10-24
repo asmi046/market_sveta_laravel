@@ -14,7 +14,7 @@
 						<a href="#callback" class="callback__popup _popup-link">Заказать обратный звонок</a>
 					</div>
 
-					<a href="#" class="header__favorites">Избранное</a>
+					<a href="{{route('favorites')}}" class="header__favorites"><span class="favorites_counter">0</span>Избранное</a>
 					<a href="{{route('bascet')}}" class="header__bascket"> <span class="bascet_counter">0</span> Корзина</a>
 				</div>
 

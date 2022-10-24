@@ -8,6 +8,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\TextPagesController;
 use App\Http\Controllers\BascetController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\FavoriteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,4 +41,10 @@ Route::get('/bascet/get', [BascetController::class, "get_all"])->name("bascet_ge
 Route::delete('/bascet/clear', [BascetController::class, "clear"])->name("bascet_clear");
 Route::delete('/bascet/delete', [BascetController::class, "delete"])->name("bascet_delete");
 Route::post('/bascet/send', [BascetController::class, "send"])->name("bascet_send");
+
+Route::get('/favorites', [FavoriteController::class, "index"])->name("favorites");
+Route::get('/favorites/get', [FavoriteController::class, "get_all"])->name("favorites_get");
+Route::post('/favorites/add', [FavoriteController::class, "add"])->name("favorites_add");
+Route::delete('/favorites/delete', [FavoriteController::class, "delete"])->name("favorites_delete");
+Route::delete('/favorites/clear', [FavoriteController::class, "clear"])->name("favorites_clear");
 

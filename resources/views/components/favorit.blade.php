@@ -1,1 +1,1 @@
-<a href="#" class="prod-card__favorites-icon favorites-icon @if ($isactive) active @endif" ></a>
+<a href="#" data-prodid="{{$sku}}" class="prod-card__favorites-icon favorites-icon to_favorites" ></a>

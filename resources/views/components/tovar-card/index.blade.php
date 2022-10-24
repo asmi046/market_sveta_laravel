@@ -3,7 +3,7 @@
         <div class="bascet_count">
             В корзине <span>1</span> шт
         </div>
-        <x-favorit :isactive="false"></x-favorit>
+        <x-favorit :sku="$minfo->sku"></x-favorit>
         <a href="{{route('product', $minfo->slug)}}" class="prod-card__img">
             @if(Storage::disk('local')->exists('public/products_galery/'.$minfo->img))
                 <img src="{{Storage::url('public/products_galery/'.$minfo->img)}}" alt="Купить {{$minfo->name}}">

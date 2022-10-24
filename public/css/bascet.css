@@ -1,5 +1,19 @@
 /* Значек карзины */
 
+.header__favorites .favorites_counter {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    color: white;
+    background-color: #6bb431;
+    font-size: 8px;
+    text-align: center;
+    line-height: 14px;
+    left: 10px;
+    top: -6px;
+}
+
 .header__bascket .bascet_counter {
     position: absolute;
     width: 13px;
@@ -14,6 +28,7 @@
     top: -4px;
 }
 
+.header__favorites,
 .header__bascket {
     font-weight: 500;
     display: flex;
