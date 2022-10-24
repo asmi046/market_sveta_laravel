@@ -358,4 +358,19 @@ if (!function_exists("add_picture")) {
     }
 }
 
+
+
+if (!function_exists("get_submenu_puncts")) { 
+    function get_submenu_puncts($puncts) {
+        $reault = [];
+        
+        foreach ($puncts as $item) {
+            $reault[$item->sub_punct][] = $item; 
+        }
+
+        return $reault;
+    }
+}
+
+
 ?>

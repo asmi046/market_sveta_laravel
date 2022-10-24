@@ -10,6 +10,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Route;
 
 use App\Models\Baner;
+use App\Models\CatalogMenu;
 
 use View;
 
@@ -23,6 +24,7 @@ class Controller extends BaseController
         $rout_name = \Request::route()->getName();
     
         $banners = Baner::where("page", $rout_name)->orWhere("page", 'all')->get();
+        $catalog = CatalogMenu::with('sub_puncts')->get();
 
         $banner_areas = [];
 
@@ -32,5 +34,6 @@ class Controller extends BaseController
 
 
         View::share('banners', $banner_areas);
+        View::share('menu', $catalog);
     }
 }

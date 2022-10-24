@@ -3,22 +3,15 @@
 	<div class="catalog_menu">
 		<nav>
 			<ul>
-				<li><a data-subwin="lustri" href="#">Люстры</a></li>
-				<li><a data-subwin="swetilniki" href="#">Светильники</a></li>
-				<li><a data-subwin="bra" href="#">Бра</a></li>
-				<li><a data-subwin="spoti" href="#">Споты</a></li>
-				<li><a data-subwin="nastolnie" href="#">Настолькные лампы</a></li>
-				<li><a data-subwin="torsheri" href="#">Торшеры</a></li>
-				<li><a data-subwin="trekovie" href="#">Трековые системы</a></li>
-				<li><a data-subwin="ulihnoe" href="#">Уличьное освещение</a></li>
-				<li><a data-subwin="ofisnoe" href="#">Офисное освещение</a></li>
-				<li><a data-subwin="lampohki" href="#">Лампочьки</a></li>
-				<li><a data-subwin="svetodiodpds" href="#">Светодиодная потсветка</a></li>
-				<li><a data-subwin="elektotovari" href="#">Электротовары</a></li>
+				@foreach ($menu as $item)
+					<li><a data-subwin="{{$item->slug}}" href="{{$item->link}}">{{$item->title}}</a></li>	
+				@endforeach
 			</ul>
 		</nav>
 	</div>
-	<x-catalog-menu.lustri></x-catalog-menu.lustri>
+
+	<x-catalog-menu.submenu :menu="$menu"></x-catalog-menu.submenu>
+	{{-- <x-catalog-menu.lustri></x-catalog-menu.lustri>
 	<x-catalog-menu.swetilniki></x-catalog-menu.swetilniki>
 	<x-catalog-menu.bra></x-catalog-menu.bra>
 	<x-catalog-menu.spoti></x-catalog-menu.spoti>
@@ -29,7 +22,7 @@
 	<x-catalog-menu.ofisnoe></x-catalog-menu.ofisnoe>
 	<x-catalog-menu.lampohki></x-catalog-menu.lampohki>
 	<x-catalog-menu.svetodiodpds></x-catalog-menu.svetodiodpds>
-	<x-catalog-menu.elektotovari></x-catalog-menu.elektotovari>
+	<x-catalog-menu.elektotovari></x-catalog-menu.elektotovari> --}}
 
 	<div class="close_catalog"></div>
 </div>
