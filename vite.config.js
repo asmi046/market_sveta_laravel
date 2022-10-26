@@ -37,6 +37,7 @@ export default defineConfig({
                 "public/js/modules/brand.js",
                 "public/js/modules/mobile_catalog_menu.js",
                 "public/js/modules/catalog_menu.js",
+                "public/js/modules/favorites.js",
                 
             ],
             refresh: true,

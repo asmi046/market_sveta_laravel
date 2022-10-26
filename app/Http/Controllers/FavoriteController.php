@@ -8,8 +8,19 @@ use App\Models\Favorite;
 
 class FavoriteController extends Controller
 {
+
+    public function add(Request $request) {
+        $product_id = $request->input('product_id');
+        $_token = $request->input('_token');
+        
+        Favorite::add($product_id);
+
+        return array($product_id, $_token);
+    }
+
     public function index() {
-        return view('favorites');
+        $fav_product = Favorite::with('tovar_data')->where("favorites.session_id", session()->getId())->get(); 
+        return view('favorites', ["products" => $fav_product]);
     }
 
     public function get_all() {

@@ -1,1 +1,1 @@
-<a href="#" data-prodid="{{$sku}}" class="prod-card__favorites-icon favorites-icon to_favorites" ></a>
+<a href="#" data-prodid="{{$sku}}" class="prod-card__favorites-icon favorites-icon icon icon-ec_icon_lice to_favorites" ></a>
