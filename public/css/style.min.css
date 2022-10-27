@@ -6034,7 +6034,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 
 
-
+.favorites-page .main-prod-card__column:not(.in-favorites) {
+  display: none;
+}
 
 
 

@@ -24,13 +24,15 @@ class Favorite extends Model
     public static function add($product_id) {
         
         if ($favorit = self::where(["session_id" => session()->getId(), "product_sku" => $product_id])->first()) {
-            $favorit->save();
+            $favorit->delete();
+            return false;
         } else {
             $favorit = self::create([
                 "session_id" => session()->getId(),
                 "user_id" => 0,
                 "product_sku" => $product_id,
             ]);
+            return true;
         }
     }
 

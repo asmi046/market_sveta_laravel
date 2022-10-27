@@ -16,7 +16,7 @@ $page_title = "Избранное";
             <h1>{{$page_title}}</h1>
         
 
-            <div class="main-prod-card d-flex">
+            <div class="main-prod-card d-flex favorites-page">
                 @foreach ($products as $item)
                     <x-tovar-card :minfo="$item->tovar_data"></x-tovar-card>    
                 @endforeach

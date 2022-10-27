@@ -13,9 +13,9 @@ class FavoriteController extends Controller
         $product_id = $request->input('product_id');
         $_token = $request->input('_token');
         
-        Favorite::add($product_id);
+        $rez = Favorite::add($product_id);
 
-        return array($product_id, $_token);
+        return array($rez, $product_id, $_token);
     }
 
     public function index() {
