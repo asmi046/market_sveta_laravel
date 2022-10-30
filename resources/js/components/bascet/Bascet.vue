@@ -13,28 +13,33 @@
                 
                 <div v-for="(item, index) in bascetList" :key="item.product_sku" class="tovar">
 
-                    <div class="tovar_all_blk picture_blk">
-                        <img :src="'/storage/products_galery/'+item.tovar_data.img" alt="">
-                    </div>
-                    <div class="tovar_all_blk name_blk">
-                        <h2>{{item.tovar_data.name}}</h2>
-                        <p>{{item.tovar_data.brand}} ({{item.tovar_data.state}}) Артикул: {{item.product_sku}}</p>
-                    </div>
-                    <div class="tovar_all_blk price_blk">
-                        <span class="rub price_formator">{{Number(item.price).toLocaleString('ru-RU')}}</span>
-                    </div>
-                    <div class="tovar_all_blk couint_blk">
-                        <div class="number_wrapper">
-                            <span @click="item.quentity--; updateBascet(); updateItem(item)" class="number_btn val_down">-</span>
-                            <input type="number"  :value="item.quentity">
-                            <span @click="item.quentity++; updateBascet(); updateItem(item)" class="number_btn val_upp">+</span>
+                    <div class="tl-side left-side">
+                        <div class="tovar_all_blk picture_blk">
+                            <img :src="'/storage/products_galery/'+item.tovar_data.img" alt="">
+                        </div>
+                        <div class="tovar_all_blk name_blk">
+                            <h2>{{item.tovar_data.name}}</h2>
+                            <p>{{item.tovar_data.brand}} ({{item.tovar_data.state}}) Артикул: {{item.product_sku}}</p>
                         </div>
                     </div>
-                    <div class="tovar_all_blk summ_blk">
-                        <span class="rub price_formator">{{Number(parseFloat(item.quentity)*parseFloat(item.price)).toLocaleString('ru-RU')}}</span>
-                    </div>
-                    <div class="tovar_all_blk dll_blk">
-                        <span @click.prevent="deleteElement(item, index)" title="Удалить товар"></span>
+
+                    <div class="tl-side right-side">
+                        <div class="tovar_all_blk price_blk">
+                            <span class="rub price_formator">{{Number(item.price).toLocaleString('ru-RU')}}</span>
+                        </div>
+                        <div class="tovar_all_blk couint_blk">
+                            <div class="number_wrapper">
+                                <span @click="item.quentity--; updateBascet(); updateItem(item)" class="number_btn val_down">-</span>
+                                <input type="number"  :value="item.quentity">
+                                <span @click="item.quentity++; updateBascet(); updateItem(item)" class="number_btn val_upp">+</span>
+                            </div>
+                        </div>
+                        <div class="tovar_all_blk summ_blk">
+                            <span class="rub price_formator">{{Number(parseFloat(item.quentity)*parseFloat(item.price)).toLocaleString('ru-RU')}}</span>
+                        </div>
+                        <div class="tovar_all_blk dll_blk">
+                            <span @click.prevent="deleteElement(item, index)" title="Удалить товар"></span>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -6923,7 +6923,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .header__favorites {
     margin-right: 10px;
-    display: none;
   }
 
   .header__logo {
@@ -7753,6 +7752,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 @media (max-width: 480px) {
+
+  .header__favorites {
+    margin-right: 0;
+    margin-left: 10px;
+  }
 
   .prod-card .prod-card__body,
   .popular__row .prod-card__body {

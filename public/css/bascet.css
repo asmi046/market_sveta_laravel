@@ -183,6 +183,7 @@
 .tovar_list .tovar{
     display: flex; 
     padding: 20px;
+    justify-content: space-between;
 }
 
 .tovar_list .tovar .tovar_all_blk{ 
@@ -306,4 +307,53 @@
 
 .itogo .itogo_price_count .itogo_row .p_price{ 
     margin: 0 0 auto 0;
+}
+
+.tl-side {
+    display: flex;
+}
+
+@media (max-width: 768px) { 
+    .bascet {
+        flex-direction: column;
+    }
+
+    .itogo .itogo_price_count {
+        width:100%;
+    }
+
+    .bascet_tovar {
+        margin-bottom: 40px;
+    }
+
+    .bascet_form {
+        width: 100%;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) { 
+    .tovar_list .tovar {
+        flex-direction: column;
+    }
+
+    .tovar_list .tovar .price_blk {
+        margin: 0 auto 0 auto; 
+        width:auto;
+    }
+
+    .tovar_list .tovar .couint_blk {
+        width:auto;
+        max-width: 100px;
+    }
+
+    .tovar_list .tovar .summ_blk {
+        width:auto;
+        margin: 0 auto 0 auto; 
+    }
+
+    .tovar_list .tovar .name_blk h2 {
+        line-height: 1.4;
+    }
 }
