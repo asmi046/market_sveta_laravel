@@ -9,6 +9,7 @@ use App\Http\Controllers\TextPagesController;
 use App\Http\Controllers\BascetController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\FavoriteController;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,4 +48,3 @@ Route::get('/favorites/get', [FavoriteController::class, "get_all"])->name("favo
 Route::post('/favorites/add', [FavoriteController::class, "add"])->name("favorites_add");
 Route::delete('/favorites/delete', [FavoriteController::class, "delete"])->name("favorites_delete");
 Route::delete('/favorites/clear', [FavoriteController::class, "clear"])->name("favorites_clear");
-
