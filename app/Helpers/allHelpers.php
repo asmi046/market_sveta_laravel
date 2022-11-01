@@ -186,8 +186,8 @@ if (!function_exists("add_tovar_in_file")) {
                 "cat3" => (!empty($cat3))?(int)$cat3["parentId"]:0,
                 "cat4" => (!empty($cat4))?(int)$cat4["parentId"]:0,
                 "img" => "",
-                "title_seo" => substr((string)$xmlObject->shop->offers->offer[$i]->name, 0, 99),
-                "description_seo" => substr("Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name, 0, 299),
+                "title_seo" => mb_substr((string)$xmlObject->shop->offers->offer[$i]->name, 0, 99),
+                "description_seo" => mb_substr("Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name, 0, 299),
             ];
 
             $Brand[] = [
