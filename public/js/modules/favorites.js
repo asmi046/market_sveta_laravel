@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault()
             let product_id = elem.dataset.prodid;
            
-            axios.post('/favorites/add/', {
+            axios.post('/favorites/add', {
                 _token: document.querySelector('meta[name="_token"]').content,
                 product_id: product_id
             })
