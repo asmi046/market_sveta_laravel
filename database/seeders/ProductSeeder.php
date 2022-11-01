@@ -24,14 +24,14 @@ class ProductSeeder extends Seeder
             // 'https://marketsveta.su/product_base/xml/100615.xml', //     606 731 
             // 'https://marketsveta.su/product_base/xml/100620.xml', //   2 469 895 
             // 'https://marketsveta.su/product_base/xml/100625.xml', //   9 153 972 
-            'https://marketsveta.su/product_base/xml/100626.xml', //   3 032 275 
-            'https://marketsveta.su/product_base/xml/100629.xml', //   1 936 683 
-            // 'https://marketsveta.su/product_base/xml/100632.xml', //   3 118 881 
-            // 'https://marketsveta.su/product_base/xml/100634.xml', //   3 861 021 
-            // 'https://marketsveta.su/product_base/xml/100648.xml', //   3 051 037 
-            // 'https://marketsveta.su/product_base/xml/100652.xml', //   1 308 528 
-            // 'https://marketsveta.su/product_base/xml/100659.xml', //   4 522 201 
-            // 'https://marketsveta.su/product_base/xml/100661.xml', //     695 495 
+            // 'https://marketsveta.su/product_base/xml/100626.xml', //   3 032 275 
+            // 'https://marketsveta.su/product_base/xml/100629.xml', //   1 936 683 
+            'https://marketsveta.su/product_base/xml/100632.xml', //   3 118 881 
+            'https://marketsveta.su/product_base/xml/100634.xml', //   3 861 021 
+            'https://marketsveta.su/product_base/xml/100648.xml', //   3 051 037 
+            'https://marketsveta.su/product_base/xml/100652.xml', //   1 308 528 
+            'https://marketsveta.su/product_base/xml/100659.xml', //   4 522 201 
+            'https://marketsveta.su/product_base/xml/100661.xml', //     695 495 
             // 'https://marketsveta.su/product_base/xml/100667.xml', //   5 494 017 
             // 'https://marketsveta.su/product_base/xml/100673.xml', //   1 283 539 
             // 'https://marketsveta.su/product_base/xml/100676.xml', //      31 551 ---
