@@ -1,6 +1,10 @@
 
 <script src="{{asset('js/libs/swiper.min.js')}}"></script>
 
+@if (Route::currentRouteName() == "contacts")
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+@endif
+
 @vite([
 
 "public/js/modules/dynamic_adapt.js", 
