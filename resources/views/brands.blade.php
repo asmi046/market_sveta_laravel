@@ -8,11 +8,6 @@ $page_title = "Бренды";
 
 @section('content')
 
-    <script>
-        let all_brands = {!! json_encode($all_brands)!!};
-
-    </script>
-
     <section id="select-prod" class="select-prod">
         <div class="_container">
             
