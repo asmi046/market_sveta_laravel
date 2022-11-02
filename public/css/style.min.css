@@ -4988,6 +4988,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .select-prod-sl__small-slide img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .select-slider-big {
@@ -5909,6 +5910,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .select-prod-sl__big-slide img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .select-prod-sl__small {
