@@ -8,6 +8,7 @@
             <div class="breadcrumb">
                 <ul>
                     <li><a href="{{route('home')}}">Главная</a></li>
+                    <li><a href="{{route('brands')}}">Все бренды</a></li>
                     <li>{{$brand->brand}}</li>
                 </ul>
             </div>
