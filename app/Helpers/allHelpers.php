@@ -142,7 +142,7 @@ if (!function_exists("add_tovar_in_file")) {
 
         for  ($i = 0; $i < count($xmlObject->shop->categories->category); $i++)
         {
-            $all_cat[(string)$xmlObject->shop->categories->category[$i]["id"]] = ["name" => (string)$xmlObject->shop->categories->category[$i], "parentId" => (string)$xmlObject->shop->categories->category[$i]["parentId"]];
+            $all_cat[(string)$xmlObject->shop->categories->category[$i]["id"]] = ["name" => (string)$xmlObject->shop->categories->category[$i], "baseid" => (string)$xmlObject->shop->categories->category[$i]["id"], "parentId" => (string)$xmlObject->shop->categories->category[$i]["parentId"]];
             
         }
 
@@ -181,10 +181,10 @@ if (!function_exists("add_tovar_in_file")) {
                 "mesto" => "",
                 "quote" => (string)$xmlObject->shop->offers->offer[$i]->name,
                 "description" => "Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name,
-                "cat1" => (int)$cat1["parentId"],
-                "cat2" => (!empty($cat2))?(int)$cat2["parentId"]:0,
-                "cat3" => (!empty($cat3))?(int)$cat3["parentId"]:0,
-                "cat4" => (!empty($cat4))?(int)$cat4["parentId"]:0,
+                "cat1" => (int)$cat1["baseid"],
+                "cat2" => (!empty($cat2))?(int)$cat2["baseid"]:0,
+                "cat3" => (!empty($cat3))?(int)$cat3["baseid"]:0,
+                "cat4" => (!empty($cat4))?(int)$cat4["baseid"]:0,
                 "img" => "",
                 "title_seo" => mb_substr((string)$xmlObject->shop->offers->offer[$i]->name, 0, 99),
                 "description_seo" => mb_substr("Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name, 0, 299),
