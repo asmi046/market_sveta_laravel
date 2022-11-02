@@ -54,9 +54,9 @@ class ProductSeeder extends Seeder
             // 'https://marketsveta.su/product_base/xml/100741.xml', //   3 819 246 
             // 'https://marketsveta.su/product_base/xml/100745.xml', //   5 127 783 
             // 'https://marketsveta.su/product_base/xml/100752.xml', //     553 345 xxx
-            'https://marketsveta.su/product_base/xml/100753.xml', //      55 981
-            'https://marketsveta.su/product_base/xml/100758.xml', //   5 166 192 
-            'https://marketsveta.su/product_base/xml/100759.xml', //  12 178 773 
+            // 'https://marketsveta.su/product_base/xml/100753.xml', //      55 981
+            // 'https://marketsveta.su/product_base/xml/100758.xml', //   5 166 192 
+            // 'https://marketsveta.su/product_base/xml/100759.xml', //  12 178 773 xxx
             'https://marketsveta.su/product_base/xml/100766.xml', //     500 944 
             'https://marketsveta.su/product_base/xml/100767.xml', //   1 645 283 
             'https://marketsveta.su/product_base/xml/100774.xml', //   3 563 059 
