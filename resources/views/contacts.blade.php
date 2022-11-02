@@ -40,7 +40,7 @@
     </section>
 
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> 
-    <script>
+    <component :is="'script'">
         ymaps.ready(init); 
 
         function init () {
@@ -82,6 +82,6 @@
             myMap.behaviors.disable('scrollZoom');
 
     }
-</script>
+</component>
 
 @endsection
