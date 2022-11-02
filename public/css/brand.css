@@ -27,9 +27,9 @@
 }
 
 .brand_input .brand_input_blk {
-    width:31%;
+    width:19%;
     margin: 0 1%;
-    min-width: 300px;
+    min-width: 250px;
     display: flex;
     margin: 0 0 20px 0;
 }
@@ -42,7 +42,9 @@
 }
 
 .brand_input .brand_input_blk .list{ 
-    padding:  10px 0;
+    padding: 7px 0 10px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .brand_search_result a{
@@ -51,8 +53,13 @@
     border-bottom: 1px dashed;
 }
 
-.brand_input .brand_input_blk .list a{ 
+.brand_input .brand_input_blk .list p{ 
     margin: 0 20px 10px 0;
+}
+
+.brand_input .brand_input_blk .list a{ 
+    
+    border-bottom: 1px dashed white;
 }
 
 .brand_search_result a:hover,
