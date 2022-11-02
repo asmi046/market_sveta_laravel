@@ -38,6 +38,7 @@ export default defineConfig({
                 "public/js/modules/mobile_catalog_menu.js",
                 "public/js/modules/catalog_menu.js",
                 "public/js/modules/favorites.js",
+                "public/js/modules/map.js",
                 
             ],
             refresh: true,

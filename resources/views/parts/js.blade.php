@@ -3,6 +3,7 @@
 
 @if (Route::currentRouteName() == "contacts")
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    @vite(["public/js/modules/map.js"])
 @endif
 
 @vite([
