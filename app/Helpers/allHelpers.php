@@ -267,7 +267,11 @@ if (!function_exists("add_tovar_in_file")) {
                     ];
 
                     if ($load_img)
-                    Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
+                        try {
+                            Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
+                        } catch (Exception $e) {
+                            echo 'Caught exception: ',  $e->getMessage(), "\n";
+                        }
                 }    
 
             
