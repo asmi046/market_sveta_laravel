@@ -1,14 +1,17 @@
+<div class="foooter_subsribe_line">
+	<h3 class="icon icon-ec_icon_mail">Подпишитесь <br> на нашу рассылку!</h3>
+
+	<form action="#" class="footer__forms d-flex">
+		<input type="email" placeholder="E-mail" name="email" class="input">
+		<button class="btn">Подписаться</button>
+	</form>
+</div>
+
 <footer id="footer" class="footer">
 	<div class='_container'>
 		<div class="footer__row d-flex">
 
 			<div class="footer__col footer__col_forms">
-				<h3>Подпишитесь <br> на нашу рассылку!</h3>
-
-				<form action="#" class="footer__forms d-flex">
-					<input type="email" placeholder="E-mail" name="email" class="input">
-					<button class="btn">Подписаться</button>
-				</form>
 
 				<div class="footer__callback callback d-flex">
 					<a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a>
