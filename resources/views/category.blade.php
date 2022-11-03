@@ -1,5 +1,6 @@
 @extends('layout.all')
-@section('title', "Категория")
+@section('title', $category->title_seo)
+@section('description', $category->description_seo)
 
 @section('content')
 

@@ -34,7 +34,7 @@
 
 
                     <form method="GET" :action="catUrl" class = "page__sidebar_form" id="cat_filter_form">   
-                        <pre-search-informer :dom-element="clicedElement" :element-count="preSerchCount"></pre-search-informer>
+                        <pre-search-informer :dom-element="clicedElement" :pre-load="preLoad" :element-count="preSerchCount"></pre-search-informer>
 
                         <price-select-category-filter @chenge-price="chengePrice"></price-select-category-filter>
 
@@ -70,6 +70,7 @@ export default {
     data() {
         return {
             showFilterBlk:true,
+            preLoad:false,
             filterList:[],
             filterListEmpty:[],
             selectedParam:{},
@@ -101,8 +102,10 @@ export default {
             }
         })
         .then((response) => {
+            console.log(response)
             this.filterList = response.data.incount
             this.filterListEmpty = response.data.empty
+            this.preSerchCount = response.data.all_length
             this.get_pre_filter()
         })
         .catch(error => console.log(error));
@@ -117,6 +120,9 @@ export default {
         },
         get_pre_filter() {
             let prefix_api_url = document.location.protocol+"//"+document.location.host
+            
+            this.preLoad = true
+            
 
             axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId+'/'+this.showMode, {
                 params: {
@@ -155,7 +161,7 @@ export default {
                     if (this.clicedElement.dataset.razdel != "plaf_material")
                         this.filterList.plaf_material = response.data.filter.plaf_material
                     
-               
+                    this.preLoad = false
             })
             .catch(error => console.log(error));
             },

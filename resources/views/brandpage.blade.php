@@ -1,5 +1,6 @@
 @extends('layout.all')
-@section('title', "Брэнд")
+@section('title', $brand->title_seo)
+@section('description', $brand->description_seo)
 
 @section('content')
 

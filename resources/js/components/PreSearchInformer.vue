@@ -18,15 +18,19 @@
 export default {
     data() {
         return{
-            loadet:false,
+            loadet:true,
             showed:false,
             coord_top:0
         }
     },
 
-    props: ['domElement', 'elementCount'],
+    props: ['domElement', 'elementCount', 'preLoad'],
 
     watch:{
+        preLoad() {
+            this.loadet = this.preLoad
+            console.log("chenget-------"+this.preLoad)
+        },
         domElement() {
             let inp = this.domElement.getBoundingClientRect()
             let win = document.getElementById("cat_filter_form").getBoundingClientRect()
@@ -38,6 +42,9 @@ export default {
 </script>
 
 <style>
+
+
+
 @media (max-width: 768px) {  
     .flter_pods {
         display: none;

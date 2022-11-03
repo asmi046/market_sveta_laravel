@@ -41,6 +41,7 @@ class ApiIndexController extends Controller
 
     public function get_sorted_category_filter($catid, $mode, Request $request) {
          
+        sleep(7);
 
         $requMain = new Request();
     
@@ -206,6 +207,6 @@ class ApiIndexController extends Controller
         $empty_filter["arm_material"] = $empty_arm_material;
         $empty_filter["plaf_material"] = $empty_plaf_material;
 
-        return ["incount" => $filter_zn, "empty" => $empty_filter];
+        return ["incount" => $filter_zn, "empty" => $empty_filter, "all_length"=>count($catProducts)];
     }
 }
