@@ -13,5 +13,5 @@
 		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Акции</a></li>
 	</ul>
 
-	<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
+	<p class="header__popup-link header__popup-link_mob _popup-link">Пн-Сб: 10:00 до 19:00</p>
 </div>

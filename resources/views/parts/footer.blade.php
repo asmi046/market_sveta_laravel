@@ -15,7 +15,7 @@
 
 				<div class="footer__callback callback d-flex">
 					<a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a>
-					<a href="#callback" class="callback__popup _popup-link">Заказать обратный звонок</a>
+					<P class="callback__popup _popup-link">Пн-Сб: 10:00 до 19:00</p>
 				</div>
 
 				<p class="footer__info-text">
