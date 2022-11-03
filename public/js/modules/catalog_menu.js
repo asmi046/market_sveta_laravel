@@ -15,6 +15,7 @@ function hide_all_submenu() {
 
 document.addEventListener("DOMContentLoaded", () => { 
     let wrapper = document.querySelector(".catalog_menu_wrapper")
+    let wrapper_zt = document.querySelector(".catalog_menu_wrapper_zt")
     let catalog_btn = document.querySelector(".open_cat_menu")
 
     let submenu_list = document.querySelectorAll(".catalog_menu nav a")
@@ -37,15 +38,18 @@ document.addEventListener("DOMContentLoaded", () => {
     catalog_btn.addEventListener("click", function (e) {
         e.preventDefault()
         wrapper.style.display = "flex"
+        wrapper_zt.style.display = "flex"
     })
 
-    wrapper.addEventListener("click", function (e) {
+    wrapper_zt.addEventListener("click", function (e) {
         e.preventDefault()
         wrapper.style.display = "none"
+        wrapper_zt.style.display = "none"
     });
 
     document.querySelector(".close_catalog").addEventListener("click", function (e) {
         e.preventDefault()
         wrapper.style.display = "none"
+        wrapper_zt.style.display = "none"
     });
 })

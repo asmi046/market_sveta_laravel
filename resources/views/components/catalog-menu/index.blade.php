@@ -1,4 +1,7 @@
 
+<div class="catalog_menu_wrapper_zt">
+	<div class="close_catalog"></div>
+</div>
 <div class="catalog_menu_wrapper">
 	<div class="catalog_menu">
 		<nav>
@@ -12,7 +15,7 @@
 
 	<x-catalog-menu.submenu :menu="$menu"></x-catalog-menu.submenu>
 
-	<div class="close_catalog"></div>
+	
 </div>
 
 <x-mobile-catalog-menu></x-mobile-catalog-menu>

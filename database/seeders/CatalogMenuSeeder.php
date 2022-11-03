@@ -64,42 +64,42 @@ class CatalogMenuSeeder extends Seeder
                 "order" => 7,
                 "slug" => Str::slug("Трековые системы"),
                 "title" => "Трековые системы",
-                "link" => "#",
+                "link" => "/category/sinnye-i-strunnye-sistemy-2899",
             ],
 
             [
                 "order" => 8,
                 "slug" => Str::slug("Уличьное освещение"),
                 "title" => "Уличьное освещение",
-                "link" => "#",
+                "link" => "/category/svet-dlia-ulicy-2915",
             ],
 
             [
                 "order" => 9,
                 "slug" => Str::slug("Офисное освещение"),
                 "title" => "Офисное освещение",
-                "link" => "#",
+                "link" => "/category/texniceskii-svet-10207",
             ],
 
             [
                 "order" => 10,
                 "slug" => Str::slug("Лампочьки"),
                 "title" => "Лампочьки",
-                "link" => "#",
+                "link" => "/category/lampy-2908",
             ],
 
             [
                 "order" => 11,
                 "slug" => Str::slug("Светодиодная подсветка"),
                 "title" => "Светодиодная подсветка",
-                "link" => "#",
+                "link" => "/category/svetodiodnye-lenty-2884",
             ],
 
             [
                 "order" => 12,
                 "slug" => Str::slug("Электротовары"),
                 "title" => "Электротовары",
-                "link" => "#",
+                "link" => "/category/elektroustanovka-3201",
             ],
         ];
 
