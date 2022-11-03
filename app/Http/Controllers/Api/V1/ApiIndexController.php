@@ -40,8 +40,6 @@ class ApiIndexController extends Controller
     }
 
     public function get_sorted_category_filter($catid, $mode, Request $request) {
-         
-        sleep(7);
 
         $requMain = new Request();
     
