@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 use DB;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class CatalogMenuSeeder extends Seeder
