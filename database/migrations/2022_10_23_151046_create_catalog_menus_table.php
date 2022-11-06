@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer("order");
             $table->string("slug", 100);
             $table->string("title", 100);
+            $table->string("img", 300);
             $table->string("link", 500);
         });
     }
