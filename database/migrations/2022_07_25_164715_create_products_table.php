@@ -18,8 +18,8 @@ return new class extends Migration
             $table->timestamps();
             $table->string('name', 400)->comment('Наименование');
             $table->string('slug', 400)->comment('Slug (для URL)');
-            $table->float('price', 8, 2)->comment('Основная цена');
-            $table->float('price_old', 8, 2)->comment('Цена до скидки');
+            $table->float('price', 9, 2)->comment('Основная цена');
+            $table->float('price_old', 9, 2)->comment('Цена до скидки');
             $table->string('manufacture_status', 30)->comment('Статус товара');
             $table->integer('insklad')->comment('На складе');
             $table->string('sku', 150)->comment('Артикул');
