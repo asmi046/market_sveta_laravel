@@ -28,6 +28,9 @@
     transform: rotate(-180deg);
   }
   
+  .catalogMenuPunct._active .catalogMenuPunctTitle_sub{
+    display: block;
+  }
   
   .catalogMenuPunctTitle::before {
     position: absolute;
