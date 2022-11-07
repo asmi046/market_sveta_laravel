@@ -1,35 +1,33 @@
 <div class="mobile_catalog_menu">
     <div class="mobMenuWrappe">
-        <div class="catalogMenuPunct">
-            <div class="catalogMenuPunctTitle icon-ec_icon_ar_down" data-spoller="">
-                <div class="cmpImg">
-                    <img src="https://light-snab.ru/wp-content/themes/light-new/img/formenu/lyustry.png" alt="">
+        @foreach ($menu as $item)
+            <div class="catalogMenuPunct">
+            
+                <div data-subwin="{{$item->slug}}" class="catalogMenuPunctTitle icon-ec_icon_ar_down">
+                    <div class="cmpImg">
+                        <img src="{{Storage::url('public/catalog/'.$item->img)}}" alt="">
+                    </div>
+
+                    <div class="cmpTitle">
+                        <span>{{$item->title}}</span>
+                    </div>
                 </div>
 
-                <div class="cmpTitle">
-                    <span>Люстры</span>
+                <div data-subwin="{{$item->slug}}" class="catalogMenuPunctTitle_sub spollers-block__body" >
+                    @foreach (get_submenu_puncts($item->sub_puncts) as $key => $value)
+                        <div class="punkt">
+                            <h2>{{$key}}</h2>
+                            <ul>
+                                @foreach ($value as $sub_item)
+                                    <li><a href="{{$sub_item->link}}">{{$sub_item->title}}</a></li>    
+                                @endforeach
+        
+                            </ul>
+                        </div>    
+                    @endforeach
                 </div>
+            
             </div>
-
-            <div class="catalogMenuPunctTitle_sub spollers-block__body" hidden="">
-                <ul>
-                    <li>
-                        <a href="https://light-snab.ru/lightcat/dizajnerskie-svetilniki-lyustry/">Смотреть все люстры</a>
-                    </li>
-
-                    <li>
-                        <a href="https://light-snab.ru/lightcat/dizajnerskie-svetilniki-lyustry/">Дизайнерские люстры</a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://light-snab.ru/lightcat/svetilniki-v-stile-loft-vintazh-lyustry/">Люстры в стиле лофт</a>
-                    </li>
-
-                    <li>
-                        <a href="https://light-snab.ru/lightcat/svetilniki-v-stile-provans-lyustry/">Люстры в стиле прованс</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
