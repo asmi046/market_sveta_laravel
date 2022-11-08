@@ -1,7 +1,7 @@
 <div class="mobile_catalog_menu">
     <div class="mobMenuWrappe">
         @foreach ($menu as $item)
-            <div class="catalogMenuPunct">
+            <div data-subwin="{{$item->slug}}" class="catalogMenuPunct">
             
                 <div data-subwin="{{$item->slug}}" class="catalogMenuPunctTitle icon-ec_icon_ar_down">
                     <div class="cmpImg">
@@ -14,6 +14,10 @@
                 </div>
 
                 <div data-subwin="{{$item->slug}}" class="catalogMenuPunctTitle_sub spollers-block__body" >
+                    <div class="all_list_link">
+                        <a class="icon icon-ec_icon_cube " href="{{$item->link}}"> Смотреть все товары</a>
+                    </div>
+                    
                     @foreach (get_submenu_puncts($item->sub_puncts) as $key => $value)
                         <div class="punkt">
                             <h2>{{$key}}</h2>

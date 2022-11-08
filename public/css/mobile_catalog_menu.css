@@ -23,7 +23,12 @@
 .catalogMenuPunct {
     width: 100%;
     border-bottom: 1px solid lightgrey;
+    margin: 7px 0;
 }
+
+  .catalogMenuPunct .all_list_link{ 
+    padding: 0 0 10px 0;
+  }
 
   .catalogMenuPunct._active .catalogMenuPunctTitle::before {
     transform: rotate(-180deg);
@@ -37,7 +42,7 @@
     box-shadow: 0 0 10px rgb(0 0 0 / 7%);
     border: none;
     border-radius: 11px;
-    margin-top: 10px;
+    
   }
 
   .catalogMenuPunct._active .catalogMenuPunctTitle_sub{

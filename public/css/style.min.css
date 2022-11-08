@@ -7790,8 +7790,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     width:25px;
     height:25px;
     background-size: cover;
-    background-image: url(http://127.0.0.1:5173/public/img/icons/logo.svg);
-    /* background-image: url(http://127.0.0.1:5173/public/img/icons/logo_mini.svg); */
+    background-image: url(../img/icons/logo_mini.svg);
   }
 }
 
