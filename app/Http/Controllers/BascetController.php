@@ -47,7 +47,7 @@ class BascetController extends Controller
     }
 
     public function send(BascetForm $request) {
-        Mail::to("asmi046@gmail.com")->send(new BascetSend($request));
+        Mail::to(["asmi046@gmail.com", "zakaz@lightsnab.ru", "sale@lightsnab.ru"])->send(new BascetSend($request));
     }
 
     public function thencs() {
