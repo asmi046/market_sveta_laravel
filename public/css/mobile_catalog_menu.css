@@ -9,6 +9,7 @@
     transition: all 0.5s ease !important;
     padding: 45px 20px 0 20px;
     left: 110%;
+    overflow: auto;
 }
 
 .mobMenuWrappe {
@@ -28,13 +29,26 @@
     transform: rotate(-180deg);
   }
   
+  .catalogMenuPunct .catalogMenuPunctTitle_sub{
+    display: none;
+  }
+
+  .catalogMenuPunct._active{
+    box-shadow: 0 0 10px rgb(0 0 0 / 7%);
+    border: none;
+    border-radius: 11px;
+    margin-top: 10px;
+  }
+
   .catalogMenuPunct._active .catalogMenuPunctTitle_sub{
     display: block;
+    padding: 0 15px 10px 15px;
+    margin: 20px 0;
   }
   
   .catalogMenuPunctTitle::before {
     position: absolute;
-    right: 0;
+    right: 10px;
     width: 16px;
     height: 16px;
     top: calc((100% / 2) - 8px);
@@ -44,7 +58,7 @@
     width: 100%;
     display: flex;
   
-    padding-bottom: 5px;
+    padding: 5px;
     margin-bottom: 5px;
     cursor: pointer;
     position: relative;
@@ -76,20 +90,34 @@
     width: 100%
   }
   
-  .catalogMenuPunctTitle_sub ul {
-    margin: 5px 10px 10px 61px;
+  
+  .catalogMenuPunctTitle_sub h2{
+    font-size: 18px;
+    font-weight: bold;
   }
   
+  .catalogMenuPunctTitle_sub ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin:  10px 0;
+  }
+  
+  .catalogMenuPunctTitle_sub ul li {
+    width:50%;
+    padding: 5px 0;
+  }
+
   .catalogMenuPunctTitle_sub ul li a {
     padding: 0;
     margin-bottom: 20px;
+    
+  
   }
   
   .catalogMenuPunctTitle_sub ul li a:hover {
-    color: #D98600;
+
   }
   
   .catalogMenuPunctTitle_sub ul li:first-child a {
-    color: #D98600;
-    border-bottom: 1px dotted #D98600;
+
   }

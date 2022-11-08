@@ -17,15 +17,15 @@
     <tbody>
            @foreach ($formData['tovars'] as $item)
                
-           @endforeach
-            <tr>
-                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;"><img src="{{asset('/storage/products_galery/'.$item["tovar_data"]["img"])}}" alt=""></td>
-                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["tovar_data"]["name"]}}<br/><span style="font-size:12px">{{$item["tovar_data"]["brand"]}} ({{$item["tovar_data"]["state"]}})</span></td>
-                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["tovar_data"]["price"]}}</td>
-                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["quentity"]}}</td>
-                <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{(float)$item["quentity"] * (float)$item["tovar_data"]["price"]}}</td>
-            </tr> 
-        
+           
+                <tr>
+                    <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;"><img src="{{asset('/storage/products_galery/'.$item["tovar_data"]["img"])}}" alt=""></td>
+                    <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["tovar_data"]["name"]}}<br/><span style="font-size:12px">{{$item["tovar_data"]["brand"]}} ({{$item["tovar_data"]["state"]}})</span></td>
+                    <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["tovar_data"]["price"]}}</td>
+                    <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["quentity"]}}</td>
+                    <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{(float)$item["quentity"] * (float)$item["tovar_data"]["price"]}}</td>
+                </tr> 
+            @endforeach
     </tbody>
 </table>
 <hr/>
