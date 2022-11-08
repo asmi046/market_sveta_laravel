@@ -7786,13 +7786,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 
   .logo-icon:before {
+    content: "";
     width:25px;
+    height:25px;
     background-size: cover;
-    background-image: url(http://127.0.0.1:5173/public/img/icons/logo_mini.svg);
+    background-image: url(http://127.0.0.1:5173/public/img/icons/logo.svg);
+    /* background-image: url(http://127.0.0.1:5173/public/img/icons/logo_mini.svg); */
   }
 }
 
 @media (max-width: 480px) {
+  .prod-card__price_blk {
+    flex-direction: column;
+  }
 
   .header__favorites {
     margin-right: 0;
@@ -7802,6 +7808,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .prod-card .prod-card__body,
   .popular__row .prod-card__body {
     flex: 0 1 100%;
+    padding: 15px 5px;
+    height: 100%;
   }
 
   .slider__item p {

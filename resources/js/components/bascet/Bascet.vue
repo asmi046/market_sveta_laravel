@@ -124,7 +124,7 @@ export default {
 
             if (this.errorList.length != 0 ) return;
 
-            axios.post('/bascet/send/', {
+            axios.post('/bascet/send', {
                 _token: document.querySelector('meta[name="_token"]').content,
                 fio: this.bascetInfo.fio,
                 email: this.bascetInfo.email,
@@ -140,7 +140,7 @@ export default {
         },
 
         updateItem(item){
-            axios.post('/bascet/update/', {
+            axios.post('/bascet/update', {
                 _token: document.querySelector('meta[name="_token"]').content,
                 product_id: item.product_sku,
                 count: item.quentity
