@@ -8,6 +8,11 @@ class ProductFilter extends QueryFilter {
             $this->builder->whereIn("style", $style);
     }
 
+    public function form($form = []) {
+        if (!empty($form))
+            $this->builder->whereIn("form", $form);
+    }
+
     public function brand($brand = []) {
         if (!empty($brand))
             $this->builder->whereIn("brand", $brand);
