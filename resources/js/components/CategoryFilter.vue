@@ -93,7 +93,7 @@ export default {
     props:['homeRout', 'catList', 'catUrl', 'catId', 'showMode'],
 
     mounted: function() {
-        
+        this.preLoad = true
         this.updateWidth()
         window.addEventListener('resize', this.updateWidth);
 
@@ -107,6 +107,7 @@ export default {
             this.filterList = response.data.incount
             this.filterListEmpty = response.data.empty
             this.preSerchCount = response.data.all_length
+            this.preLoad = false
             this.get_pre_filter()
         })
         .catch(error => console.log(error));
@@ -122,7 +123,6 @@ export default {
             let prefix_api_url = document.location.protocol+"//"+document.location.host
             
             this.preLoad = true
-            console.log(this.preLoad)
             
             axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId+'/'+this.showMode, {
                 params: {
@@ -161,7 +161,6 @@ export default {
                         this.filterList.plaf_material = response.data.filter.plaf_material
                     
                     this.preLoad = false
-                    console.log(this.preLoad)
             })
             .catch(error => console.log(error));
             },
