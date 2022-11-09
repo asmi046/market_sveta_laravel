@@ -18,7 +18,6 @@ function favorites_to_page() {
                 
             })
             .then((response) => {
-                console.log(response.data)
                 if (response.data.length == 0) return;
 
                     update_fav_counter(response.data.count)

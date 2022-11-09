@@ -151,7 +151,6 @@ export default {
                 for (let elem of bascet_counter) {
                     elem.innerHTML = this.count;
                 }
-                console.log("updatet");
             })
             .catch(error => console.log(error));
         },
@@ -188,7 +187,6 @@ export default {
                 }
             })
             .then(() => {
-                console.log(item.product_sku);
                 item.quentity = 0
                 this.bascetList.splice(index, 1)
                 this.updateBascet()

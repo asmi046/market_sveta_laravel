@@ -19,7 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         searchResult.innerHTML = rezstr 
-
-        console.log(rezstr)
     })
 })

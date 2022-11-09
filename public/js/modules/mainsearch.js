@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			search[index].addEventListener('keydown', function (e) {
 				let prefix_api_url = document.location.protocol+"//"+document.location.host
                 
-				console.log(search[index].value);
 				
 				var xhr = new XMLHttpRequest()
 

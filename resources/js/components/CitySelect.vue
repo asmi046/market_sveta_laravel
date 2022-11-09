@@ -166,7 +166,6 @@ export default {
         },
         openWin() {
             this.showWin = true
-            console.log("open")
         },
         selectCity(item) {
             localStorage.setItem("city", item[0])

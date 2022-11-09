@@ -29,7 +29,6 @@ export default {
     watch:{
         preLoad() {
             this.loadet = this.preLoad
-            console.log("chenget-------"+this.preLoad)
         },
         domElement() {
             let inp = this.domElement.getBoundingClientRect()

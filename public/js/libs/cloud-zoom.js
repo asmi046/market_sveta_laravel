@@ -152,7 +152,6 @@
         this.init2 = function (img, id) {
 
             filesLoaded++;
-            //console.log(img.src + ' ' + id + ' ' + img.width);
             if (id === 1) {
                 zoomImage = img;
             }

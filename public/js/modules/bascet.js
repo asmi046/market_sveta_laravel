@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 xhr.setRequestHeader('Accept', 'application/json')
                 
                 xhr.onload = function () {
-                    console.log(xhr)
                     if (xhr.status == 422) {
                         
                         for (let error of Object.entries(xhr.response.errors) )

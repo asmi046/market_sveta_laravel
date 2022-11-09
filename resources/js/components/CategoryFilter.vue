@@ -49,7 +49,10 @@
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.plaf_material.length != 0" property-name="plaf_material" property-text="Материал плафона" :values="filterList.plaf_material"></multy-select-category-filter>
                         
                         <div class="filter_controll">
-                            <button class="btn full_width" type="submit" >Выбрать ({{preSerchCount}})</button>
+                            <button class="btn full_width" type="submit" >Выбрать 
+                                <span v-if="!preLoad" class="mobileCounter"> ({{preSerchCount}})</span> 
+                                <span v-else class="mobileLoader"></span> 
+                            </button>
                             <button class="btn empty_btn full_width" @click.prevent="clearFilter">Сбросить фильтр</button>
                             <!-- <button class="btn empty_btn full_width" @click.prevent="test">Test</button> -->
                         </div>
@@ -92,18 +95,15 @@ export default {
     mounted: function() {
         
         this.updateWidth()
-        console.log(this.showFilterBlk )
         window.addEventListener('resize', this.updateWidth);
 
         let prefix_api_url = document.location.protocol+"//"+document.location.host
-        console.log(this.selectedParam);
         axios.get(prefix_api_url+'/api/v1/get_category_filter/'+this.catId+'/'+this.showMode, {
             params: {
                     filter:this.selectedParam
             }
         })
         .then((response) => {
-            console.log(response)
             this.filterList = response.data.incount
             this.filterListEmpty = response.data.empty
             this.preSerchCount = response.data.all_length
@@ -114,7 +114,6 @@ export default {
 
     methods: {
         updateWidth() {
-            console.log(window.innerWidth)
             if (window.innerWidth <= 768) 
                 this.showFilterBlk = false
             else this.showFilterBlk = true
@@ -123,10 +122,8 @@ export default {
             let prefix_api_url = document.location.protocol+"//"+document.location.host
             
             this.preLoad = true
+            console.log(this.preLoad)
             
-            console.log(this.filterListEmpty)
-            console.log(this.selectedParam)
-
             axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId+'/'+this.showMode, {
                 params: {
                     filter_empty:this.filterListEmpty,
@@ -134,11 +131,7 @@ export default {
                 }
             })
             .then((response) => {
-                console.log(response.data);
                 this.preSerchCount=response.data.products.length
-                // this.filterList=response.data.filter
-
-                
                 
                     if (this.clicedElement.dataset.razdel != "style")
                         this.filterList.style = response.data.filter.style
@@ -149,8 +142,8 @@ export default {
                     if (this.clicedElement.dataset.razdel != "state")
                         this.filterList.state = response.data.filter.state
                     
-                    if (this.clicedElement.dataset.razdel != "forma")
-                        this.filterList.forma = response.data.filter.forma
+                    if (this.clicedElement.dataset.razdel != "form")
+                        this.filterList.form = response.data.filter.form
                     
                     if (this.clicedElement.dataset.razdel != "mesto")
                         this.filterList.mesto = response.data.filter.mesto
@@ -168,6 +161,7 @@ export default {
                         this.filterList.plaf_material = response.data.filter.plaf_material
                     
                     this.preLoad = false
+                    console.log(this.preLoad)
             })
             .catch(error => console.log(error));
             },
@@ -184,7 +178,6 @@ export default {
                     this.get_pre_filter()
                     this.clicedElement = element
                 }
-                // console.log(element.dataset.razdel)
         },
 
         chengePrice(element, min, max, sale) {
@@ -266,6 +259,19 @@ export default {
         padding: 25px 25px 0 25px;
         border-top: 1px solid lightgray;
         background-color: white;
+    }
+
+    .mobileCounter {
+        margin-left: 10px;
+    }
+
+    .mobileLoader {
+        width:20px;
+        height: 20px;
+        background-position: center;
+        margin-left: 10px;
+        background-repeat: no-repeat;
+        background-image: url(../../../public/img/icons/loader_white.svg);
     }
 
 }

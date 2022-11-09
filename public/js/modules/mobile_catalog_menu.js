@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (showMobCataloMenuBtn)
         showMobCataloMenuBtn.onclick = (e) =>  {
-            console.log("mob_menu_open")
             e.preventDefault()
             showMobCataloMenuBtn.classList.toggle("menu_open")
             
