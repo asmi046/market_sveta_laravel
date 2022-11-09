@@ -33,6 +33,11 @@ class ProductFilter extends QueryFilter {
             $this->builder->whereIn("arm_material", $arm_material);
     }
 
+    public function mesto($mesto = []) {
+        if (!empty($mesto))
+            $this->builder->whereIn("mesto", $mesto);
+    }
+
     public function minprice($minprice) {
         if (!empty($minprice))
             $this->builder->where("price", '>', $minprice);

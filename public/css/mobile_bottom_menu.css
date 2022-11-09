@@ -34,6 +34,11 @@
     border-right: none;
 }
 
+.mobile_bottom_menu .bm_btn .icon.icon-ec_icon_abort{ 
+    font-size: 24px;
+    line-height: 1.5;
+}
+
 .mobile_bottom_menu .bm_btn .icon{ 
    width:25px; 
    height:25px;

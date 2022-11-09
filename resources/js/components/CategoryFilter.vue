@@ -40,6 +40,7 @@
 
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.brand.length != 0" property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.style.length != 0" property-name="style" property-text="Стиль" :values="filterList.style"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.style.length != 0" property-name="mesto" property-text="Место использования" :values="filterList.mesto"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.state.length != 0" property-name="state" property-text="Страна" :values="filterList.state"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.forma.length != 0" property-name="forma" property-text="Форма" :values="filterList.forma"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.arm_color.length != 0" property-name="arm_color" property-text="Цвет арматуры" :values="filterList.arm_color"></multy-select-category-filter>
@@ -123,6 +124,8 @@ export default {
             
             this.preLoad = true
             
+            console.log(this.filterListEmpty)
+            console.log(this.selectedParam)
 
             axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId+'/'+this.showMode, {
                 params: {
@@ -148,6 +151,9 @@ export default {
                     
                     if (this.clicedElement.dataset.razdel != "forma")
                         this.filterList.forma = response.data.filter.forma
+                    
+                    if (this.clicedElement.dataset.razdel != "mesto")
+                        this.filterList.mesto = response.data.filter.mesto
                     
                     if (this.clicedElement.dataset.razdel != "arm_color")
                         this.filterList.arm_color = response.data.filter.arm_color

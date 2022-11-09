@@ -45,7 +45,7 @@
         <div class="selection__row d-flex">
 
             <div class="selection__column">
-                <a href="#" class="cardType cardType_img-01">
+                <a href="/category/potolocnye-svetilniki-2872?mesto%5B%5D=спальня" class="cardType cardType_img-01">
                     <div class="cardType__color-block animated_bg">
                         <p class="cardType__color-block-text">Спальня</p>
                     </div>
@@ -53,7 +53,7 @@
             </div>
 
             <div class="selection__column ">
-                <a href="#" class="cardType cardType_img-02">
+                <a href="/category/potolocnye-svetilniki-2872?mesto%5B%5D=кухня" class="cardType cardType_img-02">
                     <div class="cardType__color-block animated_bg">
                         <p class="cardType__color-block-text">КУХНЯ</p>
                     </div>
@@ -61,15 +61,15 @@
             </div>
 
             <div class="selection__column">
-                <a href="#" class="cardType cardType_img-03">
+                <a href="/category/potolocnye-svetilniki-2872?mesto%5B%5D=гостиная" class="cardType cardType_img-03">
                     <div class="cardType__color-block animated_bg">
-                        <p class="cardType__color-block-text">ГОСТИННАЯ</p>
+                        <p class="cardType__color-block-text">ГОСТИНАЯ</p>
                     </div>
                 </a>
             </div>
 
             <div class="selection__column">
-                <a href="#" class="cardType cardType_img-04">
+                <a href="/category/potolocnye-svetilniki-2872?mesto%5B%5D=детская" class="cardType cardType_img-04">
                     <div class="cardType__color-block animated_bg">
                         <p class="cardType__color-block-text">ДЕТСКАЯ</p>
                     </div>
@@ -77,7 +77,7 @@
             </div>
 
             <div class="selection__column">
-                <a href="#" class="cardType cardType_img-05">
+                <a href="/category/potolocnye-svetilniki-2872?mesto%5B%5D=ванная" class="cardType cardType_img-05">
                     <div class="cardType__color-block animated_bg">
                         <p class="cardType__color-block-text">ВАННАЯ</p>
                     </div>

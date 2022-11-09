@@ -7035,7 +7035,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .search__btn {
     width: 43px;
-    height: 102%;
+    margin-top: 1px;
     border-radius: 0 8.5px 8.5px 0;
   }
 
