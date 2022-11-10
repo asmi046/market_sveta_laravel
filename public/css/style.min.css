@@ -4398,6 +4398,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-image: url(../img/icons/loader_white.svg);
 }
 
+.btnLoader.shoved {
+  display: block;
+}
+
 .popular__baner {
   background-size: cover;
   background-repeat: no-repeat;

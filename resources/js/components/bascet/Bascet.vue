@@ -74,7 +74,7 @@
                     <li v-for="item in errorList" :key="item">{{item}}</li>
                 </ul>
 
-                <button @click.prevent="sendBascet()" class="btn" type="submit">Отправить</button>
+                <button @click.prevent="sendBascet()" class="btn" type="submit"><span v-show="!loadet" class="nadp">Отправить</span><span v-show="loadet" class="btnLoader shoved"></span></button>
                 <p class="policy">Заполняя данную форму и отправляя заказ вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
             </form>
         </div>
@@ -87,6 +87,7 @@ export default {
     data() {
         return {
             bascetList:[],
+            loadet:false,
             count:0,
             subtotal:0,
             show_bascet:false,
@@ -124,6 +125,7 @@ export default {
 
             if (this.errorList.length != 0 ) return;
 
+            this.loadet = true;
             axios.post('/bascet/send', {
                 _token: document.querySelector('meta[name="_token"]').content,
                 fio: this.bascetInfo.fio,
@@ -134,6 +136,7 @@ export default {
                 tovars: this.bascetList,
             })
             .then((response) => {
+                this.loadet = false;
                 document.location.href="/bascet/thencs"
             })
             .catch(error => console.log(error));
