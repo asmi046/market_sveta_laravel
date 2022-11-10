@@ -50,8 +50,8 @@
                         
                         <div class="filter_controll">
                             <button class="btn full_width" type="submit" >Выбрать 
-                                <span v-if="!preLoad" class="mobileCounter"> ({{preSerchCount}})</span> 
-                                <span v-if="preLoad" class="mobileLoader"></span> 
+                                <span v-show="!preLoad" class="mobileCounter"> ({{preSerchCount}})</span> 
+                                <span v-show="preLoad" class="mobileLoader"></span> 
                             </button>
                             <button class="btn empty_btn full_width" @click.prevent="clearFilter">Сбросить фильтр</button>
                             <!-- <button class="btn empty_btn full_width" @click.prevent="test">Test</button> -->
@@ -93,9 +93,10 @@ export default {
     props:['homeRout', 'catList', 'catUrl', 'catId', 'showMode'],
 
     mounted: function() {
-        this.preLoad = true
         console.log(this.preLoad)
         
+        this.preLoad = true
+
         this.updateWidth()
         window.addEventListener('resize', this.updateWidth);
 
@@ -110,7 +111,6 @@ export default {
             this.filterListEmpty = response.data.empty
             this.preSerchCount = response.data.all_length
             this.preLoad = false
-            console.log(this.preLoad)
             this.get_pre_filter()
         })
         .catch(error => console.log(error));

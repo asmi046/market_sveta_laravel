@@ -29,7 +29,7 @@
         </div>
         <div class="prod-card__price-item d-flex">
             
-            <a href="#" data-prodid="{{$minfo->sku}}" class="card_to_bascet_btn btn to_bascet">В корзину</a>
+            <a href="#" data-prodid="{{$minfo->sku}}" class="card_to_bascet_btn btn to_bascet"><span class="nadp">В корзину</span><span class="btnLoader"></span> </a>
             <a href="{{route('bascet')}}" class="card_bascet_btn btn">Оформить</a>
         </div>
     </div>

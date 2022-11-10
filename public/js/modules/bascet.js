@@ -56,6 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
             data.append("product_id", product_id)
             data.append("_token", tiken)
 
+
+            let main_card = document.querySelector(".main-prod-card__column[data-prodid='"+product_id+"']");
+
+            main_card.querySelector(".card_to_bascet_btn .nadp").style.display = "none"
+            main_card.querySelector(".card_to_bascet_btn .btnLoader").style.display = "block"
+
             var xhr = new XMLHttpRequest()
                 
                 xhr.open("post", "/bascet/add", true)
@@ -73,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else
 
                     if (xhr.status == 200) {
-                        let main_card = document.querySelector(".main-prod-card__column[data-prodid='"+product_id+"']");
+                        
 
                         update_counter(parseInt(count_in_bascet)+1)
 
