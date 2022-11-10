@@ -6,7 +6,7 @@
         <p>Главная</p>
     </a>
     
-    <a href="#" class="bm_btn">
+    <a href="{{route('favorites')}}" class="bm_btn">
         <div class="icon icon-ec_icon_lice"></div>
         <p>Избранное</p>
     </a>

@@ -49,9 +49,9 @@
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.plaf_material.length != 0" property-name="plaf_material" property-text="Материал плафона" :values="filterList.plaf_material"></multy-select-category-filter>
                         
                         <div class="filter_controll">
-                            <button class="btn full_width" type="submit" >Выбрать 
-                                <span v-show="!preLoad" class="mobileCounter"> ({{preSerchCount}})</span> 
-                                <span v-show="preLoad" class="mobileLoader"></span> 
+                            <button class="btn full_width" type="submit" >Выбрать
+                                <span v-show="preLoad == false" class="mobileCounter">&nbsp;({{preSerchCount}})</span> 
+                                <span v-show="preLoad  == true" class="mobileLoader"></span> 
                             </button>
                             <button class="btn empty_btn full_width" @click.prevent="clearFilter">Сбросить фильтр</button>
                             <!-- <button class="btn empty_btn full_width" @click.prevent="test">Test</button> -->
@@ -93,12 +93,11 @@ export default {
     props:['homeRout', 'catList', 'catUrl', 'catId', 'showMode'],
 
     mounted: function() {
-        console.log(this.preLoad)
-        
-        this.preLoad = true
 
         this.updateWidth()
         window.addEventListener('resize', this.updateWidth);
+
+        this.preLoad = true
 
         let prefix_api_url = document.location.protocol+"//"+document.location.host
         axios.get(prefix_api_url+'/api/v1/get_category_filter/'+this.catId+'/'+this.showMode, {
@@ -111,7 +110,6 @@ export default {
             this.filterListEmpty = response.data.empty
             this.preSerchCount = response.data.all_length
             this.preLoad = false
-            this.get_pre_filter()
         })
         .catch(error => console.log(error));
     }, 
@@ -125,8 +123,9 @@ export default {
         get_pre_filter() {
             let prefix_api_url = document.location.protocol+"//"+document.location.host
             
-            this.preLoad = true
             
+            this.preLoad = true
+
             axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId+'/'+this.showMode, {
                 params: {
                     filter_empty:this.filterListEmpty,

@@ -7,12 +7,7 @@
 				<a href="{{route('dostavka')}}" class="location-block__link location-block__box icon-ec_icon_box">Доставка</a>
 			</div>
 			<ul>
-				<li><a href="{{route('about')}}">О компании</a></li>
-				<li><a href="{{route('brands')}}">Бренды</a></li>
-                <li><a href="{{route('aktsii')}}">Акции</a></li>
-                <li><a href="{{route('pay')}}">Оплата</a></li>
-                <li><a href="{{route('opt_sotrudnihestvo')}}">Опт и сотрудничество</a></li>
-				<li><a href="{{route('contacts')}}">Контакты</a></li>
+				<x-top-menu-puncts></x-top-menu-puncts>
 			</ul>
 		</div>
 	</div>

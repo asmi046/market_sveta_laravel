@@ -36,4 +36,8 @@ class TextPagesController extends Controller
     public function vozvrat() {
         return view('vozvrat');
     }
+    
+    public function policy() {
+        return view('policy');
+    }
 }
