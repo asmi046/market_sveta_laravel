@@ -83,6 +83,11 @@ class CategoryBase {
         return self::$cats;
     }
 
+    static public function get_cats_to_tovar ($category_ID) {
+        $podsvetka_src_cat = [2862, 2863, 2866, 2867];
+        return 0;
+    }
+
 }
 
 ?>
