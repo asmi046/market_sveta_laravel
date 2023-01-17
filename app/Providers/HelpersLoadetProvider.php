@@ -13,10 +13,15 @@ class HelpersLoadetProvider extends ServiceProvider
      */
     public function register()
     {
-        $file = app_path('Helpers/allHelpers.php'); 
-        if (file_exists($file)) { 
-            require_once($file); 
+        $file = app_path('Helpers/allHelpers.php');
+        if (file_exists($file)) {
+            require_once($file);
         }
+
+        // $catBase = app_path('Helpers/categoryBase.php');
+        // if (file_exists($catBase)) {
+        //     require_once($catBase);
+        // }
     }
 
     /**
