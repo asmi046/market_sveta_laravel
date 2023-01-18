@@ -4,7 +4,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
 if (!function_exists("first_upper")) {
-    
+
     function first_upper($str, $encoding='UTF-8') {
         $str = mb_ereg_replace('^[\ ]+', '', $str);
         $str = mb_strtoupper(mb_substr($str, 0, 1, $encoding), $encoding).
@@ -14,7 +14,7 @@ if (!function_exists("first_upper")) {
 
 }
 
-if (!function_exists("property_section")) { 
+if (!function_exists("property_section")) {
     function property_section($propertys) {
         $result_array = [];
 
@@ -28,43 +28,43 @@ if (!function_exists("property_section")) {
         ];
 
         for ($i = 0; $i<count($propertys); $i++) {
-            
-            if (in_array(first_upper($propertys[$i]->name), $partArray["Основные"])) 
+
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Основные"]))
             {
                 $result_array["Основные"][] = $propertys[$i];
                 continue;
             }
-            
-            if (in_array(first_upper($propertys[$i]->name), $partArray["Внешний вид"])) 
+
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Внешний вид"]))
             {
                 $result_array["Внешний вид"][] = $propertys[$i];
                 continue;
             }
-            
-            if (in_array(first_upper($propertys[$i]->name), $partArray["Материалы"])) 
+
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Материалы"]))
             {
                 $result_array["Материалы"][] = $propertys[$i];
                 continue;
             }
 
-            if (in_array(first_upper($propertys[$i]->name), $partArray["Размеры"])) 
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Размеры"]))
             {
                 $result_array["Размеры"][] = $propertys[$i];
                 continue;
             }
 
-            if (in_array(first_upper($propertys[$i]->name), $partArray["Лампы"])) 
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Лампы"]))
             {
                 $result_array["Лампы"][] = $propertys[$i];
                 continue;
             }
 
-            if (in_array(first_upper($propertys[$i]->name), $partArray["Упаковка"])) 
+            if (in_array(first_upper($propertys[$i]->name), $partArray["Упаковка"]))
             {
                 $result_array["Упаковка"][] = $propertys[$i];
                 continue;
             }
-            
+
 
 
             $result_array["Другие характеристики"][] = $propertys[$i];
@@ -75,7 +75,7 @@ if (!function_exists("property_section")) {
     }
 }
 
-if (!function_exists("get_cat_img_url")) { 
+if (!function_exists("get_cat_img_url")) {
     function get_cat_img_url($slug) {
         $allCatPhoto = [
             // "vlagozashhishhennye-tocecnye-svetilniki-2896" => "vlagozashhishhennye-tocecnye-svetilniki-2896.jpg",
@@ -87,7 +87,7 @@ if (!function_exists("get_cat_img_url")) {
     }
 }
 
-if (!function_exists("add_category_in_file")) { 
+if (!function_exists("add_category_in_file")) {
     function add_category_in_file($file_url) {
         $xmlFile = file_get_contents($file_url);
         $xmlObject = simplexml_load_string($xmlFile);
@@ -95,12 +95,12 @@ if (!function_exists("add_category_in_file")) {
         $result = json_decode($jsonFormatData, false);
 
         $categories = [];
-        $all_cat = []; 
+        $all_cat = [];
 
         for  ($i = 0; $i < count($xmlObject->shop->categories->category); $i++)
         {
             $all_cat[(string)$xmlObject->shop->categories->category[$i]["id"]] = ["name" => (string)$xmlObject->shop->categories->category[$i], "parentId" => (string)$xmlObject->shop->categories->category[$i]["parentId"]];
-            
+
             $categories[] = [
                 "baseid" => (int)$xmlObject->shop->categories->category[$i]["id"],
                 "parentid" => (int)$xmlObject->shop->categories->category[$i]["parentId"],
@@ -114,15 +114,15 @@ if (!function_exists("add_category_in_file")) {
             echo (string)$xmlObject->shop->categories->category[$i]."\n\r";
         }
 
-        foreach (array_chunk($categories, 1000) as $t)  
+        foreach (array_chunk($categories, 1000) as $t)
         {
-            DB::table("categorys")->insert($t); 
+            DB::table("categorys")->insert($t);
         }
 
     }
 }
 
-if (!function_exists("add_tovar_in_file")) { 
+if (!function_exists("add_tovar_in_file")) {
     function add_tovar_in_file($file_url, $load_img=true) {
         $xmlFile = file_get_contents($file_url);
         $xmlObject = simplexml_load_string($xmlFile);
@@ -137,30 +137,21 @@ if (!function_exists("add_tovar_in_file")) {
         $Style = [];
         $Material = [];
         $Brand = [];
-        
-        $all_cat = []; 
+
+        $all_cat = [];
 
         for  ($i = 0; $i < count($xmlObject->shop->categories->category); $i++)
         {
             $all_cat[(string)$xmlObject->shop->categories->category[$i]["id"]] = ["name" => (string)$xmlObject->shop->categories->category[$i], "baseid" => (string)$xmlObject->shop->categories->category[$i]["id"], "parentId" => (string)$xmlObject->shop->categories->category[$i]["parentId"]];
-            
+
         }
 
         for ($i = 0; $i < count($xmlObject->shop->offers->offer); $i++)
         {
-            
+
             $cat1 = $all_cat[(int)$xmlObject->shop->offers->offer[$i]->categoryId];
 
-            if (!empty($cat1["parentId"]))
-                $cat2 = $all_cat[$cat1["parentId"]];
-            
-            if (!empty($cat2["parentId"]))
-                $cat3 = $all_cat[$cat2["parentId"]];
-            
-            if (!empty($cat3["parentId"]))
-                $cat4 = $all_cat[$cat3["parentId"]];
-            
-            $price_to = 1000 + rand(100, 8000);    
+            $price_to = 1000 + rand(100, 8000);
             $tmp = [
                 "name" => (string)$xmlObject->shop->offers->offer[$i]->name,
                 "slug" => Str::slug($xmlObject->shop->offers->offer[$i]->name, '-'),
@@ -182,9 +173,6 @@ if (!function_exists("add_tovar_in_file")) {
                 "quote" => (string)$xmlObject->shop->offers->offer[$i]->name,
                 "description" => "Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name,
                 "cat1" => (int)$cat1["baseid"],
-                "cat2" => (!empty($cat2))?(int)$cat2["baseid"]:0,
-                "cat3" => (!empty($cat3))?(int)$cat3["baseid"]:0,
-                "cat4" => (!empty($cat4))?(int)$cat4["baseid"]:0,
                 "img" => "",
                 "title_seo" => mb_substr((string)$xmlObject->shop->offers->offer[$i]->name, 0, 99),
                 "description_seo" => mb_substr("Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name, 0, 299),
@@ -197,13 +185,13 @@ if (!function_exists("add_tovar_in_file")) {
                 "title_seo" => "Товары бренда ".(string)$xmlObject->shop->offers->offer[$i]->vendor,
                 "description_seo" => "Купить товары бренда ".(string)$xmlObject->shop->offers->offer[$i]->vendor." в магазине Market-Sveta"
             ];
-            
 
-            for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->param); $j++) 
+
+            for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->param); $j++)
             {
                 $name = first_upper((string)$xmlObject->shop->offers->offer[$i]->param[$j]["name"]);
                 $value = (string)$xmlObject->shop->offers->offer[$i]->param[$j];
-                
+
                 $params[] = [
                     "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
                     "name" => $name,
@@ -211,7 +199,7 @@ if (!function_exists("add_tovar_in_file")) {
                     "subcat" => "",
                 ];
 
-                
+
 
                 if ($name === "Страна происхождения") $tmp["state"] = $value;
                 if ($name === "Коллекция") $tmp["collection"] = $value;
@@ -240,9 +228,9 @@ if (!function_exists("add_tovar_in_file")) {
                 }
 
                 if ($name === "Материал плафона") $tmp["plaf_material"] = $value;
-                if ($name === "Назначение помещения") { 
+                if ($name === "Назначение помещения") {
                     $tmp["mesto"] = $value;
-                    
+
                     $Place[] = [
                         "mesto" => first_upper($value),
                         "slug" => Str::slug($value),
@@ -253,11 +241,11 @@ if (!function_exists("add_tovar_in_file")) {
                 }
             }
 
-                for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++) 
+                for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++)
                 {
                     $ext = pathinfo($xmlObject->shop->offers->offer[$i]->picture[$j], PATHINFO_EXTENSION);
                     $img_name = (string)$xmlObject->shop->offers->offer[$i]->vendorCode."_".$j.".".$ext;
-                    if ($j == 0) $tmp["img"] = $img_name; 
+                    if ($j == 0) $tmp["img"] = $img_name;
                     $pictures[] = [
                         "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
                         "img_name" => $img_name,
@@ -272,65 +260,65 @@ if (!function_exists("add_tovar_in_file")) {
                         } catch (Exception $e) {
                             echo 'Caught exception: ',  $e->getMessage(), "\n";
                         }
-                }    
+                }
 
-            
+
 
             $result[] = $tmp;
 
             // var_dump($result);
 
-            
+
             echo (string)$file_url."\n\r";
             echo (string)$xmlObject->shop->offers->offer[$i]->name."\n\r";
             echo "sku: ".(string)$xmlObject->shop->offers->offer[$i]->vendorCode ."\n\r";
             echo "Параметров: ".count($xmlObject->shop->offers->offer[$i]->param)."\n\r";
             echo "Картинок: ".count($xmlObject->shop->offers->offer[$i]->picture)."\n\r";
             echo "---------\n\r";
-            
+
             // if ($i == 2) break;
         }
 
 
-        foreach (array_chunk($result, 1000) as $t)  
+        foreach (array_chunk($result, 1000) as $t)
         {
-            DB::table("products")->insert($t); 
-        }
-        
-        foreach (array_chunk($params, 1000) as $t)  
-        {
-            DB::table("properties")->insert($t); 
+            DB::table("products")->insert($t);
         }
 
-        foreach (array_chunk($Place, 1000) as $t)  
+        foreach (array_chunk($params, 1000) as $t)
         {
-            DB::table("places")->insertOrIgnore($t); 
+            DB::table("properties")->insert($t);
         }
 
-        foreach (array_chunk($Style, 1000) as $t)  
+        foreach (array_chunk($Place, 1000) as $t)
         {
-            DB::table("styles")->insertOrIgnore($t); 
+            DB::table("places")->insertOrIgnore($t);
         }
 
-        foreach (array_chunk($Material, 1000) as $t)  
+        foreach (array_chunk($Style, 1000) as $t)
         {
-            DB::table("materials")->insertOrIgnore($t); 
+            DB::table("styles")->insertOrIgnore($t);
         }
 
-        foreach (array_chunk($Brand, 1000) as $t)  
+        foreach (array_chunk($Material, 1000) as $t)
         {
-            DB::table("brands")->insertOrIgnore($t); 
+            DB::table("materials")->insertOrIgnore($t);
         }
-     
-        foreach (array_chunk($pictures, 1000) as $t)  
+
+        foreach (array_chunk($Brand, 1000) as $t)
         {
-            DB::table("images")->insert($t); 
+            DB::table("brands")->insertOrIgnore($t);
         }
-    
+
+        foreach (array_chunk($pictures, 1000) as $t)
+        {
+            DB::table("images")->insert($t);
+        }
+
     }
 }
 
-if (!function_exists("add_picture")) { 
+if (!function_exists("add_picture")) {
     function add_picture($file_url) {
         $xmlFile = file_get_contents($file_url);
         $xmlObject = simplexml_load_string($xmlFile);
@@ -342,34 +330,34 @@ if (!function_exists("add_picture")) {
 
         for ($i = 0; $i < count($xmlObject->shop->offers->offer); $i++)
         {
-                for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++) 
+                for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++)
                 {
                     $ext = pathinfo($xmlObject->shop->offers->offer[$i]->picture[$j], PATHINFO_EXTENSION);
                     $img_name = (string)$xmlObject->shop->offers->offer[$i]->vendorCode."_".$j.".".$ext;
                     Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
-                }    
+                }
 
-            
+
             echo (string)$file_url."\n\r";
             echo (string)$xmlObject->shop->offers->offer[$i]->name."\n\r";
             echo "sku: ".(string)$xmlObject->shop->offers->offer[$i]->vendorCode ."\n\r";
             echo "Картинок: ".count($xmlObject->shop->offers->offer[$i]->picture)."\n\r";
             echo "---------\n\r";
-            
+
             // if ($i == 2) break;
         }
-    
+
     }
 }
 
 
 
-if (!function_exists("get_submenu_puncts")) { 
+if (!function_exists("get_submenu_puncts")) {
     function get_submenu_puncts($puncts) {
         $reault = [];
-        
+
         foreach ($puncts as $item) {
-            $reault[$item->sub_punct][] = $item; 
+            $reault[$item->sub_punct][] = $item;
         }
 
         return $reault;

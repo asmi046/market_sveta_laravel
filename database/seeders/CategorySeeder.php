@@ -29,7 +29,7 @@ class CategorySeeder extends Seeder
         foreach($all_cats as $top_cat) {
 
             $categories[] = [
-                "baseid" => $top_cat['id'],
+                "id" => $top_cat['id'],
                 "parentid" => 0,
                 "name" => $top_cat['name'],
                 "slug" => Str::slug((string)$top_cat['name'])."-".$top_cat['id'],
@@ -40,7 +40,7 @@ class CategorySeeder extends Seeder
 
             foreach ($top_cat['subcat'] as $sub_cat) {
                 $categories[] = [
-                    "baseid" => $sub_cat['id'],
+                    "id" => $sub_cat['id'],
                     "parentid" => $top_cat['id'],
                     "name" => $sub_cat['name'],
                     "slug" => Str::slug((string)$sub_cat['name'])."-".$sub_cat['id'],
@@ -55,7 +55,7 @@ class CategorySeeder extends Seeder
 
         foreach (array_chunk($categories, 1000) as $t)
         {
-            DB::table("categorys")->insert($t);
+            DB::table("categories")->insert($t);
         }
     }
 }

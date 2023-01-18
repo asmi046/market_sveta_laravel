@@ -7,13 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-
-    protected $table = "categorys";
-
     use HasFactory;
 
     protected $fillable = [
-        "baseid",
         "parentid",
         "name",
         "slug",
@@ -21,4 +17,8 @@ class Category extends Model
         'title_seo',
         'description_seo'
     ];
+
+    public function category_tovars() {
+        return $this->belongsToMany(Product::class);
+    }
 }

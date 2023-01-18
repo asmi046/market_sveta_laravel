@@ -37,10 +37,7 @@ return new class extends Migration
             $table->string('quote', 400)->comment('Цитата');
             $table->text('description')->comment('Описание');
 
-            $table->integer('cat1')->comment('Категория 1');
-            $table->integer('cat2')->comment('Категория 2');
-            $table->integer('cat3')->comment('Категория 3');
-            $table->integer('cat4')->comment('Категория 4');
+            $table->integer('cat1')->comment('Категория');
 
             $table->string('img', 500)->comment('Основное изображение');
 

@@ -13,10 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('categorys', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer("baseid")->comment("ID из источника");
             $table->integer("parentid")->comment("ID родительской категории");
             $table->string("name", 200)->comment("Имя категории");
             $table->string("slug", 200)->comment("Slug категории");
@@ -42,6 +41,6 @@ return new class extends Migration
     public function down()
     {
         Schema::dropIfExists('category_product');
-        Schema::dropIfExists('categorys');
+        Schema::dropIfExists('categories');
     }
 };

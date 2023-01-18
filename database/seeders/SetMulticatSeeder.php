@@ -9,6 +9,8 @@ use App\Models\Product;
 
 use App\Helpers\CategoryBase;
 
+use DB;
+
 class SetMulticatSeeder extends Seeder
 {
     /**

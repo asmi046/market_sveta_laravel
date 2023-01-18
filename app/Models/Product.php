@@ -32,9 +32,6 @@ class Product extends Model
         'quote',
         'description',
         'cat1',
-        'cat2',
-        'cat3',
-        'cat4',
         'img',
         'title_seo',
         'description_seo'
@@ -50,22 +47,6 @@ class Product extends Model
 
     public function product_propertys() {
         return $this->hasMany(Property::class, 'product_sku', 'sku');
-    }
-
-    public function cat_name_cat1() {
-        return  $this->hasOne(Category::class, 'baseid', 'cat1');
-    }
-
-    public function cat_name_cat2() {
-        return  $this->hasOne(Category::class, 'baseid', 'cat2');
-    }
-
-    public function cat_name_cat3() {
-        return  $this->hasOne(Category::class, 'baseid', 'cat3');
-    }
-
-    public function cat_name_cat4() {
-        return  $this->hasOne(Category::class, 'baseid', 'cat4');
     }
 
     public function category_tovars() {

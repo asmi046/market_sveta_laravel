@@ -17,24 +17,24 @@
 
             <div class="page__body d-flex">
 
-             
-                <div id="sb_app" class="sb_app">                
-                    <category-filter 
-                        home-rout="{{ route('home') }}" 
-                        cat-list="{{$sub_cat->toJson()}}" 
-                        cat-url="{{url()->current()}}" 
-                        cat-id="{{$category->baseid}}"
-                        show-mode="category" 
+
+                <div id="sb_app" class="sb_app">
+                    <category-filter
+                        home-rout="{{ route('home') }}"
+                        cat-list="{{$sub_cat->toJson()}}"
+                        cat-url="{{url()->current()}}"
+                        cat-id="{{$category->id}}"
+                        show-mode="category"
                     ></category-filter>
                 </div>
-                
+
                 <main class="page__main main">
 
                     <x-subcat-slider :subcat="$sub_cat"></x-subcat-slider>
 
                     <div class="main-prod-card d-flex">
                         @foreach ($cat_product as $item)
-                            <x-tovar-card :minfo="$item"></x-tovar-card>    
+                            <x-tovar-card :minfo="$item"></x-tovar-card>
                         @endforeach
                     </div>
 
