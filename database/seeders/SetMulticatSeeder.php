@@ -21,7 +21,8 @@ class SetMulticatSeeder extends Seeder
     public function run()
     {
         // $product = Product::with("product_propertys")->get();
-        $product = Product::all();
+        // $product = Product::all();
+        $product = Product::select()->take(10000)->get();
 
         echo "Данные загружены. \n\r";
 
