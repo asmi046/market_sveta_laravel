@@ -1,5 +1,6 @@
 <?php
 
+
 namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -10,6 +11,9 @@ use App\Models\Product;
 use App\Helpers\CategoryBase;
 
 use DB;
+
+ini_set('memory_limit', '2048M');
+
 
 class SetMulticatSeeder extends Seeder
 {
