@@ -34,13 +34,11 @@ class SetMulticatSeeder extends Seeder
         foreach ($product as $prod) {
             echo $i." - ".$prod['name'];
             $propertys = [];
-            foreach ($prod->product_propertys as $prop)
-                $propertys[$prop->name] = $prop->value;
+
+            // foreach ($prod->product_propertys as $prop)
+            //     $propertys[$prop->name] = $prop->value;
 
             // print_r($propertys);
-
-            // echo (isset($propertys["Выключатель"]))?$propertys["Выключатель"]:"-";
-            // echo "\n\r";
 
 
             $result_cat = CategoryBase::get_cats_to_tovar($prod['cat1'], $prod['id'], $propertys);

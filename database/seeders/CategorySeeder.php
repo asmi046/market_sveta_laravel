@@ -48,6 +48,20 @@ class CategorySeeder extends Seeder
                     "title_seo" => $sub_cat['name']." - Купить с доставкой по России",
                     "description_seo" => $sub_cat['name']." - Купить с доставкой по России"
                 ];
+
+                if (isset($sub_cat['subcat']))
+                foreach ($sub_cat['subcat'] as $subsub_cat) {
+                    $categories[] = [
+                        "id" => $subsub_cat['id'],
+                        "parentid" => $sub_cat['id'],
+                        "name" => $subsub_cat['name'],
+                        "slug" => Str::slug((string)$subsub_cat['name'])."-".$subsub_cat['id'],
+                        "description" => "",
+                        "title_seo" => $subsub_cat['name']." - Купить с доставкой по России",
+                        "description_seo" => $subsub_cat['name']." - Купить с доставкой по России"
+                    ];
+                }
+
             }
 
         }

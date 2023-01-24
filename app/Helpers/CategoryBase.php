@@ -361,6 +361,10 @@ class CategoryBase {
             'doc_id' => 9794,
             'id' => 117,
             'name' => "Лайтбоксы",
+
+            'subcat' => [
+
+            ]
         ],
 
 
@@ -554,6 +558,7 @@ class CategoryBase {
             foreach ($top_cat['subcat'] as $sub_cat) {
 
                 $add_main_cat_sub =false;
+                if (isset($sub_cat['subcat']))
                 foreach ($sub_cat['subcat'] as $subsub_cat) {
                     if ($sub_cat['doc_id'] == $category_ID)
                     {
