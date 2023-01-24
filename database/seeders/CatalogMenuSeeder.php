@@ -19,104 +19,129 @@ class CatalogMenuSeeder extends Seeder
     public function run()
     {
         $all_punkt = [
+
             [
-                "order" => 1,
-                "slug" => Str::slug("Люстры"),
-                "title" => "Люстры",
+                "order" => 11,
+                "title" => "Светильники для подсветки",
                 "img" => "lyustry.png",
-                "link" => "/category/potolocnye-liustry-2868",
+                "link" => "/category/svetilniki-dlia-podsvetki-1",
             ],
-            
+
             [
                 "order" => 2,
-                "slug" => Str::slug("Светильники"),
-                "title" => "Светильники",
-                "img" => "svetilniki.png",
-                "link" => "/category/potolocnye-svetilniki-2872",
-            ],
-
-            [
-                "order" => 3,
-                "slug" => Str::slug("Бра"),
-                "title" => "Бра",
-                "img" => "bra-i-podsvetki.png",
-                "link" => "/category/nastennye-bra-2864",
-            ],
-
-            [
-                "order" => 4,
-                "slug" => Str::slug("Споты"),
-                "title" => "Споты",
-                "img" => "spoty.png",
-                "link" => "/category/spoty-2893",
-            ],
-
-            [
-                "order" => 5,
-                "slug" => Str::slug("Настольные лампы"),
-                "title" => "Настольные лампы",
-                "img" => "nastolnye-lampy.png",
-                "link" => "/category/nastolnye-lampy-2865",
-            ],
-
-            [
-                "order" => 6,
-                "slug" => Str::slug("Торшеры"),
-                "title" => "Торшеры",
-                "img" => "torshery.png",
-                "link" => "/category/torsery-i-napolnye-svetilniki-2894",
+                "title" => "Бра и настенное освещение",
+                "img" => "lyustry.png",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7",
             ],
 
             [
                 "order" => 7,
-                "slug" => Str::slug("Трековые системы"),
-                "title" => "Трековые системы",
-                "img" => "trekovye-sistemy.png",
-                "link" => "/category/sinnye-i-strunnye-sistemy-2899",
+                "title" => "Настольные лампы",
+                "img" => "lyustry.png",
+                "link" => "/category/nastolnye-lampy-15",
             ],
 
             [
-                "order" => 8,
-                "slug" => Str::slug("Уличьное освещение"),
-                "title" => "Уличьное освещение",
-                "img" => "eksterernoe_osveshchenie.png",
-                "link" => "/category/svet-dlia-ulicy-2915",
+                "order" => 1,
+                "title" => "Люстры",
+                "img" => "lyustry.png",
+                "link" => "/category/liustry-22",
             ],
 
             [
-                "order" => 9,
-                "slug" => Str::slug("Офисное освещение"),
-                "title" => "Офисное освещение",
-                "img" => "ofisnoe-osveshchenie.png",
-                "link" => "/category/texniceskii-svet-10207",
+                "order" => 3,
+                "title" => "Светильники",
+                "img" => "lyustry.png",
+                "link" => "/category/svetilniki-30",
             ],
 
             [
-                "order" => 10,
-                "slug" => Str::slug("Лампочьки"),
-                "title" => "Лампочьки",
-                "img" => "lampochki.png",
-                "link" => "/category/lampy-2908",
-            ],
-
-            [
-                "order" => 11,
-                "slug" => Str::slug("Светодиодная подсветка"),
-                "title" => "Светодиодная подсветка",
-                "img" => "svetodiodnaya-podsvetka.png",
-                "link" => "/category/svetodiodnye-lenty-2884",
+                "order" => 13,
+                "title" => "Детские светильники",
+                "img" => "lyustry.png",
+                "link" => "/category/detskie-svetilniki-34",
             ],
 
             [
                 "order" => 12,
-                "slug" => Str::slug("Электротовары"),
-                "title" => "Электротовары",
-                "img" => "elektrotovary.png",
-                "link" => "/category/elektroustanovka-3201",
+                "title" => "Светодиодные ленты и профили",
+                "img" => "lyustry.png",
+                "link" => "/category/svetodiodnye-lenty-i-profili-43",
             ],
+
+            [
+                "order" => 9,
+                "title" => "Споты",
+                "img" => "lyustry.png",
+                "link" => "/category/spoty-54",
+            ],
+
+            [
+                "order" => 8,
+                "title" => "Торшеры и напольные светильники",
+                "img" => "lyustry.png",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59",
+            ],
+
+            [
+                "order" => 6,
+                "title" => "Точечные светильники",
+                "img" => "lyustry.png",
+                "link" => "/category/tocecnye-svetilniki-64",
+            ],
+
+            [
+                "order" => 10,
+                "title" => "Шинные и струнные системы",
+                "img" => "lyustry.png",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68",
+            ],
+
+            [
+                "order" => 15,
+                "title" => "Лампы",
+                "img" => "lyustry.png",
+                "link" => "/category/lampy-109",
+            ],
+
+            [
+                "order" => 16,
+                "title" => "Лайтбоксы",
+                "img" => "lyustry.png",
+                "link" => "/category/laitboksy-117",
+            ],
+
+            [
+                "order" => 14,
+                "title" => "Уличные светильники",
+                "img" => "lyustry.png",
+                "link" => "/category/ulicnye-svetilniki-118",
+            ],
+
+            [
+                "order" => 17,
+                "title" => "Праздничное освещение",
+                "img" => "lyustry.png",
+                "link" => "/category/prazdnicnoe-osveshhenie-132",
+            ],
+
+            [
+                "order" => 18,
+                "title" => "Электроустановочные изделия",
+                "img" => "lyustry.png",
+                "link" => "/category/elektroustanovocnye-izdeliia-143",
+            ],
+
+            [
+                "order" => 19,
+                "title" => "Технический свет, офисные светильники",
+                "img" => "lyustry.png",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168",
+            ]
+
         ];
 
-        
+
         Storage::disk('local')->put("public/catalog/lyustry.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/28e/lyustry.png"), 'public');
         Storage::disk('local')->put("public/catalog/svetilniki.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/f99/svetilniki.png"), 'public');
         Storage::disk('local')->put("public/catalog/bra-i-podsvetki.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/26b/bra-i-podsvetki.png"), 'public');

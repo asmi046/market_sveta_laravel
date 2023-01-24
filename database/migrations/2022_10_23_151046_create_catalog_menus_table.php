@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->integer("order");
-            $table->string("slug", 100);
             $table->string("title", 100);
             $table->string("img", 300);
             $table->string("link", 500);

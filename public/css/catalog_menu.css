@@ -25,7 +25,7 @@
     background-color: white;
 }
 
-.close_catalog:hover { 
+.close_catalog:hover {
     background-image: url("../img/icons/close_hover.svg");
 }
 
@@ -51,8 +51,11 @@
 .catalog_menu nav a{
     width:90%;
     margin-right: 10%;
-    min-height: 40px;
-    line-height: 40px;
+    line-height: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 30px;
     display: block;
     font-size: 16px;
@@ -60,7 +63,7 @@
 }
 
 .catalog_menu nav a.active,
-.catalog_menu nav a:hover{ 
+.catalog_menu nav a:hover{
     background-color: #FFB400;
     color:black
 }
@@ -76,7 +79,7 @@
     flex-direction: column;
 }
 
-.sub_cat_menu_wrapper .puncts{ 
+.sub_cat_menu_wrapper .puncts{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -87,14 +90,14 @@
     font-weight: 900;
     line-height: 1;
     margin: 10px 0;
-} 
+}
 
-.sub_cat_menu_wrapper .punkt{ 
+.sub_cat_menu_wrapper .punkt{
     width: 25%;
     padding: 0 2%;
 }
 
-.sub_cat_menu_wrapper .punkt ul li{ 
+.sub_cat_menu_wrapper .punkt ul li{
     margin: 5px 0;
 }
 
@@ -105,7 +108,7 @@
     padding: 10px 2%;
 }
 
-.all_list_link a{ 
+.all_list_link a{
     font-size: 16px;
     color: #E13510;
     display: flex;
@@ -113,11 +116,11 @@
     border-bottom: 1px dashed #E1351000;
 }
 
-.all_list_link a:hover{ 
+.all_list_link a:hover{
     border-bottom: 1px dashed #E13510;
 }
 
-.all_list_link a::before{ 
+.all_list_link a::before{
     font-size: 20px;
     margin-right: 10px;
     font-weight: bold;
