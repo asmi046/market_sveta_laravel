@@ -35,10 +35,10 @@ class SetMulticatSeeder extends Seeder
             echo $i." - ".$prod['name'];
             $propertys = [];
 
-            // foreach ($prod->product_propertys as $prop)
-            //     $propertys[$prop->name] = $prop->value;
+            foreach ($prod->product_propertys as $prop)
+                $propertys[$prop->name] = $prop->value;
 
-            // print_r($propertys);
+
 
 
             $result_cat = CategoryBase::get_cats_to_tovar($prod['cat1'], $prod['id'], $propertys);
@@ -47,7 +47,6 @@ class SetMulticatSeeder extends Seeder
             if (!empty($result_cat))
             {
                 echo " - Есть категории\n\r";
-                    var_dump($result_cat);
                     DB::table("category_product")->insert($result_cat);
             } else echo " - НЕТ категорий\n\r";
 
