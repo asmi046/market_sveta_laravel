@@ -30,8 +30,6 @@
 
                 <main class="page__main main">
 
-                    <x-subcat-slider :subcat="$sub_cat"></x-subcat-slider>
-
                     <div class="main-prod-card d-flex">
                         @foreach ($cat_product as $item)
                             <x-tovar-card :minfo="$item"></x-tovar-card>
