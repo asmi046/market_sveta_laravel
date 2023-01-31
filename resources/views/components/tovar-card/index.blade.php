@@ -6,9 +6,9 @@
         <x-favorit :sku="$minfo->sku"></x-favorit>
         <a href="{{route('product', $minfo->slug)}}" class="prod-card__img">
             @if(Storage::disk('local')->exists('public/products_galery/'.$minfo->img))
-                <img src="{{Storage::url('public/products_galery/'.$minfo->img)}}" alt="Купить {{$minfo->name}}">
+                <img loading="lazy" src="{{Storage::url('public/products_galery/'.$minfo->img)}}" alt="Купить {{$minfo->name}}">
             @else
-                <img src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$minfo->name}}">
+                <img loading="lazy" src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$minfo->name}}">
             @endif
         </a>
         <div class="prod-card__price_blk">
@@ -25,10 +25,10 @@
                 <p class="prod-card__manuf">{{$minfo->brand}} ({{$minfo->state}})</p>
                 <x-tovar-card.nal :insklad="$minfo->insklad" ></x-tovar-card.nal>
             </div>
-            
+
         </div>
         <div class="prod-card__price-item d-flex">
-            
+
             <a href="#" data-prodid="{{$minfo->sku}}" class="card_to_bascet_btn btn to_bascet"><span class="nadp">В корзину</span><span class="btnLoader"></span> </a>
             <a href="{{route('bascet')}}" class="card_bascet_btn btn">Оформить</a>
         </div>
