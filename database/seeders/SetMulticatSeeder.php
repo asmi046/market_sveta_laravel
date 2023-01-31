@@ -13,6 +13,7 @@ use App\Helpers\CategoryBase;
 use DB;
 
 ini_set('memory_limit', '2048M');
+ini_set('max_execution_time', '66000');
 
 
 class SetMulticatSeeder extends Seeder

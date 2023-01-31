@@ -561,7 +561,7 @@ class CategoryBase {
                 $add_main_cat_sub =false;
                 if (isset($sub_cat['subcat']))
                 foreach ($sub_cat['subcat'] as $subsub_cat) {
-                    if ($sub_cat['doc_id'] == $category_ID)
+                    if ($subsub_cat['doc_id'] == $category_ID)
                     {
                         $product_cat[] = ["category_id" => $subsub_cat['id'], "product_id" => $prod_id];
                         $add_main_cat_sub =true;
@@ -593,7 +593,7 @@ class CategoryBase {
 
                     if (isset($sub_cat['subcat']))
                     foreach ($sub_cat['subcat'] as $subsub_cat) {
-                        if ((isset($prop[$sub_cat['pn']])  &&  ($prop[$subsub_cat['pn']] == $subsub_cat['pv']))||(isset($prop[$subsub_cat['pn2']])  && ($prop[$subsub_cat['pn2']] == $subsub_cat['pv2'])))
+                        if ((isset($prop[$subsub_cat['pn']])  &&  ($prop[$subsub_cat['pn']] == $subsub_cat['pv']))||(isset($prop[$subsub_cat['pn2']])  && ($prop[$subsub_cat['pn2']] == $subsub_cat['pv2'])))
                         {
                             $product_cat[] = ["category_id" => $subsub_cat['id'], "product_id" => $prod_id];
                             echo "По фильтру:".$subsub_cat['name']." \n\r";
