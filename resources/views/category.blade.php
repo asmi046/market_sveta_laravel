@@ -9,6 +9,15 @@
             <div class="breadcrumb">
                 <ul>
                     <li><a href="{{route('home')}}">Главная</a></li>
+
+                    @if($bc1)
+                        <li><a href="{{route('category', $bc1->slug)}}">{{$bc1->name}}</a></li>
+                    @endif
+
+                    @if($bc2)
+                        <li><a href="{{route('category', $bc2->slug)}}">{{$bc2->name}}</a></li>
+                    @endif
+
                     <li>{{$category->name}}</li>
                 </ul>
             </div>

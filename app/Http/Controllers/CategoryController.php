@@ -15,9 +15,16 @@ class CategoryController extends Controller
         // dd($request->request->query);
         $categoryInfo = Category::where('slug', $slug)->take(1)->get();
 
+
+
         if($categoryInfo->isEmpty()) abort('404');
 
         $categoryInfo = $categoryInfo[0];
+
+        $subcat_info1 = Category::where('id', $categoryInfo->parentid)->first();
+        $subcat_info2 = null;
+        if (!empty($subcat_info1->parentid))
+            $subcat_info2 = Category::where('id', $subcat_info1->parentid)->first();
 
         $subCat = Category::where('parentid', $categoryInfo->id)->get();
 
@@ -31,6 +38,6 @@ class CategoryController extends Controller
 
         // dd($categoryInfo, $catProducts, $subCat, $categoryInfo->baseid);
 
-        return view('category', ["category" => $categoryInfo, "cat_product" => $catProducts, "sub_cat" => $subCat]);
+        return view('category', ["category" => $categoryInfo, "cat_product" => $catProducts, "sub_cat" => $subCat, "bc1" => $subcat_info1, "bc2" => $subcat_info2]);
     }
 }
