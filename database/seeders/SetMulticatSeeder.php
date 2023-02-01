@@ -27,7 +27,7 @@ class SetMulticatSeeder extends Seeder
     {
 
         // $product = Product::all();
-        $product = Product::where("id", ">", 44897);
+        $product = Product::where("id", ">", 44897)->get();
 
 
         echo "Данные загружены. ".count($product). "\n\r";
