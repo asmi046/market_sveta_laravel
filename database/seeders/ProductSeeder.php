@@ -115,7 +115,7 @@ class ProductSeeder extends Seeder
             'https://marketsveta.su/product_base/xml/179924.xml', //     695 520
             'https://marketsveta.su/product_base/xml/189208.xml', //   1 829 097
 
-            // 'https://marketsveta.su/product_base/xml/100625.xml', //   9 153 972 xxx
+            // 'https://marketsveta.su/product_base/xml/100625.xml', //   9 153 972 xxx ST-Luci
             // 'https://marketsveta.su/product_base/xml/100759.xml', //  12 178 773 xxx
             // 'https://marketsveta.su/product_base/xml/100782.xml', //  10 679 164 xxx
             // 'https://marketsveta.su/product_base/xml/100802.xml', //   9 143 604 xxx
