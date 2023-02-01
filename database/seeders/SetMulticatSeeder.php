@@ -29,7 +29,7 @@ class SetMulticatSeeder extends Seeder
         $product = Product::all();
         // $product = Product::select()->take(10000)->get();
 
-        echo "Данные загружены. \n\r";
+        echo "Данные загружены. ".count($product). "\n\r";
 
         $i = 1;
         foreach ($product as $prod) {
