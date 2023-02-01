@@ -33,6 +33,7 @@ class SetMulticatSeeder extends Seeder
 
         $i = 1;
         foreach ($product as $prod) {
+            if ($i < 44897) continue;
             echo $i." - ".$prod['name'];
             $propertys = [];
 
