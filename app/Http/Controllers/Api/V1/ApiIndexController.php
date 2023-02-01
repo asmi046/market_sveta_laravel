@@ -53,7 +53,7 @@ class ApiIndexController extends Controller
         else
         {
             $categoryInfo = Category::where('id', $catid)->first();
-            $catProducts = $categoryInfo[0]->category_tovars()->filter($pf)->get();
+            $catProducts = $categoryInfo->category_tovars()->filter($pf)->get();
         }
             // $catProducts = Product::where('cat1', $catid)
             // ->orWhere('cat2', $catid)

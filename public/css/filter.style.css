@@ -1,11 +1,11 @@
  .page__sidebar-navigation-col {
     overflow: hidden;
-    display: block; 
+    display: block;
     padding: 3px 20px;
     border-radius: 10px;
 }
 
-.page__sidebar-navigation-col:hover { 
+.page__sidebar-navigation-col:hover {
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 }
 
@@ -23,16 +23,16 @@
     border-radius: 10px;
 }
 
-.page__sidebar-navigation-col-price:hover { 
+.page__sidebar-navigation-col-price:hover {
     border: 0.4px solid white;
 }
 
 .page__sidebar-navigation-menu {
-    padding: 13px 0;
-    max-height: 200px;
+    margin: 13px 0 23px 0;
+    max-height: 150px;
     overflow: auto;
 }
-  
+
 .options__input:disabled+.page__sidebar-navigation-body-menu-options-item-input-text {
     text-decoration: line-through;
     color: gray;
@@ -51,6 +51,17 @@
     animation-fill-mode: forwards, backwards;
 }
 
+.sidebar-navigation-catMenu-item-link {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    color: #161615;
+    padding-left: 20px;
+    line-height: 1;
+    padding: 5px 13px;
+    margin-right: 5px;
+  }
+
 @keyframes animation_to {
     0% {
         height: 0;
@@ -60,10 +71,10 @@
     }
     100% {
         height: 100%;
-        opacity: 1; 
+        opacity: 1;
         padding-top: 16px;
         padding-bottom: 16px;
-    }  
+    }
 }
 
 .filter_controll {
@@ -89,9 +100,9 @@
 
 .triangle:after {
     content: "";
-    position: absolute; 
-    left: 10px; 
-    border: 10px solid transparent; 
+    position: absolute;
+    left: 10px;
+    border: 10px solid transparent;
     border-right: 10px solid #FFB400;
 }
 
@@ -108,7 +119,7 @@
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
   }
 
-  
+
   .loader_white {
     width: 100%;
     height: 100%;
@@ -116,15 +127,15 @@
     background-position: center;
     background-size: 40%;
     background-repeat: no-repeat;
-    background-image: url(../img/icons/loader_white.svg); 
+    background-image: url(../img/icons/loader_white.svg);
   }
-  
+
   .pds_naideno {
     font-size: 12px!important;
     line-height: 1.3;
     margin: 0 0 3px 0!important;
   }
-  
+
   .pds_submit {
     border: none;
     padding: 0;
@@ -132,7 +143,7 @@
     background: no-repeat;
     color: white;
   }
-  
-  .pds_submit:hover{ 
+
+  .pds_submit:hover{
     text-decoration: underline;
   }
