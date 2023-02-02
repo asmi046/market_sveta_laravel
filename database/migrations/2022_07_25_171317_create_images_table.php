@@ -19,8 +19,8 @@ return new class extends Migration
             // $table->foreignId('product_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('product_sku', 150)->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('img_name', 500)->comment('Изображение');
-            $table->string('alt', 150)->comment('Текст в alt');
-            $table->string('title', 150)->comment('Текст в title');
+            $table->string('alt')->comment('Текст в alt');
+            $table->string('title')->comment('Текст в title');
             $table->integer('order')->comment('Порядок в галерее');
         });
     }
