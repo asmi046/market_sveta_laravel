@@ -273,7 +273,7 @@ if (!function_exists("add_tovar_in_file")) {
 
             echo (string)$file_url."\n\r";
             echo (string)$xmlObject->shop->offers->offer[$i]->name."\n\r";
-            echo "sku: ".(string)$xmlObject->shop->offers->offer[$i]->vendorCode ."\n\r";
+            echo "sku: ".(string)trim($xmlObject->shop->offers->offer[$i]->vendorCode) ."\n\r";
             echo "Параметров: ".count($xmlObject->shop->offers->offer[$i]->param)."\n\r";
             echo "Картинок: ".count($xmlObject->shop->offers->offer[$i]->picture)."\n\r";
             echo "---------\n\r";
