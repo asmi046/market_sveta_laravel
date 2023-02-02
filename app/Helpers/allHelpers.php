@@ -244,7 +244,7 @@ if (!function_exists("add_tovar_in_file")) {
                 for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++)
                 {
                     $ext = pathinfo($xmlObject->shop->offers->offer[$i]->picture[$j], PATHINFO_EXTENSION);
-                    $img_name = (string)str_replace(".","_", $xmlObject->shop->offers->offer[$i]->vendorCode)."_".$j.".".$ext;
+                    $img_name = (string)str_replace(".","-", $xmlObject->shop->offers->offer[$i]->vendorCode)."_".$j.".".$ext;
                     if ($j == 0) $tmp["img"] = $img_name;
                     $pictures[] = [
                         "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
