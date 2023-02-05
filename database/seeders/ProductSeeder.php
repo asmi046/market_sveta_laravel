@@ -126,8 +126,6 @@ class ProductSeeder extends Seeder
             'https://marketsveta.su/product_base/xml/100625-9.xml',
             'https://marketsveta.su/product_base/xml/100625-10.xml',
             'https://marketsveta.su/product_base/xml/100625-11.xml',
-            'https://marketsveta.su/product_base/xml/100625-12.xml',
-
 
             'https://marketsveta.su/product_base/xml/100759-1.xml',
             'https://marketsveta.su/product_base/xml/100759-2.xml',
@@ -136,15 +134,15 @@ class ProductSeeder extends Seeder
             'https://marketsveta.su/product_base/xml/100759-5.xml',
             'https://marketsveta.su/product_base/xml/100759-6.xml',
 
-            // 'https://marketsveta.su/product_base/xml/100782-1.xml',
-            // 'https://marketsveta.su/product_base/xml/100782-2.xml',
-            // 'https://marketsveta.su/product_base/xml/100782-3.xml',
-            // 'https://marketsveta.su/product_base/xml/100782-4.xml',
+            'https://marketsveta.su/product_base/xml/100782-1.xml',
+            'https://marketsveta.su/product_base/xml/100782-2.xml',
+            'https://marketsveta.su/product_base/xml/100782-3.xml',
+            'https://marketsveta.su/product_base/xml/100782-4.xml',
 
-            // 'https://marketsveta.su/product_base/xml/100802-1.xml',
-            // 'https://marketsveta.su/product_base/xml/100802-2.xml',
-            // 'https://marketsveta.su/product_base/xml/100802-3.xml',
-            // 'https://marketsveta.su/product_base/xml/100802-4.xml',
+            'https://marketsveta.su/product_base/xml/100802-1.xml',
+            'https://marketsveta.su/product_base/xml/100802-2.xml',
+            'https://marketsveta.su/product_base/xml/100802-3.xml',
+            'https://marketsveta.su/product_base/xml/100802-4.xml',
         ];
 
             for ($i=0; $i<count($adding_files); $i++ ) {
