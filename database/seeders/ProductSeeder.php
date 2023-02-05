@@ -137,7 +137,7 @@ class ProductSeeder extends Seeder
             'https://marketsveta.su/product_base/xml/100782-1.xml',
             'https://marketsveta.su/product_base/xml/100782-2.xml',
             'https://marketsveta.su/product_base/xml/100782-3.xml',
-            'https://marketsveta.su/product_base/xml/100782-4.xml',
+            // 'https://marketsveta.su/product_base/xml/100782-4.xml',
 
             'https://marketsveta.su/product_base/xml/100802-1.xml',
             'https://marketsveta.su/product_base/xml/100802-2.xml',
