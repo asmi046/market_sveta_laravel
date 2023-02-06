@@ -3,6 +3,8 @@ use Illuminate\Support\Str;
 
 use Illuminate\Support\Facades\DB;
 
+use App\Helpers\CategoryBase;
+
 if (!function_exists("first_upper")) {
 
     function first_upper($str, $encoding='UTF-8') {
@@ -153,14 +155,14 @@ if (!function_exists("add_tovar_in_file")) {
 
             $price_to = 1000 + rand(100, 8000);
             $tmp = [
-                "name" => (string)$xmlObject->shop->offers->offer[$i]->name,
+                "name" => (string)trim($xmlObject->shop->offers->offer[$i]->name),
                 "slug" => Str::slug($xmlObject->shop->offers->offer[$i]->name, '-'),
                 "price" => $price_to,
                 "price_old" => !empty(rand(0,1))?$price_to+rand(100, 2800):0,
                 "manufacture_status" => "В наличии",
                 "insklad" => (int)$xmlObject->shop->offers->offer[$i]->quantity,
                 "sku" => (string)trim($xmlObject->shop->offers->offer[$i]->vendorCode),
-                "brand" => (string)$xmlObject->shop->offers->offer[$i]->vendor,
+                "brand" => (string)trim($xmlObject->shop->offers->offer[$i]->vendor),
                 "state" => "",
                 "collection" => "",
                 "style" => "",
@@ -170,30 +172,30 @@ if (!function_exists("add_tovar_in_file")) {
                 "arm_material" => "",
                 "plaf_material" => "",
                 "mesto" => "",
-                "quote" => (string)$xmlObject->shop->offers->offer[$i]->name,
-                "description" => "Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name,
+                "quote" => (string)trim($xmlObject->shop->offers->offer[$i]->name),
+                "description" => "Купить по выгодной цене - ".(string)trim($xmlObject->shop->offers->offer[$i]->name),
                 "cat1" => (int)$cat1["baseid"],
                 "img" => "",
-                "title_seo" => mb_substr((string)$xmlObject->shop->offers->offer[$i]->name, 0, 99),
-                "description_seo" => mb_substr("Купить по выгодной цене - ".(string)$xmlObject->shop->offers->offer[$i]->name, 0, 299),
+                "title_seo" => mb_substr((string)trim($xmlObject->shop->offers->offer[$i]->name), 0, 99),
+                "description_seo" => mb_substr("Купить по выгодной цене - ".(string)trim($xmlObject->shop->offers->offer[$i]->name), 0, 299),
             ];
 
             $Brand[] = [
-                "brand" => first_upper((string)$xmlObject->shop->offers->offer[$i]->vendor),
-                "slug" => Str::slug((string)$xmlObject->shop->offers->offer[$i]->vendor),
-                "title" => "Товары бренда ".(string)$xmlObject->shop->offers->offer[$i]->vendor,
-                "title_seo" => "Товары бренда ".(string)$xmlObject->shop->offers->offer[$i]->vendor,
-                "description_seo" => "Купить товары бренда ".(string)$xmlObject->shop->offers->offer[$i]->vendor." в магазине Market-Sveta"
+                "brand" => first_upper((string)trim($xmlObject->shop->offers->offer[$i]->vendor)),
+                "slug" => Str::slug((string)trim($xmlObject->shop->offers->offer[$i]->vendor)),
+                "title" => "Товары бренда ".(string)trim($xmlObject->shop->offers->offer[$i]->vendor),
+                "title_seo" => "Товары бренда ".(string)trim($xmlObject->shop->offers->offer[$i]->vendor),
+                "description_seo" => "Купить товары бренда ".(string)trim($xmlObject->shop->offers->offer[$i]->vendor)." в магазине Market-Sveta"
             ];
 
 
             for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->param); $j++)
             {
-                $name = first_upper((string)$xmlObject->shop->offers->offer[$i]->param[$j]["name"]);
-                $value = (string)$xmlObject->shop->offers->offer[$i]->param[$j];
+                $name = first_upper((string)trim($xmlObject->shop->offers->offer[$i]->param[$j]["name"]));
+                $value = (string)trim($xmlObject->shop->offers->offer[$i]->param[$j]);
 
                 $params[] = [
-                    "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
+                    "product_sku" => (string)trim($xmlObject->shop->offers->offer[$i]->vendorCode),
                     "name" => $name,
                     "value" => $value,
                     "subcat" => "",
@@ -245,7 +247,6 @@ if (!function_exists("add_tovar_in_file")) {
                 {
                     $ext = pathinfo($xmlObject->shop->offers->offer[$i]->picture[$j], PATHINFO_EXTENSION);
                     $img_name = (string)trim($xmlObject->shop->offers->offer[$i]->vendorCode)."_".$j.".".$ext;
-                    $img_name = "stl-".$i."-".$j.".".$ext;
 
                     if ($j == 0) $tmp["img"] = $img_name;
                     $pictures[] = [
