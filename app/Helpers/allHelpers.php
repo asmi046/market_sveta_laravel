@@ -250,10 +250,10 @@ if (!function_exists("add_tovar_in_file")) {
 
                     if ($j == 0) $tmp["img"] = $img_name;
                     $pictures[] = [
-                        "product_sku" => (string)$xmlObject->shop->offers->offer[$i]->vendorCode,
+                        "product_sku" => (string)trim($xmlObject->shop->offers->offer[$i]->vendorCode),
                         "img_name" => $img_name,
-                        "alt" => (string)$xmlObject->shop->offers->offer[$i]->name . " Изображение №" . ($j + 1),
-                        "title" => (string)$xmlObject->shop->offers->offer[$i]->name . " Изображение №" . ($j + 1),
+                        "alt" => (string)trim($xmlObject->shop->offers->offer[$i]->name) . " Изображение №" . ($j + 1),
+                        "title" => (string)trim($xmlObject->shop->offers->offer[$i]->name) . " Изображение №" . ($j + 1),
                         "order" => $j,
                     ];
 
