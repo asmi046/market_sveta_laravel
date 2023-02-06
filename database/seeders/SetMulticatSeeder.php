@@ -26,7 +26,8 @@ class SetMulticatSeeder extends Seeder
     public function run()
     {
 
-        $product = Product::all();
+        // $product = Product::all();
+        $product = Product::where("id", "<", 100000)->get();
         // $product = Product::where("id", ">", 24445)->get();
 
 
