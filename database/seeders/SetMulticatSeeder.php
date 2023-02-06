@@ -50,9 +50,12 @@ class SetMulticatSeeder extends Seeder
             {
                 echo " - Есть категории\n\r";
                     DB::table("category_product")->insert($result_cat);
+
             } else echo " - НЕТ категорий\n\r";
 
             $i++;
+
+
         }
     }
 }
