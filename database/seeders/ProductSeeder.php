@@ -146,7 +146,7 @@ class ProductSeeder extends Seeder
         ];
 
             for ($i=0; $i<count($adding_files); $i++ ) {
-                add_tovar_in_file($adding_files[$i], false);
+                add_tovar_in_file($adding_files[$i], true);
             }
 
 
