@@ -34,7 +34,7 @@ class SetMulticatSeeder extends Seeder
 
         $i = 1;
         foreach ($product as $prod) {
-            echo $i." - ".$prod['name'];
+            echo $i." - id:".$prod['name']." - ".$prod['name'];
             $propertys = [];
 
             foreach ($prod->product_propertys as $prop)
