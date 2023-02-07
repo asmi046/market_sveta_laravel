@@ -52,7 +52,7 @@ class CatalogMenuSeeder extends Seeder
                 "order" => 3,
                 "title" => "Накладные светильники",
                 "img" => "lyustry.png",
-                "link" => "/category/nakladnye-svetilniki-2874",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31",
             ],
 
             [
