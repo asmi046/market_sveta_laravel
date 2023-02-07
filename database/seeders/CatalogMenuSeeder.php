@@ -50,9 +50,23 @@ class CatalogMenuSeeder extends Seeder
 
             [
                 "order" => 3,
-                "title" => "Светильники",
+                "title" => "Накладные светильники",
                 "img" => "lyustry.png",
                 "link" => "/category/svetilniki-30",
+            ],
+
+            [
+                "order" => 3,
+                "title" => "Подвесные светильники",
+                "img" => "lyustry.png",
+                "link" => "/category/podvesnye-svetilniki-32",
+            ],
+
+            [
+                "order" => 3,
+                "title" => "Реечные, линейные светильники",
+                "img" => "lyustry.png",
+                "link" => "/category/reecnye-lineinye-svetilniki-33",
             ],
 
             [
