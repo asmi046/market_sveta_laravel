@@ -51,7 +51,11 @@ class ApiIndexController extends Controller
         if ($mode == "brand")
             $catProducts = Product::where('brand', $catid)->filter($pf)->get();
         else
+        if ($mode == "place")
         {
+            $catProducts = Product::where('mesto', $catid)->filter($pf)->get();
+        }
+        else{
             $categoryInfo = Category::where('id', $catid)->first();
             $catProducts = $categoryInfo->category_tovars()->filter($pf)->get();
         }
@@ -117,7 +121,11 @@ class ApiIndexController extends Controller
         if ($mode == "brand")
             $catProducts = Product::where('brand', $catid)->filter($pf)->get();
         else
+        if ($mode == "place")
         {
+            $catProducts = Product::where('mesto', $catid)->filter($pf)->get();
+        }
+        else{
             $categoryInfo = Category::where('id', $catid)->first();
             $catProducts = $categoryInfo->category_tovars()->filter($pf)->get();
         }

@@ -5,6 +5,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PlaceController;
 use App\Http\Controllers\TextPagesController;
 use App\Http\Controllers\BascetController;
 use App\Http\Controllers\BrandController;
@@ -23,6 +24,7 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', [IndexController::class, "index"])->name("home");
 Route::get('/category/{slug}', [CategoryController::class, "index"])->name("category");
+Route::get('/place/{slug}', [PlaceController::class, "index"])->name("place");
 Route::get('/product/{slug}', [ProductController::class, "index"])->name("product");
 Route::get('/contacts', [ContactsController::class, "index"])->name("contacts");
 Route::get('/opt', [TextPagesController::class, "opt_sotrudnihestvo"])->name("opt_sotrudnihestvo");
