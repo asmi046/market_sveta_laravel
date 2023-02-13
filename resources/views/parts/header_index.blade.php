@@ -1,4 +1,4 @@
-@include('parts.top_sale')
+{{-- @include('parts.top_sale') --}}
 
 <x-top-menu></x-top-menu>
 

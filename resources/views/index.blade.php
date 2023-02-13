@@ -12,7 +12,7 @@
                         <img src="img/banners/{{$item["img_name"]}}" alt="">
                     </div>
                 @endforeach
-                
+
             </div>
 
             <div class="info-sl__images d-flex ">
@@ -101,10 +101,10 @@
 
             <div class="sale_tovar_wraper">
                 @foreach ($sale_elements as $item)
-                    <x-tovar-card :minfo="$item"></x-tovar-card>    
+                    <x-tovar-card :minfo="$item"></x-tovar-card>
                 @endforeach
             </div>
-            
+
 
         </div>
 
