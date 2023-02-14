@@ -18,156 +18,164 @@ class CatalogMenuSeeder extends Seeder
      */
     public function run()
     {
+
+        Storage::disk('public')->put("bra.jpg", file_get_contents(public_path('img/facer_img/for_menu/bra.jpg')), 'public');
+        Storage::disk('public')->put("detskiye_svetilniki.jpg", file_get_contents(public_path('img/facer_img/for_menu/detskiye_svetilniki.jpg')), 'public');
+        Storage::disk('public')->put("elektroustanovochnyye_izdeliya.jpg", file_get_contents(public_path('img/facer_img/for_menu/elektroustanovochnyye_izdeliya.jpg')), 'public');
+        Storage::disk('public')->put("lampy.jpg", file_get_contents(public_path('img/facer_img/for_menu/lampy.jpg')), 'public');
+        Storage::disk('public')->put("lyustry.jpg", file_get_contents(public_path('img/facer_img/for_menu/lyustry.jpg')), 'public');
+        Storage::disk('public')->put("nakladnye_svet.jpg", file_get_contents(public_path('img/facer_img/for_menu/nakladnye_svet.jpg')), 'public');
+        Storage::disk('public')->put("nastolnyye_lampy.jpg", file_get_contents(public_path('img/facer_img/for_menu/nastolnyye_lampy.jpg')), 'public');
+        Storage::disk('public')->put("podvesnye_svet.jpg", file_get_contents(public_path('img/facer_img/for_menu/podvesnye_svet.jpg')), 'public');
+        Storage::disk('public')->put("prazdnichnoye_osveshcheniye.jpg", file_get_contents(public_path('img/facer_img/for_menu/prazdnichnoye_osveshcheniye.jpg')), 'public');
+        Storage::disk('public')->put("reechniye_svet.jpg", file_get_contents(public_path('img/facer_img/for_menu/reechniye_svet.jpg')), 'public');
+        Storage::disk('public')->put("shinnyye_sistemy.jpg", file_get_contents(public_path('img/facer_img/for_menu/shinnyye_sistemy.jpg')), 'public');
+        Storage::disk('public')->put("spoty.jpg", file_get_contents(public_path('img/facer_img/for_menu/spoty.jpg')), 'public');
+        Storage::disk('public')->put("svetilniki_dlya_podsvetki.jpg", file_get_contents(public_path('img/facer_img/for_menu/svetilniki_dlya_podsvetki.jpg')), 'public');
+        Storage::disk('public')->put("svetodiodnyye_lenty.jpg", file_get_contents(public_path('img/facer_img/for_menu/svetodiodnyye_lenty.jpg')), 'public');
+        Storage::disk('public')->put("tekhnicheskiy_svet_ofis.jpg", file_get_contents(public_path('img/facer_img/for_menu/tekhnicheskiy_svet_ofis.jpg')), 'public');
+        Storage::disk('public')->put("tochechnyye_svet.jpg", file_get_contents(public_path('img/facer_img/for_menu/tochechnyye_svet.jpg')), 'public');
+        Storage::disk('public')->put("torshery.jpg", file_get_contents(public_path('img/facer_img/for_menu/torshery.jpg')), 'public');
+
         $all_punkt = [
 
             [
                 "order" => 11,
                 "title" => "Светильники для подсветки",
-                "img" => "lyustry.png",
+                "img" => Storage::url("svetilniki_dlya_podsvetki.jpg"),
                 "link" => "/category/svetilniki-dlia-podsvetki-1",
             ],
 
             [
                 "order" => 2,
                 "title" => "Бра и настенное освещение",
-                "img" => "lyustry.png",
+                "img" => Storage::url("bra.jpg"),
                 "link" => "/category/bra-i-nastennoe-osveshhenie-7",
             ],
 
             [
                 "order" => 7,
                 "title" => "Настольные лампы",
-                "img" => "lyustry.png",
+                "img" => Storage::url("nastolnyye_lampy.jpg"),
                 "link" => "/category/nastolnye-lampy-15",
             ],
 
             [
                 "order" => 1,
                 "title" => "Люстры",
-                "img" => "lyustry.png",
+                "img" => Storage::url("lyustry.jpg"),
                 "link" => "/category/liustry-22",
             ],
 
             [
                 "order" => 3,
                 "title" => "Накладные светильники",
-                "img" => "lyustry.png",
+                "img" => Storage::url("nakladnye_svet.jpg"),
                 "link" => "/category/nakladnye-potolocnye-svetilniki-31",
             ],
 
             [
                 "order" => 3,
                 "title" => "Подвесные светильники",
-                "img" => "lyustry.png",
+                "img" => Storage::url("podvesnye_svet.jpg"),
                 "link" => "/category/podvesnye-svetilniki-32",
             ],
 
             [
                 "order" => 3,
                 "title" => "Реечные, линейные светильники",
-                "img" => "lyustry.png",
+                "img" => Storage::url("reechniye_svet.jpg"),
                 "link" => "/category/reecnye-lineinye-svetilniki-33",
             ],
 
             [
                 "order" => 13,
                 "title" => "Детские светильники",
-                "img" => "lyustry.png",
+                "img" => Storage::url("detskiye_svetilniki.jpg"),
                 "link" => "/category/detskie-svetilniki-34",
             ],
 
             [
                 "order" => 12,
                 "title" => "Светодиодные ленты и профили",
-                "img" => "lyustry.png",
+                "img" => Storage::url("svetodiodnyye_lenty.jpg"),
                 "link" => "/category/svetodiodnye-lenty-i-profili-43",
             ],
 
             [
                 "order" => 9,
                 "title" => "Споты",
-                "img" => "lyustry.png",
+                "img" => Storage::url("spoty.jpg"),
                 "link" => "/category/spoty-54",
             ],
 
             [
                 "order" => 8,
                 "title" => "Торшеры и напольные светильники",
-                "img" => "lyustry.png",
+                "img" => Storage::url("torshery.jpg"),
                 "link" => "/category/torsery-i-napolnye-svetilniki-59",
             ],
 
             [
                 "order" => 6,
                 "title" => "Точечные светильники",
-                "img" => "lyustry.png",
+                "img" => Storage::url("tochechnyye_svet.jpg"),
                 "link" => "/category/tocecnye-svetilniki-64",
             ],
 
             [
                 "order" => 10,
                 "title" => "Шинные и струнные системы",
-                "img" => "lyustry.png",
+                "img" => Storage::url("shinnyye_sistemy.jpg"),
                 "link" => "/category/sinnye-i-strunnye-sistemy-68",
             ],
 
             [
                 "order" => 15,
                 "title" => "Лампы",
-                "img" => "lyustry.png",
+                "img" => Storage::url("lampy.jpg"),
                 "link" => "/category/lampy-109",
             ],
 
             [
                 "order" => 16,
                 "title" => "Лайтбоксы",
-                "img" => "lyustry.png",
+                "img" => Storage::url("lyustry.png"),
                 "link" => "/category/laitboksy-117",
             ],
 
             [
                 "order" => 14,
                 "title" => "Уличные светильники",
-                "img" => "lyustry.png",
+                "img" => Storage::url("ulichnyye_svetilniki.jpg"),
                 "link" => "/category/ulicnye-svetilniki-118",
             ],
 
             [
                 "order" => 17,
                 "title" => "Праздничное освещение",
-                "img" => "lyustry.png",
+                "img" => Storage::url("prazdnichnoye_osveshcheniye.jpg"),
                 "link" => "/category/prazdnicnoe-osveshhenie-132",
             ],
 
             [
                 "order" => 18,
                 "title" => "Электроустановочные изделия",
-                "img" => "lyustry.png",
+                "img" => Storage::url("elektroustanovochnyye_izdeliya.jpg"),
                 "link" => "/category/elektroustanovocnye-izdeliia-143",
             ],
 
             [
                 "order" => 19,
                 "title" => "Технический свет, офисные светильники",
-                "img" => "lyustry.png",
+                "img" => Storage::url("tekhnicheskiy_svet_ofis.jpg"),
                 "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168",
             ]
 
         ];
 
 
-        Storage::disk('local')->put("public/catalog/lyustry.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/28e/lyustry.png"), 'public');
-        Storage::disk('local')->put("public/catalog/svetilniki.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/f99/svetilniki.png"), 'public');
-        Storage::disk('local')->put("public/catalog/bra-i-podsvetki.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/26b/bra-i-podsvetki.png"), 'public');
-        Storage::disk('local')->put("public/catalog/spoty.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/377/spoty.png"), 'public');
-        Storage::disk('local')->put("public/catalog/nastolnye-lampy.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/fa1/nastolnye-lampy.png"), 'public');
-        Storage::disk('local')->put("public/catalog/torshery.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/3a2/torshery.png"), 'public');
-        Storage::disk('local')->put("public/catalog/trekovye-sistemy.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/690/trekovye-sistemy.png"), 'public');
-        Storage::disk('local')->put("public/catalog/eksterernoe_osveshchenie.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/9f3/eksterernoe_osveshchenie.png"), 'public');
-        Storage::disk('local')->put("public/catalog/ofisnoe-osveshchenie.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/1c3/ofisnoe-osveshchenie.png"), 'public');
-        Storage::disk('local')->put("public/catalog/lampochki.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/03e/lampochki.png"), 'public');
-        Storage::disk('local')->put("public/catalog/svetodiodnaya-podsvetka.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/44b/svetodiodnaya-podsvetka.png"), 'public');
-        Storage::disk('local')->put("public/catalog/elektrotovary.png", file_get_contents("https://www.vamsvet.ru/upload/iblock/923/elektrotovary.png"), 'public');
+
 
         DB::table("catalog_menus")->insert($all_punkt);
     }
