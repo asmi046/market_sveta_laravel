@@ -7,7 +7,7 @@
 		<nav>
 			<ul>
 				@foreach ($menu as $item)
-					<li><a data-subwin="{{$item->slug}}" href="{{$item->link}}">{{$item->title}}</a></li>
+					<li><a data-subwin="{{$item->id}}" href="{{$item->link}}">{{$item->title}}</a></li>
 				@endforeach
 			</ul>
 		</nav>

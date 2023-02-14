@@ -21,172 +21,148 @@ class SubCatalogMenuSeeder extends Seeder
                 "parent" => "Люстры",
                 "sub_punct" => "Виды",
                 "order" => 1,
-                "title" => "Потолочьные",
-                "link" => "#",
+                "title" => "Люстры потолочные, накладны",
+                "link" => "category/liustry-potolocnye-nakladny-23",
             ],
-            
+
             [
                 "parent" => "Люстры",
                 "sub_punct" => "Виды",
-                "order" => 2,
-                "title" => "Подвесные",
-                "link" => "#",
+                "order" => 1,
+                "title" => "Люстры подвесные",
+                "link" => "category/liustry-podvesnye-24",
             ],
-            
+
             [
                 "parent" => "Люстры",
                 "sub_punct" => "Виды",
-                "order" => 3,
-                "title" => "Каскадные",
-                "link" => "#",
+                "order" => 1,
+                "title" => "Люстры каскадные",
+                "link" => "category/liustry-kaskadnye-25",
             ],
+
+            [
+                "parent" => "Люстры",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Люстры для натяжного потолка",
+                "link" => "category/liustry-dlia-natiaznogo-potolka-27",
+            ],
+
+            [
+                "parent" => "Люстры",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Люстры с пультом",
+                "link" => "category/liustry-s-pultom-28",
+            ],
+
+            [
+                "parent" => "Люстры",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Люстры светодиодные",
+                "link" => "category/liustry-svetodiodnye-29",
+            ],
+
+            [
+                "parent" => "Люстры",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Люстры светодиодные",
+                "link" => "category/liustry-svetodiodnye-29",
+            ],
+
+            [
+                "parent" => "Люстры",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Люстры на штанге",
+                "link" => "category/liustry-na-stange-2300",
+            ],
+
         ];
+
 
         DB::table("sub_catalog_menus")->insert($all_punkt);
 
         $all_punkt = [
             [
-                "parent" => "Люстры",
-                "sub_punct" => "Место использования",
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Виды",
                 "order" => 1,
-                "title" => "Для спальни",
-                "link" => "#",
+                "title" => "Бра с выключателем",
+                "link" => "category/bra-s-vykliucatelem-9",
             ],
-            
+
             [
-                "parent" => "Люстры",
-                "sub_punct" => "Место использования",
-                "order" => 2,
-                "title" => "Для гостинной",
-                "link" => "#",
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Бра гибкие",
+                "link" => "category/bra-gibkie-10",
             ],
-            
+
             [
-                "parent" => "Люстры",
-                "sub_punct" => "Место использования",
-                "order" => 3,
-                "title" => "Для кухни",
-                "link" => "#",
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Бра с абажуром",
+                "link" => "category/bra-s-abazurom-11",
             ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Бра с подсветкой",
+                "link" => "category/bra-s-podsvetkoi-12",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Бра для чтения",
+                "link" => "category/bra-dlia-cteniia-13",
+            ],
+
+
+
         ];
+
 
         DB::table("sub_catalog_menus")->insert($all_punkt);
 
         $all_punkt = [
             [
-                "parent" => "Люстры",
-                "sub_punct" => "Стили",
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Виды",
                 "order" => 1,
-                "title" => "Классика",
-                "link" => "#",
+                "title" => "Накладные светильники с пультом",
+                "link" => "category/nakladnye-svetilniki-s-pultom-3101",
             ],
-            
+
             [
-                "parent" => "Люстры",
-                "sub_punct" => "Место использования",
-                "order" => 2,
-                "title" => "Арт-деко",
-                "link" => "#",
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные накладные светильники",
+                "link" => "category/svetodiodnye-nakladnye-svetilniki-3102",
             ],
-            
+
             [
-                "parent" => "Люстры",
-                "sub_punct" => "Место использования",
-                "order" => 3,
-                "title" => "Современный",
-                "link" => "#",
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Накладные светильники для натяжного потолка",
+                "link" => "category/nakladnye-svetilniki-dlia-natiaznogo-potolka-3103",
             ],
-            
-            [
-                "parent" => "Люстры",
-                "sub_punct" => "Место использования",
-                "order" => 4,
-                "title" => "Кантри",
-                "link" => "#",
-            ],
-            
-            [
-                "parent" => "Люстры",
-                "sub_punct" => "Место использования",
-                "order" => 5,
-                "title" => "Тифани",
-                "link" => "#",
-            ],
+
+
+
         ];
 
-        DB::table("sub_catalog_menus")->insert($all_punkt);
-
-        $all_punkt = [
-            [
-                "parent" => "Люстры",
-                "sub_punct" => "Материалы",
-                "order" => 1,
-                "title" => "Хрустальные",
-                "link" => "#",
-            ],
-            
-            [
-                "parent" => "Люстры",
-                "sub_punct" => "Материалы",
-                "order" => 2,
-                "title" => "Деревянные",
-                "link" => "#",
-            ],
-            
-            [
-                "parent" => "Люстры",
-                "sub_punct" => "Материалы",
-                "order" => 3,
-                "title" => "Стеклянные",
-                "link" => "#",
-            ],
-            
-            [
-                "parent" => "Люстры",
-                "sub_punct" => "Материалы",
-                "order" => 4,
-                "title" => "Пластиковые",
-                "link" => "#",
-            ],
-            
-        ];
-
-        DB::table("sub_catalog_menus")->insert($all_punkt);
-
-        $all_punkt = [
-            [
-                "parent" => "Светильники",
-                "sub_punct" => "Материалы",
-                "order" => 1,
-                "title" => "Хрустальные",
-                "link" => "#",
-            ],
-            
-            [
-                "parent" => "Светильники",
-                "sub_punct" => "Материалы",
-                "order" => 2,
-                "title" => "Деревянные",
-                "link" => "#",
-            ],
-            
-            [
-                "parent" => "Светильники",
-                "sub_punct" => "Материалы",
-                "order" => 3,
-                "title" => "Стеклянные",
-                "link" => "#",
-            ],
-            
-            [
-                "parent" => "Светильники",
-                "sub_punct" => "Материалы",
-                "order" => 4,
-                "title" => "Пластиковые",
-                "link" => "#",
-            ],
-            
-        ];
 
         DB::table("sub_catalog_menus")->insert($all_punkt);
     }

@@ -38,7 +38,7 @@
 
                         <price-select-category-filter @chenge-price="chengePrice"></price-select-category-filter>
 
-                        <multy-select-category-filter @chenge-list="chengeList" v-show="showMode" property-name="osvtype" property-text="Тип светильника" :values="filterList.osvtype"></multy-select-category-filter>
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="showMode=='place'" property-name="osvtype" property-text="Тип светильника" :values="filterList.osvtype"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.brand.length != 0" property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.form.length != 0" property-name="form" property-text="Форма" :values="filterList.form"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.style.length != 0" property-name="style" property-text="Стиль" :values="filterList.style"></multy-select-category-filter>

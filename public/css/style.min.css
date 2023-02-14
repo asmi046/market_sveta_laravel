@@ -5473,6 +5473,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .page__sidebar {
   flex: 0 0 20.5%;
   margin-right: 15px;
+  max-width: 300px;
 }
 
 .page__sidebar-navigation-body {
