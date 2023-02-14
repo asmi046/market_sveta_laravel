@@ -68,6 +68,13 @@ class ApiIndexController extends Controller
         $zap_filter = json_decode($request->get('filter_empty'));
 
         foreach ($catProducts as $elem) {
+
+            $first_word = $this->get_osv_type($elem->name);
+
+            if (!empty($first_word)) {
+                $zap_filter->osvtype->{$first_word} = empty($zap_filter->osvtype->{$first_word})?"1":$zap_filter->osvtype->{$first_word}+1;
+            }
+
             if (!empty($elem->style))
                 $zap_filter->style->{$elem->style} = empty($zap_filter->style->{$elem->style})?"1":$zap_filter->style->{$elem->style}+1;
 
@@ -109,6 +116,15 @@ class ApiIndexController extends Controller
         return array("products"=>$catProducts, "filter"=>$zap_filter);
     }
 
+    public function get_osv_type($name) {
+        $tags = ['Бра', 'Люстра', 'Торшер', 'Светильник', 'Настольная лампа', 'Спот'];
+
+        foreach ($tags as $t) {
+            if (strpos(mb_strtoupper($name), mb_strtoupper($t)) !== false)
+             return $t;
+        }
+    }
+
     public function get_category_filter($catid, $mode, Request $request) {
 
         $requMain = new Request();
@@ -134,6 +150,7 @@ class ApiIndexController extends Controller
             // ->orWhere('cat3', $catid)
             // ->orWhere('cat4', $catid)->filter($pf)->get();
 
+        $osvtype = [];
         $brand = [];
         $style = [];
         $state = [];
@@ -145,6 +162,7 @@ class ApiIndexController extends Controller
         $mesto = [];
         $form = [];
 
+        $empty_osvtype = [];
         $empty_brand = [];
         $empty_style = [];
         $empty_state = [];
@@ -159,6 +177,15 @@ class ApiIndexController extends Controller
         $max_price = 0;
 
         foreach ($catProducts as $elem) {
+
+            $first_word = $this->get_osv_type($elem->name);
+
+            if (!empty($first_word)) {
+                $osvtype[$first_word] = (empty($osvtype[$first_word]))?1:$osvtype[$first_word]+1;
+            }
+
+            $empty_osvtype[$first_word] = 0;
+
             if (!empty($elem->style))
             {
                 $style[$elem->style] = (empty($style[$elem->style]))?1:$style[$elem->style]+1;
@@ -231,6 +258,7 @@ class ApiIndexController extends Controller
             }
         }
 
+        $filter_zn["osvtype"] = $osvtype;
         $filter_zn["style"] = $style;
         $filter_zn["brand"] = $brand;
         $filter_zn["state"] = $state;
@@ -243,6 +271,7 @@ class ApiIndexController extends Controller
         $filter_zn["form"] = $form;
         $filter_zn["max_price"] = $max_price;
 
+        $empty_filter["osvtype"] = $empty_osvtype;
         $empty_filter["style"] = $empty_style;
         $empty_filter["brand"] = $empty_brand;
         $empty_filter["state"] = $empty_state;

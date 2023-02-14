@@ -1,43 +1,44 @@
 <template>
     <div @click.prevent="showFilterBlk = !showFilterBlk" class = "filter_mobile_panel">
-        <span class = "icon icon-ec_icon_tune_gr"></span> Фильтры 
+        <span class = "icon icon-ec_icon_tune_gr"></span> Фильтры
     </div>
 
-    <aside v-show ="showFilterBlk" id="cat_filter" class="page__sidebar">   
+    <aside v-show ="showFilterBlk" id="cat_filter" class="page__sidebar">
         <div class="mobile_filter_close_panel">
                 <span>Фильтры</span>
                 <div @click.prevent="showFilterBlk = !showFilterBlk" class="icon icon-ec_icon_abort"></div>
         </div>
-        
+
         <div v-show="filterList.length == 0" class="filter_loading">
             Фильтр загружается...
         </div>
 
-        
+
         <div v-show="filterList.length != 0" class="page__sidebar-body">
 
 
             <div class="page__sidebar-navigation">
                 <div class="spollers-block" data-spollers data-one-spoller>
-        
+
                     <div v-show="mainCatList.length !=0" class="page__sidebar-navigation-col">
                         <div class="page__sidebar-navigation-block-name d-flex">
                                 <div class="page__sidebar-navigation-name">Категории</div>
                         </div>
-                        
+
                         <ul class="page__sidebar-navigation-menu sidebar-navigation-catMenu">
                                     <li v-for="(item, index) in mainCatList" :key="item.id" :data-index="index"  class="sidebar-navigation-catMenu-item">
                                         <a :href="homeRout+'/category/'+item.slug" class="sidebar-navigation-catMenu-item-link">{{item.name}}</a>
-                                    </li>    
+                                    </li>
                         </ul>
                     </div>
 
 
-                    <form method="GET" :action="catUrl" class = "page__sidebar_form" id="cat_filter_form">   
+                    <form method="GET" :action="catUrl" class = "page__sidebar_form" id="cat_filter_form">
                         <pre-search-informer :dom-element="clicedElement" :pre-load="preLoad" :element-count="preSerchCount"></pre-search-informer>
 
                         <price-select-category-filter @chenge-price="chengePrice"></price-select-category-filter>
 
+                        <multy-select-category-filter @chenge-list="chengeList" v-show="showMode" property-name="osvtype" property-text="Тип светильника" :values="filterList.osvtype"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.brand.length != 0" property-name="brand" property-text="Бренд" :values="filterList.brand"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.form.length != 0" property-name="form" property-text="Форма" :values="filterList.form"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.style.length != 0" property-name="style" property-text="Стиль" :values="filterList.style"></multy-select-category-filter>
@@ -47,11 +48,11 @@
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.plaf_color.length != 0" property-name="plaf_color" property-text="Цвент плафона" :values="filterList.plaf_color"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.arm_material.length != 0" property-name="arm_material" property-text="Материал арматуры" :values="filterList.arm_material"></multy-select-category-filter>
                         <multy-select-category-filter @chenge-list="chengeList" v-show="filterList.length!= 0 && filterList.plaf_material.length != 0" property-name="plaf_material" property-text="Материал плафона" :values="filterList.plaf_material"></multy-select-category-filter>
-                        
+
                         <div class="filter_controll">
                             <button class="btn full_width" type="submit" >Выбрать
-                                <span v-show="preLoad == false" class="mobileCounter">&nbsp;({{preSerchCount}})</span> 
-                                <span v-show="preLoad  == true" class="mobileLoader"></span> 
+                                <span v-show="preLoad == false" class="mobileCounter">&nbsp;({{preSerchCount}})</span>
+                                <span v-show="preLoad  == true" class="mobileLoader"></span>
                             </button>
                             <button class="btn empty_btn full_width" @click.prevent="clearFilter">Сбросить фильтр</button>
                             <!-- <button class="btn empty_btn full_width" @click.prevent="test">Test</button> -->
@@ -59,7 +60,7 @@
                     </form>
 
                 </div>
-            </div>    
+            </div>
         </div>
   </aside>
 </template>
@@ -112,18 +113,18 @@ export default {
             this.preLoad = false
         })
         .catch(error => console.log(error));
-    }, 
+    },
 
     methods: {
         updateWidth() {
-            if (window.innerWidth <= 768) 
+            if (window.innerWidth <= 768)
                 this.showFilterBlk = false
             else this.showFilterBlk = true
         },
         get_pre_filter() {
             let prefix_api_url = document.location.protocol+"//"+document.location.host
-            
-            
+
+
             this.preLoad = true
 
             axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId+'/'+this.showMode, {
@@ -134,34 +135,37 @@ export default {
             })
             .then((response) => {
                 this.preSerchCount=response.data.products.length
-                
+
+                    if (this.clicedElement.dataset.razdel != "osvtype")
+                        this.filterList.osvtype = response.data.filter.osvtype
+
                     if (this.clicedElement.dataset.razdel != "style")
                         this.filterList.style = response.data.filter.style
-                    
+
                     if (this.clicedElement.dataset.razdel != "brand")
                         this.filterList.brand = response.data.filter.brand
-                    
+
                     if (this.clicedElement.dataset.razdel != "state")
                         this.filterList.state = response.data.filter.state
-                    
+
                     if (this.clicedElement.dataset.razdel != "form")
                         this.filterList.form = response.data.filter.form
-                    
+
                     if (this.clicedElement.dataset.razdel != "mesto")
                         this.filterList.mesto = response.data.filter.mesto
-                    
+
                     if (this.clicedElement.dataset.razdel != "arm_color")
                         this.filterList.arm_color = response.data.filter.arm_color
-                    
+
                     if (this.clicedElement.dataset.razdel != "plaf_color")
                         this.filterList.plaf_color = response.data.filter.plaf_color
-                    
+
                     if (this.clicedElement.dataset.razdel != "arm_material")
                         this.filterList.arm_material = response.data.filter.arm_material
-                    
+
                     if (this.clicedElement.dataset.razdel != "plaf_material")
                         this.filterList.plaf_material = response.data.filter.plaf_material
-                    
+
                     this.preLoad = false
             })
             .catch(error => console.log(error));
@@ -173,7 +177,7 @@ export default {
 
         chengeList(element, list, item) {
             this.selectedParam[item] = list
-            
+
             if (element != null)
                 {
                     this.get_pre_filter()
@@ -224,13 +228,13 @@ export default {
     top: calc(50% - 6px);
 }
 
-.mobile_filter_close_panel .icon:hover{ 
+.mobile_filter_close_panel .icon:hover{
     color: #E13510;
 }
 
 
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 
     .mobile_filter_close_panel {
         display: block;

@@ -3,6 +3,30 @@
 namespace App\Filters;
 
 class ProductFilter extends QueryFilter {
+    public function osvtype($osvtype = []) {
+        if (!empty($osvtype))
+        {
+            // $all_qusl = [];
+            // foreach ($osvtype as $ot)
+            //     $all_qusl[] = ["name", "LIKE", "%".$ot."%"];
+
+            // $this->builder->orWhere($all_qusl);
+
+            $i =0;
+             foreach ($osvtype as $ot)
+              {
+                if ($i == 0)
+                    $this->builder->where("name", "LIKE", "%".$ot."%");
+                else
+                    $this->builder->orWhere("name", "LIKE", "%".$ot."%");
+
+                $i++;
+              }
+        }
+
+
+    }
+
     public function style($style = []) {
         if (!empty($style))
             $this->builder->whereIn("style", $style);
