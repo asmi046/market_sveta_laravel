@@ -3459,7 +3459,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .header-top ul li {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .header-top ul li a {
@@ -3474,6 +3474,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .header-top-index {
   background: #313133;
+  color:white
 }
 
 .header-top-index ul li {
@@ -3490,10 +3491,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding-bottom: 2px;
 }
 
+.r_work {
+
+}
+
 .location-block__link {
   display: flex;
   align-items: center;
-  margin-right: 70px;
+  margin-right: 30px;
 }
 
 .location-block__link:last-child {
@@ -3576,7 +3581,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   float: left;
   width: 206px;
   height: 56px;
-  background-size: 100%;
+  background-size: contain;
   background-position: 0 0;
   background-repeat: no-repeat;
 }

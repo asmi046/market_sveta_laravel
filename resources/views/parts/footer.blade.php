@@ -15,11 +15,11 @@
 
 				<div class="footer__callback callback d-flex">
 					<a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a>
-					<P class="callback__popup _popup-link">Пн-Сб: 10:00 до 19:00</p>
+					<P class="callback__popup _popup-link">{{Config::get('contact.grafik')}}</p>
 				</div>
 
 				<p class="footer__info-text">
-					2012 — 2021г. «Интернет-магазин» Маркет Света» ©
+					2012 — {{date("Y")}}г. «Интернет-магазин «Карта Света» ©
 				</p>
 			</div>
 
