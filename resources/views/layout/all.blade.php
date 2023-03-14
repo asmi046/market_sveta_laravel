@@ -3,7 +3,7 @@
     @include('parts.head')
 <body>
 
-    <div class="up_btn" id="up_btn"></div>
+    <div class="up_btn up_btn_hide" id="up_btn"></div>
 
 	<div class="wrapper" id = "global_app">
 		@include('parts.header_index')
