@@ -6112,10 +6112,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 
 
+.up_btn {
+    position: fixed;
+    width:40px;
+    height: 40px;
+    bottom: 60px;
+    right: 10px;
+    border: 2px solid #FFB400;
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
+    background-image: url(../img/icons/arrow_.svg);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
 
+}
 
+.up_btn:hover {
+    background-color: #FFB400;
+    background-image: url(../img/icons/arrow_hover.svg);
+}
 
-
+.up_btn_hide{ display: none;}
 
 
 

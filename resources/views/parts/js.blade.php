@@ -8,7 +8,7 @@
     </script>
 
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    
+
 @endif
 
 @if (Route::currentRouteName() == "brands")
@@ -20,7 +20,7 @@
 
 @vite([
 
-"public/js/modules/dynamic_adapt.js", 
+"public/js/modules/dynamic_adapt.js",
 
 "public/js/modules/functions.js",
 "public/js/modules/regular.js",
@@ -33,4 +33,5 @@
 "public/js/modules/forms.js",
 "public/js/modules/mobile_catalog_menu.js",
 "public/js/modules/favorites.js",
+"public/js/modules/upp_btn.js",
 ])

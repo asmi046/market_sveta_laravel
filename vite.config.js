@@ -9,9 +9,9 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-                
-                "public/css/style.min.css", 
-                "public/css/interface.css", 
+
+                "public/css/style.min.css",
+                "public/css/interface.css",
                 "public/css/filter.style.css",
                 "public/css/mainsearch.css",
                 "public/css/bascet.css",
@@ -25,7 +25,7 @@ export default defineConfig({
                 "resources/js/lib/lib.js",
 
                 "public/js/modules/dynamic_adapt.js",
-                
+
                 "public/js/modules/functions.js",
                 "public/js/modules/regular.js",
                 "public/js/modules/script.js",
@@ -39,7 +39,8 @@ export default defineConfig({
                 "public/js/modules/catalog_menu.js",
                 "public/js/modules/favorites.js",
                 "public/js/modules/map.js",
-                
+                "public/js/modules/upp_btn.js",
+
             ],
             refresh: true,
             mode:'production'
