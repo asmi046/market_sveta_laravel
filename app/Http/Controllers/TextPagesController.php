@@ -28,16 +28,20 @@ class TextPagesController extends Controller
     public function about() {
         return view('about');
     }
-    
+
     public function dostavka() {
         return view('dostavka');
     }
-    
+
     public function vozvrat() {
         return view('vozvrat');
     }
-    
+
     public function policy() {
         return view('policy');
+    }
+
+    public function for_designers() {
+        return view('for-designers');
     }
 }
