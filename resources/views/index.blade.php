@@ -36,7 +36,34 @@
     </div>
 </section>
 
+
+
+
+
 <x-popular></x-popular>
+
+<section id="newstovar" class="newstovar">
+    <div class="_container">
+        <h2 class="selection__title title">НОВИНКИ</h2>
+
+        <div class="sale_tovar_wraper sale_tovar_wraper_bottom">
+            @for ($i=0; $i<6; $i++)
+                <x-tovar-card :minfo="$new_tovar[$i]"></x-tovar-card>
+            @endfor
+        </div>
+    </div>
+</section>
+
+<section id="pop_bnr" class="pop_bnr">
+    <div class="_container">
+
+        <div class="popular__baner">
+            <img src="{{asset('img/banners/'.$banners["action_banner"][0]["img_name"])}}" alt="">
+        </div>
+
+    </div>
+</section>
+
 
 <section id="selection" class="selection">
     <div class="_container">

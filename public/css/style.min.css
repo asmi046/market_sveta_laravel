@@ -4158,6 +4158,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background: #FFB400;
 }
 
+.pop_bnr,
+.newstovar,
 .popular {
   padding: 25px 0 20px 0;
 }
@@ -4173,7 +4175,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .popular__row {
   display: flex;
   margin: 0 -10px;
-  margin-bottom: 55px;
 }
 
 .popular__column {
