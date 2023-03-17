@@ -100,12 +100,17 @@
             </div>
 
             <div class="sale_tovar_wraper">
-                @foreach ($sale_elements as $item)
-                    <x-tovar-card :minfo="$item"></x-tovar-card>
-                @endforeach
+                @for ($i=0; $i<4; $i++)
+                    <x-tovar-card :minfo="$sale_elements[$i]"></x-tovar-card>
+                @endfor
             </div>
+        </div>
 
 
+        <div class="main-prod-card d-flex">
+            @for ($i=4; $i<8; $i++)
+                <x-tovar-card :minfo="$sale_elements[$i]"></x-tovar-card>
+            @endfor
         </div>
 
     </div>
