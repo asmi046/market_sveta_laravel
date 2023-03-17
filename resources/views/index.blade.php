@@ -107,8 +107,8 @@
         </div>
 
 
-        <div class="main-prod-card d-flex">
-            @for ($i=4; $i<8; $i++)
+        <div class="sale_tovar_wraper sale_tovar_wraper_bottom">
+            @for ($i=4; $i<10; $i++)
                 <x-tovar-card :minfo="$sale_elements[$i]"></x-tovar-card>
             @endfor
         </div>
