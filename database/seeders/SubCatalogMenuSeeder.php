@@ -21,7 +21,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "parent" => "Люстры",
                 "sub_punct" => "Виды",
                 "order" => 1,
-                "title" => "Люстры потолочные, накладны",
+                "title" => "Люстры потолочные, накладные",
                 "link" => "category/liustry-potolocnye-nakladny-23",
             ],
 
@@ -347,8 +347,8 @@ class SubCatalogMenuSeeder extends Seeder
             ],
 
         ];
-//КОНЕЦ СТРОКИ
-
+//КОНЕЦ СТРОКИ ЛЮСТР
+//НАЧАЛО СТРОКИ БРА И НАСТЕННОЕ ОСВЕЩЕНИЕ
         DB::table("sub_catalog_menus")->insert($all_punkt);
 
         $all_punkt = [
@@ -391,12 +391,307 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Бра для чтения",
                 "link" => "category/bra-dlia-cteniia-13",
             ],
+//Стили БРА
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=современный",
+            ],
 
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=хай-тек",
+            ],
 
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=лофт",
+            ],
 
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=классический",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=кантри",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-декор",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=арт-деко",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Замковый",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=замковый",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Тиффани",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=тиффани",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Прованс",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=прованс",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Восточный",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=восточный",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Модерн",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=модерн",
+            ],
+//МАТЕРИАЛЫ БРА
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Дерево",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=дерево",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Гипс",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=гипс",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бетон",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=бетон",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Латунь",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=латунь",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Полимер",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=полимер",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Стекло",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=стекло",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Керамика",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=керамика",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бронза",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=бронза",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бронза",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=камень",
+            ],
+//Место применения БРА
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=экспозиция",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Ванная",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=ванная",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Детская",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=детская",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=большие+залы",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Магазины",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=магазин",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=Гостиня",
+            ],
+
+            [
+                "parent" => "Бра и настенное освещение",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кабинет",
+                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кабинет",
+            ],
+            
         ];
-
-
+//КОНЕЦ СТРОКИ БРА
+//НАЧАЛО СТРОКИ НАКЛАДНЫЕ СВЕТИЛЬНИКИ
         DB::table("sub_catalog_menus")->insert($all_punkt);
 
         $all_punkt = [
@@ -423,13 +718,1222 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Накладные светильники для натяжного потолка",
                 "link" => "category/nakladnye-svetilniki-dlia-natiaznogo-potolka-3103",
             ],
+//СТИЛИ НАКЛАДНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=хай-тек",
+            ],
 
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=современный",
+            ],
 
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=классический",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-декор",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=арт-деко",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=кантри",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Прованс",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=прованс",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Восточный",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=восточный",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Модерн",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=модерн",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Замковый",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=замковый",
+            ],
+//МАТЕРИАЛЫ НАКЛАДНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Латунь",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=латунь",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Дерево",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=дерево",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Полимер",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=полимер",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Гипс",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=гипс",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бетон",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=бетон",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ НАКЛАДНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Ванная",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=ванная",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Магазин",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=магазин",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кабинет",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=кабинет",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=большие+залы",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=экспозиция",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Детская",
+                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=детская",
+            ],
 
         ];
+//КОНЕЦ СТРОКИ НАКЛАДНЫЕ СВЕТИЛЬНИКИ
+//НАЧАЛО СТРОКИ ПОДВЕСНЫЕ СВЕТИЛЬНИКИ
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные подвесные светильники",
+                "link" => "category/svetodiodnye-podvesnye-svetilniki-3201",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Подвесные светильники с абажуром",
+                "link" => "category/podvesnye-svetilniki-s-abazurom-3202",
+            ],
+        ];
+//КОНЕЦ СТРОКИ ПОДВЕСНЫЕ СВЕТИЛЬНИКИ
+//НАЧАЛО СТРОКИ Реечные, линейные светильники
 
 
         DB::table("sub_catalog_menus")->insert($all_punkt);
 
+        $all_punkt = [
+//СТИЛИ РЕЕЧНЫЕ, ЛИНЕЙНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Накладные светильники с пультом",
+                "link" => "category/nakladnye-svetilniki-s-pultom-3101",
+            ],
+        ];
+//КОНЕЦ СТРОКИ Реечные, линейные светильники
+//НАЧАЛО СТРОКИ Точечные светильники
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Влагозащищенные точечные светильники",
+                "link" => "category/vlagozashhishhennye-tocecnye-svetilniki-65",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Встраиваемые точечные светильники",
+                "link" => "category/vstraivaemye-tocecnye-svetilniki-66",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Накладные точечные светильники",
+                "link" => "category/nakladnye-tocecnye-svetilniki-67",
+            ],
+//СТИЛИ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
+        ];
+//КОНЕЦ СТРОКИ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
+//НАЧАЛО СТРОКИ Настольные лампы
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Настольные лампы c абажуром",
+                "link" => "category/nastolnye-lampy-c-abazurom-16",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные настольные лампы",
+                "link" => "category/svetodiodnye-nastolnye-lampy-17",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Настольные лампы на струбцине",
+                "link" => "category/nastolnye-lampy-na-strubcine-18",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Настольные лампы для спальни",
+                "link" => "category/nastolnye-lampy-dlia-spalni-19",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Дизайнерские настольные лампы",
+                "link" => "category/dizainerskie-nastolnye-lampy-20",
+            ],
+
+//СТИЛИ ДЛЯ НАСТОЛЬНЫЕ ЛАМПЫ
+        ];
+//КОНЕЦ СТРОКИ НАСТОЛЬНЫЕ ЛАМПЫ
+//НАЧАЛО СТРОКИ Торшеры и напольные светильники
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Торшеры с абажуром",
+                "link" => "category/torsery-s-abazurom-60",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные",
+                "link" => "category/svetodiodnye-61",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Торшеры со столиком",
+                "link" => "category/torsery-so-stolikom-62",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Торшеры и напольные светильники",
+                "link" => "category/torsery-i-napolnye-svetilniki-59",
+            ],
+//СТИЛИ ДЛЯ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
+        ];
+//КОНЕЦ СТРОКИ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
+//НАЧАЛО СТРОКИ Споты
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Встраиваемые споты",
+                "link" => "category/vstraivaemye-spoty-55",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные споты",
+                "link" => "category/svetodiodnye-spoty-56",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Споты на штанге",
+                "link" => "category/spoty-na-stange-57",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Споты с выключателем",
+                "link" => "category/spoty-s-vykliucatelem-58",
+            ],
+//СТИЛИ СПОТЫ
+        ];
+//КОНЕЦ СТРОКИ СПОТЫ
+//НАЧАЛО СТРОКИ Шинные и струнные системы
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Комплектующие",
+                "link" => "category/komplektuiushhie-70",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Трековые светильники",
+                "link" => "category/trekovye-svetilniki-71",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Готовые решения",
+                "link" => "category/gotovye-reseniia-72",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Шинопроводы",
+                "link" => "category/sinoprovody-73",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Комплектующие для трековых светильников",
+                "link" => "category/komplektuiushhie-dlia-trekovyx-svetilnikov-74",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Комплектующие для шинопроводов",
+                "link" => "category/komplektuiushhie-dlia-sinoprovodov-75",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Драйверы для шинопроводов",
+                "link" => "category/draivery-dlia-sinoprovodov-76",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Диммеры для шинопроводов",
+                "link" => "category/dimmery-dlia-sinoprovodov-78",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Датчики движения для шинопроводов",
+                "link" => "category/datciki-dvizeniia-dlia-sinoprovodov-79",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Струнные светильники",
+                "link" => "category/strunnye-svetilniki-80",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Струнные шинопроводы",
+                "link" => "category/strunnye-sinoprovody-81",
+            ],
+//СТИЛИ Шинные и струнные системы
+        ];
+//КОНЕЦ СТРОКИ Шинные и струнные системы
+//НАЧАЛО СТРОКИ Светильники для подсветки
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники для картин и зеркал",
+                "link" => "category/svetilniki-dlia-kartin-i-zerkal-2",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Мебельные светильники",
+                "link" => "category/mebelnye-svetilniki-3",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Ночники",
+                "link" => "category/nocniki-4",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Подсветка стен и ступеней",
+                "link" => "category/podsvetka-sten-i-stupenei-5",
+            ],
+//СТИЛИ Светильники для подсветки
+        ];
+//КОНЕЦ СТРОКИ Светильники для подсветки
+//НАЧАЛО СТРОКИ Светодиодные ленты и профили
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Ленты светодиодные",
+                "link" => "category/lenty-svetodiodnye-44",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Драйверы для светодиодных лент",
+                "link" => "category/draivery-dlia-svetodiodnyx-lent-45",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Усилители для светодиодных лент",
+                "link" => "category/usiliteli-dlia-svetodiodnyx-lent-46",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Контроллеры для светодиодных лент",
+                "link" => "category/kontrollery-dlia-svetodiodnyx-lent-47",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Блоки питания для светодиодных лент",
+                "link" => "category/bloki-pitaniia-dlia-svetodiodnyx-lent-48",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Экраны для светодиодных лент",
+                "link" => "category/ekrany-dlia-svetodiodnyx-lent-49",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Профили для светодиодных лент",
+                "link" => "category/profili-dlia-svetodiodnyx-lent-50",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Комплектующие для светодиодных лент",
+                "link" => "category/komplektuiushhie-dlia-svetodiodnyx-lent-51",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Комплектующие для профилей",
+                "link" => "category/komplektuiushhie-dlia-profilei-52",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Диммеры",
+                "link" => "category/dimmery-53",
+            ],
+//СТИЛИ ДЛЯ Светодиодные ленты и профили
+        ];
+//КОНЕЦ СТРОКИ Светодиодные ленты и профили
+//НАЧАЛО СТРОКИ Детские светильники
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Детские люстры",
+                "link" => "category/detskie-liustry-35",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Детские бра",
+                "link" => "category/detskie-bra-36",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Детские настольные лампы",
+                "link" => "category/detskie-nastolnye-lampy-37",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Детские ночники",
+                "link" => "category/detskie-nocniki-38",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники детские",
+                "link" => "category/svetilniki-detskie-39",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Детские споты",
+                "link" => "category/detskie-spoty-40",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Детские торшеры",
+                "link" => "category/detskie-torsery-41",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Детские точечные светильники",
+                "link" => "category/detskie-tocecnye-svetilniki-42",
+            ],
+//СТИЛИ ДЛЯ Детские светильники
+        ];
+//КОНЕЦ СТРОКИ Детские светильники
+//НАЧАЛО СТРОКИ Уличные светильники
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Грунтовые светильники",
+                "link" => "category/gruntovye-svetilniki-119",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники для стен и ступеней",
+                "link" => "category/svetilniki-dlia-sten-i-stupenei-120",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники для фонтанов и бассейнов",
+                "link" => "category/svetilniki-dlia-fontanov-i-basseinov-121",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Уличные настенные светильники",
+                "link" => "category/ulicnye-nastennye-svetilniki-122",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Уличные потолочные светильники",
+                "link" => "category/ulicnye-potolocnye-svetilniki-123",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Прожекторы",
+                "link" => "category/prozektory-124",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Садово-парковые светильники",
+                "link" => "category/sadovo-parkovye-svetilniki-125",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Садовые фигуры",
+                "link" => "category/sadovye-figury-126",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Уличные настольные светильники",
+                "link" => "category/ulicnye-nastolnye-svetilniki-127",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Уличные блоки розеток",
+                "link" => "category/ulicnye-bloki-rozetok-128",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Тротуарные светильники",
+                "link" => "category/trotuarnye-svetilniki-129",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Фонари",
+                "link" => "category/fonari-130",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Штативы",
+                "link" => "category/stativy-131",
+            ],
+//СТИЛИ ДЛЯ Уличные светильники
+        ];
+//КОНЕЦ СТРОКИ Уличные светильники
+//НАЧАЛО СТРОКИ Лампы
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Галогеновые лампы",
+                "link" => "category/galogenovye-lampy-110",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Металлогалогеновые лампы",
+                "link" => "category/metallogalogenovye-lampy-111",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Лампы накаливания",
+                "link" => "category/lampy-nakalivaniia-112",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные лампы",
+                "link" => "category/svetodiodnye-lampy-113",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Ретро лампы",
+                "link" => "category/retro-lampy-114",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Люминесцентные лампы",
+                "link" => "category/liuminescentnye-lampy-115",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные модули",
+                "link" => "category/svetodiodnye-moduli-116",
+            ],
+//СТИЛИ ДЛЯ Лампы
+        ];
+//КОНЕЦ СТРОКИ Лампы
+//НАЧАЛО СТРОКИ Лайтбоксы
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Лайтбоксы",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "",
+                "link" => "",
+            ],
+        ];
+//КОНЕЦ СТРОКИ Лайтбоксы
+//НАЧАЛО СТРОКИ Праздничное освещение
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодная бахрома",
+                "link" => "category/svetodiodnaia-baxroma-133",
+            ],
+
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные гирлянды",
+                "link" => "category/svetodiodnye-girliandy-134",
+            ],
+
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "LED гирлянды на деревья",
+                "link" => "category/led-girliandy-na-derevia-135",
+            ],
+
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные деревья",
+                "link" => "category/svetodiodnye-derevia-136",
+            ],
+
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные нити",
+                "link" => "category/svetodiodnye-niti-137",
+            ],
+
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные занавесы",
+                "link" => "category/svetodiodnye-zanavesy-138",
+            ],
+
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные фигуры",
+                "link" => "category/svetodiodnye-figury-139",
+            ],
+
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные сети",
+                "link" => "category/svetodiodnye-seti-140",
+            ],
+
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Дюралайт",
+                "link" => "category/diuralait-141",
+            ],
+
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Комплектующие",
+                "link" => "category/komplektuiushhie-142",
+            ],
+//СТИЛИ Праздничное освещение
+        ];
+//КОНЕЦ СТРОКИ Праздничное освещение
+//НАЧАЛО СТРОКИ Электроустановочные изделия
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Выключатели",
+                "link" => "category/vykliucateli-144",
+            ],
+
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Клавиши, накладки",
+                "link" => "category/klavisi-nakladki-145",
+            ],
+
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Рамки",
+                "link" => "category/ramki-146",
+            ],
+
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Розетки",
+                "link" => "category/rozetki-147",
+            ],
+
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Радиовыключатели",
+                "link" => "category/radiovykliucateli-148",
+            ],
+
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Терморегулятор",
+                "link" => "category/termoreguliator-149",
+            ],
+
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Комплектующие",
+                "link" => "category/komplektuiushhie-150",
+            ],
+
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Стабилизаторы напряжения",
+                "link" => "category/stabilizatory-napriazeniia-151",
+            ],
+//СТИЛИ ДЛЯ Электроустановочные изделия
+        ];
+//КОНЕЦ СТРОКИ Электроустановочные изделия
+//НАЧАЛО СТРОКИ Технический свет, офисные светильники
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Консольные светильники",
+                "link" => "category/konsolnye-svetilniki-152",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники Downlight",
+                "link" => "category/svetilniki-downlight-153",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светодиодные панели",
+                "link" => "category/svetodiodnye-paneli-154",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Пылевлагозащищенные светильники",
+                "link" => "category/pylevlagozashhishhennye-svetilniki-155",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Световые указатели",
+                "link" => "category/svetovye-ukazateli-156",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Аварийные светильники",
+                "link" => "category/avariinye-svetilniki-157",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Потолочные светильники",
+                "link" => "category/potolocnye-svetilniki-158",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Купольные светильники",
+                "link" => "category/kupolnye-svetilniki-159",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники офисные накладные",
+                "link" => "category/svetilniki-ofisnye-nakladnye-160",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники подвесные промышленные",
+                "link" => "category/svetilniki-podvesnye-promyslennye-161",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Cветильники потолочные встраиваемые",
+                "link" => "category/cvetilniki-potolocnye-vstraivaemye-162",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники для потолка грильято",
+                "link" => "category/svetilniki-dlia-potolka-griliato-163",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники Армстронг",
+                "link" => "category/svetilniki-armstrong-164",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники настенно-потолочные",
+                "link" => "category/svetilniki-nastenno-potolocnye-165",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Комплектующие",
+                "link" => "category/komplektuiushhie-166",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Виды",
+                "order" => 1,
+                "title" => "Светильники модульные",
+                "link" => "category/svetilniki-modulnye-167",
+            ],
+        ];
     }
 }
