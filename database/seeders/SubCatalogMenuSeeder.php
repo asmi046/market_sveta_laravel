@@ -80,6 +80,32 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Люстры на штанге",
                 "link" => "category/liustry-na-stange-2300",
             ],
+// Стили
+            [
+                "parent" => "Люстры",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/liustry-22?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Люстры",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-деко",
+                "link" => "category/liustry-22?style%5B%5D=арт-деко",
+            ],
+// Материалы
+
+            [
+                "parent" => "Люстры",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/liustry-22?arm_material%5B%5D=алюминий",
+            ],
+
 
         ];
 
@@ -190,9 +216,6 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Накладные светильники для натяжного потолка",
                 "link" => "category/nakladnye-svetilniki-dlia-natiaznogo-potolka-3103",
             ],
-
-
-
         ];
     }
 }
