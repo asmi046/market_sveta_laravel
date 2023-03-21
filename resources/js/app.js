@@ -12,11 +12,14 @@ import VueAxios from 'vue-axios'
 
 import { VMaskDirective } from 'v-slim-mask'
 
+import ModalWindow from './components/ModalWindow.vue'
+
 const global_app = createApp({
     components:{
        CategoryFilter,
        CitySelect,
-       Bascet,    
+       Bascet,
+       ModalWindow,
     }
 })
 

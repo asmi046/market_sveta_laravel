@@ -7,6 +7,9 @@
 
 	<div class="wrapper" id = "global_app">
 		@include('parts.header_index')
+
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="recollMsg" title="Заказать обратный звонок" subtitle="{{Config::get('contact.grafik')}}" ></modal-window>
+
 		<main class="page">
 
             @yield('content')
