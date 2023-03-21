@@ -165,5 +165,34 @@ class SubCatalogMenuSeeder extends Seeder
 
 
         DB::table("sub_catalog_menus")->insert($all_punkt);
+
+        $all_punkt = [
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Накладные светильники с пультом",
+                "link" => "category/nakladnye-svetilniki-s-pultom-3101",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Светодиодные накладные светильники",
+                "link" => "category/svetodiodnye-nakladnye-svetilniki-3102",
+            ],
+
+            [
+                "parent" => "Накладные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Накладные светильники для натяжного потолка",
+                "link" => "category/nakladnye-svetilniki-dlia-natiaznogo-potolka-3103",
+            ],
+
+
+
+        ];
     }
 }
