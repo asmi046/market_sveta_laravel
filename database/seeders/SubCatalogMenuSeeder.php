@@ -2274,6 +2274,205 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/spoty-s-vykliucatelem-58",
             ],
 //СТИЛИ СПОТЫ
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/spoty-54?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/spoty-54?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/spoty-54?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/spoty-54?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/spoty-54?style%5B%5D=кантри",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Прованс",
+                "link" => "category/spoty-54?style%5B%5D=прованс",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/spoty-54?style%5B%5D=классический",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Восточный",
+                "link" => "category/spoty-54?style%5B%5D=восточный",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Замковый",
+                "link" => "category/spoty-54?style%5B%5D=замковый",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-декор",
+                "link" => "category/spoty-54?style%5B%5D=арт-деко",
+            ],
+//МАТЕРИАЛЫ СПОТЫ
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/spoty-54?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/spoty-54?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Дерево",
+                "link" => "category/spoty-54?arm_material%5B%5D=дерево",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ СПОТЫ
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/spoty-54?mesto%5B%5D=экспозиция",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/spoty-54?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/spoty-54?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Магазин",
+                "link" => "category/spoty-54?mesto%5B%5D=магазин",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Ванная",
+                "link" => "category/spoty-54?mesto%5B%5D=ванная",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/spoty-54?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/spoty-54?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/spoty-54?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/spoty-54?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Детская",
+                "link" => "category/spoty-54?mesto%5B%5D=детская",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/spoty-54?mesto%5B%5D=большие+залы",
+            ],
+
+            [
+                "parent" => "Споты",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кабинет",
+                "link" => "category/spoty-54?mesto%5B%5D=кабинет",
+            ],
         ];
 //КОНЕЦ СТРОКИ СПОТЫ
 //НАЧАЛО СТРОКИ Шинные и струнные системы
@@ -2369,6 +2568,173 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/strunnye-sinoprovody-81",
             ],
 //СТИЛИ Шинные и струнные системы
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=классический",
+            ],
+//МАТЕРИАЛЫ ШИННЫЕ И СТРУННЫЕ СИСТЕМЫ
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Латунь",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=латунь",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Полимер",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=полимер",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ ШИННЫЕ И СТРУННЫЕ СИСТЕМЫ
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Магазин",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=магазин",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=экспозиция",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=большие+залы",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Детская",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=детская",
+            ],
+
+            [
+                "parent" => "Шинные и струнные системы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Ванная",
+                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=ванная",
+            ],
         ];
 //КОНЕЦ СТРОКИ Шинные и струнные системы
 //НАЧАЛО СТРОКИ Светильники для подсветки
@@ -2408,6 +2774,181 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/podsvetka-sten-i-stupenei-5",
             ],
 //СТИЛИ Светильники для подсветки
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=классический",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Эклектика",
+                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=эклектика",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Прованс",
+                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=прованс",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-декор",
+                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=арт-деко",
+            ],
+// МАТЕРИАЛЫ СВЕТИЛЬНИКИ ДЛЯ ПОДСВЕТКИ
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Латунь",
+                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=латунь",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бронза",
+                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=бронза",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Гипс",
+                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=гипс",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ СВЕТИЛЬНИКИ ДЛЯ ПОДСВЕТКИ
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=экспозиция",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Ванная",
+                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=ванная",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Магазин",
+                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=магазин",
+            ],
+
+            [
+                "parent" => "Светильники для подсветки",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=кафе%2C+рестораны",
+            ],
         ];
 //КОНЕЦ СТРОКИ Светильники для подсветки
 //НАЧАЛО СТРОКИ Светодиодные ленты и профили
@@ -2495,6 +3036,62 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/dimmery-53",
             ],
 //СТИЛИ ДЛЯ Светодиодные ленты и профили
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/svetodiodnye-lenty-i-profili-43?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/svetodiodnye-lenty-i-profili-43?style%5B%5D=хай-тек",
+            ],
+//МАТЕРИАЛЫ СВЕТОДИОДНЫЕ ЛЕНТЫ И ПРОФИЛИ
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Стекло",
+                "link" => "category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=стекло",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ СВЕТОДИОДНЫЕ ЛЕНТЫ И ПРОФИЛИ
+            [
+                "parent" => "Светодиодные ленты и профили",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/svetodiodnye-lenty-i-profili-43?mesto%5B%5D=кафе%2C+рестораны",
+            ],
         ];
 //КОНЕЦ СТРОКИ Светодиодные ленты и профили
 //НАЧАЛО СТРОКИ Детские светильники
@@ -2566,6 +3163,173 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/detskie-tocecnye-svetilniki-42",
             ],
 //СТИЛИ ДЛЯ Детские светильники
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/detskie-svetilniki-34?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/detskie-svetilniki-34?style%5B%5D=классический",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/detskie-svetilniki-34?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/detskie-svetilniki-34?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-декор",
+                "link" => "category/detskie-svetilniki-34?style%5B%5D=арт-деко",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/detskie-svetilniki-34?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/detskie-svetilniki-34?style%5B%5D=кантри",
+            ],
+//МАТЕРИАЛЫ ДЕТСКИЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Керамика",
+                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=керамика",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Дерево",
+                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=дерево",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Гипс",
+                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=гипс",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Полимер",
+                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=полимер",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ ДЕТСКИЕ ВЕТИЛЬНИКИ
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Детская",
+                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=детская",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=большие+залы",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Детские светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=спальня",
+            ],
         ];
 //КОНЕЦ СТРОКИ Детские светильники
 //НАЧАЛО СТРОКИ Уличные светильники
@@ -2677,6 +3441,221 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/stativy-131",
             ],
 //СТИЛИ ДЛЯ Уличные светильники
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=классический",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Замковый",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=замковый",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Эклектика",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=эклектика",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=кантри",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Восточный",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=восточный",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Прованс",
+                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=прованс",
+            ],
+//МАТЕРИАЛЫ УЛИЧНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Полимер",
+                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=полимер",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бетон",
+                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=бетон",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Хрусталь",
+                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=хрусталь",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Латунь",
+                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=латунь",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Камень",
+                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=Камень",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ УЛИЧНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=экспозиция",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Ванная",
+                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=ванная",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Уличные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Веранда",
+                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=веранда",
+            ],
         ];
 //КОНЕЦ СТРОКИ Уличные светильники
 //НАЧАЛО СТРОКИ Лампы
@@ -2740,6 +3719,61 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/svetodiodnye-moduli-116",
             ],
 //СТИЛИ ДЛЯ Лампы
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/lampy-109?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/lampy-109?style%5B%5D=современный",
+            ],
+//МАТЕРИАЛЫ ЛАМПЫ
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/lampy-109?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/lampy-109?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Стекло",
+                "link" => "category/lampy-109?arm_material%5B%5D=стекло",
+            ],
+
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Керамика",
+                "link" => "category/lampy-109?arm_material%5B%5D=керамика",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ ЛАМПЫ
+            [
+                "parent" => "Лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/lampy-109?mesto%5B%5D=спальня",
+            ],
         ];
 //КОНЕЦ СТРОКИ Лампы
 //НАЧАЛО СТРОКИ Лайтбоксы
@@ -2841,6 +3875,14 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/komplektuiushhie-142",
             ],
 //СТИЛИ Праздничное освещение
+//МАТЕРИАЛЫ ПРАЗДНИЧНОЕ ОСВЕЩЕНИЕ
+            [
+                "parent" => "Праздничное освещение",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/prazdnicnoe-osveshhenie-132?arm_material%5B%5D=пластик",
+            ],
         ];
 //КОНЕЦ СТРОКИ Праздничное освещение
 //НАЧАЛО СТРОКИ Электроустановочные изделия
@@ -2912,6 +3954,37 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/stabilizatory-napriazeniia-151",
             ],
 //СТИЛИ ДЛЯ Электроустановочные изделия
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/elektroustanovocnye-izdeliia-143?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/elektroustanovocnye-izdeliia-143?style%5B%5D=кантри",
+            ],
+//МАТЕРИАЛЫ ЭЛЕКТРОУСТАНОВОЧНЫЕ ИЗДЕЛИЯ
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/elektroustanovocnye-izdeliia-143?arm_material%5B%5D=пластик",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ ЭЛЕКТРОУСТАНОВОЧНЫЕ ИЗДЕЛИЯ
+            [
+                "parent" => "Электроустановочные изделия",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/elektroustanovocnye-izdeliia-143?mesto%5B%5D=спальня",
+            ],
         ];
 //КОНЕЦ СТРОКИ Электроустановочные изделия
 //НАЧАЛО СТРОКИ Технический свет, офисные светильники
@@ -3045,6 +4118,102 @@ class SubCatalogMenuSeeder extends Seeder
                 "order" => 1,
                 "title" => "Светильники модульные",
                 "link" => "category/svetilniki-modulnye-167",
+            ],
+//СТИЛИ 
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?style%5B%5D=современный",
+            ],
+//МАТЕРИАЛЫ
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?arm_material%5B%5D=металл",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Ванная",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=ванная",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Магазин",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=магазин",
+            ],
+
+            [
+                "parent" => "Технический свет, офисные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=прихожая",
             ],
         ];
     }
