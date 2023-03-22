@@ -989,6 +989,286 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Подвесные светильники с абажуром",
                 "link" => "category/podvesnye-svetilniki-s-abazurom-3202",
             ],
+//СТИЛИ ПОДВЕСНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-декор",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=арт-деко",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Прованс",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=прованс",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=кантри",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Восточный",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=восточный",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Замковый",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=замковый",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=классический",
+            ],
+            
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Тиффани",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=тиффани",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Модерн",
+                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=модерн",
+            ],
+//МАТЕРИАЛЫ
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Дерево",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=дерево",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Латунь",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=латунь",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Полимер",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=полимер",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бетон",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=бетон",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Гипс",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=гипс",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Камень",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=камень",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Стекло",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=стекло",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Керамика",
+                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=керамика",
+            ],
+//Место применения 
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Магазин",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=магазин",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=большие+залы",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кабинет",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=кабинет",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=экспозиция",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Детская",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=детская",
+            ],
+
+            [
+                "parent" => "Подвесные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Ванная",
+                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=ванная",
+            ],
         ];
 //КОНЕЦ СТРОКИ ПОДВЕСНЫЕ СВЕТИЛЬНИКИ
 //НАЧАЛО СТРОКИ Реечные, линейные светильники
@@ -997,13 +1277,125 @@ class SubCatalogMenuSeeder extends Seeder
         DB::table("sub_catalog_menus")->insert($all_punkt);
 
         $all_punkt = [
-//СТИЛИ РЕЕЧНЫЕ, ЛИНЕЙНЫЕ СВЕТИЛЬНИКИ
             [
                 "parent" => "Реечные, линейные светильники",
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Накладные светильники с пультом",
                 "link" => "category/nakladnye-svetilniki-s-pultom-3101",
+            ],
+//СТИЛИ РЕЕЧНЫЕ, ЛИНЕЙНЫЕ СВЕТИЛЬНИКИ
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/reecnye-lineinye-svetilniki-33?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/reecnye-lineinye-svetilniki-33?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/reecnye-lineinye-svetilniki-33?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/reecnye-lineinye-svetilniki-33?style%5B%5D=кантри",
+            ],
+//МАТЕРИАЛЫ 
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Дерево",
+                "link" => "category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=дерево",
+            ],
+//Место применения 
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Магазин",
+                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=магазин",
+            ],
+
+            [
+                "parent" => "Реечные, линейные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=большие+залы",
             ],
         ];
 //КОНЕЦ СТРОКИ Реечные, линейные светильники
@@ -1036,6 +1428,270 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/nakladnye-tocecnye-svetilniki-67",
             ],
 //СТИЛИ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=классический",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-декор",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=арт-деко",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=кантри",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Прованс",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=прованс",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Замковый",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=замковый",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Восточный",
+                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=восточный",
+            ],
+//МАТЕРИАЛЫ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Гипс",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=гипс",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Латунь",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=латунь",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Полимер",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=полимер",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бетон",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=бетон",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бронза",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=бронза",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Дерево",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=дерево",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Керамика",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=керамика",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Камень",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=камень",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Стекло",
+                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=стекло",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Ванная",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=ванная",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Магазин",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=магазин",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=большие+залы",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=экспозиция",
+            ],
+
+            [
+                "parent" => "Точечные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кабинет",
+                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=кабинет",
+            ],
         ];
 //КОНЕЦ СТРОКИ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
 //НАЧАЛО СТРОКИ Настольные лампы
@@ -1082,8 +1738,264 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Дизайнерские настольные лампы",
                 "link" => "category/dizainerskie-nastolnye-lampy-20",
             ],
-
 //СТИЛИ ДЛЯ НАСТОЛЬНЫЕ ЛАМПЫ
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=классический",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=хай-тек",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=кантри",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Восточный",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=восточный",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-декор",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=арт-деко",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Прованс",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=прованс",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Тиффани",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=тиффани",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Замковый",
+                "link" => "category/nastolnye-lampy-15?style%5B%5D=замковый",
+            ],
+//МАТЕРИАЛЫ Настольные лампы
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Керамика",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=керамика",
+            ],
+            
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Дерево",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=дерево",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=пластик",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Бетон",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=бетон",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Камень",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=камень",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Латунь",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=латунь",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Стекло",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=стекло",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Полимер",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=полимер",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Ткань",
+                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=ткань",
+            ],
+//Место применения Настольные лампы
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=гостиная",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=прихожая",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=большие+залы",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кабинет",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=кабинет",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Детская",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=детская",
+            ],
+
+            [
+                "parent" => "Настольные лампы",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=экспозиция",
+            ],
         ];
 //КОНЕЦ СТРОКИ НАСТОЛЬНЫЕ ЛАМПЫ
 //НАЧАЛО СТРОКИ Торшеры и напольные светильники
@@ -1123,6 +2035,206 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/torsery-i-napolnye-svetilniki-59",
             ],
 //СТИЛИ ДЛЯ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Хай-тек",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=хай-тек",
+            ],
+            
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Современный",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=современный",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Кантри",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=кантри",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Классический",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=классический",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Арт-декор",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=арт-деко",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Лофт",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=лофт",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Восточный",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=восточный",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Флористика",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=флористика",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Прованс",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=прованс",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Стили",
+                "order" => 1,
+                "title" => "Модерн",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=модерн",
+            ],
+//МАТЕРИАЛЫ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Металл",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=металл",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Дерево",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=дерево",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Латунь",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=латунь",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Алюминий",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=алюминий",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Материалы",
+                "order" => 1,
+                "title" => "Пластик",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=пластик",
+            ],
+//МЕСТО ПРИМЕНЕНИЯ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Спальня",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=спальня",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Офис",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=офис",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Гостиная",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=Гостиная",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Прихожая",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=Прихожая",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кафе, рестораны",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=кафе%2C+рестораны",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Большие залы",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=большие+залы",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кабинет",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=кабинет",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Кухня",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=кухня",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Детская",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=детская",
+            ],
+
+            [
+                "parent" => "Торшеры и напольные светильники",
+                "sub_punct" => "Место применения",
+                "order" => 1,
+                "title" => "Экспозиция",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=экспозиция",
+            ],
         ];
 //КОНЕЦ СТРОКИ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
 //НАЧАЛО СТРОКИ Споты
