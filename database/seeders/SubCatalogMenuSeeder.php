@@ -65,13 +65,6 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "category/liustry-svetodiodnye-29",
             ],
 
-            [
-                "parent" => "Люстры",
-                "sub_punct" => "Виды",
-                "order" => 1,
-                "title" => "Люстры светодиодные",
-                "link" => "category/liustry-svetodiodnye-29",
-            ],
 
             [
                 "parent" => "Люстры",
@@ -580,7 +573,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "parent" => "Бра и настенное освещение",
                 "sub_punct" => "Материалы",
                 "order" => 1,
-                "title" => "Бронза",
+                "title" => "камень",
                 "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=камень",
             ],
 //Место применения БРА
@@ -653,7 +646,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "parent" => "Бра и настенное освещение",
                 "sub_punct" => "Место применения",
                 "order" => 1,
-                "title" => "Гостиная",
+                "title" => "гостиная",
                 "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=гостиная",
             ],
 
@@ -2177,7 +2170,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=Гостиная",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -2185,7 +2178,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=Прихожая",
+                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -3582,7 +3575,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Камень",
-                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=Камень",
+                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=камень",
             ],
 //МЕСТО ПРИМЕНЕНИЯ УЛИЧНЫЕ СВЕТИЛЬНИКИ
             [
