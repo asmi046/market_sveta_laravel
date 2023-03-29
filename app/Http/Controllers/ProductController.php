@@ -22,7 +22,12 @@ class ProductController extends Controller
             "cat4" => $prosuct->first()->cat_name_cat4,
         ];
 
-        $up_sale = Product::where('collection', $prosuct[0]->collection)->take(5)->get();
+        if (!empty($prosuct[0]->collection))
+            $up_sale = Product::where('collection', $prosuct[0]->collection)->take(5)->get();
+        else
+            $up_sale = [];
+
+
 
         //  dd($propertys["Основные"][0]->name);
 

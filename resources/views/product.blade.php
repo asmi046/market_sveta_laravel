@@ -146,6 +146,9 @@
         <section id="similar-products" class="similar-products">
           <div class="_container">
 
+        @if (!empty($upsale))
+
+
           <h2 class="similar-products__title">Похожие товары</h2>
 
             <div class="prod-card d-flex">
@@ -153,6 +156,7 @@
                 <x-tovar-card :minfo="$item"></x-tovar-card>
               @endforeach
             </div>
+        @endif
 
           </div>
         </section>
