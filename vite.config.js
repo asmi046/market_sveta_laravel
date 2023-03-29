@@ -38,7 +38,7 @@ export default defineConfig({
                 "public/js/modules/mobile_catalog_menu.js",
                 "public/js/modules/favorites.js",
                 "public/js/modules/upp_btn.js",
-
+                "public/js/libs/fslightbox.js",
             ],
             refresh: true,
             mode:'production'

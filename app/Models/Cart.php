@@ -16,7 +16,8 @@ class Cart extends Model
         'user_id',
         'product_sku',
         'quentity',
-        'price'
+        'price',
+        'lnk'
     ];
 
     public function tovar_data() {
@@ -35,7 +36,8 @@ class Cart extends Model
                 "user_id" => 0,
                 "product_sku" => $product_id,
                 "quentity" => 1,
-                "price" => $product->price
+                "price" => $product->price,
+                "lnk" => route('product', $product->slug)
             ]);
         }
     }

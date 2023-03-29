@@ -10,7 +10,7 @@ class ProductController extends Controller
 {
     public function index($slug) {
         $prosuct = Product::where('slug', $slug)->take(1)->get();
-        
+
         if($prosuct->isEmpty()) abort('404');
 
         $images = $prosuct->first()->product_images;
@@ -21,8 +21,8 @@ class ProductController extends Controller
             "cat3" => $prosuct->first()->cat_name_cat3,
             "cat4" => $prosuct->first()->cat_name_cat4,
         ];
-        
-        $up_sale = Product::where('cat1', $prosuct[0]->cat1)->take(5)->get();
+
+        $up_sale = Product::where('collection', $prosuct[0]->collection)->take(5)->get();
 
         //  dd($propertys["Основные"][0]->name);
 

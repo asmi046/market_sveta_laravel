@@ -5,14 +5,14 @@
 
   <section id="select-prod" class="select-prod">
     <div class="_container">
-      
+
       <x-breadcrumbs :pagename="$product[0]->name" :simple="false" :catnames="$catnames"></x-breadcrumbs>
 
       <h1>{{$product[0]->name}}</h1>
 
       <div class="select-prod-block d-flex">
-                    
-        <div class="select-prod-sl">  
+
+        <div class="select-prod-sl">
 
           <div class="select-prod-sl__small">
             <div class="swiper-button swiper-button-next select-prod-sl__small-prev"></div>
@@ -21,7 +21,7 @@
               @foreach ($images as $item)
                 <div class="select-prod-sl__small-slide slider__slide">
                   @if(Storage::disk('local')->exists('public/products_galery/'.$item->img_name))
-                      <img src="{{Storage::url('public/products_galery/'.$item->img_name)}}" alt="Купить {{$item->alt}}">
+                      <img  src="{{Storage::url('public/products_galery/'.$item->img_name)}}" alt="Купить {{$item->alt}}">
                   @else
                       <img src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$item->alt}}">
                   @endif
@@ -34,30 +34,34 @@
             @foreach ($images as $item)
               <div class="select-prod-sl__big-slide slider__slide">
                 @if(Storage::disk('local')->exists('public/products_galery/'.$item->img_name))
-                    <img src="{{Storage::url('public/products_galery/'.$item->img_name)}}" alt="Купить {{$item->alt}}">
+                    <a data-fslightbox="prod_g1" href="{{Storage::url('public/products_galery/'.$item->img_name)}}">
+                        <img data-fslightbox="prod_g1" src="{{Storage::url('public/products_galery/'.$item->img_name)}}" alt="Купить {{$item->alt}}">
+                    </a>
                 @else
-                    <img src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$item->alt}}">
+                    <a data-fslightbox="prod_g1" href="{{asset('img/no_photo.jpg')}}">
+                        <img  src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$item->alt}}">
+                    </a>
                 @endif
               </div>
             @endforeach
           </div>
 
         </div>
-  
+
       <div class="select-prod-info">
-        
+
         <div class="vender_sku">
           <p class="prod-page__manuf">{{$product[0]->brand}} ({{$product[0]->state}})</p>
           <p class="prod-page__manuf">Артикул: {{$product[0]->sku}}</p>
         </div>
-        
+
         <div class="select-prod-info__price-block select-prod-info__column">
           <div class="select-prod-info__price-block-inner d-flex">
             <div class="price_and_sale">
               <x-tovar-card.action :price="$product[0]->price" :oldprice="$product[0]->price_old"></x-tovar-card.action>
               <div class="select-prod-info__price-block-price price_formator rub">{{$product[0]->price}}</div>
             </div>
-            
+
             <div class="select-prod-info__price-block-avail">
               <x-tovar-card.nal :insklad="$product[0]->insklad" ></x-tovar-card.nal>
             </div>
@@ -79,11 +83,11 @@
         <div class="select-prod-info__delivery select-prod-info__column">
           <h3 class="select-prod-info__delivery-title">Информация о доставке</h3>
           <div class="select-prod-info__delivery-wrap" >
-            
-            
+
+
             <city-select page-mode="page"></city-select>
-   
-            
+
+
             <p class="select-prod-info__delivery-item-clasific">Точный срок доставки уточним при оформлении заказа</p>
           </div>
         </div>
@@ -103,10 +107,10 @@
           </div>
           {{-- <h3 class="select-prod-info__guarantee-title">
             6 месяцев гарантии <br>
-            с момента покупки 
+            с момента покупки
           </h3>
           <p class="select-prod-info__guarantee-subtitle">
-            18 месяцев <a href="#" class="select-prod-info__guarantee-subtitle-link">расширенной гарантии</a> на светильники при 
+            18 месяцев <a href="#" class="select-prod-info__guarantee-subtitle-link">расширенной гарантии</a> на светильники при
             условии монтажа нашим специалистом.
           </p>
           <p class="select-prod-info__guarantee-subtitle">
@@ -121,7 +125,7 @@
       <h2 class="select-prod__specifications-title">Технические характеристики</h2>
 
       <div class="select-prod__specifications-inner">
-          @foreach ($propertys as $key => $value) 
+          @foreach ($propertys as $key => $value)
             <x-property-part :name="$key" :prop="$value"></x-property-part>
           @endforeach
       </div>
@@ -146,7 +150,7 @@
 
             <div class="prod-card d-flex">
               @foreach ($upsale as $item)
-                <x-tovar-card :minfo="$item"></x-tovar-card>    
+                <x-tovar-card :minfo="$item"></x-tovar-card>
               @endforeach
             </div>
 

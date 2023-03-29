@@ -23,6 +23,7 @@
     width: 320px;
     height: 100%;
     background-color: white;
+    overflow-y: scroll;
 }
 
 .close_catalog:hover {
@@ -74,9 +75,9 @@
     height: 100%;
     background-color: #f2f3f5;
     display: none;
-    flex-wrap: wrap;
     padding: 0 1%;
     flex-direction: column;
+    overflow: scroll;
 }
 
 .sub_cat_menu_wrapper .puncts{

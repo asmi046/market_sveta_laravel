@@ -10,7 +10,7 @@
             </div>
 
             <div class="tovar_list">
-                
+
                 <div v-for="(item, index) in bascetList" :key="item.product_sku" class="tovar">
 
                     <div class="tl-side left-side">
@@ -18,7 +18,11 @@
                             <img :src="'/storage/products_galery/'+item.tovar_data.img" alt="">
                         </div>
                         <div class="tovar_all_blk name_blk">
-                            <h2>{{item.tovar_data.name}}</h2>
+                            <h2>
+                                <a target="_blank" :href="item.lnk">
+                                    {{item.tovar_data.name}}
+                                </a>
+                            </h2>
                             <p>{{item.tovar_data.brand}} ({{item.tovar_data.state}}) Артикул: {{item.product_sku}}</p>
                         </div>
                     </div>
@@ -61,7 +65,7 @@
             </div>
 
         </div>
-        
+
         <div class="bascet_form">
             <h2>Контактные данные</h2>
             <form action="GET">
@@ -106,6 +110,7 @@ export default {
         this.show_bascet = false;
         axios.get('/bascet/get/')
             .then((response) => {
+                console.log(response)
                 this.bascetList = response.data.position
                 this.updateBascet()
                 this.show_bascet = true
@@ -117,10 +122,10 @@ export default {
 
             this.errorList = []
 
-            if (this.bascetInfo.fio == "") 
+            if (this.bascetInfo.fio == "")
                 this.errorList.push("Поле 'Имя' не заполнено");
 
-            if (this.bascetInfo.phone == "") 
+            if (this.bascetInfo.phone == "")
                 this.errorList.push("Поле 'Телефон' не заполнено");
 
             if (this.errorList.length != 0 ) return;
@@ -149,7 +154,7 @@ export default {
                 count: item.quentity
             })
             .then(() => {
-                
+
                 let bascet_counter = document.querySelectorAll(".bascet_counter")
                 for (let elem of bascet_counter) {
                     elem.innerHTML = this.count;
@@ -160,7 +165,7 @@ export default {
 
         updateBascet() {
             if (this.bascetList.length == 0) return;
-            
+
             this.count = 0;
             this.subtotal = 0;
             for (let i = 0; i<this.bascetList.length; i++) {
