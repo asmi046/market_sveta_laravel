@@ -7,11 +7,12 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class BascetSend extends Mailable
+class ToClientSend extends Mailable
 {
     use Queueable, SerializesModels;
 
     protected $formData;
+
     protected $orderId;
 
     /**
@@ -33,9 +34,9 @@ class BascetSend extends Mailable
     public function build()
     {
         return $this->from("asmi-work046@yandex.ru","Karta-sveta")
-            ->subject("Заказ с сайта")
+            ->subject("Ваш заказ оформлен")
             ->replyTo('info@asmi-studio.ru', 'Магазин')
-            ->view('mail.bascetmail')
+            ->view('mail.toclientmail')
             ->with([
             "formData" => $this->formData,
             "orderId" => $this->orderId

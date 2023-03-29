@@ -81,8 +81,6 @@ export default {
     mounted() {
         window.addEventListener('hashchange', this.openWin)
 
-
-
         if (location.hash === '#'+this.hesh) {
             this.showModal = true
         }

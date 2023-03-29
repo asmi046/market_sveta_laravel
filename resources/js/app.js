@@ -13,6 +13,7 @@ import VueAxios from 'vue-axios'
 import { VMaskDirective } from 'v-slim-mask'
 
 import ModalWindow from './components/ModalWindow.vue'
+import QuickViewWindow from './components/QuickViewWindow.vue'
 
 const global_app = createApp({
     components:{
@@ -20,6 +21,7 @@ const global_app = createApp({
        CitySelect,
        Bascet,
        ModalWindow,
+       QuickViewWindow,
     }
 })
 

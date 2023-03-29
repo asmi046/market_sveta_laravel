@@ -6,8 +6,22 @@ use Illuminate\Http\Request;
 
 use App\Models\Product;
 
+use Illuminate\Support\Facades\Storage;
+
+
 class ProductController extends Controller
 {
+    public function getPriductById($id) {
+        $prosuct = Product::with("product_propertys")->where('id', $id)->first();
+
+        $main_img = asset('img/no_photo.jpg');
+
+        if (Storage::disk('local')->exists('public/products_galery/'.$prosuct->img))
+            $main_img = Storage::url('public/products_galery/'.$prosuct->img);
+
+        return ["product" => $prosuct, "main_img" => $main_img];
+    }
+
     public function index($slug) {
         $prosuct = Product::where('slug', $slug)->take(1)->get();
 

@@ -10,6 +10,8 @@
 
         <modal-window rout="/send_consult" redirect="/thencs" hesh="recollMsg" title="Заказать обратный звонок" subtitle="{{Config::get('contact.grafik')}}" ></modal-window>
 
+        <quick-view-window></quick-view-window>
+
 		<main class="page">
 
             @yield('content')

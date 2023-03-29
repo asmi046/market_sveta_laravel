@@ -133,7 +133,7 @@ export default {
             this.loadet = true;
             axios.post('/bascet/send', {
                 _token: document.querySelector('meta[name="_token"]').content,
-                fio: this.bascetInfo.fio,
+                name: this.bascetInfo.fio,
                 email: this.bascetInfo.email,
                 phone: this.bascetInfo.phone,
                 adress: this.bascetInfo.adress,

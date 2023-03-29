@@ -1,5 +1,5 @@
-<h1>Письмо с сайта</h1>
-<p><strong>Имя:</strong> {{$formData['fio']}}</p>
+<h1>Оформлен новый заказ № {{ $orderId }}</h1>
+<p><strong>Имя:</strong> {{$formData['name']}}</p>
 <p><strong>Телефон:</strong> {{$formData['phone']}}</p>
 <p><strong>E-mail:</strong> {{$formData['email']}}</p>
 <p><strong>Адрес:</strong> {{$formData['adress']}}</p>
@@ -16,15 +16,15 @@
     </thead>
     <tbody>
            @foreach ($formData['tovars'] as $item)
-               
-           
+
+
                 <tr>
                     <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;"><img width="70" height="70" src="{{asset('/storage/products_galery/'.$item["tovar_data"]["img"])}}" alt=""></td>
                     <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["tovar_data"]["name"]}}<br/><span style="font-size:12px">{{$item["tovar_data"]["brand"]}} ({{$item["tovar_data"]["state"]}})</span></td>
                     <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["tovar_data"]["price"]}}</td>
                     <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{$item["quentity"]}}</td>
                     <td style="padding: 5px; border-bottom:1px solid black; border-right:1px solid black;">{{(float)$item["quentity"] * (float)$item["tovar_data"]["price"]}}</td>
-                </tr> 
+                </tr>
             @endforeach
     </tbody>
 </table>
