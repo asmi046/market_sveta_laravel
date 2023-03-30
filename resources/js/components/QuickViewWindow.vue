@@ -150,6 +150,7 @@ export default {
     .popup_c {
         width:80%;
         min-width: 1024px;
+        max-width: 1280px;
         height: auto;
         background-color: white;
         margin: auto;
@@ -233,10 +234,19 @@ export default {
 
     .qs_wrap {
         display: flex;
+        max-height: 630px;
+    }
+
+    .qs_wrap .left img{
+        object-fit: contain;
     }
 
     .qs_wrap .left{
         flex:2;
+        border-radius: 15px;
+        margin-right: 30px;
+        overflow: hidden;
+        border: 0.4px solid #d2d1d1;
     }
 
     .qs_wrap .right{
