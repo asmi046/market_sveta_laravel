@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->boolean('new')->comment("Пометка о новинке");
-            $table->boolean('hit')->comment("Пометка о хите продаж");
+            $table->boolean('new')->nullable()->comment("Пометка о новинке");
+            $table->boolean('hit')->nullable()->comment("Пометка о хите продаж");
         });
     }
 
