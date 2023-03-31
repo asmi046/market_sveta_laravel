@@ -30,19 +30,23 @@ class AllDataProvider extends ServiceProvider
     {
         View::composer('*', function ($view) {
 
-            $rout_name = \Request::route()->getName();
+            $banners = \Cache::rememberForever('allbanners', function () {
+                $rout_name = \Request::route()->getName();
 
-            $banners = Baner::where("page", $rout_name)->orWhere("page", 'all')->get();
-            $catalog = CatalogMenu::with('sub_puncts')->orderBy('order', 'asc')->get();
+                $b_all = Baner::where("page", $rout_name)->orWhere("page", 'all')->get();
 
-            $banner_areas = [];
+                $banner_areas = [];
+                foreach($b_all as $el){
+                    $banner_areas[$el->page_area][] = $el;
+                }
+                return $banner_areas;
+            });
 
-            foreach($banners as $el){
-                $banner_areas[$el->page_area][] = $el;
-            }
+            $catalog = \Cache::rememberForever('globalmenu', function () {
+                return CatalogMenu::with('sub_puncts')->orderBy('order', 'asc')->get();
+            });
 
-
-            View::share('banners', $banner_areas);
+            View::share('banners', $banners);
             View::share('menu', $catalog);
         });
     }

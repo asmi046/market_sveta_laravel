@@ -34,6 +34,12 @@ class BascetController extends Controller
         return ["count" => Cart::cart_coun(), "position" => $cart_product] ;
     }
 
+    public function has_in_bascet(Request $request) {
+        $sku = $request->input('sku');
+        $cart_product = Cart::with('tovar_data')->where("carts.session_id", session()->getId())->where('product_sku', $sku)->get();
+        return ["count" => Cart::cart_coun(), "position" => $cart_product] ;
+    }
+
     public function clear() {
         return Cart::cart_clear();
     }

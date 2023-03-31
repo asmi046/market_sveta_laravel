@@ -14,6 +14,7 @@ import { VMaskDirective } from 'v-slim-mask'
 
 import ModalWindow from './components/ModalWindow.vue'
 import QuickViewWindow from './components/QuickViewWindow.vue'
+import AddToBascetBtn from './components/AddToBascetBtn.vue'
 
 const global_app = createApp({
     components:{
@@ -22,6 +23,7 @@ const global_app = createApp({
        Bascet,
        ModalWindow,
        QuickViewWindow,
+       AddToBascetBtn
     }
 })
 

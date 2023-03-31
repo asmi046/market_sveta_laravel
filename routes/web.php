@@ -46,6 +46,7 @@ Route::get('/bascet', [BascetController::class, "index"])->name("bascet");
 Route::post('/bascet/add', [BascetController::class, "add"])->name("bascet_add");
 Route::post('/bascet/update', [BascetController::class, "update"])->name("bascet_update");
 Route::get('/bascet/get', [BascetController::class, "get_all"])->name("bascet_get");
+Route::get('/bascet/has', [BascetController::class, "has_in_bascet"])->name("bascet_has");
 Route::delete('/bascet/clear', [BascetController::class, "clear"])->name("bascet_clear");
 Route::delete('/bascet/delete', [BascetController::class, "delete"])->name("bascet_delete");
 Route::post('/bascet/send', [BascetController::class, "send"])->name("bascet_send");

@@ -68,10 +68,11 @@
           </div>
           <div class="select-prod-info__price-block-buttons">
             <div class="select-prod-info__price-block-buttons-inner d-flex">
-              <a href="#" data-prodid="{{$product[0]->sku}}" class="select-prod-info__price-block-buttons-btn btn to_bascet">ДОБАВИТЬ В КОРЗИНУ</a>
-              <a href="" data-prodid="{{$product[0]->sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>
+                <add-to-bascet-btn sku="{{$product[0]->sku}}">Добавить в корзину</add-to-bascet-btn>
+                <button class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</button>
             </div>
-            <button class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</button>
+
+            <a href="" data-prodid="{{$product[0]->sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>
           </div>
         </div>
 
