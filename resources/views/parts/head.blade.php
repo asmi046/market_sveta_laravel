@@ -20,12 +20,14 @@
 	<meta property="og:site_name" content="MarketSveta.su" />
 
 	<meta name="_token" content="{{ csrf_token() }}">
-	
+
+    <link rel="stylesheet" href="{{asset('css/swiper-bundle.min.css')}}" />
+
 	@vite(["resources/css/app.css",
-			"resources/js/app.js", 
-			"resources/js/lib/lib.js", 
-			"public/css/style.min.css", 
-			"public/css/interface.css", 
+			"resources/js/app.js",
+			"resources/js/lib/lib.js",
+			"public/css/style.min.css",
+			"public/css/interface.css",
 			"public/css/filter.style.css",
 			"public/css/mainsearch.css",
 			"public/css/bascet.css",

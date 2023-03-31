@@ -6,28 +6,25 @@
     <div class="_container">
         <div class="info-sl__row d-flex">
 
-            <div class="info-sl__slider main_banner infoSlBg slider _swiper">
-                @foreach ($banners["main_banner"] as $item)
-                    <div class="slider__item main_slider__item">
-                        <img src="img/banners/{{$item["img_name"]}}" alt="">
-                    </div>
-                @endforeach
-
+            <div class="info-sl__slider main_banner slider swiper">
+                <div class="swiper-wrapper">
+                    @foreach ($banners["main_banner"] as $item)
+                        <div class="slider__item main_slider__item swiper-slide">
+                            <img src="img/banners/{{$item["img_name"]}}" alt="">
+                        </div>
+                    @endforeach
+                </div>
             </div>
 
             <div class="info-sl__images d-flex ">
 
                 <div class="info-sl__img-item img-item-l">
                     <img src="img/banners/{{$banners["info_slider_top"][0]["img_name"]}}" alt="">
-                    <!-- <div class="img-l">
-                        <p>Светильники <span>до 10 000 рублей</span></p>
-                        <a href="#" class="btn">Смотреть</a>
-                    </div> -->
+
                 </div>
 
                 <div class="info-sl__img-item img-item-r">
                     <img src="img/banners/{{$banners["info_slider_bottom"][0]["img_name"]}}" alt="">
-                    <!-- <p>CYBER MONDAY <span>до -80%</span></p> -->
                 </div>
 
             </div>

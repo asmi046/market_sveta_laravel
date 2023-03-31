@@ -60,69 +60,6 @@ if (sliderScrollItems.length > 0) {
 
 // function sliders_bild_callback(params) { }
 
-// Сюда пишем класс нашего слайдера и меняем переменную
-let infoSlBg = new Swiper('.infoSlBg', {
-	// effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-
-	observer: true,
-	observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 0, //отступ в пикселях
-	autoHeight: true,
-	speed: 2000,
-	watchOverflow: true,
-	//touchRatio: 0,
-	//simulateTouch: false,
-	loop: true, //циклично
-	// slidesPerGroup: 3, //по 3 слайда
-	// slideToClickedSlide: true, //клик по слайду
-	//preloadImages: false,
-	//lazy: true,
-	// Dotts
-	//pagination: {
-	//	el: '.swiper-paggination',
-	//	clickable: true,
-	//},
-	// Arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	/*
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
-		},
-		768: {
-			slidesPerView: 2,
-			spaceBetween: 20,
-		},
-		992: {
-			slidesPerView: 3,
-			spaceBetween: 20,
-		},
-		1268: {
-			slidesPerView: 4,
-			spaceBetween: 30,
-		},
-	},
-	*/
-	on: {
-		lazyImageReady: function () {
-			ibg();
-		},
-	}
-	// And if we need scrollbar
-	//scrollbar: {
-	//	el: '.swiper-scrollbar',
-	//},
-});
 
 
 // Сюда пишем класс нашего слайдера и меняем переменную
@@ -222,32 +159,16 @@ let prodSlBig = new Swiper('.prodSlBig', {
 	//},
 });
 
-// prodSlSmall.controller.control = prodSlBig;
-// prodSlBig.controller.control = prodSlSmall;
-
-// var thumbs = document.querySelectorAll('.prodSlSmall .slider__slide');
-// thumbs.forEach(el => el.addEventListener('mouseenter', function () { prodSlSmall.slideTo(el.dataset.swiperSlideIndex) }));
-
 
 // Сюда пишем класс нашего слайдера и меняем переменную
 let subCatInCat = new Swiper('.subCatInCat', {
-	// observer: true,
-	// observeParents: true,
+
 	slidesPerView: 1,
 	spaceBetween: 10, //отступ в пикселях
-	// autoHeight: true,
+
 	speed: 2000,
 	loop: true, //циклично
-	// Dotts
-	//pagination: {
-	//	el: '.swiper-paggination',
-	//	clickable: true,
-	//},
-	// Arrows
-	// navigation: {
-	// 	nextEl: '.swiper-button-next',
-	// 	prevEl: '.swiper-button-prev',
-	// },
+
 	breakpoints: {
 		640: {
 			slidesPerView: 2,
@@ -264,8 +185,51 @@ let subCatInCat = new Swiper('.subCatInCat', {
 			ibg();
 		},
 	}
-	// And if we need scrollbar
-	//scrollbar: {
-	//	el: '.swiper-scrollbar',
-	//},
+
+});
+
+let main_banner = new Swiper('.main_banner', {
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 0, //отступ в пикселях
+	autoHeight: true,
+	speed: 2000,
+	loop: true, //циклично
+
+    navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+});
+
+
+let popular_in_main_slider = new Swiper('.popular_in_main_slider', {
+
+    slidesPerView: 2,
+    spaceBetween: 30,
+    autoHeight:true,
+
+    navigation: {
+        nextEl: ".popular_in_main_slider .slider_nav_btn_next",
+        prevEl: ".popular_in_main_slider .slider_nav_btn_prev",
+    },
+
+    breakpoints: {
+
+		768: {
+			slidesPerView: 4,
+		},
+
+
+		1024: {
+			slidesPerView: 5,
+		},
+	},
 });
