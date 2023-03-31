@@ -89,7 +89,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Арт-деко",
                 "link" => "category/liustry-22?style%5B%5D=арт-деко",
             ],
-            
+
             [
                 "parent" => "Люстры",
                 "sub_punct" => "Стили",
@@ -681,7 +681,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Кабинет",
                 "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кабинет",
             ],
-            
+
         ];
 //КОНЕЦ СТРОКИ БРА
 //НАЧАЛО СТРОКИ НАКЛАДНЫЕ СВЕТИЛЬНИКИ
@@ -1054,7 +1054,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Классический",
                 "link" => "category/podvesnye-svetilniki-32?style%5B%5D=классический",
             ],
-            
+
             [
                 "parent" => "Подвесные светильники",
                 "sub_punct" => "Стили",
@@ -1166,7 +1166,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Керамика",
                 "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=керамика",
             ],
-//Место применения 
+//Место применения
             [
                 "parent" => "Подвесные светильники",
                 "sub_punct" => "Место применения",
@@ -1310,7 +1310,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Кантри",
                 "link" => "category/reecnye-lineinye-svetilniki-33?style%5B%5D=кантри",
             ],
-//МАТЕРИАЛЫ 
+//МАТЕРИАЛЫ
             [
                 "parent" => "Реечные, линейные светильники",
                 "sub_punct" => "Материалы",
@@ -1334,7 +1334,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Дерево",
                 "link" => "category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=дерево",
             ],
-//Место применения 
+//Место применения
             [
                 "parent" => "Реечные, линейные светильники",
                 "sub_punct" => "Место применения",
@@ -1828,7 +1828,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Керамика",
                 "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=керамика",
             ],
-            
+
             [
                 "parent" => "Настольные лампы",
                 "sub_punct" => "Материалы",
@@ -2036,7 +2036,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Хай-тек",
                 "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=хай-тек",
             ],
-            
+
             [
                 "parent" => "Торшеры и напольные светильники",
                 "sub_punct" => "Стили",
@@ -3769,20 +3769,22 @@ class SubCatalogMenuSeeder extends Seeder
             ],
         ];
 //КОНЕЦ СТРОКИ Лампы
-//НАЧАЛО СТРОКИ Лайтбоксы
 
-        DB::table("sub_catalog_menus")->insert($all_punkt);
+// //НАЧАЛО СТРОКИ Лайтбоксы
 
-        $all_punkt = [
-            [
-                "parent" => "Лайтбоксы",
-                "sub_punct" => "Виды",
-                "order" => 1,
-                "title" => "",
-                "link" => "",
-            ],
-        ];
-//КОНЕЦ СТРОКИ Лайтбоксы
+//         DB::table("sub_catalog_menus")->insert($all_punkt);
+
+//         $all_punkt = [
+//             [
+//                 "parent" => "Лайтбоксы",
+//                 "sub_punct" => "Виды",
+//                 "order" => 1,
+//                 "title" => "",
+//                 "link" => "",
+//             ],
+//         ];
+// //КОНЕЦ СТРОКИ Лайтбоксы
+
 //НАЧАЛО СТРОКИ Праздничное освещение
 
         DB::table("sub_catalog_menus")->insert($all_punkt);
@@ -4112,7 +4114,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "title" => "Светильники модульные",
                 "link" => "category/svetilniki-modulnye-167",
             ],
-//СТИЛИ 
+//СТИЛИ
             [
                 "parent" => "Технический свет, офисные светильники",
                 "sub_punct" => "Стили",
