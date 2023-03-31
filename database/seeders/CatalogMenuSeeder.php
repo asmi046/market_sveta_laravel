@@ -36,6 +36,8 @@ class CatalogMenuSeeder extends Seeder
         Storage::disk('public')->put("tekhnicheskiy_svet_ofis.jpg", file_get_contents(public_path('img/facer_img/for_menu/tekhnicheskiy_svet_ofis.jpg')), 'public');
         Storage::disk('public')->put("tochechnyye_svet.jpg", file_get_contents(public_path('img/facer_img/for_menu/tochechnyye_svet.jpg')), 'public');
         Storage::disk('public')->put("torshery.jpg", file_get_contents(public_path('img/facer_img/for_menu/torshery.jpg')), 'public');
+        Storage::disk('public')->put("ulichnyye_svetilniki.jpg", file_get_contents(public_path('img/facer_img/for_menu/ulichnyye_svetilniki.jpg')), 'public');
+        Storage::disk('public')->put("lyustry.png", file_get_contents(public_path('img/facer_img/for_menu/lyustry.png')), 'public');
 
         $all_punkt = [
 
