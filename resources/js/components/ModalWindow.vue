@@ -42,11 +42,8 @@ export default {
         },
 
         openWin() {
-            console.log(location.hash)
-            console.log(this.hesh)
             if (location.hash === '#'+this.hesh) {
                 this.showModal = true
-                console.log(this.showModal)
             }
         },
 
@@ -67,7 +64,6 @@ export default {
             })
             .then((response) => {
                 this.showLoader = false
-                console.log(response)
                 document.location.href=this.redirect
             })
             .catch( (error) => {

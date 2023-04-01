@@ -1,13 +1,15 @@
 <template>
     <a @click="addToBascet" href="#" :class="{disabled:((sku == undefined)||(sku == ''))}" class="w_full btn_pd btn ">
 
-        <span v-if="countInBscet == 0" v-show="!loaderShow" class="nadp"><slot></slot> - {{ sku }}</span>
-        <span v-else v-show="!loaderShow" class="nadp">В корзине: {{ countInBscet }} - {{ sku }}</span>
+        <span v-if="countInBscet == 0" v-show="!loaderShow" class="nadp"><slot></slot></span>
+        <span v-else v-show="!loaderShow" class="nadp">В корзине: {{ countInBscet }} шт.</span>
         <span v-show="loaderShow" :class="{shoved:loaderShow}" class="btnLoader"></span>
     </a>
 </template>
 
 <script>
+import { watch, toRefs } from 'vue'
+
 export default {
     data() {
         return{
@@ -18,6 +20,20 @@ export default {
     },
     props:{
         sku: String
+    },
+
+    setup(props) {
+        const { sku } = toRefs(props)
+
+        return {
+            sku
+        }
+    },
+
+    watch: {
+        sku() {
+            this.getTovatInfo()
+        }
     },
 
     methods: {
@@ -34,14 +50,6 @@ export default {
                 console.log(response)
             })
             .catch( error => console.log(error));
-        },
-
-        watch: {
-            sku: function() {
-                console.log("!!!!!")
-                // this.getTovatInfo()
-            },
-            deep: true
         },
 
         addToBascet() {

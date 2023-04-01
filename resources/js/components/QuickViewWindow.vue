@@ -38,7 +38,7 @@
                             </div>
                             <div class="select-prod-info__price-block-buttons">
                                 <div class="select-prod-info__price-block-buttons-inner d-flex">
-                                    <add-to-bascet-btn v-bind:sku="tSku">Добавить в корзину</add-to-bascet-btn>
+                                    <add-to-bascet-btn v-bind:sku="tovarInfo.sku">Добавить в корзину</add-to-bascet-btn>
                                     <button class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</button>
                                 </div>
 
@@ -73,7 +73,6 @@ export default {
     data() {
         return {
             tovarId:0,
-            tSku:"",
             tovarInfo:{
                 name:"",
                 img:"",
@@ -88,12 +87,6 @@ export default {
             showModal:false,
             showLoader:true,
             _token: document.querySelector('meta[name="_token"]').content,
-        }
-    },
-
-    watch: {
-        tSku() {
-            console.log("vvv")
         }
     },
 
@@ -122,7 +115,6 @@ export default {
             .then((response) => {
                 this.showLoader = false
 
-                this.tSku = response.data.product.sku
                 this.tovarInfo = response.data.product
                 this.tovarInfo.img = response.data.main_img
             })
