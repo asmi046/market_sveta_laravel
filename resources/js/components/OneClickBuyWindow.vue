@@ -9,58 +9,21 @@
             </div>
 
             <div v-show="!showLoader" class="tInfo">
-                <h2 class="modal_h2">{{ this.tovarInfo.name }}</h2>
-                <div class="qs_wrap">
-                    <div class="left">
+                <h2 class="modal_h2">Купить в один клик</h2>
+                <div class="ocbuy_tovar">
+                    <div class="photo">
                         <img :src="tovarInfo.img" alt="">
                     </div>
-                    <div class="right">
-
-                        <div class="vender_sku">
-                            <p class="prod-page__manuf">{{tovarInfo.brand}} ({{tovarInfo.state}})</p>
-                            <p class="prod-page__manuf">Артикул: {{tovarInfo.sku}}</p>
-                        </div>
-
-                        <div class="select-prod-info__price-block select-prod-info__column m_bottom">
-                            <div class="select-prod-info__price-block-inner d-flex">
-                                <div class="price_and_sale">
-                                    <div v-show="tovarInfo.price_old !=0" class="prod-card__old-price-block d-flex">
-                                            <div class="prod-card__old-price price_formator rub">{{tovarInfo.price_old}}</div>
-                                            <div class="prod-card__sale-icon">-{{Math.round(((tovarInfo.price_old - tovarInfo.price) / tovarInfo.price_old) * 100)}}%</div>
-                                    </div>
-                                    <div class="select-prod-info__price-block-price price_formator rub">{{ Number(tovarInfo.price).toLocaleString('ru-RU') }}</div>
-                                </div>
-
-                                <div class="select-prod-info__price-block-avail">
-                                    <p v-if="tovarInfo.insklad !== 0" class="prod-card__avail  ">В наличии</p>
-                                    <p v-else class="prod-card__avail active">Под заказ</p>
-                                </div>
-                            </div>
-                            <div class="select-prod-info__price-block-buttons">
-                                <div class="select-prod-info__price-block-buttons-inner d-flex">
-                                    <add-to-bascet-btn v-bind:sku="tovarInfo.sku">Добавить в корзину</add-to-bascet-btn>
-                                    <button class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</button>
-                                </div>
-
-                                <a href="" data-prodid="{{tovarInfo.sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>
-                            </div>
-                        </div>
-
-                        <div class="select-prod__specifications-column">
-                            <h4 class="select-prod__specifications-column-title">Характеристики</h4>
-                            <div class="select-prod__specifications-card param_scroll_wrap">
-                                <div class="param_scroll">
-                                    <div v-for="(item, index) in tovarInfo.product_propertys" :key="index" class="select-prod__specifications-card-list d-flex">
-                                        <div class="select-prod__specifications-card-list-item">{{item.name}}</div>
-                                        <div class="select-prod__specifications-card-list-item">{{item.value}}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="info">
+                        <strong>{{ tovarInfo.name }}</strong>
+                        <p>Артикул: {{ tovarInfo.sku }}</p>
                     </div>
                 </div>
-
+                <form class="buy_form" action="">
+                    <input v-model="phone" @focus="phoneError=false" :class="{_error:phoneError}" v-mask="{mask: '+N (NNN) NNN-NN-NN' }" type="tel" placeholder="Введите телефон" />
+                    <button @click.prevent="buyTovar" class="btn">Купить</button>
+                    <p class="policy_des">Заполняя данную форму и отправляя заказ вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                </form>
             </div>
         </div>
     </div>
@@ -73,6 +36,8 @@ export default {
     data() {
         return {
             tovarId:0,
+            phone:"",
+            phoneError:false,
             tovarInfo:{
                 name:"",
                 img:"",
@@ -97,7 +62,7 @@ export default {
         },
 
         openWin() {
-            if (location.hash.indexOf("quick_") !== -1){
+            if (location.hash.indexOf("ocbuy_") !== -1){
                 this.showModal = true
                 this.tovarId = location.hash.split('_')[1]
                 this.getTovarData()
@@ -119,6 +84,51 @@ export default {
                 this.tovarInfo.img = response.data.main_img
             })
             .catch( error => console.log(error));
+        },
+
+        buyTovar() {
+            console.log(this.phone)
+
+            let re = /([\+]?[7|8][\s-(]?[9][0-9]{2}[\s-)]?)?([\d]{3})[\s-]?([\d]{2})[\s-]?([\d]{2})/
+
+            if (!re.test(this.phone)) {
+                this.phoneError = true
+                return
+            }
+
+
+
+
+            const tovar_position = [
+                    {
+                        product_sku:this.tovarInfo.sku,
+                        quentity:1,
+                        price:this.tovarInfo.price,
+
+                        tovar_data: {
+                            img:this.tovarInfo.img,
+                            brand:this.tovarInfo.brand,
+                            state:this.tovarInfo.state,
+                            name:this.tovarInfo.name,
+                            price:this.tovarInfo.price,
+                            quentity:1
+                        }
+                    }
+                ]
+
+                console.log(tovar_position)
+
+            axios.post('/bascet/ocsend', {
+                _token: document.querySelector('meta[name="_token"]').content,
+                name: "Покупка в 1 клик",
+                phone: this.phone,
+                tovars: tovar_position,
+            })
+            .then((response) => {
+                this.loadet = false;
+                document.location.href="/bascet/thencs"
+            })
+            .catch(error => console.log(error));
         }
     },
 
@@ -146,9 +156,9 @@ export default {
     }
 
     .popup_c {
-        width:80%;
-        min-width: 1024px;
-        max-width: 1280px;
+        width:40%;
+        min-width: 300px;
+        max-width: 500px;
         height: auto;
         background-color: white;
         margin: auto;
@@ -174,27 +184,6 @@ export default {
         margin: 0 0 20px 0;
     }
 
-    .policy_descr a{
-        text-decoration: underline;
-    }
-
-    .sending_form .control_wrap button{
-        width:50%;
-    }
-
-    .sending_form .control_wrap {
-        max-width: 100%;
-        display: flex;
-    }
-
-    .sending_form {
-       display: flex;
-       flex-direction: column;
-    }
-
-    .sub_h {
-        margin-bottom: 20px;
-    }
 
     .modal_h2 {
         font-size: 28px;
@@ -262,6 +251,48 @@ export default {
 
     .m_bottom {
         margin-bottom: 30px;
+    }
+
+    .ocbuy_tovar {
+        display: flex;
+    }
+
+    .ocbuy_tovar .info strong{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .ocbuy_tovar .info{
+        display: flex;
+        flex-direction: column;
+        flex: 4;
+    }
+    .ocbuy_tovar .photo{
+        width:80px;
+        height:80px;
+        margin-right: 20px;
+        flex: 1;
+    }
+
+    .buy_form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buy_form input[type=tel]{
+        margin-bottom: 20px;
+    }
+
+    .policy_des {
+        margin-top: 20px;
+    }
+
+    .policy_des a:hover{
+        text-decoration: underline;
+    }
+    .policy_des a{
+        color:#FFB400
     }
 
     @media (max-width: 480px){

@@ -45,12 +45,12 @@
                         @endforeach
                     </div>
 
-                    <!-- <div class="show-link">
-                        <a href="#" class="show-link__btn">Показать еще</a>
-                    </div> -->
-
 
                     {{$cat_product->links('parts.pagination');}}
+
+                    <div class="text_blk category_description">
+                        {!! $category->description !!}
+                    </div>
                 </main>
 
             </div>

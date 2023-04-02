@@ -75,6 +75,8 @@ class BascetController extends Controller
         Mail::to(["asmi046@gmail.com", "zakaz@lightsnab.ru", "sale@lightsnab.ru"])->send(new BascetSend($request, $order_number->id));
     }
 
+
+
     public function thencs() {
         Cart::cart_clear();
         return view("thencs");

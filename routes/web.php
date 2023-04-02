@@ -50,6 +50,7 @@ Route::get('/bascet/has', [BascetController::class, "has_in_bascet"])->name("bas
 Route::delete('/bascet/clear', [BascetController::class, "clear"])->name("bascet_clear");
 Route::delete('/bascet/delete', [BascetController::class, "delete"])->name("bascet_delete");
 Route::post('/bascet/send', [BascetController::class, "send"])->name("bascet_send");
+Route::post('/bascet/ocsend', [BascetController::class, "send"])->name("bascet_oc_send");
 
 Route::get('/favorites', [FavoriteController::class, "index"])->name("favorites");
 Route::get('/favorites/get', [FavoriteController::class, "get_all"])->name("favorites_get");

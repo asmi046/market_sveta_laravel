@@ -69,7 +69,7 @@
           <div class="select-prod-info__price-block-buttons">
             <div class="select-prod-info__price-block-buttons-inner d-flex">
                 <add-to-bascet-btn sku="{{$product[0]->sku}}">Добавить в корзину</add-to-bascet-btn>
-                <button class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</button>
+                <a href="#ocbuy_{{$product[0]->id}}" class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</a>
             </div>
 
             <a href="" data-prodid="{{$product[0]->sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>
@@ -106,17 +106,6 @@
               <a href="#" class="btn"> Отправить проект</a>
             </div>
           </div>
-          {{-- <h3 class="select-prod-info__guarantee-title">
-            6 месяцев гарантии <br>
-            с момента покупки
-          </h3>
-          <p class="select-prod-info__guarantee-subtitle">
-            18 месяцев <a href="#" class="select-prod-info__guarantee-subtitle-link">расширенной гарантии</a> на светильники при
-            условии монтажа нашим специалистом.
-          </p>
-          <p class="select-prod-info__guarantee-subtitle">
-            <a href="#" class="select-prod-info__guarantee-subtitle-link">Стоимость услуг по установке светильников</a>
-          </p> --}}
         </div>
 
       </div>
