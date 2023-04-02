@@ -585,6 +585,63 @@ class CategoryBase {
         return self::$cats;
     }
 
+    static public function get_cat_description($cat_name, $cat_id) {
+        $category_text = $cat_name." - Купить с доставкой по России";
+
+        if ($cat_id == 22)
+            $category_text = file_get_contents(public_path('texts//liustry-22.html'));
+
+        if ($cat_id == 7)
+            $category_text = file_get_contents(public_path('texts//bra-i-nastennoe-osveshhenie-7.html'));
+
+        if ($cat_id == 31)
+            $category_text = file_get_contents(public_path('texts//nakladnye-potolocnye-svetilniki-31.html'));
+
+        if ($cat_id == 33)
+            $category_text = file_get_contents(public_path('texts//podvesnye-svetilniki-32.html'));
+
+        if ($cat_id == 64)
+            $category_text = file_get_contents(public_path('texts//tocecnye-svetilniki-64.html'));
+
+        if ($cat_id == 15)
+            $category_text = file_get_contents(public_path('texts//nastolnye-lampy-15.html'));
+
+        if ($cat_id == 59)
+            $category_text = file_get_contents(public_path('texts//torsery-i-napolnye-svetilniki-59.html'));
+
+        if ($cat_id == 54)
+            $category_text = file_get_contents(public_path('texts//spoty-54.html'));
+
+        if ($cat_id == 68)
+            $category_text = file_get_contents(public_path('texts//sinnye-i-strunnye-sistemy-68.html'));
+
+        if ($cat_id == 1)
+            $category_text = file_get_contents(public_path('texts//svetilniki-dlia-podsvetki-1.html'));
+
+        if ($cat_id == 43)
+            $category_text = file_get_contents(public_path('texts//svetodiodnye-lenty-i-profili-43.html'));
+
+        if ($cat_id == 34)
+            $category_text = file_get_contents(public_path('texts//detskie-svetilniki-34.html'));
+
+        if ($cat_id == 118)
+            $category_text = file_get_contents(public_path('texts//ulicnye-svetilniki-118.html'));
+
+        if ($cat_id == 109)
+            $category_text = file_get_contents(public_path('texts//lampy-109.html'));
+
+        if ($cat_id == 132)
+            $category_text = file_get_contents(public_path('texts//prazdnicnoe-osveshhenie-132.html'));
+
+        if ($cat_id == 143)
+            $category_text = file_get_contents(public_path('texts//elektroustanovocnye-izdeliia-143.html'));
+
+        if ($cat_id == 168)
+            $category_text = file_get_contents(public_path('texts//texniceskii-svet-ofisnye-svetilniki-168.html'));
+
+        return $category_text;
+    }
+
     static public function get_cats_to_tovar ($category_ID = -1, $prod_id = 0, $prop = []) {
 
         $product_cat = [];

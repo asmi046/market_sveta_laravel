@@ -33,7 +33,7 @@ class CategorySeeder extends Seeder
                 "parentid" => 0,
                 "name" => $top_cat['name'],
                 "slug" => Str::slug((string)$top_cat['name'])."-".$top_cat['id'],
-                "description" => "",
+                "description" => CategoryBase::get_cat_description($top_cat['name'], $top_cat['id']),
                 "title_seo" => $top_cat['name']." - Купить с доставкой по России",
                 "description_seo" => $top_cat['name']." - Купить с доставкой по России"
             ];
@@ -44,7 +44,7 @@ class CategorySeeder extends Seeder
                     "parentid" => $top_cat['id'],
                     "name" => $sub_cat['name'],
                     "slug" => Str::slug((string)$sub_cat['name'])."-".$sub_cat['id'],
-                    "description" => "",
+                    "description" => CategoryBase::get_cat_description($top_cat['name'], $top_cat['id']),
                     "title_seo" => $sub_cat['name']." - Купить с доставкой по России",
                     "description_seo" => $sub_cat['name']." - Купить с доставкой по России"
                 ];
@@ -56,7 +56,7 @@ class CategorySeeder extends Seeder
                         "parentid" => $sub_cat['id'],
                         "name" => $subsub_cat['name'],
                         "slug" => Str::slug((string)$subsub_cat['name'])."-".$subsub_cat['id'],
-                        "description" => "",
+                        "description" => CategoryBase::get_cat_description($top_cat['name'], $top_cat['id']),
                         "title_seo" => $subsub_cat['name']." - Купить с доставкой по России",
                         "description_seo" => $subsub_cat['name']." - Купить с доставкой по России"
                     ];
