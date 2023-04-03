@@ -39,7 +39,7 @@
                             <div class="select-prod-info__price-block-buttons">
                                 <div class="select-prod-info__price-block-buttons-inner d-flex">
                                     <add-to-bascet-btn v-bind:sku="tovarInfo.sku">Добавить в корзину</add-to-bascet-btn>
-                                    <button class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</button>
+                                    <a :href="'#ocbuy_'+tovarInfo.id" class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</a>
                                 </div>
 
                                 <a href="" data-prodid="{{tovarInfo.sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>

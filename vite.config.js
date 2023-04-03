@@ -29,6 +29,7 @@ export default defineConfig({
                 // "public/js/modules/functions.js",
                 // "public/js/modules/regular.js",
                 "public/js/modules/script.js",
+                "public/js/modules/brand.js",
                 // "public/js/modules/scroll.js",
                 "public/js/modules/mainsearch.js",
                 "public/js/modules/sliders.js",
