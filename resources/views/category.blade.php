@@ -48,9 +48,11 @@
 
                     {{$cat_product->links('parts.pagination');}}
 
-                    <div class="text_blk category_description">
-                        {!! $category->description !!}
-                    </div>
+                    @if ($cat_product->currentPage() == 1)
+                        <div class="text_blk category_description">
+                            {!! $category->description !!}
+                        </div>
+                    @endif
                 </main>
 
             </div>
