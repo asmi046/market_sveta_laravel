@@ -15,11 +15,10 @@
     <script>
         let all_brands = {!! json_encode($all_brands) !!};
     </script>
-    @vite(["public/js/modules/brand.js"])
 @endif
 
 @vite([
-
+"public/js/modules/brand.js",
 // "public/js/modules/dynamic_adapt.js",
 
 // "public/js/modules/functions.js",
