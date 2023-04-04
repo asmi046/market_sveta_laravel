@@ -18,7 +18,6 @@ $page_title = "Дизайнерам";
 
             <div class="text_style">
                 <div class="designer_slide">
-                    <img src="{{asset('img/for_designers/fd_head.webp')}}" alt="{{$page_title}}">
                     <div class="control">
                         <h2>Вы дизайнер интерьера  или у  вас архитектурное бюро?</h2>
                         <h3>мы преложем вам персональные условия сотрудничества</h3>
