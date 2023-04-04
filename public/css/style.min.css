@@ -6311,14 +6311,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     background-image: url(../img/icons/pay_icon/plastik_pv.svg);
 }
 
+.budget_icon:before,
 .budget_icon {
     background-image: url(../img/icons/complect_icon/budget.svg);
 }
 
+.complectation_icon:before,
 .complectation_icon {
+
     background-image: url(../img/icons/complect_icon/complectation.svg);
 }
 
+.result_icon:before,
 .result_icon {
     background-image: url(../img/icons/complect_icon/result.svg);
 }
@@ -6351,6 +6355,168 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /* Блок способы оплаты на странице end */
+/* Страница дизайнерам */
+
+.designer_slide .control{
+    position: absolute;
+    left: 50px;
+    top: 15%;
+    width:40%;
+}
+
+.designer_slide .control h2{
+    text-transform: uppercase;
+}
+
+.designer_slide .control h3{
+    text-transform: none;
+    font-size: 18px;
+}
+
+.designer_slide {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+}
+
+.for_designers_descr {
+    margin:  40px 0;
+    padding: 20px 30px 20px 150px;
+    border: 3px solid #FFB400;
+    border-radius: 12px;
+    position: relative;
+}
+
+.for_designers_descr:before {
+    content: "";
+    height: 100%;
+    width:120px;
+    position: absolute;
+    left:0;
+    top: 0;
+    border-radius: 0 50% 50% 0;
+    background-color: #FFB400;
+    background-image: url(../img/icons/complect_icon/home_plan.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.for_designers_advantages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.for_designers_advantages .fda{
+    width:31%;
+    border: 3px solid #FFB400;
+    border-radius: 12px;
+    padding: 20px 30px 20px 100px;
+    position: relative;
+    background-image: none;
+}
+
+.for_designers_advantages .fda:before{
+    content:"";
+    position: absolute;
+    width:80px;
+    height:80px;
+    border-radius: 0 0 50% 0;
+    background-color: #FFB400;
+    left:0;
+    top:0;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.for_designers_advantages .fda h3{
+    line-height: 1;
+    margin-bottom: 30px;
+    font-weight: 900;
+ }
+
+.how_hem {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.how_hem .hhp{
+    width:19%;
+    margin: 0 1% 1% 0;
+    background-color: #f2f3f5;
+    border:1px solid #f2f3f5;
+    padding: 20px 20px 20px 65px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.how_hem .hhp:before{
+    content: attr(data-number);
+    color: #E0E1E3;
+    font-size: 32px;
+    font-weight: 900;
+    position: absolute;
+    left:12px;
+    top:14px;
+}
+
+@media (max-width: 1024px) {
+    .designer_slide .control {
+        width:70%
+    }
+
+    .for_designers_advantages {
+        flex-direction: column;
+    }
+
+    .for_designers_advantages .fda {
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .how_hem .hhp {
+        width: 32%;
+    }
+
+    .designer_slide {
+        height: auto;
+        background-color: black;
+        background-image: url(../img/for_designers/fd_head.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .designer_slide img {
+        display: none;
+
+    }
+    .designer_slide .control {
+        padding: 30px 0;
+        position: relative;
+    }
+}
+
+@media (max-width: 520px) {
+    .how_hem .hhp {
+        width: 100%;
+    }
+
+    .for_designers_descr:before {
+        height: 120px;
+        border-radius: 0 0 50% 0;
+    }
+
+    .designer_slide .control h3,
+    .designer_slide .control h2 {
+        line-height: 1.3;
+    }
+}
+
+/* Страница дизайнерам end */
 
 .category_description {
     margin: 40px 0 30px 0;

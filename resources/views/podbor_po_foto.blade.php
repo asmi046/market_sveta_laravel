@@ -1,7 +1,7 @@
 @extends('layout.all')
 
 @php
-$page_title = "Подбор по фото";
+$page_title = "Укомплектуем дизайн-проект";
 @endphp
 
 @section('title', $page_title)
