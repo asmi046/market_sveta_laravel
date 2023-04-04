@@ -4,7 +4,7 @@
 <li><a href="{{route('pay')}}">Оплата</a></li>
 <li><a href="{{route('garantia')}}">Гарантия</a></li>
 <li><a href="{{route('vozvrat')}}">Возврат</a></li>
-<li><a href="#">Укомплектуем дизайн-проект</a></li>
+<li><a href="{{route("podbor_po_foto")}}">Укомплектуем дизайн-проект</a></li>
 <li><a href="{{route('for_designers')}}">Дизайнерам</a></li>
 <li><a href="{{route('opt_sotrudnihestvo')}}">Оптовым покупателям</a></li>
 <li><a href="{{route('contacts')}}">Контакты</a></li>

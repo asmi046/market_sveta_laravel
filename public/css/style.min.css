@@ -6239,6 +6239,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     flex-direction: row;
 }
 
+.pay_sp_in_page.complecctation .ps {
+    flex-wrap: nowrap;
+}
+
+.pay_sp_in_page.complecctation .ps .text{
+    text-transform: none;
+    flex-direction: column;
+    font-weight: 400;
+}
+
 
 .pay_sp_in_page .ps{
     display: flex;
@@ -6273,6 +6283,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     font-weight: 900;
 }
 
+.pay_sp_in_page.complecctation .ps .icon{
+    background-size: 60%;
+}
+
 .pay_sp_in_page .ps .icon{
     width:70px;
     height: 70px;
@@ -6295,6 +6309,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .card_icon {
     background-image: url(../img/icons/pay_icon/plastik_pv.svg);
+}
+
+.budget_icon {
+    background-image: url(../img/icons/complect_icon/budget.svg);
+}
+
+.complectation_icon {
+    background-image: url(../img/icons/complect_icon/complectation.svg);
+}
+
+.result_icon {
+    background-image: url(../img/icons/complect_icon/result.svg);
 }
 
 @media (max-width: 1024px) {

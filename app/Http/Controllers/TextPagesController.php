@@ -29,6 +29,10 @@ class TextPagesController extends Controller
         return view('garantia');
     }
 
+    public function podbor_po_foto() {
+        return view('podbor_po_foto');
+    }
+
     public function about() {
         return view('about');
     }

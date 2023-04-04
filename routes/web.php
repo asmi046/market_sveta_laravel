@@ -39,6 +39,7 @@ Route::get('/policy', [TextPagesController::class, "policy"])->name("policy");
 Route::get('/about', [TextPagesController::class, "about"])->name("about");
 Route::get('/dostavka', [TextPagesController::class, "dostavka"])->name("dostavka");
 Route::get('/garantia', [TextPagesController::class, "garantia"])->name("garantia");
+Route::get('/podbor_po_foto', [TextPagesController::class, "podbor_po_foto"])->name("podbor_po_foto");
 
 Route::get('/brands', [BrandController::class, "index"])->name("brands");
 Route::get('/brand/{slug}', [BrandController::class, "brand_page"])->name("brand_page");
