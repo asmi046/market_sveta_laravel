@@ -6364,7 +6364,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     background-image: url(../img/for_designers/fd_head.webp);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: right center;
 }
 
 .designer_slide .control{
@@ -6379,6 +6379,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .designer_slide .control h3{
     text-transform: none;
     font-size: 18px;
+    line-height: 1.2;
+    margin-top: 20px;
 }
 
 .designer_slide {
@@ -6527,6 +6529,87 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /* Страница дизайнерам end */
+
+/* Страница оптовым покупателям  */
+
+.designer_slide.opt {
+    background-color: #cbced5;
+    color:black;
+    background-image: url(../img/opt/opt_slide.webp );
+    margin-bottom: 40px;
+}
+
+.col_2_blk {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col_2_blk > *{
+    flex:1;
+}
+
+.btand_wrap {
+    margin-top: 40px;
+}
+
+.pay_sp_in_page.opt_page .ps .text span {
+    font-weight: 400;
+}
+
+.opt_icon_control {
+    background-image: url(../img/icons/opt/d_control.svg);
+}
+.opt_icon_pay {
+    background-image: url(../img/icons/pay_icon/plastik_pv.svg);
+}
+
+.opt_icon_savemony {
+    background-image: url(../img/icons/opt/save_mony.svg);
+}
+.opt_icon_delivery {
+    background-image: url(../img/icons/opt/opt_delivery.svg);
+}
+
+
+.opt_icon_shop{
+    background-image: url(../img/icons/opt/ofline-shop.svg);
+}
+
+.opt_icon_shop_online{
+    background-size: 60%!important;
+    background-image: url(../img/icons/opt/online_shop.svg);
+}
+.opt_icon_stroi{
+    background-size: 60%!important;
+    background-image: url(../img/icons/opt/stroi_snab.svg);
+}
+.opt_icon_cafe{
+    background-size: 60%!important;
+    background-image: url(../img/icons/opt/cafe_r.svg);
+}
+.opt_icon_kot_pos{
+    background-image: url(../img/icons/opt/kot_pos.svg);
+}
+
+@media (max-width: 812px) {
+    .col_2_blk {
+        flex-direction: column;
+    }
+
+    .pay_sp_in_page.opt_page .ps {
+        flex-wrap: nowrap;
+    }
+
+
+    .pay_sp_in_page.opt_page .ps .icon{
+        margin-right: 20px;
+        margin-bottom: 0;
+     }
+}
+
+
+
+/* Страница оптовым покупателям end */
 
 .category_description {
     margin: 40px 0 30px 0;

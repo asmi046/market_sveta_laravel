@@ -5,11 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Stock;
+use App\Models\Brand;
 
 class TextPagesController extends Controller
 {
     public function opt_sotrudnihestvo() {
-        return view('opt_sotrudnihestvo');
+        $allBrand = Brand::select('*')->orderBy('brand')->get();
+        $allBrandSort = [];
+
+        foreach($allBrand as $element) {
+            $allBrandSort[strtoupper(mb_substr($element["brand"], 0, 1))][] = $element;
+        }
+
+        return view('opt_sotrudnihestvo', ["all_brands" => $allBrandSort]);
     }
 
     public function pay() {

@@ -11,7 +11,7 @@
 
 @endif
 
-@if (Route::currentRouteName() == "brands")
+@if (Route::currentRouteName() == "brands" || Route::currentRouteName() == "opt_sotrudnihestvo")
     <script>
         let all_brands = {!! json_encode($all_brands) !!};
     </script>
