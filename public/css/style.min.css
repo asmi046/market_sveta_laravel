@@ -6227,6 +6227,103 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /* оформление текстовых блоков end */
 
+/* Блок способы оплаты на странице */
+
+.pay_sp_in_page {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.pay_sp_in_page_line {
+    flex-direction: row;
+}
+
+
+.pay_sp_in_page .ps{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+.pay_sp_in_page_line .ps{
+    margin-right: 20px;
+    flex-wrap: nowrap;
+    flex: 1;
+}
+
+.pay_sp_in_page .ps .text span{
+    margin: auto;
+}
+
+.pay_sp_in_page .ps .text{
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 16px;
+    display: flex;
+}
+
+.pay_sp_in_page .ps .icon.current{
+    font-size: 42px;
+    color: #1a1818;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 900;
+}
+
+.pay_sp_in_page .ps .icon{
+    width:70px;
+    height: 70px;
+    min-width:70px;
+    min-height: 70px;
+    background-color: #FFB400;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.bn_icon {
+    background-image: url(../img/icons/pay_icon/beznar_rs.svg);
+}
+
+.card_k_icon {
+    background-image: url(../img/icons/pay_icon/plastic_rs.svg);
+}
+
+.card_icon {
+    background-image: url(../img/icons/pay_icon/plastik_pv.svg);
+}
+
+@media (max-width: 1024px) {
+    .pay_sp_in_page_line {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .pay_sp_in_page .ps .text{
+        margin-left: 0;
+    }
+
+    .pay_sp_in_page_line .ps .text{
+        margin-left: 20px;
+    }
+
+    .pay_sp_in_page .ps .icon{
+        margin-bottom: 20px;
+    }
+
+    .pay_sp_in_page_line .ps .icon{
+        margin-bottom: 0;
+    }
+}
+
+/* Блок способы оплаты на странице end */
+
 .category_description {
     margin: 40px 0 30px 0;
 }

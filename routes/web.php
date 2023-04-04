@@ -36,10 +36,12 @@ Route::get('/for-designers', [TextPagesController::class, "for_designers"])->nam
 Route::get('/vozvrat', [TextPagesController::class, "vozvrat"])->name("vozvrat");
 Route::get('/aktsii', [TextPagesController::class, "aktsii"])->name("aktsii");
 Route::get('/policy', [TextPagesController::class, "policy"])->name("policy");
-Route::get('/brands', [BrandController::class, "index"])->name("brands");
-Route::get('/brand/{slug}', [BrandController::class, "brand_page"])->name("brand_page");
 Route::get('/about', [TextPagesController::class, "about"])->name("about");
 Route::get('/dostavka', [TextPagesController::class, "dostavka"])->name("dostavka");
+Route::get('/garantia', [TextPagesController::class, "garantia"])->name("garantia");
+
+Route::get('/brands', [BrandController::class, "index"])->name("brands");
+Route::get('/brand/{slug}', [BrandController::class, "brand_page"])->name("brand_page");
 
 Route::get('/bascet/thencs', [BascetController::class, "thencs"])->name("bascet_thencs");
 Route::get('/bascet', [BascetController::class, "index"])->name("bascet");

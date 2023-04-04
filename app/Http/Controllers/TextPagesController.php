@@ -25,6 +25,10 @@ class TextPagesController extends Controller
         return view('brands');
     }
 
+    public function garantia() {
+        return view('garantia');
+    }
+
     public function about() {
         return view('about');
     }

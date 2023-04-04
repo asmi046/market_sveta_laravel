@@ -35,7 +35,7 @@
 			<div class="footer__col">
 				<h3>Помощь покупателю</h3>
 				<ul class="footer__menu">
-					<x-top-menu-puncts></x-top-menu-puncts>
+					<x-bottom-menu-puncts></x-bottom-menu-puncts>
 				</ul>
 				<div class="footer__social-network">
 					<p class="footer__social-network-text">СОЦИАЛЬНЫЕ СЕТИ</p>
