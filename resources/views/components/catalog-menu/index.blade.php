@@ -28,9 +28,14 @@
 				<li class="menu__catalogy"><a href="#" class="open_cat_menu menu__link animated_bg">Каталог товаров</a></li>
 
                 <li><a href="{{route('category', "liustry-22")}}" class="menu__link">Люстры</a></li>
+                <li><a href="{{route('category', "bra-i-nastennoe-osveshhenie-7")}}" class="menu__link">Бра</a></li>
+                <li><a href="{{route('category', "tocecnye-svetilniki-64")}}" class="menu__link">Точечный свет</a></li>
+                <li><a href="{{route('category', "svetodiodnye-lenty-i-profili-43")}}" class="menu__link">Ленты и профили</a></li>
+                <li><a href="{{route('category', "sinnye-i-strunnye-sistemy-68")}}" class="menu__link">Трековый свет</a></li>
+                <li><a href="{{route('category', "ulicnye-svetilniki-118")}}" class="menu__link">Уличный свет</a></li>
+                <li><a href="{{route('category', "spoty-54")}}" class="menu__link">Споты</a></li>
                 <li><a href="{{route('category', "nastolnye-lampy-15")}}" class="menu__link">Настольные лампы</a></li>
-                <li><a href="{{route('category', "svetilniki-dlia-podsvetki-1")}}" class="menu__link">Светильники для подсветки</a></li>
-                <li><a href="{{route('category', "bra-i-nastennoe-osveshhenie-7")}}" class="menu__link">Бра и настенное освещение</a></li>
+
                 <li class="menu__shares"><a href="{{route('aktsii')}}" class="menu__link animated_bg">Акции</a></li>
 			</ul>
 		</div>
