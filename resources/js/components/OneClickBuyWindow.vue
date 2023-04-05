@@ -22,7 +22,7 @@
                 <form class="buy_form" action="">
                     <input v-model="phone" @focus="phoneError=false" :class="{_error:phoneError}" v-mask="{mask: '+N (NNN) NNN-NN-NN' }" type="tel" placeholder="Введите телефон" />
                     <button @click.prevent="buyTovar" class="btn">Купить</button>
-                    <p class="policy_des">Заполняя данную форму и отправляя заказ вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                    <p class="policy_des">Заполняя данную форму и отправляя заказ вы соглашаетесь с <a href="/policy">политикой конфиденциальности</a></p>
                 </form>
             </div>
         </div>

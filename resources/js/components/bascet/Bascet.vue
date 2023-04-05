@@ -79,7 +79,7 @@
                 </ul>
 
                 <button @click.prevent="sendBascet()" class="btn" type="submit"><span v-show="!loadet" class="nadp">Отправить</span><span v-show="loadet" class="btnLoader shoved"></span></button>
-                <p class="policy">Заполняя данную форму и отправляя заказ вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                <p class="policy">Заполняя данную форму и отправляя заказ вы соглашаетесь с <a href="/policy">политикой конфиденциальности</a></p>
             </form>
         </div>
     </div>

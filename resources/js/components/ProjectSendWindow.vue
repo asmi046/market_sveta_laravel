@@ -7,7 +7,8 @@
             <form class="sending_form" action="/send_consult" method="POST">
                 <input type="hidden" name="_token" :value="_token">
                 <input type="text" name="name" v-model="name" placeholder="Имя">
-                <input type="tel" name="phone" v-model="phone" placeholder="Телефон*">
+                <input type="tel" name="phone" v-model="phone" v-mask="{mask: '+N (NNN) NNN-NN-NN', model: 'cpf' }" placeholder="Телефон*">
+                <input v-if="hesh == 'calcbaMsg'" type="text" name="company" v-model="company" placeholder="Название компании">
 
                 <label for="fileComponent">
                     <div class="icon"></div>
@@ -18,7 +19,7 @@
                 <div class="error_list_wrap">
                     <div v-for="(item, index) in errorList" :key="index" class="error">{{item}}</div>
                 </div>
-                <p class="policy_descr">Заполняя данную форму и отправляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                <p class="policy_descr">Заполняя данную форму и отправляя заявку вы соглашаетесь с <a href="/policy">политикой конфиденциальности</a></p>
                 <div class="control_wrap">
                     <button class="btn" @click.prevent="sendMsg()">Отправить</button> <div v-show="showLoader" class="loader"></div>
                 </div>
@@ -34,6 +35,7 @@ export default {
         return {
             name:"",
             phone:"",
+            company:"",
             file:null,
             fileName:"",
             showModal:false,
@@ -72,6 +74,7 @@ export default {
             formData.append('_token', this._token)
             formData.append('title', this.title)
             formData.append('name', this.name)
+            formData.append('company', this.company)
             formData.append('phone', this.phone)
             formData.append('file', this.file)
 

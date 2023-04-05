@@ -6,11 +6,11 @@
             <p class="sub_h">{{subtitle}}</p>
             <form class="sending_form" action="/send_consult" method="POST">
                 <input type="hidden" name="_token" :value="_token">
-                <input class="h-10 rounded-lg border px-3 border-cborder bg-cfill" type="text" name="phone" v-model="phone" placeholder="Телефон*">
+                <input  type="text" name="tel" v-mask="{mask: '+N (NNN) NNN-NN-NN', model: 'cpf' }" v-model="phone" placeholder="Телефон*">
                 <div class="error_list_wrap">
                     <div v-for="(item, index) in errorList" :key="index" class="error">{{item}}</div>
                 </div>
-                <p class="policy_descr">Заполняя данную форму и отправляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                <p class="policy_descr">Заполняя данную форму и отправляя заявку вы соглашаетесь с <a href="/policy">политикой конфиденциальности</a></p>
                 <div class="control_wrap">
                     <button class="btn" @click.prevent="sendMsg()">Отправить</button> <div v-show="showLoader" class="loader"></div>
                 </div>
