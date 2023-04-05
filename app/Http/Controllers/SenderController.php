@@ -13,9 +13,12 @@ class SenderController extends Controller
     public function send_project(Request $request) {
 
         $data = $request->validate([
+            "title" => ['string'],
             "name" => [],
-            "phone" => ['required','string']
+            "phone" => ['required','string'],
+            "file" => []
         ]);
+
 
         Mail::to(["asmi046@gmail.com", "zakaz@lightsnab.ru", "sale@lightsnab.ru"])->send(new ProjectMail($data));
         return ["Сообщение отправлено"];

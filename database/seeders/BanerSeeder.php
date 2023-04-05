@@ -32,6 +32,9 @@ class BanerSeeder extends Seeder
         Storage::disk('public')->put("action_banner_SMART.webp", file_get_contents(public_path('img/banners/action_banner_SMART.webp')), 'public');
         Storage::disk('public')->put("action_banner_MAGNIT.webp", file_get_contents(public_path('img/banners/action_banner_MAGNIT.webp')), 'public');
 
+        Storage::disk('public')->put("info-sl-1.webp", file_get_contents(public_path('img/banners/info-sl-1.webp')), 'public');
+        Storage::disk('public')->put("info-sl-2.webp", file_get_contents(public_path('img/banners/info-sl-2.webp')), 'public');
+
         echo env("PICT",1);
         $all_banners = [
             [
@@ -127,7 +130,7 @@ class BanerSeeder extends Seeder
 
 
             [
-                "img_name" => "info-sl-1.jpg",
+                "img_name" => Storage::url("info-sl-1.webp"),
                 "page" => "home",
                 "page_area" => "info_slider_top",
                 "title" => "",
@@ -135,7 +138,7 @@ class BanerSeeder extends Seeder
                 "order" => 0,
             ],
             [
-                "img_name" => "info-sl-2.jpg",
+                "img_name" => Storage::url("info-sl-2.webp"),
                 "page" => "home",
                 "page_area" => "info_slider_bottom",
                 "title" => "",

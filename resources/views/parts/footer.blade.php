@@ -1,10 +1,6 @@
 <div class="foooter_subsribe_line">
-	<h3 class="icon icon-ec_icon_mail">Подпишитесь <br> на нашу рассылку!</h3>
-
-	<form action="#" class="footer__forms d-flex">
-		<input type="email" placeholder="E-mail" name="email" class="input">
-		<button class="btn">Подписаться</button>
-	</form>
+	<h3>Не нашли то что искази? <br>Воспользуйтесь услугой подбор по фото →</h3>
+    <a href="#photoMsg" class="btn">Подбор по фото</a>
 </div>
 
 <footer id="footer" class="footer">

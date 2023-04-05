@@ -11,7 +11,9 @@ use Illuminate\Queue\SerializesModels;
 
 use Illuminate\Mail\Mailables\Address;
 
-class RecollMail extends Mailable
+use Illuminate\Mail\Mailables\Attachment;
+
+class ProjectMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -36,8 +38,8 @@ class RecollMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address("asmi-work046@yandex.ru","Karta-sveta"),
-            subject: 'Запрос обратного звонка',
+            from: new Address("asmi-work046@yandex.ru", "Karta-sveta"),
+            subject: $this->formData["title"],
         );
     }
 
@@ -49,7 +51,7 @@ class RecollMail extends Mailable
     public function content()
     {
         return new Content(
-            view: 'mail.recoll',
+            view: 'mail.project',
         );
     }
 
@@ -60,6 +62,9 @@ class RecollMail extends Mailable
      */
     public function attachments()
     {
-        return [];
+        return [
+            Attachment::fromPath($this->formData["file"] )
+            ->as($this->formData["file"]->getClientOriginalName())
+        ];
     }
 }

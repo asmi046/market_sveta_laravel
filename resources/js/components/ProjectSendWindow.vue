@@ -66,12 +66,17 @@ export default {
 
             if (this.errorList.length != 0 ) return
 
-            this.showLoader = true;
-            axios.post(this.rout, {
-                _token: this._token,
-                phone: this.phone,
+            const config = { 'content-type': 'multipart/form-data' }
 
-            })
+            const formData = new FormData()
+            formData.append('_token', this._token)
+            formData.append('title', this.title)
+            formData.append('name', this.name)
+            formData.append('phone', this.phone)
+            formData.append('file', this.file)
+
+            this.showLoader = true;
+            axios.post(this.rout, formData, config)
             .then((response) => {
                 this.showLoader = false
                 document.location.href=this.redirect

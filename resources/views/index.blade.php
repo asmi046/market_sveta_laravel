@@ -18,14 +18,15 @@
 
             <div class="info-sl__images d-flex ">
 
-                <div class="info-sl__img-item img-item-l">
-                    <img loading="lazy" src="img/banners/{{$banners["info_slider_top"][0]["img_name"]}}" alt="">
+                <a href="#projectMsg" class="info-sl__img-item img-item-l">
 
-                </div>
+                    <img loading="lazy" src="{{$banners["info_slider_top"][0]["img_name"]}}" alt="">
 
-                <div class="info-sl__img-item img-item-r">
-                    <img loading="lazy" src="img/banners/{{$banners["info_slider_bottom"][0]["img_name"]}}" alt="">
-                </div>
+                </a>
+
+                <a target="_blank" href="https://lightsnab.ru/" class="info-sl__img-item img-item-r">
+                    <img loading="lazy" src="{{$banners["info_slider_bottom"][0]["img_name"]}}" alt="">
+                </a>
 
             </div>
 
