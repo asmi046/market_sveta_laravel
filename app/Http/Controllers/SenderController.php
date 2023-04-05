@@ -13,7 +13,7 @@ class SenderController extends Controller
     public function send_project(Request $request) {
 
         $data = $request->validate([
-            "name" => ['required','string']
+            "name" => [],
             "phone" => ['required','string']
         ]);
 

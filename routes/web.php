@@ -63,3 +63,4 @@ Route::delete('/favorites/clear', [FavoriteController::class, "clear"])->name("f
 
 Route::get('/thencs', [SenderController::class, "show_thencs"])->name('thencs');
 Route::post('/send_consult', [SenderController::class, "send_consultation"])->name('send_consultation');
+Route::post('/send_project', [SenderController::class, "send_project"])->name('send_project');
