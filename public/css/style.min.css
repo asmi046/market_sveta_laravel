@@ -6533,10 +6533,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 /* Страница оптовым покупателям  */
 
 .designer_slide.opt {
-    background-color: #cbced5;
+    background-color: #d5d8dd;
     color:black;
     background-image: url(../img/opt/opt_slide.webp );
     margin-bottom: 40px;
+    background-position: right bottom;
 }
 
 .col_2_blk {
@@ -6591,6 +6592,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     background-image: url(../img/icons/opt/kot_pos.svg);
 }
 
+@media (max-width: 1280px) {
+    .designer_slide.opt {
+        background-size: cover;
+    }
+}
+
 @media (max-width: 812px) {
     .col_2_blk {
         flex-direction: column;
@@ -6605,6 +6612,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         margin-right: 20px;
         margin-bottom: 0;
      }
+}
+
+@media (max-width: 480px) {
+    .designer_slide.opt{
+        background-position: 71% center;
+    }
 }
 
 
