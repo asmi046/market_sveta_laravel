@@ -4118,6 +4118,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 100%;
   flex: 1 0 auto;
   border-radius: 10px;
+  border: 1px solid #f6f6f4;
 }
 
 /* Точки (булиты) */
@@ -4411,6 +4412,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   position: relative;
   border-radius: 11px;
   overflow: hidden;
+  border: 1px solid #f6f6f4;
 }
 
 .popular__baner-text {
@@ -6971,10 +6973,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-  }
-
-  .popular__baner {
-    background-position: center;
   }
 
   .page__main-banner {

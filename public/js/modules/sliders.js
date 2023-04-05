@@ -194,18 +194,24 @@ let main_banner = new Swiper('.main_banner', {
 		disableOnInteraction: false,
 	},
 
-	observer: true,
-	observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 0, //отступ в пикселях
-	autoHeight: true,
-	speed: 2000,
-	loop: true, //циклично
+    navigation: {
+        nextEl: ".main_banner .slider_nav_btn_next",
+        prevEl: ".main_banner .slider_nav_btn_prev",
+    },
+
+});
+
+let popular__baner = new Swiper('.popular__baner', {
+	autoplay: {
+		delay: 8000,
+		disableOnInteraction: false,
+	},
+
 
     navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
+        nextEl: ".popular__baner .slider_nav_btn_next",
+        prevEl: ".popular__baner .slider_nav_btn_prev",
+    },
 
 });
 

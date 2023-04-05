@@ -10,7 +10,7 @@
                 <div class="swiper-wrapper">
                     @foreach ($banners["main_banner"] as $item)
                         <div class="slider__item main_slider__item swiper-slide">
-                            <img src="img/banners/{{$item["img_name"]}}" alt="">
+                            <img loading="lazy" src="{{$item["img_name"]}}" alt="{{$item["title"]}}">
                         </div>
                     @endforeach
                 </div>
@@ -19,12 +19,12 @@
             <div class="info-sl__images d-flex ">
 
                 <div class="info-sl__img-item img-item-l">
-                    <img src="img/banners/{{$banners["info_slider_top"][0]["img_name"]}}" alt="">
+                    <img loading="lazy" src="img/banners/{{$banners["info_slider_top"][0]["img_name"]}}" alt="">
 
                 </div>
 
                 <div class="info-sl__img-item img-item-r">
-                    <img src="img/banners/{{$banners["info_slider_bottom"][0]["img_name"]}}" alt="">
+                    <img loading="lazy" src="img/banners/{{$banners["info_slider_bottom"][0]["img_name"]}}" alt="">
                 </div>
 
             </div>
@@ -54,8 +54,17 @@
 <section id="pop_bnr" class="pop_bnr">
     <div class="_container">
 
-        <div class="popular__baner">
-            <img src="{{asset('img/banners/'.$banners["action_banner"][0]["img_name"])}}" alt="">
+        <div class="popular__baner swiper">
+            <div class="swiper-wrapper">
+                @foreach ($banners["action_banner"] as $item)
+                    <div  class="swiper-slide">
+                        <img loading="lazy" src="{{$item["img_name"]}}" alt="{{$item["title"]}}">
+                    </div>
+                @endforeach
+            </div>
+
+            <div class="slider_nav_btn slider_nav_btn_next"></div>
+            <div class="slider_nav_btn slider_nav_btn_prev"></div>
         </div>
 
     </div>
