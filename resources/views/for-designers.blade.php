@@ -67,6 +67,9 @@ $page_title = "Дизайнерам";
                     <div data-number="12." class="hhp">Беремся за самые сложные задачи</div>
                     <div data-number="13." class="hhp">Рассчитываем уровень освещенности</div>
                 </div>
+
+                <x-project-rs></x-project-rs>
+
             </div>
 
         </div>

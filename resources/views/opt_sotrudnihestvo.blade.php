@@ -98,10 +98,15 @@ $page_title = "Оптовым клиентам";
                     </div>
                 </div>
 
+                <x-project-rs></x-project-rs>
+
                 <h2>Бренды с которыми мы сотрудничаем</h2>
                 <div class="btand_wrap">
                     <x-brands-in-page :allbrands="$all_brands"></x-brands-in-page>
                 </div>
+
+
+
             </div>
 
         </div>
