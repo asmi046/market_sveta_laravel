@@ -17,6 +17,7 @@
         "seed_rep_one": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan DB:seed SetMulticatSeeder\"",
         "seed_rep_one_1": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan DB:seed BanerSeeder\"",
         "seed_rep_one_2": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan DB:seed CatalogMenuSeeder\"",
+        "seed_rep_one_3": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan DB:seed SubCatalogMenuSeeder\"",
         "seed_rep_price": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan DB:seed PriceLoader\"",
         "seed_rep_price_xml": "ssh u1803163@31.31.198.109 \"cd www/lr.marketsveta.su && /opt/php/8.1/bin/php artisan DB:seed PriceLoaderXML\"",
         "db_update": "npm run rollback_rep && npm run migrate_rep && npm run seed_rep",
