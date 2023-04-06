@@ -29,14 +29,10 @@ class CategoryController extends Controller
         $subCat = Category::where('parentid', $categoryInfo->id)->get();
 
 
-        $catProducts = $categoryInfo->category_tovars()->filter($request)->paginate(48)->withQueryString();
-
-        // $catProducts = Product::where('cat1', $categoryInfo->baseid)
-        // ->orWhere('cat2', $categoryInfo->baseid)
-        // ->orWhere('cat3', $categoryInfo->baseid)
-        // ->orWhere('cat4', $categoryInfo->baseid)->filter($request)->paginate(48)->withQueryString();
-
-        // dd($categoryInfo, $catProducts, $subCat, $categoryInfo->baseid);
+        if ($request->request->get("order"))
+            $catProducts = $categoryInfo->category_tovars()->filter($request)->paginate(48)->withQueryString();
+        else
+            $catProducts = $categoryInfo->category_tovars()->filter($request)->orderByRaw("price, insklad")->paginate(48)->withQueryString();
 
         return view('category', ["category" => $categoryInfo, "cat_product" => $catProducts, "sub_cat" => $subCat, "bc1" => $subcat_info1, "bc2" => $subcat_info2]);
     }
