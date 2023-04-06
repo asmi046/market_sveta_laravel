@@ -27,6 +27,25 @@ class ProductFilter extends QueryFilter {
 
     }
 
+    public function order($order = []) {
+        if (empty($order)) return;
+
+        if ($order === "Сначала недорогие")
+            $this->builder->orderBy("price");
+
+        if ($order === "Сначала дорогие")
+            $this->builder->orderByDesc("price");
+
+        if ($order === "Скидка")
+            $this->builder->orderByDesc("price_old");
+
+        if ($order === "Новинки")
+            $this->builder->orderByDesc("new");
+
+        if ($order === "По наличию")
+            $this->builder->orderByDesc("insklad");
+    }
+
     public function style($style = []) {
         if (!empty($style))
             $this->builder->whereIn("style", $style);

@@ -39,6 +39,9 @@
 
                 <main class="page__main main">
 
+
+                    <x-category-sort :cat="$cat_product"></x-category-sort>
+
                     <div class="main-prod-card d-flex">
                         @foreach ($cat_product as $item)
                             <x-tovar-card :minfo="$item"></x-tovar-card>
