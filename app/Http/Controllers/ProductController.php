@@ -37,13 +37,10 @@ class ProductController extends Controller
         ];
 
         if (!empty($prosuct[0]->collection))
-            $up_sale = Product::where('collection', $prosuct[0]->collection)->take(5)->get();
+            $up_sale = Product::where('collection', $prosuct[0]->collection)->where('brand', $prosuct[0]->brand)->get();
         else
             $up_sale = [];
 
-
-
-        //  dd($propertys["Основные"][0]->name);
 
         return view("product", ["product" => $prosuct, "images" => $images, "propertys" => $propertys, "catnames" =>  $categories_name, "upsale" => $up_sale]);
     }

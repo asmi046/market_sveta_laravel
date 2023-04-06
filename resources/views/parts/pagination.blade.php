@@ -57,7 +57,17 @@
                         </div>
 
                         @if ($paginator->lastPage() > 2)
-                                <form class="paginat_form" method="GET">
+                                <form action="{{$paginator->url($paginator->currentPage())}}" class="paginat_form" method="GET">
+                                    @foreach (request()->all() as $key => $value)
+                                        @if (is_array($value))
+                                            @foreach ($value as $subitem)
+                                                <input type="hidden" name="{{$key}}[]" value="{{$subitem}}">
+                                            @endforeach
+                                        @else
+                                            <input type="hidden" name="{{$key}}" value="{{$value}}">
+
+                                        @endif
+                                    @endforeach
                                     <input type="number" name="page" value="{{$paginator->currentPage()}}" min="1" max="{{$paginator->lastPage()}}">
                                     <button class="btn" type="submit">Перейти</button>
                                 </form>
