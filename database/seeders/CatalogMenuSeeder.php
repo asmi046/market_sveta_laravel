@@ -139,12 +139,6 @@ class CatalogMenuSeeder extends Seeder
                 "link" => "/category/lampy-109",
             ],
 
-            // [
-            //     "order" => 16,
-            //     "title" => "Лайтбоксы",
-            //     "img" => Storage::url("lyustry.png"),
-            //     "link" => "/category/laitboksy-117",
-            // ],
 
             [
                 "order" => 14,
