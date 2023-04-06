@@ -52,5 +52,14 @@
 
 
                             <a class="pagination__next" href="{{$paginator->nextPageUrl()}}">Вперед</a>
+
+
                         </div>
+
+                        @if ($paginator->lastPage() > 2)
+                                <form class="paginat_form" method="GET">
+                                    <input type="number" name="page" value="{{$paginator->currentPage()}}" min="1" max="{{$paginator->lastPage()}}">
+                                    <button class="btn" type="submit">Перейти</button>
+                                </form>
+                            @endif
                     </nav>
