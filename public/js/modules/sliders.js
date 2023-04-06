@@ -206,6 +206,7 @@ let popular__baner = new Swiper('.popular__baner', {
 		delay: 8000,
 		disableOnInteraction: false,
 	},
+    loop: true,
 
 
     navigation: {

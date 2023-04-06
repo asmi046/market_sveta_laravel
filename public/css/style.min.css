@@ -4399,6 +4399,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+    .quick_show{
+        display: none;
+    }
+}
+
 .quick_show::before {
     content:"";
     position: absolute;
@@ -4551,7 +4557,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .sale_tovar_wraper .main-prod-card__column{
   flex: 0 1 32.8%;
-  min-width: 200px;
 }
 
 .new-items h2 {
