@@ -32,7 +32,7 @@ class CategoryController extends Controller
         if ($request->request->get("order"))
             $catProducts = $categoryInfo->category_tovars()->filter($request)->paginate(48)->withQueryString();
         else
-            $catProducts = $categoryInfo->category_tovars()->filter($request)->orderByRaw("price, insklad")->paginate(48)->withQueryString();
+            $catProducts = $categoryInfo->category_tovars()->filter($request)->orderByRaw("`insklad` DESC, `price` ASC")->paginate(48)->withQueryString();
 
         return view('category', ["category" => $categoryInfo, "cat_product" => $catProducts, "sub_cat" => $subCat, "bc1" => $subcat_info1, "bc2" => $subcat_info2]);
     }
