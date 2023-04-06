@@ -37,14 +37,6 @@ class BanerSeeder extends Seeder
 
         echo env("PICT",1);
         $all_banners = [
-            [
-                "img_name" =>  Storage::url("action_banner_odeon.webp"),
-                "page" => "home",
-                "page_area" => "action_banner",
-                "title" => "",
-                "sub_title" => "",
-                "order" => 0,
-            ],
 
             [
                 "img_name" =>  Storage::url("action_banner_C_LUX.webp"),
@@ -52,7 +44,7 @@ class BanerSeeder extends Seeder
                 "page_area" => "action_banner",
                 "title" => "",
                 "sub_title" => "",
-                "order" => 0,
+                "order" => 1,
             ],
 
             [
@@ -61,7 +53,7 @@ class BanerSeeder extends Seeder
                 "page_area" => "action_banner",
                 "title" => "",
                 "sub_title" => "",
-                "order" => 0,
+                "order" => 2,
             ],
 
             [
@@ -70,7 +62,16 @@ class BanerSeeder extends Seeder
                 "page_area" => "action_banner",
                 "title" => "",
                 "sub_title" => "",
-                "order" => 0,
+                "order" => 3,
+            ],
+
+            [
+                "img_name" =>  Storage::url("action_banner_odeon.webp"),
+                "page" => "home",
+                "page_area" => "action_banner",
+                "title" => "",
+                "sub_title" => "",
+                "order" => 4,
             ],
 
             [

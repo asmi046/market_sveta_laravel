@@ -4201,7 +4201,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .prod-card {
   margin: 0 -6.5px;
-  flex-wrap: wrap;
 }
 
 .prod-card__column {

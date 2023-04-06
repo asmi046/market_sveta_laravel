@@ -141,7 +141,7 @@
 
           <h2 class="similar-products__title">Похожие товары</h2>
 
-            <div class="prod-card d-flex">
+            <div class="main-prod-card d-flex">
               @foreach ($upsale as $item)
                 <x-tovar-card :minfo="$item"></x-tovar-card>
               @endforeach
