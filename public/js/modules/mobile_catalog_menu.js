@@ -2,17 +2,19 @@ document.addEventListener("DOMContentLoaded", () => {
     let showMobCataloMenuBtn = document.querySelector('.show_mob_menu')
     let mobCatalogMenu = document.querySelector('.mobile_catalog_menu')
 
-    let mobCatalogMenuList = document.querySelectorAll('.catalogMenuPunct')
+    let mobCatalogMenuList = document.querySelectorAll('.catalogMenuPunctTitle')
 
     if (mobCatalogMenuList)
         for (let item of mobCatalogMenuList)
         item.onclick = (e) =>  {
             e.preventDefault()
+            e.stopPropagation()
+
             // let elem = document.querySelector('.catalogMenuPunct[data-subwin="'+item.dataset.subwin+'"]')
             // if (elem)
             //     elem.classList.toggle("_active")
 
-            item.classList.toggle("_active")
+            item.parentNode.classList.toggle("_active")
         }
 
     if (showMobCataloMenuBtn)

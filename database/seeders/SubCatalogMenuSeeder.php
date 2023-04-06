@@ -22,7 +22,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Люстры потолочные, накладные",
-                "link" => "category/liustry-potolocnye-nakladny-23",
+                "link" => "/category/liustry-potolocnye-nakladny-23",
             ],
 
             [
@@ -30,7 +30,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Люстры подвесные",
-                "link" => "category/liustry-podvesnye-24",
+                "link" => "/category/liustry-podvesnye-24",
             ],
 
             [
@@ -38,7 +38,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Люстры каскадные",
-                "link" => "category/liustry-kaskadnye-25",
+                "link" => "/category/liustry-kaskadnye-25",
             ],
 
             [
@@ -46,7 +46,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Люстры для натяжного потолка",
-                "link" => "category/liustry-dlia-natiaznogo-potolka-27",
+                "link" => "/category/liustry-dlia-natiaznogo-potolka-27",
             ],
 
             [
@@ -54,7 +54,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Люстры с пультом",
-                "link" => "category/liustry-s-pultom-28",
+                "link" => "/category/liustry-s-pultom-28",
             ],
 
             [
@@ -62,7 +62,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Люстры светодиодные",
-                "link" => "category/liustry-svetodiodnye-29",
+                "link" => "/category/liustry-svetodiodnye-29",
             ],
 
 
@@ -71,7 +71,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Люстры на штанге",
-                "link" => "category/liustry-na-stange-2300",
+                "link" => "/category/liustry-na-stange-2300",
             ],
 // Стили
             [
@@ -79,7 +79,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/liustry-22?style%5B%5D=современный",
+                "link" => "/category/liustry-22?style%5B%5D=современный",
             ],
 
             [
@@ -87,7 +87,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-деко",
-                "link" => "category/liustry-22?style%5B%5D=арт-деко",
+                "link" => "/category/liustry-22?style%5B%5D=арт-деко",
             ],
 
             [
@@ -95,7 +95,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Восточный",
-                "link" => "category/liustry-22?style%5B%5D=восточный",
+                "link" => "/category/liustry-22?style%5B%5D=восточный",
             ],
 
             [
@@ -103,7 +103,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/liustry-22?style%5B%5D=лофт",
+                "link" => "/category/liustry-22?style%5B%5D=лофт",
             ],
 
             [
@@ -111,7 +111,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Замковый",
-                "link" => "category/liustry-22?style%5B%5D=замковый",
+                "link" => "/category/liustry-22?style%5B%5D=замковый",
             ],
 
             [
@@ -119,7 +119,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/liustry-22?style%5B%5D=классический",
+                "link" => "/category/liustry-22?style%5B%5D=классический",
             ],
 
             [
@@ -127,7 +127,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Ретро",
-                "link" => "category/liustry-22?style%5B%5D=ретро",
+                "link" => "/category/liustry-22?style%5B%5D=ретро",
             ],
 
             [
@@ -135,7 +135,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/liustry-22?style%5B%5D=кантри",
+                "link" => "/category/liustry-22?style%5B%5D=кантри",
             ],
 
             [
@@ -143,7 +143,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/liustry-22?style%5B%5D=хай-тек",
+                "link" => "/category/liustry-22?style%5B%5D=хай-тек",
             ],
 
             [
@@ -151,7 +151,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Модерн",
-                "link" => "category/liustry-22?style%5B%5D=модерн",
+                "link" => "/category/liustry-22?style%5B%5D=модерн",
             ],
 
             [
@@ -159,7 +159,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/liustry-22?style%5B%5D=флористика",
+                "link" => "/category/liustry-22?style%5B%5D=флористика",
             ],
 
             [
@@ -167,7 +167,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/liustry-22?style%5B%5D=прованс",
+                "link" => "/category/liustry-22?style%5B%5D=прованс",
             ],
 
             [
@@ -175,7 +175,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Тиффани",
-                "link" => "category/liustry-22?style%5B%5D=тиффани",
+                "link" => "/category/liustry-22?style%5B%5D=тиффани",
             ],
 // Материалы
 
@@ -184,7 +184,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/liustry-22?arm_material%5B%5D=металл",
+                "link" => "/category/liustry-22?arm_material%5B%5D=металл",
             ],
 
             [
@@ -192,7 +192,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/liustry-22?arm_material%5B%5D=алюминий",
+                "link" => "/category/liustry-22?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -200,7 +200,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/liustry-22?arm_material%5B%5D=пластик",
+                "link" => "/category/liustry-22?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -208,7 +208,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/liustry-22?arm_material%5B%5D=латунь",
+                "link" => "/category/liustry-22?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -216,7 +216,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/liustry-22?arm_material%5B%5D=дерево",
+                "link" => "/category/liustry-22?arm_material%5B%5D=дерево",
             ],
 
             [
@@ -224,7 +224,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Стекло",
-                "link" => "category/liustry-22?arm_material%5B%5D=стекло",
+                "link" => "/category/liustry-22?arm_material%5B%5D=стекло",
             ],
 
             [
@@ -232,7 +232,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Полимер",
-                "link" => "category/liustry-22?arm_material%5B%5D=полимер",
+                "link" => "/category/liustry-22?arm_material%5B%5D=полимер",
             ],
 
             [
@@ -240,7 +240,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Камень",
-                "link" => "category/liustry-22?arm_material%5B%5D=камень",
+                "link" => "/category/liustry-22?arm_material%5B%5D=камень",
             ],
 
             [
@@ -248,7 +248,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Хрусталь",
-                "link" => "category/liustry-22?arm_material%5B%5D=хрусталь",
+                "link" => "/category/liustry-22?arm_material%5B%5D=хрусталь",
             ],
 //Места применения
             [
@@ -256,7 +256,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/liustry-22?mesto%5B%5D=прихожая",
+                "link" => "/category/liustry-22?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -264,7 +264,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/liustry-22?mesto%5B%5D=гостиная",
+                "link" => "/category/liustry-22?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -272,7 +272,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/liustry-22?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/liustry-22?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -280,7 +280,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/liustry-22?mesto%5B%5D=спальня",
+                "link" => "/category/liustry-22?mesto%5B%5D=спальня",
             ],
 
             [
@@ -288,7 +288,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Детская",
-                "link" => "category/liustry-22?mesto%5B%5D=детская",
+                "link" => "/category/liustry-22?mesto%5B%5D=детская",
             ],
 
             [
@@ -296,7 +296,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/liustry-22?mesto%5B%5D=большие+залы",
+                "link" => "/category/liustry-22?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -304,7 +304,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/liustry-22?mesto%5B%5D=кухня",
+                "link" => "/category/liustry-22?mesto%5B%5D=кухня",
             ],
 
             [
@@ -312,7 +312,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/liustry-22?mesto%5B%5D=офис",
+                "link" => "/category/liustry-22?mesto%5B%5D=офис",
             ],
 
             [
@@ -320,7 +320,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кабинет",
-                "link" => "category/liustry-22?mesto%5B%5D=кабинет",
+                "link" => "/category/liustry-22?mesto%5B%5D=кабинет",
             ],
 
             [
@@ -328,7 +328,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазин",
-                "link" => "category/liustry-22?mesto%5B%5D=магазин",
+                "link" => "/category/liustry-22?mesto%5B%5D=магазин",
             ],
 
             [
@@ -336,7 +336,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/liustry-22?mesto%5B%5D=ванная",
+                "link" => "/category/liustry-22?mesto%5B%5D=ванная",
             ],
 
         ];
@@ -350,7 +350,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Бра с выключателем",
-                "link" => "category/bra-s-vykliucatelem-9",
+                "link" => "/category/bra-s-vykliucatelem-9",
             ],
 
             [
@@ -358,7 +358,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Бра гибкие",
-                "link" => "category/bra-gibkie-10",
+                "link" => "/category/bra-gibkie-10",
             ],
 
             [
@@ -366,7 +366,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Бра с абажуром",
-                "link" => "category/bra-s-abazurom-11",
+                "link" => "/category/bra-s-abazurom-11",
             ],
 
             [
@@ -374,7 +374,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Бра с подсветкой",
-                "link" => "category/bra-s-podsvetkoi-12",
+                "link" => "/category/bra-s-podsvetkoi-12",
             ],
 
             [
@@ -382,7 +382,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Бра для чтения",
-                "link" => "category/bra-dlia-cteniia-13",
+                "link" => "/category/bra-dlia-cteniia-13",
             ],
 //Стили БРА
             [
@@ -390,7 +390,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=современный",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=современный",
             ],
 
             [
@@ -398,7 +398,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=хай-тек",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=хай-тек",
             ],
 
             [
@@ -406,7 +406,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=лофт",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=лофт",
             ],
 
             [
@@ -414,7 +414,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=классический",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=классический",
             ],
 
             [
@@ -422,7 +422,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=флористика",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=флористика",
             ],
 
             [
@@ -430,7 +430,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=кантри",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=кантри",
             ],
 
             [
@@ -438,7 +438,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-декор",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=арт-деко",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=арт-деко",
             ],
 
             [
@@ -446,7 +446,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Замковый",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=замковый",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=замковый",
             ],
 
             [
@@ -454,7 +454,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Тиффани",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=тиффани",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=тиффани",
             ],
 
             [
@@ -462,7 +462,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=прованс",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=прованс",
             ],
 
             [
@@ -470,7 +470,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Восточный",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=восточный",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=восточный",
             ],
 
             [
@@ -478,7 +478,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Модерн",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=модерн",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?style%5B%5D=модерн",
             ],
 //МАТЕРИАЛЫ БРА
             [
@@ -486,7 +486,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=алюминий",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -494,7 +494,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=металл",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=металл",
             ],
 
             [
@@ -502,7 +502,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=дерево",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=дерево",
             ],
 
             [
@@ -510,7 +510,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=пластик",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -518,7 +518,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Гипс",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=гипс",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=гипс",
             ],
 
             [
@@ -526,7 +526,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Бетон",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=бетон",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=бетон",
             ],
 
             [
@@ -534,7 +534,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=латунь",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -542,7 +542,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Полимер",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=полимер",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=полимер",
             ],
 
             [
@@ -550,7 +550,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Стекло",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=стекло",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=стекло",
             ],
 
             [
@@ -558,7 +558,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Керамика",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=керамика",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=керамика",
             ],
 
             [
@@ -566,7 +566,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Бронза",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=бронза",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=бронза",
             ],
 
             [
@@ -574,7 +574,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "камень",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=камень",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?arm_material%5B%5D=камень",
             ],
 //Место применения БРА
 
@@ -583,7 +583,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=прихожая",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -591,7 +591,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кухня",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кухня",
             ],
 
             [
@@ -599,7 +599,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=спальня",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=спальня",
             ],
 
             [
@@ -607,7 +607,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=офис",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=офис",
             ],
 
             [
@@ -615,7 +615,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -623,7 +623,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=экспозиция",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=экспозиция",
             ],
 
             [
@@ -631,7 +631,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=ванная",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=ванная",
             ],
 
             [
@@ -639,7 +639,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Детская",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=детская",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=детская",
             ],
 
             [
@@ -647,7 +647,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "гостиная",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=гостиная",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -655,7 +655,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=большие+залы",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -663,7 +663,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазины",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=магазин",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=магазин",
             ],
 
             [
@@ -671,7 +671,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=Гостиня",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=Гостиня",
             ],
 
             [
@@ -679,7 +679,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кабинет",
-                "link" => "category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кабинет",
+                "link" => "/category/bra-i-nastennoe-osveshhenie-7?mesto%5B%5D=кабинет",
             ],
 
         ];
@@ -693,7 +693,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Накладные светильники с пультом",
-                "link" => "category/nakladnye-svetilniki-s-pultom-3101",
+                "link" => "/category/nakladnye-svetilniki-s-pultom-3101",
             ],
 
             [
@@ -701,7 +701,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные накладные светильники",
-                "link" => "category/svetodiodnye-nakladnye-svetilniki-3102",
+                "link" => "/category/svetodiodnye-nakladnye-svetilniki-3102",
             ],
 
             [
@@ -709,7 +709,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Накладные светильники для натяжного потолка",
-                "link" => "category/nakladnye-svetilniki-dlia-natiaznogo-potolka-3103",
+                "link" => "/category/nakladnye-svetilniki-dlia-natiaznogo-potolka-3103",
             ],
 //СТИЛИ НАКЛАДНЫЕ СВЕТИЛЬНИКИ
             [
@@ -717,7 +717,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=хай-тек",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=хай-тек",
             ],
 
             [
@@ -725,7 +725,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=современный",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=современный",
             ],
 
             [
@@ -733,7 +733,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=классический",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=классический",
             ],
 
             [
@@ -741,7 +741,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-декор",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=арт-деко",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=арт-деко",
             ],
 
             [
@@ -749,7 +749,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=лофт",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=лофт",
             ],
 
             [
@@ -757,7 +757,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=флористика",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=флористика",
             ],
 
             [
@@ -765,7 +765,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=кантри",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=кантри",
             ],
 
             [
@@ -773,7 +773,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=прованс",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=прованс",
             ],
 
             [
@@ -781,7 +781,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Восточный",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=восточный",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=восточный",
             ],
 
             [
@@ -789,7 +789,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Модерн",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=модерн",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=модерн",
             ],
 
             [
@@ -797,7 +797,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Замковый",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=замковый",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?style%5B%5D=замковый",
             ],
 //МАТЕРИАЛЫ НАКЛАДНЫЕ СВЕТИЛЬНИКИ
             [
@@ -805,7 +805,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=пластик",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -813,7 +813,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=алюминий",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -821,7 +821,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=металл",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=металл",
             ],
 
             [
@@ -829,7 +829,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=латунь",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -837,7 +837,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=дерево",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=дерево",
             ],
 
             [
@@ -845,7 +845,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Полимер",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=полимер",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=полимер",
             ],
 
             [
@@ -853,7 +853,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Гипс",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=гипс",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=гипс",
             ],
 
             [
@@ -861,7 +861,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Бетон",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=бетон",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?arm_material%5B%5D=бетон",
             ],
 //МЕСТО ПРИМЕНЕНИЯ НАКЛАДНЫЕ СВЕТИЛЬНИКИ
             [
@@ -869,7 +869,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=кухня",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=кухня",
             ],
 
             [
@@ -877,7 +877,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=прихожая",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -885,7 +885,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=ванная",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=ванная",
             ],
 
             [
@@ -893,7 +893,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=спальня",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=спальня",
             ],
 
             [
@@ -901,7 +901,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=офис",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=офис",
             ],
 
             [
@@ -909,7 +909,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазин",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=магазин",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=магазин",
             ],
 
             [
@@ -917,7 +917,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=гостиная",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -925,7 +925,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -933,7 +933,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кабинет",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=кабинет",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=кабинет",
             ],
 
             [
@@ -941,7 +941,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=большие+залы",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -949,7 +949,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=экспозиция",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=экспозиция",
             ],
 
             [
@@ -957,7 +957,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Детская",
-                "link" => "category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=детская",
+                "link" => "/category/nakladnye-potolocnye-svetilniki-31?mesto%5B%5D=детская",
             ],
 
         ];
@@ -972,7 +972,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные подвесные светильники",
-                "link" => "category/svetodiodnye-podvesnye-svetilniki-3201",
+                "link" => "/category/svetodiodnye-podvesnye-svetilniki-3201",
             ],
 
             [
@@ -980,7 +980,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Подвесные светильники с абажуром",
-                "link" => "category/podvesnye-svetilniki-s-abazurom-3202",
+                "link" => "/category/podvesnye-svetilniki-s-abazurom-3202",
             ],
 //СТИЛИ ПОДВЕСНЫЕ СВЕТИЛЬНИКИ
             [
@@ -988,7 +988,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-декор",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=арт-деко",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=арт-деко",
             ],
 
             [
@@ -996,7 +996,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=современный",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=современный",
             ],
 
             [
@@ -1004,7 +1004,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=лофт",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=лофт",
             ],
 
             [
@@ -1012,7 +1012,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=хай-тек",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=хай-тек",
             ],
 
             [
@@ -1020,7 +1020,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=прованс",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=прованс",
             ],
 
             [
@@ -1028,7 +1028,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=кантри",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=кантри",
             ],
 
             [
@@ -1036,7 +1036,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Восточный",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=восточный",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=восточный",
             ],
 
             [
@@ -1044,7 +1044,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Замковый",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=замковый",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=замковый",
             ],
 
             [
@@ -1052,7 +1052,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=классический",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=классический",
             ],
 
             [
@@ -1060,7 +1060,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=флористика",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=флористика",
             ],
 
             [
@@ -1068,7 +1068,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Тиффани",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=тиффани",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=тиффани",
             ],
 
             [
@@ -1076,7 +1076,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Модерн",
-                "link" => "category/podvesnye-svetilniki-32?style%5B%5D=модерн",
+                "link" => "/category/podvesnye-svetilniki-32?style%5B%5D=модерн",
             ],
 //МАТЕРИАЛЫ
             [
@@ -1084,7 +1084,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=металл",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=металл",
             ],
 
             [
@@ -1092,7 +1092,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=пластик",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -1100,7 +1100,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=алюминий",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -1108,7 +1108,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=дерево",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=дерево",
             ],
 
             [
@@ -1116,7 +1116,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=латунь",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -1124,7 +1124,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Полимер",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=полимер",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=полимер",
             ],
 
             [
@@ -1132,7 +1132,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Бетон",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=бетон",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=бетон",
             ],
 
             [
@@ -1140,7 +1140,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Гипс",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=гипс",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=гипс",
             ],
 
             [
@@ -1148,7 +1148,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Камень",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=камень",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=камень",
             ],
 
             [
@@ -1156,7 +1156,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Стекло",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=стекло",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=стекло",
             ],
 
             [
@@ -1164,7 +1164,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Керамика",
-                "link" => "category/podvesnye-svetilniki-32?arm_material%5B%5D=керамика",
+                "link" => "/category/podvesnye-svetilniki-32?arm_material%5B%5D=керамика",
             ],
 //Место применения
             [
@@ -1172,7 +1172,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=спальня",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=спальня",
             ],
 
             [
@@ -1180,7 +1180,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -1188,7 +1188,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=прихожая",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -1196,7 +1196,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=кухня",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=кухня",
             ],
 
             [
@@ -1204,7 +1204,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=гостиная",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -1212,7 +1212,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазин",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=магазин",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=магазин",
             ],
 
             [
@@ -1220,7 +1220,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=большие+залы",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -1228,7 +1228,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=офис",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=офис",
             ],
 
             [
@@ -1236,7 +1236,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кабинет",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=кабинет",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=кабинет",
             ],
 
             [
@@ -1244,7 +1244,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=экспозиция",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=экспозиция",
             ],
 
             [
@@ -1252,7 +1252,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Детская",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=детская",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=детская",
             ],
 
             [
@@ -1260,7 +1260,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/podvesnye-svetilniki-32?mesto%5B%5D=ванная",
+                "link" => "/category/podvesnye-svetilniki-32?mesto%5B%5D=ванная",
             ],
         ];
 //КОНЕЦ СТРОКИ ПОДВЕСНЫЕ СВЕТИЛЬНИКИ
@@ -1275,7 +1275,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Накладные светильники с пультом",
-                "link" => "category/nakladnye-svetilniki-s-pultom-3101",
+                "link" => "/category/nakladnye-svetilniki-s-pultom-3101",
             ],
 //СТИЛИ РЕЕЧНЫЕ, ЛИНЕЙНЫЕ СВЕТИЛЬНИКИ
 
@@ -1284,7 +1284,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/reecnye-lineinye-svetilniki-33?style%5B%5D=хай-тек",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?style%5B%5D=хай-тек",
             ],
 
             [
@@ -1292,7 +1292,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/reecnye-lineinye-svetilniki-33?style%5B%5D=современный",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?style%5B%5D=современный",
             ],
 
             [
@@ -1300,7 +1300,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/reecnye-lineinye-svetilniki-33?style%5B%5D=лофт",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?style%5B%5D=лофт",
             ],
 
             [
@@ -1308,7 +1308,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/reecnye-lineinye-svetilniki-33?style%5B%5D=кантри",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?style%5B%5D=кантри",
             ],
 //МАТЕРИАЛЫ
             [
@@ -1316,7 +1316,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=металл",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=металл",
             ],
 
             [
@@ -1324,7 +1324,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=алюминий",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -1332,7 +1332,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=дерево",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?arm_material%5B%5D=дерево",
             ],
 //Место применения
             [
@@ -1340,7 +1340,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=офис",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=офис",
             ],
 
             [
@@ -1348,7 +1348,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -1356,7 +1356,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=гостиная",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -1364,7 +1364,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=кухня",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=кухня",
             ],
 
             [
@@ -1372,7 +1372,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=прихожая",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -1380,7 +1380,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазин",
-                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=магазин",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=магазин",
             ],
 
             [
@@ -1388,7 +1388,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=большие+залы",
+                "link" => "/category/reecnye-lineinye-svetilniki-33?mesto%5B%5D=большие+залы",
             ],
         ];
 //КОНЕЦ СТРОКИ Реечные, линейные светильники
@@ -1402,7 +1402,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Влагозащищенные точечные светильники",
-                "link" => "category/vlagozashhishhennye-tocecnye-svetilniki-65",
+                "link" => "/category/vlagozashhishhennye-tocecnye-svetilniki-65",
             ],
 
             [
@@ -1410,7 +1410,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Встраиваемые точечные светильники",
-                "link" => "category/vstraivaemye-tocecnye-svetilniki-66",
+                "link" => "/category/vstraivaemye-tocecnye-svetilniki-66",
             ],
 
             [
@@ -1418,7 +1418,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Накладные точечные светильники",
-                "link" => "category/nakladnye-tocecnye-svetilniki-67",
+                "link" => "/category/nakladnye-tocecnye-svetilniki-67",
             ],
 //СТИЛИ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
 
@@ -1427,7 +1427,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=современный",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=современный",
             ],
 
             [
@@ -1435,7 +1435,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=хай-тек",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=хай-тек",
             ],
 
             [
@@ -1443,7 +1443,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=классический",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=классический",
             ],
 
             [
@@ -1451,7 +1451,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=лофт",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=лофт",
             ],
 
             [
@@ -1459,7 +1459,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=флористика",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=флористика",
             ],
 
             [
@@ -1467,7 +1467,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-декор",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=арт-деко",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=арт-деко",
             ],
 
             [
@@ -1475,7 +1475,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=кантри",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=кантри",
             ],
 
             [
@@ -1483,7 +1483,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=прованс",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=прованс",
             ],
 
             [
@@ -1491,7 +1491,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Замковый",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=замковый",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=замковый",
             ],
 
             [
@@ -1499,7 +1499,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Восточный",
-                "link" => "category/tocecnye-svetilniki-64?style%5B%5D=восточный",
+                "link" => "/category/tocecnye-svetilniki-64?style%5B%5D=восточный",
             ],
 //МАТЕРИАЛЫ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
             [
@@ -1507,7 +1507,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=алюминий",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -1515,7 +1515,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=металл",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=металл",
             ],
 
             [
@@ -1523,7 +1523,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Гипс",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=гипс",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=гипс",
             ],
 
             [
@@ -1531,7 +1531,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=латунь",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -1539,7 +1539,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Полимер",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=полимер",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=полимер",
             ],
 
             [
@@ -1547,7 +1547,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=пластик",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -1555,7 +1555,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Бетон",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=бетон",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=бетон",
             ],
 
             [
@@ -1563,7 +1563,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Бронза",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=бронза",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=бронза",
             ],
 
             [
@@ -1571,7 +1571,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=дерево",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=дерево",
             ],
 
             [
@@ -1579,7 +1579,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Керамика",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=керамика",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=керамика",
             ],
 
             [
@@ -1587,7 +1587,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Камень",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=камень",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=камень",
             ],
 
             [
@@ -1595,7 +1595,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Стекло",
-                "link" => "category/tocecnye-svetilniki-64?arm_material%5B%5D=стекло",
+                "link" => "/category/tocecnye-svetilniki-64?arm_material%5B%5D=стекло",
             ],
 //МЕСТО ПРИМЕНЕНИЯ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
             [
@@ -1603,7 +1603,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=ванная",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=ванная",
             ],
 
             [
@@ -1611,7 +1611,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -1619,7 +1619,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=прихожая",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -1627,7 +1627,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=спальня",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=спальня",
             ],
 
             [
@@ -1635,7 +1635,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазин",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=магазин",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=магазин",
             ],
 
             [
@@ -1643,7 +1643,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=кухня",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=кухня",
             ],
 
             [
@@ -1651,7 +1651,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=гостиная",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -1659,7 +1659,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=офис",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=офис",
             ],
 
             [
@@ -1667,7 +1667,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=большие+залы",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -1675,7 +1675,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=экспозиция",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=экспозиция",
             ],
 
             [
@@ -1683,7 +1683,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кабинет",
-                "link" => "category/tocecnye-svetilniki-64?mesto%5B%5D=кабинет",
+                "link" => "/category/tocecnye-svetilniki-64?mesto%5B%5D=кабинет",
             ],
         ];
 //КОНЕЦ СТРОКИ ТОЧЕЧНЫЕ СВЕТИЛЬНИКИ
@@ -1697,7 +1697,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Настольные лампы c абажуром",
-                "link" => "category/nastolnye-lampy-c-abazurom-16",
+                "link" => "/category/nastolnye-lampy-c-abazurom-16",
             ],
 
             [
@@ -1705,7 +1705,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные настольные лампы",
-                "link" => "category/svetodiodnye-nastolnye-lampy-17",
+                "link" => "/category/svetodiodnye-nastolnye-lampy-17",
             ],
 
             [
@@ -1713,7 +1713,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Настольные лампы на струбцине",
-                "link" => "category/nastolnye-lampy-na-strubcine-18",
+                "link" => "/category/nastolnye-lampy-na-strubcine-18",
             ],
 
             [
@@ -1721,7 +1721,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Настольные лампы для спальни",
-                "link" => "category/nastolnye-lampy-dlia-spalni-19",
+                "link" => "/category/nastolnye-lampy-dlia-spalni-19",
             ],
 
             [
@@ -1729,7 +1729,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Дизайнерские настольные лампы",
-                "link" => "category/dizainerskie-nastolnye-lampy-20",
+                "link" => "/category/dizainerskie-nastolnye-lampy-20",
             ],
 //СТИЛИ ДЛЯ НАСТОЛЬНЫЕ ЛАМПЫ
 
@@ -1738,7 +1738,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=современный",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=современный",
             ],
 
             [
@@ -1746,7 +1746,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=классический",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=классический",
             ],
 
             [
@@ -1754,7 +1754,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=хай-тек",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=хай-тек",
             ],
 
             [
@@ -1762,7 +1762,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=лофт",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=лофт",
             ],
 
             [
@@ -1770,7 +1770,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=кантри",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=кантри",
             ],
 
             [
@@ -1778,7 +1778,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Восточный",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=восточный",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=восточный",
             ],
 
             [
@@ -1786,7 +1786,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-декор",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=арт-деко",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=арт-деко",
             ],
 
             [
@@ -1794,7 +1794,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=прованс",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=прованс",
             ],
 
             [
@@ -1802,7 +1802,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Тиффани",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=тиффани",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=тиффани",
             ],
 
             [
@@ -1810,7 +1810,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=флористика",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=флористика",
             ],
 
             [
@@ -1818,7 +1818,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Замковый",
-                "link" => "category/nastolnye-lampy-15?style%5B%5D=замковый",
+                "link" => "/category/nastolnye-lampy-15?style%5B%5D=замковый",
             ],
 //МАТЕРИАЛЫ Настольные лампы
             [
@@ -1826,7 +1826,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Керамика",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=керамика",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=керамика",
             ],
 
             [
@@ -1834,7 +1834,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=металл",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=металл",
             ],
 
             [
@@ -1842,7 +1842,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=дерево",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=дерево",
             ],
 
             [
@@ -1850,7 +1850,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=пластик",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -1858,7 +1858,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Бетон",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=бетон",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=бетон",
             ],
 
             [
@@ -1866,7 +1866,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Камень",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=камень",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=камень",
             ],
 
             [
@@ -1874,7 +1874,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=латунь",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -1882,7 +1882,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Стекло",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=стекло",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=стекло",
             ],
 
             [
@@ -1890,7 +1890,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=алюминий",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -1898,7 +1898,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Полимер",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=полимер",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=полимер",
             ],
 
             [
@@ -1906,7 +1906,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Ткань",
-                "link" => "category/nastolnye-lampy-15?arm_material%5B%5D=ткань",
+                "link" => "/category/nastolnye-lampy-15?arm_material%5B%5D=ткань",
             ],
 //Место применения Настольные лампы
 
@@ -1915,7 +1915,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=спальня",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=спальня",
             ],
 
             [
@@ -1923,7 +1923,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=офис",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=офис",
             ],
 
             [
@@ -1931,7 +1931,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=гостиная",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -1939,7 +1939,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=кухня",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=кухня",
             ],
 
             [
@@ -1947,7 +1947,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=прихожая",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -1955,7 +1955,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=большие+залы",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -1963,7 +1963,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кабинет",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=кабинет",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=кабинет",
             ],
 
             [
@@ -1971,7 +1971,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -1979,7 +1979,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Детская",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=детская",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=детская",
             ],
 
             [
@@ -1987,7 +1987,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/nastolnye-lampy-15?mesto%5B%5D=экспозиция",
+                "link" => "/category/nastolnye-lampy-15?mesto%5B%5D=экспозиция",
             ],
         ];
 //КОНЕЦ СТРОКИ НАСТОЛЬНЫЕ ЛАМПЫ
@@ -2001,7 +2001,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Торшеры с абажуром",
-                "link" => "category/torsery-s-abazurom-60",
+                "link" => "/category/torsery-s-abazurom-60",
             ],
 
             [
@@ -2009,7 +2009,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные",
-                "link" => "category/svetodiodnye-61",
+                "link" => "/category/svetodiodnye-61",
             ],
 
             [
@@ -2017,7 +2017,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Торшеры со столиком",
-                "link" => "category/torsery-so-stolikom-62",
+                "link" => "/category/torsery-so-stolikom-62",
             ],
 
             [
@@ -2025,7 +2025,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Торшеры и напольные светильники",
-                "link" => "category/torsery-i-napolnye-svetilniki-59",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59",
             ],
 //СТИЛИ ДЛЯ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
 
@@ -2034,7 +2034,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=хай-тек",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=хай-тек",
             ],
 
             [
@@ -2042,7 +2042,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=современный",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=современный",
             ],
 
             [
@@ -2050,7 +2050,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=кантри",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=кантри",
             ],
 
             [
@@ -2058,7 +2058,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=классический",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=классический",
             ],
 
             [
@@ -2066,7 +2066,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-декор",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=арт-деко",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=арт-деко",
             ],
 
             [
@@ -2074,7 +2074,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=лофт",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=лофт",
             ],
 
             [
@@ -2082,7 +2082,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Восточный",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=восточный",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=восточный",
             ],
 
             [
@@ -2090,7 +2090,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=флористика",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=флористика",
             ],
 
             [
@@ -2098,7 +2098,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=прованс",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=прованс",
             ],
 
             [
@@ -2106,7 +2106,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Модерн",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?style%5B%5D=модерн",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?style%5B%5D=модерн",
             ],
 //МАТЕРИАЛЫ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
             [
@@ -2114,7 +2114,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=металл",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=металл",
             ],
 
             [
@@ -2122,7 +2122,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=дерево",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=дерево",
             ],
 
             [
@@ -2130,7 +2130,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=латунь",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -2138,7 +2138,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=алюминий",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -2146,7 +2146,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=пластик",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?arm_material%5B%5D=пластик",
             ],
 //МЕСТО ПРИМЕНЕНИЯ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
             [
@@ -2154,7 +2154,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=спальня",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=спальня",
             ],
 
             [
@@ -2162,7 +2162,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=офис",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=офис",
             ],
 
             [
@@ -2170,7 +2170,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=гостиная",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -2178,7 +2178,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=прихожая",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -2186,7 +2186,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -2194,7 +2194,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=большие+залы",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -2202,7 +2202,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кабинет",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=кабинет",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=кабинет",
             ],
 
             [
@@ -2210,7 +2210,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=кухня",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=кухня",
             ],
 
             [
@@ -2218,7 +2218,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Детская",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=детская",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=детская",
             ],
 
             [
@@ -2226,7 +2226,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=экспозиция",
+                "link" => "/category/torsery-i-napolnye-svetilniki-59?mesto%5B%5D=экспозиция",
             ],
         ];
 //КОНЕЦ СТРОКИ ТОРШЕРЫ И НАПОЛЬНЫЕ СВЕТИЛЬНИКИ
@@ -2240,7 +2240,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Встраиваемые споты",
-                "link" => "category/vstraivaemye-spoty-55",
+                "link" => "/category/vstraivaemye-spoty-55",
             ],
 
             [
@@ -2248,7 +2248,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные споты",
-                "link" => "category/svetodiodnye-spoty-56",
+                "link" => "/category/svetodiodnye-spoty-56",
             ],
 
             [
@@ -2256,7 +2256,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Споты на штанге",
-                "link" => "category/spoty-na-stange-57",
+                "link" => "/category/spoty-na-stange-57",
             ],
 
             [
@@ -2264,7 +2264,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Споты с выключателем",
-                "link" => "category/spoty-s-vykliucatelem-58",
+                "link" => "/category/spoty-s-vykliucatelem-58",
             ],
 //СТИЛИ СПОТЫ
             [
@@ -2272,7 +2272,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/spoty-54?style%5B%5D=хай-тек",
+                "link" => "/category/spoty-54?style%5B%5D=хай-тек",
             ],
 
             [
@@ -2280,7 +2280,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/spoty-54?style%5B%5D=лофт",
+                "link" => "/category/spoty-54?style%5B%5D=лофт",
             ],
 
             [
@@ -2288,7 +2288,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/spoty-54?style%5B%5D=флористика",
+                "link" => "/category/spoty-54?style%5B%5D=флористика",
             ],
 
             [
@@ -2296,7 +2296,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/spoty-54?style%5B%5D=современный",
+                "link" => "/category/spoty-54?style%5B%5D=современный",
             ],
 
             [
@@ -2304,7 +2304,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/spoty-54?style%5B%5D=кантри",
+                "link" => "/category/spoty-54?style%5B%5D=кантри",
             ],
 
             [
@@ -2312,7 +2312,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/spoty-54?style%5B%5D=прованс",
+                "link" => "/category/spoty-54?style%5B%5D=прованс",
             ],
 
             [
@@ -2320,7 +2320,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/spoty-54?style%5B%5D=классический",
+                "link" => "/category/spoty-54?style%5B%5D=классический",
             ],
 
             [
@@ -2328,7 +2328,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Восточный",
-                "link" => "category/spoty-54?style%5B%5D=восточный",
+                "link" => "/category/spoty-54?style%5B%5D=восточный",
             ],
 
             [
@@ -2336,7 +2336,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Замковый",
-                "link" => "category/spoty-54?style%5B%5D=замковый",
+                "link" => "/category/spoty-54?style%5B%5D=замковый",
             ],
 
             [
@@ -2344,7 +2344,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-декор",
-                "link" => "category/spoty-54?style%5B%5D=арт-деко",
+                "link" => "/category/spoty-54?style%5B%5D=арт-деко",
             ],
 //МАТЕРИАЛЫ СПОТЫ
             [
@@ -2352,7 +2352,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/spoty-54?arm_material%5B%5D=металл",
+                "link" => "/category/spoty-54?arm_material%5B%5D=металл",
             ],
 
             [
@@ -2360,7 +2360,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/spoty-54?arm_material%5B%5D=алюминий",
+                "link" => "/category/spoty-54?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -2368,7 +2368,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/spoty-54?arm_material%5B%5D=дерево",
+                "link" => "/category/spoty-54?arm_material%5B%5D=дерево",
             ],
 //МЕСТО ПРИМЕНЕНИЯ СПОТЫ
             [
@@ -2376,7 +2376,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/spoty-54?mesto%5B%5D=экспозиция",
+                "link" => "/category/spoty-54?mesto%5B%5D=экспозиция",
             ],
 
             [
@@ -2384,7 +2384,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/spoty-54?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/spoty-54?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -2392,7 +2392,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/spoty-54?mesto%5B%5D=гостиная",
+                "link" => "/category/spoty-54?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -2400,7 +2400,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазин",
-                "link" => "category/spoty-54?mesto%5B%5D=магазин",
+                "link" => "/category/spoty-54?mesto%5B%5D=магазин",
             ],
 
             [
@@ -2408,7 +2408,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/spoty-54?mesto%5B%5D=ванная",
+                "link" => "/category/spoty-54?mesto%5B%5D=ванная",
             ],
 
             [
@@ -2416,7 +2416,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/spoty-54?mesto%5B%5D=кухня",
+                "link" => "/category/spoty-54?mesto%5B%5D=кухня",
             ],
 
             [
@@ -2424,7 +2424,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/spoty-54?mesto%5B%5D=спальня",
+                "link" => "/category/spoty-54?mesto%5B%5D=спальня",
             ],
 
             [
@@ -2432,7 +2432,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/spoty-54?mesto%5B%5D=офис",
+                "link" => "/category/spoty-54?mesto%5B%5D=офис",
             ],
 
             [
@@ -2440,7 +2440,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/spoty-54?mesto%5B%5D=прихожая",
+                "link" => "/category/spoty-54?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -2448,7 +2448,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Детская",
-                "link" => "category/spoty-54?mesto%5B%5D=детская",
+                "link" => "/category/spoty-54?mesto%5B%5D=детская",
             ],
 
             [
@@ -2456,7 +2456,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/spoty-54?mesto%5B%5D=большие+залы",
+                "link" => "/category/spoty-54?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -2464,7 +2464,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кабинет",
-                "link" => "category/spoty-54?mesto%5B%5D=кабинет",
+                "link" => "/category/spoty-54?mesto%5B%5D=кабинет",
             ],
         ];
 //КОНЕЦ СТРОКИ СПОТЫ
@@ -2478,7 +2478,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Комплектующие",
-                "link" => "category/komplektuiushhie-70",
+                "link" => "/category/komplektuiushhie-70",
             ],
 
             [
@@ -2486,7 +2486,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Трековые светильники",
-                "link" => "category/trekovye-svetilniki-71",
+                "link" => "/category/trekovye-svetilniki-71",
             ],
 
             [
@@ -2494,7 +2494,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Готовые решения",
-                "link" => "category/gotovye-reseniia-72",
+                "link" => "/category/gotovye-reseniia-72",
             ],
 
             [
@@ -2502,7 +2502,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Шинопроводы",
-                "link" => "category/sinoprovody-73",
+                "link" => "/category/sinoprovody-73",
             ],
 
             [
@@ -2510,7 +2510,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Комплектующие для трековых светильников",
-                "link" => "category/komplektuiushhie-dlia-trekovyx-svetilnikov-74",
+                "link" => "/category/komplektuiushhie-dlia-trekovyx-svetilnikov-74",
             ],
 
             [
@@ -2518,7 +2518,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Комплектующие для шинопроводов",
-                "link" => "category/komplektuiushhie-dlia-sinoprovodov-75",
+                "link" => "/category/komplektuiushhie-dlia-sinoprovodov-75",
             ],
 
             [
@@ -2526,7 +2526,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Драйверы для шинопроводов",
-                "link" => "category/draivery-dlia-sinoprovodov-76",
+                "link" => "/category/draivery-dlia-sinoprovodov-76",
             ],
 
             [
@@ -2534,7 +2534,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Диммеры для шинопроводов",
-                "link" => "category/dimmery-dlia-sinoprovodov-78",
+                "link" => "/category/dimmery-dlia-sinoprovodov-78",
             ],
 
             [
@@ -2542,7 +2542,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Датчики движения для шинопроводов",
-                "link" => "category/datciki-dvizeniia-dlia-sinoprovodov-79",
+                "link" => "/category/datciki-dvizeniia-dlia-sinoprovodov-79",
             ],
 
             [
@@ -2550,7 +2550,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Струнные светильники",
-                "link" => "category/strunnye-svetilniki-80",
+                "link" => "/category/strunnye-svetilniki-80",
             ],
 
             [
@@ -2558,7 +2558,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Струнные шинопроводы",
-                "link" => "category/strunnye-sinoprovody-81",
+                "link" => "/category/strunnye-sinoprovody-81",
             ],
 //СТИЛИ Шинные и струнные системы
             [
@@ -2566,7 +2566,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=современный",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?style%5B%5D=современный",
             ],
 
             [
@@ -2574,7 +2574,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=лофт",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?style%5B%5D=лофт",
             ],
 
             [
@@ -2582,7 +2582,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=флористика",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?style%5B%5D=флористика",
             ],
 
             [
@@ -2590,7 +2590,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=хай-тек",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?style%5B%5D=хай-тек",
             ],
 
             [
@@ -2598,7 +2598,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?style%5B%5D=классический",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?style%5B%5D=классический",
             ],
 //МАТЕРИАЛЫ ШИННЫЕ И СТРУННЫЕ СИСТЕМЫ
             [
@@ -2606,7 +2606,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=металл",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=металл",
             ],
 
             [
@@ -2614,7 +2614,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=алюминий",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -2622,7 +2622,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=пластик",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -2630,7 +2630,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=латунь",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -2638,7 +2638,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Полимер",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=полимер",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?arm_material%5B%5D=полимер",
             ],
 //МЕСТО ПРИМЕНЕНИЯ ШИННЫЕ И СТРУННЫЕ СИСТЕМЫ
             [
@@ -2646,7 +2646,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазин",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=магазин",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=магазин",
             ],
 
             [
@@ -2654,7 +2654,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=спальня",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=спальня",
             ],
 
             [
@@ -2662,7 +2662,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=кухня",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=кухня",
             ],
 
             [
@@ -2670,7 +2670,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -2678,7 +2678,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=экспозиция",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=экспозиция",
             ],
 
             [
@@ -2686,7 +2686,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=гостиная",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -2694,7 +2694,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=прихожая",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -2702,7 +2702,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=офис",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=офис",
             ],
 
             [
@@ -2710,7 +2710,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=большие+залы",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -2718,7 +2718,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Детская",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=детская",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=детская",
             ],
 
             [
@@ -2726,7 +2726,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=ванная",
+                "link" => "/category/sinnye-i-strunnye-sistemy-68?mesto%5B%5D=ванная",
             ],
         ];
 //КОНЕЦ СТРОКИ Шинные и струнные системы
@@ -2740,7 +2740,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники для картин и зеркал",
-                "link" => "category/svetilniki-dlia-kartin-i-zerkal-2",
+                "link" => "/category/svetilniki-dlia-kartin-i-zerkal-2",
             ],
 
             [
@@ -2748,7 +2748,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Мебельные светильники",
-                "link" => "category/mebelnye-svetilniki-3",
+                "link" => "/category/mebelnye-svetilniki-3",
             ],
 
             [
@@ -2756,7 +2756,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Ночники",
-                "link" => "category/nocniki-4",
+                "link" => "/category/nocniki-4",
             ],
 
             [
@@ -2764,7 +2764,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Подсветка стен и ступеней",
-                "link" => "category/podsvetka-sten-i-stupenei-5",
+                "link" => "/category/podsvetka-sten-i-stupenei-5",
             ],
 //СТИЛИ Светильники для подсветки
             [
@@ -2772,7 +2772,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=современный",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?style%5B%5D=современный",
             ],
 
             [
@@ -2780,7 +2780,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=хай-тек",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?style%5B%5D=хай-тек",
             ],
 
             [
@@ -2788,7 +2788,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=классический",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?style%5B%5D=классический",
             ],
 
             [
@@ -2796,7 +2796,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Эклектика",
-                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=эклектика",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?style%5B%5D=эклектика",
             ],
 
             [
@@ -2804,7 +2804,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=прованс",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?style%5B%5D=прованс",
             ],
 
             [
@@ -2812,7 +2812,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=лофт",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?style%5B%5D=лофт",
             ],
 
             [
@@ -2820,7 +2820,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-декор",
-                "link" => "category/svetilniki-dlia-podsvetki-1?style%5B%5D=арт-деко",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?style%5B%5D=арт-деко",
             ],
 // МАТЕРИАЛЫ СВЕТИЛЬНИКИ ДЛЯ ПОДСВЕТКИ
             [
@@ -2828,7 +2828,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=металл",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=металл",
             ],
 
             [
@@ -2836,7 +2836,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=алюминий",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -2844,7 +2844,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=латунь",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -2852,7 +2852,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=пластик",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -2860,7 +2860,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Бронза",
-                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=бронза",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=бронза",
             ],
 
             [
@@ -2868,7 +2868,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Гипс",
-                "link" => "category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=гипс",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?arm_material%5B%5D=гипс",
             ],
 //МЕСТО ПРИМЕНЕНИЯ СВЕТИЛЬНИКИ ДЛЯ ПОДСВЕТКИ
             [
@@ -2876,7 +2876,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=экспозиция",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=экспозиция",
             ],
 
             [
@@ -2884,7 +2884,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=гостиная",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -2892,7 +2892,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=ванная",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=ванная",
             ],
 
             [
@@ -2900,7 +2900,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=прихожая",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -2908,7 +2908,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=спальня",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=спальня",
             ],
 
             [
@@ -2916,7 +2916,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=офис",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=офис",
             ],
 
             [
@@ -2924,7 +2924,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=кухня",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=кухня",
             ],
 
             [
@@ -2932,7 +2932,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазин",
-                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=магазин",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=магазин",
             ],
 
             [
@@ -2940,7 +2940,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/svetilniki-dlia-podsvetki-1?mesto%5B%5D=кафе%2C+рестораны",
             ],
         ];
 //КОНЕЦ СТРОКИ Светильники для подсветки
@@ -2954,7 +2954,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Ленты светодиодные",
-                "link" => "category/lenty-svetodiodnye-44",
+                "link" => "/category/lenty-svetodiodnye-44",
             ],
 
             [
@@ -2962,7 +2962,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Драйверы для светодиодных лент",
-                "link" => "category/draivery-dlia-svetodiodnyx-lent-45",
+                "link" => "/category/draivery-dlia-svetodiodnyx-lent-45",
             ],
 
             [
@@ -2970,7 +2970,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Усилители для светодиодных лент",
-                "link" => "category/usiliteli-dlia-svetodiodnyx-lent-46",
+                "link" => "/category/usiliteli-dlia-svetodiodnyx-lent-46",
             ],
 
             [
@@ -2978,7 +2978,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Контроллеры для светодиодных лент",
-                "link" => "category/kontrollery-dlia-svetodiodnyx-lent-47",
+                "link" => "/category/kontrollery-dlia-svetodiodnyx-lent-47",
             ],
 
             [
@@ -2986,7 +2986,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Блоки питания для светодиодных лент",
-                "link" => "category/bloki-pitaniia-dlia-svetodiodnyx-lent-48",
+                "link" => "/category/bloki-pitaniia-dlia-svetodiodnyx-lent-48",
             ],
 
             [
@@ -2994,7 +2994,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Экраны для светодиодных лент",
-                "link" => "category/ekrany-dlia-svetodiodnyx-lent-49",
+                "link" => "/category/ekrany-dlia-svetodiodnyx-lent-49",
             ],
 
             [
@@ -3002,7 +3002,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Профили для светодиодных лент",
-                "link" => "category/profili-dlia-svetodiodnyx-lent-50",
+                "link" => "/category/profili-dlia-svetodiodnyx-lent-50",
             ],
 
             [
@@ -3010,7 +3010,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Комплектующие для светодиодных лент",
-                "link" => "category/komplektuiushhie-dlia-svetodiodnyx-lent-51",
+                "link" => "/category/komplektuiushhie-dlia-svetodiodnyx-lent-51",
             ],
 
             [
@@ -3018,7 +3018,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Комплектующие для профилей",
-                "link" => "category/komplektuiushhie-dlia-profilei-52",
+                "link" => "/category/komplektuiushhie-dlia-profilei-52",
             ],
 
             [
@@ -3026,7 +3026,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Диммеры",
-                "link" => "category/dimmery-53",
+                "link" => "/category/dimmery-53",
             ],
 //СТИЛИ ДЛЯ Светодиодные ленты и профили
 
@@ -3035,7 +3035,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/svetodiodnye-lenty-i-profili-43?style%5B%5D=современный",
+                "link" => "/category/svetodiodnye-lenty-i-profili-43?style%5B%5D=современный",
             ],
 
             [
@@ -3043,7 +3043,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/svetodiodnye-lenty-i-profili-43?style%5B%5D=хай-тек",
+                "link" => "/category/svetodiodnye-lenty-i-profili-43?style%5B%5D=хай-тек",
             ],
 //МАТЕРИАЛЫ СВЕТОДИОДНЫЕ ЛЕНТЫ И ПРОФИЛИ
             [
@@ -3051,7 +3051,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=металл",
+                "link" => "/category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=металл",
             ],
 
             [
@@ -3059,7 +3059,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=пластик",
+                "link" => "/category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -3067,7 +3067,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=алюминий",
+                "link" => "/category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -3075,7 +3075,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Стекло",
-                "link" => "category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=стекло",
+                "link" => "/category/svetodiodnye-lenty-i-profili-43?arm_material%5B%5D=стекло",
             ],
 //МЕСТО ПРИМЕНЕНИЯ СВЕТОДИОДНЫЕ ЛЕНТЫ И ПРОФИЛИ
             [
@@ -3083,7 +3083,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/svetodiodnye-lenty-i-profili-43?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/svetodiodnye-lenty-i-profili-43?mesto%5B%5D=кафе%2C+рестораны",
             ],
         ];
 //КОНЕЦ СТРОКИ Светодиодные ленты и профили
@@ -3097,7 +3097,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Детские люстры",
-                "link" => "category/detskie-liustry-35",
+                "link" => "/category/detskie-liustry-35",
             ],
 
             [
@@ -3105,7 +3105,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Детские бра",
-                "link" => "category/detskie-bra-36",
+                "link" => "/category/detskie-bra-36",
             ],
 
             [
@@ -3113,7 +3113,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Детские настольные лампы",
-                "link" => "category/detskie-nastolnye-lampy-37",
+                "link" => "/category/detskie-nastolnye-lampy-37",
             ],
 
             [
@@ -3121,7 +3121,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Детские ночники",
-                "link" => "category/detskie-nocniki-38",
+                "link" => "/category/detskie-nocniki-38",
             ],
 
             [
@@ -3129,7 +3129,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники детские",
-                "link" => "category/svetilniki-detskie-39",
+                "link" => "/category/svetilniki-detskie-39",
             ],
 
             [
@@ -3137,7 +3137,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Детские споты",
-                "link" => "category/detskie-spoty-40",
+                "link" => "/category/detskie-spoty-40",
             ],
 
             [
@@ -3145,7 +3145,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Детские торшеры",
-                "link" => "category/detskie-torsery-41",
+                "link" => "/category/detskie-torsery-41",
             ],
 
             [
@@ -3153,7 +3153,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Детские точечные светильники",
-                "link" => "category/detskie-tocecnye-svetilniki-42",
+                "link" => "/category/detskie-tocecnye-svetilniki-42",
             ],
 //СТИЛИ ДЛЯ Детские светильники
             [
@@ -3161,7 +3161,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/detskie-svetilniki-34?style%5B%5D=современный",
+                "link" => "/category/detskie-svetilniki-34?style%5B%5D=современный",
             ],
 
             [
@@ -3169,7 +3169,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/detskie-svetilniki-34?style%5B%5D=классический",
+                "link" => "/category/detskie-svetilniki-34?style%5B%5D=классический",
             ],
 
             [
@@ -3177,7 +3177,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/detskie-svetilniki-34?style%5B%5D=флористика",
+                "link" => "/category/detskie-svetilniki-34?style%5B%5D=флористика",
             ],
 
             [
@@ -3185,7 +3185,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/detskie-svetilniki-34?style%5B%5D=хай-тек",
+                "link" => "/category/detskie-svetilniki-34?style%5B%5D=хай-тек",
             ],
 
             [
@@ -3193,7 +3193,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Арт-декор",
-                "link" => "category/detskie-svetilniki-34?style%5B%5D=арт-деко",
+                "link" => "/category/detskie-svetilniki-34?style%5B%5D=арт-деко",
             ],
 
             [
@@ -3201,7 +3201,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/detskie-svetilniki-34?style%5B%5D=лофт",
+                "link" => "/category/detskie-svetilniki-34?style%5B%5D=лофт",
             ],
 
             [
@@ -3209,7 +3209,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/detskie-svetilniki-34?style%5B%5D=кантри",
+                "link" => "/category/detskie-svetilniki-34?style%5B%5D=кантри",
             ],
 //МАТЕРИАЛЫ ДЕТСКИЕ СВЕТИЛЬНИКИ
             [
@@ -3217,7 +3217,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=металл",
+                "link" => "/category/detskie-svetilniki-34?arm_material%5B%5D=металл",
             ],
 
             [
@@ -3225,7 +3225,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=пластик",
+                "link" => "/category/detskie-svetilniki-34?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -3233,7 +3233,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Керамика",
-                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=керамика",
+                "link" => "/category/detskie-svetilniki-34?arm_material%5B%5D=керамика",
             ],
 
             [
@@ -3241,7 +3241,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Дерево",
-                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=дерево",
+                "link" => "/category/detskie-svetilniki-34?arm_material%5B%5D=дерево",
             ],
 
             [
@@ -3249,7 +3249,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Гипс",
-                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=гипс",
+                "link" => "/category/detskie-svetilniki-34?arm_material%5B%5D=гипс",
             ],
 
             [
@@ -3257,7 +3257,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=алюминий",
+                "link" => "/category/detskie-svetilniki-34?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -3265,7 +3265,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Полимер",
-                "link" => "category/detskie-svetilniki-34?arm_material%5B%5D=полимер",
+                "link" => "/category/detskie-svetilniki-34?arm_material%5B%5D=полимер",
             ],
 //МЕСТО ПРИМЕНЕНИЯ ДЕТСКИЕ ВЕТИЛЬНИКИ
             [
@@ -3273,7 +3273,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Детская",
-                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=детская",
+                "link" => "/category/detskie-svetilniki-34?mesto%5B%5D=детская",
             ],
 
             [
@@ -3281,7 +3281,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=гостиная",
+                "link" => "/category/detskie-svetilniki-34?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -3289,7 +3289,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=прихожая",
+                "link" => "/category/detskie-svetilniki-34?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -3297,7 +3297,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=кухня",
+                "link" => "/category/detskie-svetilniki-34?mesto%5B%5D=кухня",
             ],
 
             [
@@ -3305,7 +3305,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Большие залы",
-                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=большие+залы",
+                "link" => "/category/detskie-svetilniki-34?mesto%5B%5D=большие+залы",
             ],
 
             [
@@ -3313,7 +3313,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/detskie-svetilniki-34?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -3321,7 +3321,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/detskie-svetilniki-34?mesto%5B%5D=спальня",
+                "link" => "/category/detskie-svetilniki-34?mesto%5B%5D=спальня",
             ],
         ];
 //КОНЕЦ СТРОКИ Детские светильники
@@ -3335,7 +3335,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Грунтовые светильники",
-                "link" => "category/gruntovye-svetilniki-119",
+                "link" => "/category/gruntovye-svetilniki-119",
             ],
 
             [
@@ -3343,7 +3343,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники для стен и ступеней",
-                "link" => "category/svetilniki-dlia-sten-i-stupenei-120",
+                "link" => "/category/svetilniki-dlia-sten-i-stupenei-120",
             ],
 
             [
@@ -3351,7 +3351,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники для фонтанов и бассейнов",
-                "link" => "category/svetilniki-dlia-fontanov-i-basseinov-121",
+                "link" => "/category/svetilniki-dlia-fontanov-i-basseinov-121",
             ],
 
             [
@@ -3359,7 +3359,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Уличные настенные светильники",
-                "link" => "category/ulicnye-nastennye-svetilniki-122",
+                "link" => "/category/ulicnye-nastennye-svetilniki-122",
             ],
 
             [
@@ -3367,7 +3367,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Уличные потолочные светильники",
-                "link" => "category/ulicnye-potolocnye-svetilniki-123",
+                "link" => "/category/ulicnye-potolocnye-svetilniki-123",
             ],
 
             [
@@ -3375,7 +3375,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Прожекторы",
-                "link" => "category/prozektory-124",
+                "link" => "/category/prozektory-124",
             ],
 
             [
@@ -3383,7 +3383,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Садово-парковые светильники",
-                "link" => "category/sadovo-parkovye-svetilniki-125",
+                "link" => "/category/sadovo-parkovye-svetilniki-125",
             ],
 
             [
@@ -3391,7 +3391,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Садовые фигуры",
-                "link" => "category/sadovye-figury-126",
+                "link" => "/category/sadovye-figury-126",
             ],
 
             [
@@ -3399,7 +3399,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Уличные настольные светильники",
-                "link" => "category/ulicnye-nastolnye-svetilniki-127",
+                "link" => "/category/ulicnye-nastolnye-svetilniki-127",
             ],
 
             [
@@ -3407,7 +3407,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Уличные блоки розеток",
-                "link" => "category/ulicnye-bloki-rozetok-128",
+                "link" => "/category/ulicnye-bloki-rozetok-128",
             ],
 
             [
@@ -3415,7 +3415,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Тротуарные светильники",
-                "link" => "category/trotuarnye-svetilniki-129",
+                "link" => "/category/trotuarnye-svetilniki-129",
             ],
 
             [
@@ -3423,7 +3423,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Фонари",
-                "link" => "category/fonari-130",
+                "link" => "/category/fonari-130",
             ],
 
             [
@@ -3431,7 +3431,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Штативы",
-                "link" => "category/stativy-131",
+                "link" => "/category/stativy-131",
             ],
 //СТИЛИ ДЛЯ Уличные светильники
             [
@@ -3439,7 +3439,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=современный",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=современный",
             ],
 
             [
@@ -3447,7 +3447,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=хай-тек",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=хай-тек",
             ],
 
             [
@@ -3455,7 +3455,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Классический",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=классический",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=классический",
             ],
 
             [
@@ -3463,7 +3463,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=лофт",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=лофт",
             ],
 
             [
@@ -3471,7 +3471,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Замковый",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=замковый",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=замковый",
             ],
 
             [
@@ -3479,7 +3479,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Флористика",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=флористика",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=флористика",
             ],
 
             [
@@ -3487,7 +3487,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Эклектика",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=эклектика",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=эклектика",
             ],
 
             [
@@ -3495,7 +3495,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=кантри",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=кантри",
             ],
 
             [
@@ -3503,7 +3503,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Восточный",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=восточный",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=восточный",
             ],
 
             [
@@ -3511,7 +3511,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Прованс",
-                "link" => "category/ulicnye-svetilniki-118?style%5B%5D=прованс",
+                "link" => "/category/ulicnye-svetilniki-118?style%5B%5D=прованс",
             ],
 //МАТЕРИАЛЫ УЛИЧНЫЕ СВЕТИЛЬНИКИ
             [
@@ -3519,7 +3519,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=металл",
+                "link" => "/category/ulicnye-svetilniki-118?arm_material%5B%5D=металл",
             ],
 
             [
@@ -3527,7 +3527,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=пластик",
+                "link" => "/category/ulicnye-svetilniki-118?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -3535,7 +3535,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=алюминий",
+                "link" => "/category/ulicnye-svetilniki-118?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -3543,7 +3543,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Полимер",
-                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=полимер",
+                "link" => "/category/ulicnye-svetilniki-118?arm_material%5B%5D=полимер",
             ],
 
             [
@@ -3551,7 +3551,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Бетон",
-                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=бетон",
+                "link" => "/category/ulicnye-svetilniki-118?arm_material%5B%5D=бетон",
             ],
 
             [
@@ -3559,7 +3559,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Хрусталь",
-                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=хрусталь",
+                "link" => "/category/ulicnye-svetilniki-118?arm_material%5B%5D=хрусталь",
             ],
 
             [
@@ -3567,7 +3567,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Латунь",
-                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=латунь",
+                "link" => "/category/ulicnye-svetilniki-118?arm_material%5B%5D=латунь",
             ],
 
             [
@@ -3575,7 +3575,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Камень",
-                "link" => "category/ulicnye-svetilniki-118?arm_material%5B%5D=камень",
+                "link" => "/category/ulicnye-svetilniki-118?arm_material%5B%5D=камень",
             ],
 //МЕСТО ПРИМЕНЕНИЯ УЛИЧНЫЕ СВЕТИЛЬНИКИ
             [
@@ -3583,7 +3583,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кафе, рестораны",
-                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=кафе%2C+рестораны",
+                "link" => "/category/ulicnye-svetilniki-118?mesto%5B%5D=кафе%2C+рестораны",
             ],
 
             [
@@ -3591,7 +3591,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=кухня",
+                "link" => "/category/ulicnye-svetilniki-118?mesto%5B%5D=кухня",
             ],
 
             [
@@ -3599,7 +3599,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Экспозиция",
-                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=экспозиция",
+                "link" => "/category/ulicnye-svetilniki-118?mesto%5B%5D=экспозиция",
             ],
 
             [
@@ -3607,7 +3607,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=ванная",
+                "link" => "/category/ulicnye-svetilniki-118?mesto%5B%5D=ванная",
             ],
 
             [
@@ -3615,7 +3615,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=гостиная",
+                "link" => "/category/ulicnye-svetilniki-118?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -3623,7 +3623,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=спальня",
+                "link" => "/category/ulicnye-svetilniki-118?mesto%5B%5D=спальня",
             ],
 
             [
@@ -3631,7 +3631,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=прихожая",
+                "link" => "/category/ulicnye-svetilniki-118?mesto%5B%5D=прихожая",
             ],
 
             [
@@ -3639,7 +3639,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=офис",
+                "link" => "/category/ulicnye-svetilniki-118?mesto%5B%5D=офис",
             ],
 
             [
@@ -3647,7 +3647,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Веранда",
-                "link" => "category/ulicnye-svetilniki-118?mesto%5B%5D=веранда",
+                "link" => "/category/ulicnye-svetilniki-118?mesto%5B%5D=веранда",
             ],
         ];
 //КОНЕЦ СТРОКИ Уличные светильники
@@ -3661,7 +3661,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Галогеновые лампы",
-                "link" => "category/galogenovye-lampy-110",
+                "link" => "/category/galogenovye-lampy-110",
             ],
 
             [
@@ -3669,7 +3669,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Металлогалогеновые лампы",
-                "link" => "category/metallogalogenovye-lampy-111",
+                "link" => "/category/metallogalogenovye-lampy-111",
             ],
 
             [
@@ -3677,7 +3677,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Лампы накаливания",
-                "link" => "category/lampy-nakalivaniia-112",
+                "link" => "/category/lampy-nakalivaniia-112",
             ],
 
             [
@@ -3685,7 +3685,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные лампы",
-                "link" => "category/svetodiodnye-lampy-113",
+                "link" => "/category/svetodiodnye-lampy-113",
             ],
 
             [
@@ -3693,7 +3693,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Ретро лампы",
-                "link" => "category/retro-lampy-114",
+                "link" => "/category/retro-lampy-114",
             ],
 
             [
@@ -3701,7 +3701,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Люминесцентные лампы",
-                "link" => "category/liuminescentnye-lampy-115",
+                "link" => "/category/liuminescentnye-lampy-115",
             ],
 
             [
@@ -3709,7 +3709,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные модули",
-                "link" => "category/svetodiodnye-moduli-116",
+                "link" => "/category/svetodiodnye-moduli-116",
             ],
 //СТИЛИ ДЛЯ Лампы
             [
@@ -3717,7 +3717,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Лофт",
-                "link" => "category/lampy-109?style%5B%5D=лофт",
+                "link" => "/category/lampy-109?style%5B%5D=лофт",
             ],
 
             [
@@ -3725,7 +3725,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/lampy-109?style%5B%5D=современный",
+                "link" => "/category/lampy-109?style%5B%5D=современный",
             ],
 //МАТЕРИАЛЫ ЛАМПЫ
             [
@@ -3733,7 +3733,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/lampy-109?arm_material%5B%5D=алюминий",
+                "link" => "/category/lampy-109?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -3741,7 +3741,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/lampy-109?arm_material%5B%5D=пластик",
+                "link" => "/category/lampy-109?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -3749,7 +3749,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Стекло",
-                "link" => "category/lampy-109?arm_material%5B%5D=стекло",
+                "link" => "/category/lampy-109?arm_material%5B%5D=стекло",
             ],
 
             [
@@ -3757,7 +3757,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Керамика",
-                "link" => "category/lampy-109?arm_material%5B%5D=керамика",
+                "link" => "/category/lampy-109?arm_material%5B%5D=керамика",
             ],
 //МЕСТО ПРИМЕНЕНИЯ ЛАМПЫ
             [
@@ -3765,7 +3765,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/lampy-109?mesto%5B%5D=спальня",
+                "link" => "/category/lampy-109?mesto%5B%5D=спальня",
             ],
         ];
 //КОНЕЦ СТРОКИ Лампы
@@ -3795,7 +3795,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодная бахрома",
-                "link" => "category/svetodiodnaia-baxroma-133",
+                "link" => "/category/svetodiodnaia-baxroma-133",
             ],
 
             [
@@ -3803,7 +3803,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные гирлянды",
-                "link" => "category/svetodiodnye-girliandy-134",
+                "link" => "/category/svetodiodnye-girliandy-134",
             ],
 
             [
@@ -3811,7 +3811,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "LED гирлянды на деревья",
-                "link" => "category/led-girliandy-na-derevia-135",
+                "link" => "/category/led-girliandy-na-derevia-135",
             ],
 
             [
@@ -3819,7 +3819,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные деревья",
-                "link" => "category/svetodiodnye-derevia-136",
+                "link" => "/category/svetodiodnye-derevia-136",
             ],
 
             [
@@ -3827,7 +3827,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные нити",
-                "link" => "category/svetodiodnye-niti-137",
+                "link" => "/category/svetodiodnye-niti-137",
             ],
 
             [
@@ -3835,7 +3835,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные занавесы",
-                "link" => "category/svetodiodnye-zanavesy-138",
+                "link" => "/category/svetodiodnye-zanavesy-138",
             ],
 
             [
@@ -3843,7 +3843,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные фигуры",
-                "link" => "category/svetodiodnye-figury-139",
+                "link" => "/category/svetodiodnye-figury-139",
             ],
 
             [
@@ -3851,7 +3851,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные сети",
-                "link" => "category/svetodiodnye-seti-140",
+                "link" => "/category/svetodiodnye-seti-140",
             ],
 
             [
@@ -3859,7 +3859,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Дюралайт",
-                "link" => "category/diuralait-141",
+                "link" => "/category/diuralait-141",
             ],
 
             [
@@ -3867,7 +3867,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Комплектующие",
-                "link" => "category/komplektuiushhie-142",
+                "link" => "/category/komplektuiushhie-142",
             ],
 //СТИЛИ Праздничное освещение
 //МАТЕРИАЛЫ ПРАЗДНИЧНОЕ ОСВЕЩЕНИЕ
@@ -3876,7 +3876,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/prazdnicnoe-osveshhenie-132?arm_material%5B%5D=пластик",
+                "link" => "/category/prazdnicnoe-osveshhenie-132?arm_material%5B%5D=пластик",
             ],
         ];
 //КОНЕЦ СТРОКИ Праздничное освещение
@@ -3890,7 +3890,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Выключатели",
-                "link" => "category/vykliucateli-144",
+                "link" => "/category/vykliucateli-144",
             ],
 
             [
@@ -3898,7 +3898,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Клавиши, накладки",
-                "link" => "category/klavisi-nakladki-145",
+                "link" => "/category/klavisi-nakladki-145",
             ],
 
             [
@@ -3906,7 +3906,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Рамки",
-                "link" => "category/ramki-146",
+                "link" => "/category/ramki-146",
             ],
 
             [
@@ -3914,7 +3914,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Розетки",
-                "link" => "category/rozetki-147",
+                "link" => "/category/rozetki-147",
             ],
 
             [
@@ -3922,7 +3922,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Радиовыключатели",
-                "link" => "category/radiovykliucateli-148",
+                "link" => "/category/radiovykliucateli-148",
             ],
 
             [
@@ -3930,7 +3930,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Терморегулятор",
-                "link" => "category/termoreguliator-149",
+                "link" => "/category/termoreguliator-149",
             ],
 
             [
@@ -3938,7 +3938,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Комплектующие",
-                "link" => "category/komplektuiushhie-150",
+                "link" => "/category/komplektuiushhie-150",
             ],
 
             [
@@ -3946,7 +3946,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Стабилизаторы напряжения",
-                "link" => "category/stabilizatory-napriazeniia-151",
+                "link" => "/category/stabilizatory-napriazeniia-151",
             ],
 //СТИЛИ ДЛЯ Электроустановочные изделия
             [
@@ -3954,7 +3954,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/elektroustanovocnye-izdeliia-143?style%5B%5D=современный",
+                "link" => "/category/elektroustanovocnye-izdeliia-143?style%5B%5D=современный",
             ],
 
             [
@@ -3962,7 +3962,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Кантри",
-                "link" => "category/elektroustanovocnye-izdeliia-143?style%5B%5D=кантри",
+                "link" => "/category/elektroustanovocnye-izdeliia-143?style%5B%5D=кантри",
             ],
 //МАТЕРИАЛЫ ЭЛЕКТРОУСТАНОВОЧНЫЕ ИЗДЕЛИЯ
             [
@@ -3970,7 +3970,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/elektroustanovocnye-izdeliia-143?arm_material%5B%5D=пластик",
+                "link" => "/category/elektroustanovocnye-izdeliia-143?arm_material%5B%5D=пластик",
             ],
 //МЕСТО ПРИМЕНЕНИЯ ЭЛЕКТРОУСТАНОВОЧНЫЕ ИЗДЕЛИЯ
             [
@@ -3978,7 +3978,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/elektroustanovocnye-izdeliia-143?mesto%5B%5D=спальня",
+                "link" => "/category/elektroustanovocnye-izdeliia-143?mesto%5B%5D=спальня",
             ],
         ];
 //КОНЕЦ СТРОКИ Электроустановочные изделия
@@ -3992,7 +3992,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Консольные светильники",
-                "link" => "category/konsolnye-svetilniki-152",
+                "link" => "/category/konsolnye-svetilniki-152",
             ],
 
             [
@@ -4000,7 +4000,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники Downlight",
-                "link" => "category/svetilniki-downlight-153",
+                "link" => "/category/svetilniki-downlight-153",
             ],
 
             [
@@ -4008,7 +4008,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светодиодные панели",
-                "link" => "category/svetodiodnye-paneli-154",
+                "link" => "/category/svetodiodnye-paneli-154",
             ],
 
             [
@@ -4016,7 +4016,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Пылевлагозащищенные светильники",
-                "link" => "category/pylevlagozashhishhennye-svetilniki-155",
+                "link" => "/category/pylevlagozashhishhennye-svetilniki-155",
             ],
 
             [
@@ -4024,7 +4024,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Световые указатели",
-                "link" => "category/svetovye-ukazateli-156",
+                "link" => "/category/svetovye-ukazateli-156",
             ],
 
             [
@@ -4032,7 +4032,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Аварийные светильники",
-                "link" => "category/avariinye-svetilniki-157",
+                "link" => "/category/avariinye-svetilniki-157",
             ],
 
             [
@@ -4040,7 +4040,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Потолочные светильники",
-                "link" => "category/potolocnye-svetilniki-158",
+                "link" => "/category/potolocnye-svetilniki-158",
             ],
 
             [
@@ -4048,7 +4048,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Купольные светильники",
-                "link" => "category/kupolnye-svetilniki-159",
+                "link" => "/category/kupolnye-svetilniki-159",
             ],
 
             [
@@ -4056,7 +4056,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники офисные накладные",
-                "link" => "category/svetilniki-ofisnye-nakladnye-160",
+                "link" => "/category/svetilniki-ofisnye-nakladnye-160",
             ],
 
             [
@@ -4064,7 +4064,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники подвесные промышленные",
-                "link" => "category/svetilniki-podvesnye-promyslennye-161",
+                "link" => "/category/svetilniki-podvesnye-promyslennye-161",
             ],
 
             [
@@ -4072,7 +4072,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Cветильники потолочные встраиваемые",
-                "link" => "category/cvetilniki-potolocnye-vstraivaemye-162",
+                "link" => "/category/cvetilniki-potolocnye-vstraivaemye-162",
             ],
 
             [
@@ -4080,7 +4080,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники для потолка грильято",
-                "link" => "category/svetilniki-dlia-potolka-griliato-163",
+                "link" => "/category/svetilniki-dlia-potolka-griliato-163",
             ],
 
             [
@@ -4088,7 +4088,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники Армстронг",
-                "link" => "category/svetilniki-armstrong-164",
+                "link" => "/category/svetilniki-armstrong-164",
             ],
 
             [
@@ -4096,7 +4096,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники настенно-потолочные",
-                "link" => "category/svetilniki-nastenno-potolocnye-165",
+                "link" => "/category/svetilniki-nastenno-potolocnye-165",
             ],
 
             [
@@ -4104,7 +4104,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Комплектующие",
-                "link" => "category/komplektuiushhie-166",
+                "link" => "/category/komplektuiushhie-166",
             ],
 
             [
@@ -4112,7 +4112,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Светильники модульные",
-                "link" => "category/svetilniki-modulnye-167",
+                "link" => "/category/svetilniki-modulnye-167",
             ],
 //СТИЛИ
             [
@@ -4120,7 +4120,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Хай-тек",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?style%5B%5D=хай-тек",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?style%5B%5D=хай-тек",
             ],
 
             [
@@ -4128,7 +4128,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Стили",
                 "order" => 1,
                 "title" => "Современный",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?style%5B%5D=современный",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?style%5B%5D=современный",
             ],
 //МАТЕРИАЛЫ
             [
@@ -4136,7 +4136,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Алюминий",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?arm_material%5B%5D=алюминий",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?arm_material%5B%5D=алюминий",
             ],
 
             [
@@ -4144,7 +4144,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Пластик",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?arm_material%5B%5D=пластик",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?arm_material%5B%5D=пластик",
             ],
 
             [
@@ -4152,7 +4152,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Материалы",
                 "order" => 1,
                 "title" => "Металл",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?arm_material%5B%5D=металл",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?arm_material%5B%5D=металл",
             ],
 //МЕСТО ПРИМЕНЕНИЯ
             [
@@ -4160,7 +4160,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Офис",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=офис",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=офис",
             ],
 
             [
@@ -4168,7 +4168,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Гостиная",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=гостиная",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=гостиная",
             ],
 
             [
@@ -4176,7 +4176,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Ванная",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=ванная",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=ванная",
             ],
 
             [
@@ -4184,7 +4184,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Спальня",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=спальня",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=спальня",
             ],
 
             [
@@ -4192,7 +4192,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Кухня",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=кухня",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=кухня",
             ],
 
             [
@@ -4200,7 +4200,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Магазин",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=магазин",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=магазин",
             ],
 
             [
@@ -4208,7 +4208,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Место применения",
                 "order" => 1,
                 "title" => "Прихожая",
-                "link" => "category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=прихожая",
+                "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=прихожая",
             ],
         ];
     }

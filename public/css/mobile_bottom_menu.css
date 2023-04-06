@@ -34,15 +34,15 @@
     border-right: none;
 }
 
-.mobile_bottom_menu .bm_btn .icon.icon-ec_icon_abort{ 
+.mobile_bottom_menu .bm_btn .icon.icon-ec_icon_abort{
     font-size: 24px;
     line-height: 1.5;
 }
 
-.mobile_bottom_menu .bm_btn .icon{ 
-   width:25px; 
+.mobile_bottom_menu .bm_btn .icon{
+   width:25px;
    height:25px;
-   margin: 5px auto; 
+   margin: 5px auto;
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -68,7 +68,7 @@
     top: 5px;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 1024px) {
     .mobile_bottom_menu {
         display: flex;
 
