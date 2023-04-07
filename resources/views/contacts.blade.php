@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <h1>Контакты</h1>
-            
+
             <div class="contacts_data contacts_phone">
                 <a href="tel:+{{preg_replace('/[^0-9]/', '',Config::get('contact.phone'))}}">{{Config::get('contact.phone')}}</a>
                 <br>
@@ -33,12 +33,11 @@
                 <p>Наш магазин «Маркет Света» находится по адресу г. Москва, Дмитровское шоссе., 100, стр. 2. По этому адресу работает наш пункт самовывоза. Если вы хотите самостоятельно забрать свою покупку, обязательно укажите это при оформлении заказа.</p>
             </div>
 
-            <div class="block__map" id="map"></div>
+            <yandex-map></yandex-map>
 
-            
         </div>
     </section>
 
-     
+
 
 @endsection

@@ -17,6 +17,7 @@ import QuickViewWindow from './components/QuickViewWindow.vue'
 import AddToBascetBtn from './components/AddToBascetBtn.vue'
 import OneClickBuyWindow from './components/OneClickBuyWindow.vue'
 import ProjectSendWindow from './components/ProjectSendWindow.vue'
+import YandexMap from './components/YandexMap.vue'
 
 const global_app = createApp({
     components:{
@@ -27,7 +28,8 @@ const global_app = createApp({
        QuickViewWindow,
        AddToBascetBtn,
        OneClickBuyWindow,
-       ProjectSendWindow
+       ProjectSendWindow,
+       YandexMap
     }
 })
 

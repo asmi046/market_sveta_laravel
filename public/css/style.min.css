@@ -6764,6 +6764,7 @@ select {
     border-radius: 8px;
     outline: 0;
     outline-offset: 0;
+    background-color: white;
 }
 
 .category_sort_blk .counter span{

@@ -21,6 +21,8 @@
 
 	<meta name="_token" content="{{ csrf_token() }}">
 
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
     <link rel="stylesheet" href="{{asset('css/swiper-bundle.min.css')}}" />
 
 	@vite(["resources/css/app.css",
@@ -38,4 +40,9 @@
 			"public/css/mobile_catalog_menu.css",
 			"public/css/stocks.css",
 			])
+    <script>
+        const map_coord = {{Config::get('contact.coord')}}
+        const company_name = "{{Config::get('contact.maptext')}}"
+        const adress = "{{Config::get('contact.adress')}}"
+    </script>
 </head>

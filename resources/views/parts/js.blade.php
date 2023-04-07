@@ -2,12 +2,6 @@
 <script src="{{asset('js/libs/swiper.min.js')}}"></script>
 
 @if (Route::currentRouteName() == "contacts")
-    <script>
-        let map_text = "{{Config::get('contact.maptext')}}";
-        let map_coord = {{Config::get('contact.coord')}};
-    </script>
-
-    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 @endif
 
@@ -34,5 +28,5 @@
 "public/js/modules/favorites.js",
 "public/js/modules/upp_btn.js",
 "public/js/libs/fslightbox.js",
-"public/js/modules/map.js",
+
 ])
