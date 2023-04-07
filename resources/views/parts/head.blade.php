@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/png" href="{{asset('img/favicons/icon32.png')}}" sizes="32x32">
 	<link rel="icon" type="image/png" href="{{asset('img/favicons/icon16.png')}}" sizes="16x16">
 	<link rel="icon" type="image/png" href="{{asset('img/favicons/icon.svg')}}" sizes="any">
-	<link rel="shortcut icon" href="favicon.ico">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta property="og:locale" content="ru_RU" />

@@ -35,6 +35,8 @@ class BanerSeeder extends Seeder
         Storage::disk('public')->put("info-sl-1.webp", file_get_contents(public_path('img/banners/info-sl-1.webp')), 'public');
         Storage::disk('public')->put("info-sl-2.webp", file_get_contents(public_path('img/banners/info-sl-2.webp')), 'public');
 
+        Storage::disk('public')->put("sales_main.webp", file_get_contents(public_path('img/banners/sales_main.webp')), 'public');
+
         echo env("PICT",1);
         $all_banners = [
 
@@ -148,11 +150,11 @@ class BanerSeeder extends Seeder
             ],
 
             [
-                "img_name" => "sale.jpg",
+                "img_name" => Storage::url("sales_main.webp"),
                 "page" => "home",
                 "page_area" => "sale_banner",
-                "title" => "",
-                "sub_title" => "",
+                "title" => "Скидки каждый день в магазине КартаСвета",
+                "sub_title" => "Скидки каждый день в магазине КартаСвета",
                 "order" => 0,
             ],
 

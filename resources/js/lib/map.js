@@ -7,12 +7,9 @@ export default class YandexMapLoader {
         this.create()
     }
 
-    create() {
-        ymaps.ready(this.init());
-    }
 
-    init () {
-        var myMap = new ymaps.Map(this.map_dom_element, {
+    initMap () {
+        var myMap = new ymaps.Map("map", {
             // Координаты центра карты
             center: this.map_coord,
             // Масштаб карты
@@ -48,5 +45,13 @@ export default class YandexMapLoader {
         // Отключим zoom
         myMap.behaviors.disable('scrollZoom');
 
+    }
+
+
+    create() {
+        console.log(ymaps)
+        ymaps.ready( () => {
+            this.initMap()
+        });
     }
 }

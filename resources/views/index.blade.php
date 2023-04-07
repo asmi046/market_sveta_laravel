@@ -130,7 +130,7 @@
         <div class="prod-card main_sales d-flex">
 
             <div class="sale-baner">
-                <img src="img/banners/{{$banners["sale_banner"][0]["img_name"]}}" alt="">
+                <img src="{{$banners["sale_banner"][0]["img_name"]}}" alt="{{$banners["sale_banner"][0]["title"]}}">
             </div>
 
             <div class="sale_tovar_wraper">
