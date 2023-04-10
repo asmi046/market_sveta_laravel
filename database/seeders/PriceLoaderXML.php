@@ -18,7 +18,7 @@ class PriceLoaderXML extends Seeder
     {
         ini_set('max_execution_time', 9000);
 
-        $price_patch = public_path('all_price/all_23_02_23.xml');
+        $price_patch = public_path('all_price/divine.xml');
 
         $xmlObject = simplexml_load_file($price_patch);
 
