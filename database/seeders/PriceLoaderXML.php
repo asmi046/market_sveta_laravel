@@ -18,23 +18,43 @@ class PriceLoaderXML extends Seeder
     {
         ini_set('max_execution_time', 9000);
 
-        $price_patch = public_path('all_price/18-stock.xls');
+        $price_patch = public_path('all_price/18-stock.csv');
 
-        $xmlObject = simplexml_load_file($price_patch);
+        if (($handle = fopen($price_patch, "r")) !== FALSE) {
+            echo  $price_patch."\n\r";
+            $row = 0;
+            while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
+                if ($row == 0) {$row++; continue;}
 
 
-        $row = 0;
-        foreach ($xmlObject->Worksheet->Table->Row as $key => $value) {
-            if ($row === 0) {$row++; continue;}
+                $old_pricr = empty($data[7])?0:$data[7];
 
-            $old_pricr = empty($value->Cell[3]->Data)?0:$value->Cell[3]->Data;
+                $rez = DB::table('products')->where('sku', $data[4])->update(['price' => $data[6], "insklad" => $data[9], "price_old" => $old_pricr]);
+                echo  $row . ": " . $data[4] ." - ".$rez."\n\r";
 
-            $rez = DB::table('products')->where('sku', $value->Cell[0]->Data)->update(['price' => $value->Cell[2]->Data, "insklad" => $value->Cell[4]->Data, "price_old" => $old_pricr]);
-            echo  $row . ": " . $value->Cell[0]->Data ." - ".$rez."\n\r";
+                $row++;
 
-            // echo (string)$value->Cell[2]->Data ;
-            $row++;
+            }
+
+            fclose($handle);
         }
+
+        // $xmlObject = simplexml_load_file($price_patch);
+        // $xmlObject = simplexml_load_string(html_entity_decode(file_get_contents($price_patch)));
+
+
+        // $row = 0;
+        // foreach ($xmlObject->Worksheet->Table->Row as $key => $value) {
+        //     if ($row === 0) {$row++; continue;}
+
+        //     $old_pricr = empty($value->Cell[3]->Data)?0:$value->Cell[3]->Data;
+
+        //     $rez = DB::table('products')->where('sku', $value->Cell[0]->Data)->update(['price' => $value->Cell[2]->Data, "insklad" => $value->Cell[4]->Data, "price_old" => $old_pricr]);
+        //     echo  $row . ": " . $value->Cell[0]->Data ." - ".$rez."\n\r";
+
+        //     // echo (string)$value->Cell[2]->Data ;
+        //     $row++;
+        // }
 
     }
 }
