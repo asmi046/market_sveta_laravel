@@ -19,6 +19,8 @@
 	<meta property="og:url" content="{{url()->current()}}" />
 	<meta property="og:site_name" content="MarketSveta.su" />
 
+    <meta name="yandex-verification" content="4352bfa0c3087b1f" />
+
 	<meta name="_token" content="{{ csrf_token() }}">
 
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
