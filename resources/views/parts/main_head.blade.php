@@ -10,7 +10,7 @@
 
 				<div class="header__contacts d-flex">
 					<div class="header__callback callback d-flex">
-						<a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a>
+						{{-- <a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a> --}}
 						<a href="#recollMsg" class="callback__popup">Заказать звонок</a>
 					</div>
 

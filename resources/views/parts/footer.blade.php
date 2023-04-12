@@ -9,10 +9,10 @@
 
 			<div class="footer__col footer__col_forms">
 
-				<div class="footer__callback callback d-flex">
+				{{-- <div class="footer__callback callback d-flex">
 					<a href="tel:88007006045" class="callback__phone">{{Config::get('contact.phone')}}</a>
 					<P class="callback__popup _popup-link">{{Config::get('contact.grafik')}}</p>
-				</div>
+				</div> --}}
 
 				<p class="footer__info-text">
 					2012 — {{date("Y")}}г. «Интернет-магазин «Карта Света» ©

@@ -149,7 +149,7 @@
 
     </div>
 </section>
-
+{{--
 <section id="about" class="about">
     <div class="_container">
         <h2 class="about__title title">ИНТЕРНЕТ-МАГАЗИН СВЕТИЛЬНИКОВ И ЛЮСТР «МАРКЕТСВЕТА»</h2>
@@ -201,6 +201,6 @@
         </div>
 
     </div>
-</section>
+</section> --}}
 
 @endsection
