@@ -23,7 +23,7 @@
 				<h3>Каталог товаров</h3>
 				<ul class="footer__menu">
 					@foreach ($menu as $item)
-						<li><a href="{{$item->slug}}">{{$item->title}}</a></li>
+						<li><a href="{{$item->link}}">{{$item->title}}</a></li>
 					@endforeach
 				</ul>
 			</div>

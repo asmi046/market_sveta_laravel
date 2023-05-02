@@ -3,18 +3,20 @@
         <div class="popup_c">
             <div @click.prevent="closeWin()" class="popup__close" aria-label="Закрыть модальное окно"></div>
             <h2 class="modal_h2">{{title}}</h2>
-            <p class="sub_h">{{subtitle}}</p>
+            <p @click="onFileLoad" class="sub_h">{{subtitle}}</p>
             <form class="sending_form" action="/send_consult" method="POST">
-                <input type="hidden" name="_token" :value="_token">
+                <input type="hidden" name="_token" :value="token">
                 <input type="text" name="name" v-model="name" placeholder="Имя">
                 <input type="tel" name="phone" v-model="phone" v-mask="{mask: '+N (NNN) NNN-NN-NN', model: 'cpf' }" placeholder="Телефон*">
                 <input v-if="hesh == 'calcbaMsg'" type="text" name="company" v-model="company" placeholder="Название компании">
 
-                <label for="fileComponent">
+                <label>
                     <div class="icon"></div>
                     <div class="text">{{(fileName == "")?'Загрузить файл...':fileName}}</div>
-                    <input @change="onFileLoad" id ="fileComponent" type="file" name="file" >
+                    <input id ="fileComponent" @change="onFileLoad" type="file" name="file"  >
                 </label>
+
+
 
                 <div class="error_list_wrap">
                     <div v-for="(item, index) in errorList" :key="index" class="error">{{item}}</div>
@@ -30,78 +32,102 @@
 </template>
 
 <script>
+import { ref, onMounted } from 'vue'
 export default {
-    data() {
-        return {
-            name:"",
-            phone:"",
-            company:"",
-            file:null,
-            fileName:"",
-            showModal:false,
-            showLoader:false,
-            errorList:[],
-            _token: document.querySelector('meta[name="_token"]').content,
-        }
-    },
 
     props: ['rout', 'redirect', 'hesh', 'title', 'subtitle'],
 
-    methods:{
-        closeWin() {
-            this.showModal = false
-            history.pushState('', document.title, window.location.pathname+window.location.search)
-        },
+    setup(props) {
 
-        openWin() {
-            if (location.hash === '#'+this.hesh) {
-                this.showModal = true
-            }
-        },
+        let name = ref("")
+        let phone = ref("")
+        let company = ref("")
+        let showModal = ref(false)
+        let showLoader = ref(false)
+        let errorList = ref([])
+        const token = document.querySelector('meta[name="_token"]').content
 
-        sendMsg() {
+        let file = ref(null)
+        let fileName = ref("")
 
-            this.errorList = [];this.errorList
 
-            if (this.phone == "")
-                this.errorList.push("Поле 'Телефон' не заполнено");
+        const hesh = props.hesh
 
-            if (this.errorList.length != 0 ) return
+        const onFileLoad = (e) => {
+            file.value = e.target.files[0]
+            console.log(file.value.name)
+            fileName.value = file.value.name
+        }
+
+        const sendMsg = () => {
+
+            errorList.value = [];
+
+            if (phone.value == "")
+                errorList.value.push("Поле 'Телефон' не заполнено");
+
+            if (errorList.value.length != 0 ) return
 
             const config = { 'content-type': 'multipart/form-data' }
 
-            const formData = new FormData()
-            formData.append('_token', this._token)
-            formData.append('title', this.title)
-            formData.append('name', this.name)
-            formData.append('company', this.company)
-            formData.append('phone', this.phone)
-            formData.append('file', this.file)
 
-            this.showLoader = true;
-            axios.post(this.rout, formData, config)
+            const formData = new FormData()
+            formData.append('_token', token)
+            formData.append('title', props.title)
+            formData.append('name', name.value)
+            formData.append('company', company.value)
+            formData.append('phone', phone.value)
+            formData.append('file', file.value)
+
+            showLoader.value = true;
+            axios.post(props.rout, formData, config)
             .then((response) => {
-                this.showLoader = false
-                document.location.href=this.redirect
+                showLoader.value = false
+                document.location.href=props.redirect
             })
             .catch( (error) => {
-                this.showLoader = false
-                this.errorList.push(error.response.data.message)
+                showLoader.value = false
+                errorList.value.push(error.response.data.message)
                 console.log(error)
             });
-        },
-
-        onFileLoad(e) {
-            this.file =  e.target.files[0]
-            this.fileName = this.file.name;
         }
-    },
 
-    mounted() {
-        window.addEventListener('hashchange', this.openWin)
+        const closeWin = () => {
+            showModal.value = false
+            history.pushState('', document.title, window.location.pathname+window.location.search)
+        }
 
-        if (location.hash === '#'+this.hesh) {
-            this.showModal = true
+        const openWin = () => {
+            if (location.hash === '#'+ hesh) {
+                showModal.value = true
+            }
+        }
+
+
+        onMounted(() => {
+
+            window.addEventListener('hashchange', openWin)
+
+                if (location.hash === '#'+hesh) {
+                    showModal.value = true
+                }
+        })
+
+        return {
+            hesh,
+            file,
+            fileName,
+            name,
+            phone,
+            company,
+            showModal,
+            showLoader,
+            errorList,
+            token,
+            onFileLoad,
+            sendMsg,
+            closeWin,
+            openWin
         }
     }
 }
