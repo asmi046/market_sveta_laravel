@@ -9,7 +9,7 @@
                     <h2>{{$key}}</h2>
                     <ul>
                         @foreach ($value as $sub_item)
-                            <li><a href="/{{$sub_item->link}}">{{$sub_item->title}}</a></li>
+                            <li><a href="{{$sub_item->link}}">{{$sub_item->title}}</a></li>
                         @endforeach
 
                     </ul>
