@@ -20,7 +20,7 @@ class SenderController extends Controller
         ]);
 
 
-        Mail::to(["asmi046@gmail.com", "zakaz@lightsnab.ru", "sale@lightsnab.ru"])->send(new ProjectMail($data));
+        Mail::to(["asmi046@gmail.com", "zakaz@kartasveta.ru", "sale@lightsnab.ru"])->send(new ProjectMail($data));
         return ["Сообщение отправлено"];
     }
 
@@ -29,7 +29,7 @@ class SenderController extends Controller
             "phone" => ['required','string']
         ]);
 
-        Mail::to(["asmi046@gmail.com", "zakaz@lightsnab.ru", "sale@lightsnab.ru"])->send(new RecollMail($data));
+        Mail::to(["asmi046@gmail.com", "zakaz@kartasveta.ru", "sale@lightsnab.ru"])->send(new RecollMail($data));
 
 
         return ["Сообщение отправлено"];
