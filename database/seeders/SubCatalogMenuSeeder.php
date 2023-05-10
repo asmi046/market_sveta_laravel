@@ -4212,5 +4212,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "link" => "/category/texniceskii-svet-ofisnye-svetilniki-168?mesto%5B%5D=прихожая",
             ],
         ];
+
+        DB::table("sub_catalog_menus")->insert($all_punkt);
     }
 }
