@@ -22,7 +22,7 @@ class SubCatalogMenuSeeder extends Seeder
                 "sub_punct" => "Виды",
                 "order" => 1,
                 "title" => "Люстры потолочные, накладные",
-                "link" => "/category/liustry-potolocnye-nakladny-23",
+                "link" => "/category/liustry-potolocnye-nakladnye-23",
             ],
 
             [
@@ -1270,13 +1270,14 @@ class SubCatalogMenuSeeder extends Seeder
         DB::table("sub_catalog_menus")->insert($all_punkt);
 
         $all_punkt = [
-            [
-                "parent" => "Реечные, линейные светильники",
-                "sub_punct" => "Виды",
-                "order" => 1,
-                "title" => "Накладные светильники с пультом",
-                "link" => "/category/nakladnye-svetilniki-s-pultom-3101",
-            ],
+            // [
+            //     "parent" => "Реечные, линейные светильники",
+            //     "sub_punct" => "Виды",
+            //     "order" => 1,
+            //     "title" => "Накладные светильники с пультом",
+            //     "link" => "/category/nakladnye-svetilniki-s-pultom-3101",
+            // ],
+
 //СТИЛИ РЕЕЧНЫЕ, ЛИНЕЙНЫЕ СВЕТИЛЬНИКИ
 
             [
