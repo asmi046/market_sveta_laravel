@@ -260,7 +260,7 @@ export default {
         width: 100%;
         position: fixed;
         left: 0;
-        bottom: 0;
+        top:calc(100vh - 135px);
         padding: 25px 25px 0 25px;
         border-top: 1px solid lightgray;
         background-color: white;
