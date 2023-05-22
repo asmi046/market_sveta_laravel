@@ -25,7 +25,7 @@ class PlaceController extends Controller
         // $subCat = Category::where('parentid', $categoryInfo->id)->get();
 
 
-        $placeProducts = $placeInfo->place_product()->filter($request)->paginate(48)->withQueryString();
+        $placeProducts = $placeInfo->place_product()->filter($request)->orderByRaw("`insklad` DESC, `price` ASC")->paginate(48)->withQueryString();
 
         return view('place', ["place" => $placeInfo, "cat_product" => $placeProducts]);
     }
