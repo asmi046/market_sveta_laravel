@@ -178,6 +178,7 @@ if (!function_exists("add_tovar_in_file")) {
                 "img" => "",
                 "title_seo" => mb_substr((string)trim($xmlObject->shop->offers->offer[$i]->name), 0, 99),
                 "description_seo" => mb_substr("Купить по выгодной цене - ".(string)trim($xmlObject->shop->offers->offer[$i]->name), 0, 299),
+                "img_sku" => (string)trim($xmlObject->shop->offers->offer[$i]->vendorCode)."_".(string)trim($xmlObject->shop->offers->offer[$i]->vendor),
             ];
 
             $Brand[] = [
@@ -246,11 +247,12 @@ if (!function_exists("add_tovar_in_file")) {
                 for ($j = 0; $j<count($xmlObject->shop->offers->offer[$i]->picture); $j++)
                 {
                     $ext = pathinfo($xmlObject->shop->offers->offer[$i]->picture[$j], PATHINFO_EXTENSION);
-                    $img_name = (string)trim($xmlObject->shop->offers->offer[$i]->vendorCode)."_".$j.".".$ext;
+                    $img_name = (string)trim($xmlObject->shop->offers->offer[$i]->vendorCode)."_".(string)trim($xmlObject->shop->offers->offer[$i]->vendor)."_".$j.".".$ext;
 
                     if ($j == 0) $tmp["img"] = $img_name;
                     $pictures[] = [
                         "product_sku" => (string)trim($xmlObject->shop->offers->offer[$i]->vendorCode),
+                        "img_sku" => (string)trim($xmlObject->shop->offers->offer[$i]->vendorCode)."_".(string)trim($xmlObject->shop->offers->offer[$i]->vendor),
                         "img_name" => $img_name,
                         "alt" => (string)trim($xmlObject->shop->offers->offer[$i]->name) . " Изображение №" . ($j + 1),
                         "title" => (string)trim($xmlObject->shop->offers->offer[$i]->name) . " Изображение №" . ($j + 1),
@@ -259,7 +261,8 @@ if (!function_exists("add_tovar_in_file")) {
 
                     if ($load_img)
                         try {
-                            Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
+                            // Storage::disk('local')->put("public/products_galery/"  . $img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
+                            Storage::disk('public')->put($img_name, file_get_contents($xmlObject->shop->offers->offer[$i]->picture[$j]), 'public');
                         } catch (Exception $e) {
                             echo 'Caught exception: ',  $e->getMessage(), "\n";
                         }

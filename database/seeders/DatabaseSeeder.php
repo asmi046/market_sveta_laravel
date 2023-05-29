@@ -27,7 +27,8 @@ class DatabaseSeeder extends Seeder
             CatalogMenuSeeder::class,
             SubCatalogMenuSeeder::class,
             ProductSeeder::class,
-            CategorySeeder::class
+            CategorySeeder::class,
+            SetMulticatSeeder::class
         ]);
     }
 }
