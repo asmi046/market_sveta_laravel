@@ -8,9 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Image extends Model
 {
     use HasFactory;
-    
+
     protected $fillable = [
-        'product_sku', 
+        'product_sku',
+        'img_sku',
         'img_name',
         'alt',
         'title',

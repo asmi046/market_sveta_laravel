@@ -16,24 +16,25 @@ class ProductController extends Controller
 
         $main_img = asset('img/no_photo.jpg');
 
-        if (Storage::disk('local')->exists('public/products_galery/'.$prosuct->img))
-            $main_img = Storage::url('public/products_galery/'.$prosuct->img);
+        if (Storage::disk('public')->exists($prosuct->img))
+            $main_img = Storage::url($prosuct->img);
 
         return ["product" => $prosuct, "main_img" => $main_img];
     }
 
     public function index($slug) {
-        $prosuct = Product::where('slug', $slug)->take(1)->get();
+        $prosuct = Product::with(['product_propertys', 'product_images'])->where('slug', $slug)->first();
 
-        if($prosuct->isEmpty()) abort('404');
+        if($prosuct == null) abort('404');
 
-        $images = $prosuct->first()->product_images;
-        $propertys = property_section($prosuct->first()->product_propertys);
+        $images = $prosuct->product_images;
+
+        $propertys = property_section($prosuct->product_propertys);
         $categories_name = [
-            "cat1" => $prosuct->first()->cat_name_cat1,
-            "cat2" => $prosuct->first()->cat_name_cat2,
-            "cat3" => $prosuct->first()->cat_name_cat3,
-            "cat4" => $prosuct->first()->cat_name_cat4,
+            "cat1" => $prosuct->cat_name_cat1,
+            "cat2" => $prosuct->cat_name_cat2,
+            "cat3" => $prosuct->cat_name_cat3,
+            "cat4" => $prosuct->cat_name_cat4,
         ];
 
         if (!empty($prosuct[0]->collection))
