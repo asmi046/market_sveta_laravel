@@ -15,7 +15,7 @@
 
                     <div class="tl-side left-side">
                         <div class="tovar_all_blk picture_blk">
-                            <img :src="'/storage/products_galery/'+item.tovar_data.img" alt="">
+                            <img :src="'/storage/'+item.tovar_data.img" alt="">
                         </div>
                         <div class="tovar_all_blk name_blk">
                             <h2>
