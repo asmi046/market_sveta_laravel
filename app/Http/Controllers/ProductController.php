@@ -37,8 +37,8 @@ class ProductController extends Controller
             "cat4" => $prosuct->cat_name_cat4,
         ];
 
-        if (!empty($prosuct[0]->collection))
-            $up_sale = Product::where('collection', $prosuct[0]->collection)->where('brand', $prosuct[0]->brand)->get();
+        if (!empty($prosuct->collection))
+            $up_sale = Product::where('collection', $prosuct->collection)->where('brand', $prosuct->brand)->get();
         else
             $up_sale = [];
 
