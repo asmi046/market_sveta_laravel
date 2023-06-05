@@ -1,14 +1,14 @@
 @extends('layout.all')
-@section('title', $product[0]->title_seo)
+@section('title', $product->title_seo)
 
 @section('content')
 
   <section id="select-prod" class="select-prod">
     <div class="_container">
 
-      <x-breadcrumbs :pagename="$product[0]->name" :simple="false" :catnames="$catnames"></x-breadcrumbs>
+      <x-breadcrumbs :pagename="$product->name" :simple="false" :catnames="$catnames"></x-breadcrumbs>
 
-      <h1>{{$product[0]->name}}</h1>
+      <h1>{{$product->name}}</h1>
 
       <div class="select-prod-block d-flex">
 
@@ -20,8 +20,8 @@
             <div class="select-prod-sl__small-slider slider _swiper prodSlSmall">
               @foreach ($images as $item)
                 <div class="select-prod-sl__small-slide slider__slide">
-                  @if(Storage::disk('local')->exists('public/products_galery/'.$item->img_name))
-                      <img  src="{{Storage::url('public/products_galery/'.$item->img_name)}}" alt="Купить {{$item->alt}}">
+                  @if(Storage::disk('public')->exists($item->img_name))
+                      <img  src="{{Storage::url($item->img_name)}}" alt="Купить {{$item->alt}}">
                   @else
                       <img src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$item->alt}}">
                   @endif
@@ -33,9 +33,9 @@
           <div class="select-prod-sl__big slider _swiper prodSlBig">
             @foreach ($images as $item)
               <div class="select-prod-sl__big-slide slider__slide">
-                @if(Storage::disk('local')->exists('public/products_galery/'.$item->img_name))
-                    <a data-fslightbox="prod_g1" href="{{Storage::url('public/products_galery/'.$item->img_name)}}">
-                        <img data-fslightbox="prod_g1" src="{{Storage::url('public/products_galery/'.$item->img_name)}}" alt="Купить {{$item->alt}}">
+                @if(Storage::disk('public')->exists($item->img_name))
+                    <a data-fslightbox="prod_g1" href="{{Storage::url($item->img_name)}}">
+                        <img data-fslightbox="prod_g1" src="{{Storage::url($item->img_name)}}" alt="Купить {{$item->alt}}">
                     </a>
                 @else
                     <a data-fslightbox="prod_g1" href="{{asset('img/no_photo.jpg')}}">
@@ -51,28 +51,28 @@
       <div class="select-prod-info">
 
         <div class="vender_sku">
-          <p class="prod-page__manuf">{{$product[0]->brand}} ({{$product[0]->state}})</p>
-          <p class="prod-page__manuf">Артикул: {{$product[0]->sku}}</p>
+          <p class="prod-page__manuf">{{$product->brand}} ({{$product->state}})</p>
+          <p class="prod-page__manuf">Артикул: {{$product->sku}}</p>
         </div>
 
         <div class="select-prod-info__price-block select-prod-info__column">
           <div class="select-prod-info__price-block-inner d-flex">
             <div class="price_and_sale">
-              <x-tovar-card.action :price="$product[0]->price" :oldprice="$product[0]->price_old"></x-tovar-card.action>
-              <div class="select-prod-info__price-block-price price_formator rub">{{$product[0]->price}}</div>
+              <x-tovar-card.action :price="$product->price" :oldprice="$product->price_old"></x-tovar-card.action>
+              <div class="select-prod-info__price-block-price price_formator rub">{{$product->price}}</div>
             </div>
 
             <div class="select-prod-info__price-block-avail">
-              <x-tovar-card.nal :insklad="$product[0]->insklad" ></x-tovar-card.nal>
+              <x-tovar-card.nal :insklad="$product->insklad" ></x-tovar-card.nal>
             </div>
           </div>
           <div class="select-prod-info__price-block-buttons">
             <div class="select-prod-info__price-block-buttons-inner d-flex">
-                <add-to-bascet-btn sku="{{$product[0]->sku}}">Добавить в корзину</add-to-bascet-btn>
-                <a href="#ocbuy_{{$product[0]->id}}" class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</a>
+                <add-to-bascet-btn sku="{{$product->sku}}">Добавить в корзину</add-to-bascet-btn>
+                <a href="#ocbuy_{{$product->id}}" class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</a>
             </div>
 
-            <a href="" data-prodid="{{$product[0]->sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>
+            <a href="" data-prodid="{{$product->sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>
           </div>
         </div>
 
@@ -125,7 +125,7 @@
               <div class="select-prod__description">
                 <h2 class="select-prod__description-title">Описание</h2>
                 <p class="select-prod__description-text">
-                  {{$product[0]->description}}
+                  {{$product->description}}
                 </p>
               </div>
 

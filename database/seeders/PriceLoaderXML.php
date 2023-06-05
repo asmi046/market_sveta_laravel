@@ -29,8 +29,8 @@ class PriceLoaderXML extends Seeder
 
                 $old_pricr = empty($data[7])?0:$data[7];
 
-                $rez = DB::table('products')->where('sku', $data[4])->update(['price' => $data[6], "insklad" => $data[9], "price_old" => $old_pricr]);
-                echo  $row . ": " . $data[4] ." - ".$rez."\n\r";
+                $rez = DB::table('products')->where('sku', $data[4])->where('brand', $data[5])->update(['price' => $data[6], "insklad" => $data[9], "price_old" => $old_pricr]);
+                echo  $row . ": " . $data[4] ." ". $data[5]." => ". $data[6] ." - ".$rez."\n\r";
 
                 $row++;
 

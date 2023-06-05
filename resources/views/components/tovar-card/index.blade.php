@@ -6,8 +6,8 @@
         <a href="#quick_{{$minfo->id}}" class="quick_show"><span>Быстрый просмотр</span></a>
         <x-favorit :sku="$minfo->sku"></x-favorit>
         <a href="{{route('product', $minfo->slug)}}" class="prod-card__img">
-            @if(Storage::disk('local')->exists('public/products_galery/'.$minfo->img))
-                <img loading="lazy" src="{{Storage::url('public/products_galery/'.$minfo->img)}}" alt="Купить {{$minfo->name}}">
+            @if(Storage::disk('public')->exists($minfo->img))
+                <img loading="lazy" src="{{Storage::url($minfo->img)}}" alt="Купить {{$minfo->name}}">
             @else
                 <img loading="lazy" src="{{asset('img/no_photo.jpg')}}" alt="Купить {{$minfo->name}}">
             @endif

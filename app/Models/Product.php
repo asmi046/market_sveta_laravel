@@ -34,7 +34,8 @@ class Product extends Model
         'cat1',
         'img',
         'title_seo',
-        'description_seo'
+        'description_seo',
+        'img_sku'
     ];
 
     public function scopeFilter(Builder $builder, QueryFilter $filter) {
@@ -42,7 +43,7 @@ class Product extends Model
     }
 
     public function product_images() {
-        return $this->hasMany(Image::class, 'product_sku', 'sku');
+        return $this->hasMany(Image::class, 'img_sku', 'img_sku');
     }
 
     public function product_propertys() {
