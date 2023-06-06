@@ -95,7 +95,7 @@ export default {
         PreSearchInformer
     },
 
-    props:['homeRout', 'catList', 'catUrl', 'catId', 'showMode'],
+    props:['homeRout', 'catList', 'catUrl', 'catId', 'showMode', 'searchStr'],
 
     mounted: function() {
 
@@ -107,10 +107,13 @@ export default {
         let prefix_api_url = document.location.protocol+"//"+document.location.host
         axios.get(prefix_api_url+'/api/v1/get_category_filter/'+this.catId+'/'+this.showMode, {
             params: {
-                    filter:this.selectedParam
+                    filter:this.selectedParam,
+                    search:this.searchStr
+
             }
         })
         .then((response) => {
+            console.log(response)
             this.filterList = response.data.incount
             this.filterListEmpty = response.data.empty
             this.preSerchCount = response.data.all_length
@@ -134,10 +137,12 @@ export default {
             axios.get(prefix_api_url+'/api/v1/get_sorted_category_filter/'+this.catId+'/'+this.showMode, {
                 params: {
                     filter_empty:this.filterListEmpty,
-                    filter:this.selectedParam
+                    filter:this.selectedParam,
+                    search:this.search
                 }
             })
             .then((response) => {
+                console.log(response)
                 this.preSerchCount=response.data.products.length
 
                     if (this.clicedElement.dataset.razdel != "osvtype")

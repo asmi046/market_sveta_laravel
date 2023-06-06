@@ -55,6 +55,17 @@ class ApiIndexController extends Controller
         {
             $catProducts = Product::where('mesto', $catid)->filter($pf)->get();
         }
+        else
+        if ($mode == "search")
+        {
+            $search_str = $request->get('search');
+            $catProducts = Product::where("name", "LIKE", "%".$search_str."%")
+                ->orWhere("description", "LIKE", "%".$search_str."%")
+                ->orWhere("brand", "LIKE", "%".$search_str."%")
+                ->orWhere("sku", "LIKE", "%".$search_str."%")
+                ->orWhere("collection", "LIKE", "%".$search_str."%")
+                ->filter($pf)->get();
+        }
         else{
             $categoryInfo = Category::where('id', $catid)->first();
             $catProducts = $categoryInfo->category_tovars()->filter($pf)->get();
@@ -113,7 +124,7 @@ class ApiIndexController extends Controller
 
 
 
-        return array("products"=>$catProducts, "filter"=>$zap_filter);
+        return array("products"=>$catProducts, "filter"=>$zap_filter, "mode" =>  $search_str);
     }
 
     public function get_osv_type($name) {
@@ -140,6 +151,17 @@ class ApiIndexController extends Controller
         if ($mode == "place")
         {
             $catProducts = Product::where('mesto', $catid)->filter($pf)->get();
+        }
+        else
+        if ($mode == "search")
+        {
+            $search_str = $request->get('search');
+            $catProducts = Product::where("name", "LIKE", "%".$search_str."%")
+                ->orWhere("description", "LIKE", "%".$search_str."%")
+                ->orWhere("brand", "LIKE", "%".$search_str."%")
+                ->orWhere("sku", "LIKE", "%".$search_str."%")
+                ->orWhere("collection", "LIKE", "%".$search_str."%")
+                ->filter($pf)->get();
         }
         else{
             $categoryInfo = Category::where('id', $catid)->first();
@@ -283,6 +305,6 @@ class ApiIndexController extends Controller
         $empty_filter["mesto"] = $empty_mesto;
         $empty_filter["form"] = $empty_form;
 
-        return ["incount" => $filter_zn, "empty" => $empty_filter, "all_length"=>count($catProducts)];
+        return ["incount" => $filter_zn, "empty" => $empty_filter, "all_length"=>count($catProducts), "mode" => $mode];
     }
 }

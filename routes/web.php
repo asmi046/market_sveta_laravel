@@ -13,6 +13,7 @@ use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SenderController;
 use App\Http\Controllers\FeedController;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,7 @@ Route::get('/dostavka', [TextPagesController::class, "dostavka"])->name("dostavk
 Route::get('/garantia', [TextPagesController::class, "garantia"])->name("garantia");
 Route::get('/podbor_po_foto', [TextPagesController::class, "podbor_po_foto"])->name("podbor_po_foto");
 
+Route::get('/search', [SearchController::class, "index"])->name("search");
 Route::get('/brands', [BrandController::class, "index"])->name("brands");
 Route::get('/brand/{slug}', [BrandController::class, "brand_page"])->name("brand_page");
 
