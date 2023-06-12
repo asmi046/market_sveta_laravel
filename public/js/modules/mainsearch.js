@@ -52,7 +52,7 @@ function doInteractiveSearch(element) {
         for (let i = 0; i<searchElements.products.length; i++){
             rez_str += '<a class="preSearchElemLnk" href="'+prefix_api_url+'/product/'+searchElements.products[i].slug+'">'+
                             '<div class="preSearchElem">'+
-                                  '<div class="img" style="background-image: url('+searchElements.img_prefix+"/"+searchElements.products[i].img+')"></div>'+
+                                  '<div class="img" style="background-image: url('+searchElements.img_prefix+searchElements.products[i].img+')"></div>'+
 
                             '<div class="text">'+
                                 '<span>'+searchElements.products[i].name+'</span>'+
