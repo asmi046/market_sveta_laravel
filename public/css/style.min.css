@@ -2452,10 +2452,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   content: "\e903";
 }
 
-.group {
-  *zoom: 1;
-}
-
 .group:before,
 .group:after {
   display: table;
@@ -3836,9 +3832,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   right: 0%;
 }
 
+.footer a{
+    color: white;
+}
+
 .footer {
   padding: 63px 0 40px 0;
-  background: #E0E1E3;
+  background: #212121;
+  color: white;
 }
 
 .foooter_subsribe_line {
