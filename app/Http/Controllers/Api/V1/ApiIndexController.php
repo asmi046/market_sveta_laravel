@@ -14,7 +14,7 @@ class ApiIndexController extends Controller
 {
     public function get_search_pds(Request $request) {
 
-        $result_array = ["products" => [], "categories" => [], "img_prefix" => Storage::url()];
+        $result_array = ["products" => [], "categories" => [], "img_prefix" => Storage::url('')];
 
         $search_str = $request->get('search_str');
 
