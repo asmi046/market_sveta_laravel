@@ -139,6 +139,8 @@ export default {
                 adress: this.bascetInfo.adress,
                 comment: this.bascetInfo.comment,
                 tovars: this.bascetList,
+                count:this.count,
+                subtotal:this.subtotal
             })
             .then((response) => {
                 this.loadet = false;
