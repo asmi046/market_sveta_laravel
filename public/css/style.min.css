@@ -236,7 +236,7 @@ h4 {
   text-transform: uppercase;
   text-align: center;
   color: #222222;
-  margin-bottom: 38px;
+  margin-bottom: 25px;
 }
 
 
@@ -3583,7 +3583,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .header__row-top {
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding: 25px 0;
 }
 
 .header__logo:before {
@@ -4064,7 +4064,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .info-sl {
-  padding: 25px 0;
+  padding: 0;
 }
 
 .info-sl__row {
@@ -4150,6 +4150,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 /* Слайдер */
 .info-sl__slider {
   min-width: 0;
+  margin-left: 0;
   max-width: 915px;
   width: 100%;
   flex: 1 0 auto;
@@ -4191,9 +4192,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 25px 0 20px 0;
 }
 
-.popular h2 {
-  margin-bottom: 48px;
-}
 
 .circleCard {
   display: flex;
@@ -4477,7 +4475,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .selection {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .selection__row {
@@ -4562,7 +4560,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .new-items h2 {
-  margin-bottom: 47px;
+  margin-bottom: 10px;
 }
 
 .new-sale {
