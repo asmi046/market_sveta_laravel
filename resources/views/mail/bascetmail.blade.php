@@ -29,3 +29,5 @@
     </tbody>
 </table>
 <hr/>
+
+<h3>Итого: {{$formData['count']}} товаров на сумму {{$formData['subtotal']}}  </h3>
