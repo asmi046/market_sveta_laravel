@@ -16,21 +16,24 @@ class BrandController extends Controller
         $allBrandSort = [];
 
         foreach($allBrand as $element) {
-            $allBrandSort[strtoupper(mb_substr($element["brand"], 0, 1))][] = $element; 
+            $allBrandSort[strtoupper(mb_substr($element["brand"], 0, 1))][] = $element;
         }
 
         return view("brands", ["all_brands" => $allBrandSort]);
     }
-    
+
     public function brand_page($slug, ProductFilter $request) {
 
         $brandInfo = Brand::where('slug', $slug)->take(1)->get();
-        
+
         if($brandInfo->isEmpty()) abort('404');
 
         $brandInfo = $brandInfo[0];
 
-        $brandProducts = Product::where('brand', $brandInfo->brand)->filter($request)->paginate(48)->withQueryString();
+        if ($request->request->get("order"))
+            $brandProducts = Product::where('brand', $brandInfo->brand)->filter($request)->paginate(48)->withQueryString();
+        else
+            $brandProducts = Product::where('brand', $brandInfo->brand)->filter($request)->orderByRaw("`insklad` DESC, `price` ASC")->paginate(48)->withQueryString();
 
 
         return view("brandpage", ["brand" => $brandInfo, "brand_product" => $brandProducts]);

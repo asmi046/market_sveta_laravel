@@ -18,26 +18,27 @@
 
             <div class="page__body d-flex">
 
-                <div id="sb_app"  class="sb_app">                
-                    <category-filter 
-                        home-rout="{{ route('home') }}" 
-                        cat-list="" 
-                        cat-url="{{url()->current()}}" 
+                <div id="sb_app"  class="sb_app">
+                    <category-filter
+                        home-rout="{{ route('home') }}"
+                        cat-list=""
+                        cat-url="{{url()->current()}}"
                         cat-id="{{$brand->brand}}"
-                        show-mode="brand" 
+                        show-mode="brand"
                     ></category-filter>
                 </div>
-                
+
                 <main class="page__main main">
 
-                
+                    <x-category-sort :cat="$brand_product"></x-category-sort>
+
                     <div class="main-prod-card d-flex">
                         @foreach ($brand_product as $item)
-                            <x-tovar-card :minfo="$item"></x-tovar-card>    
+                            <x-tovar-card :minfo="$item"></x-tovar-card>
                         @endforeach
                     </div>
 
-                
+
 
 
                     {{$brand_product->links('parts.pagination');}}
