@@ -2733,6 +2733,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
 }
 
+
+
 #breadcrumbs {
   margin-bottom: 22px;
 }
@@ -2763,6 +2765,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #5D5C5C;
 }
 
+.more_btn_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.more_btn_wrap .btn:hover {
+    background-color: #E13510;
+    color: white;
+}
+
+.more_btn_wrap .btn {
+    width: 100%;
+    background-color: #f2f3f5;
+    color: #1a1818;
+}
 .pagination {
   justify-content: center;
   margin: 20px 0;
@@ -4320,6 +4337,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .prod-card__price-item {
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .prod-card__price {
@@ -6806,6 +6824,107 @@ select {
 }
 
 /* Сортировка в категории end */
+
+
+/* --------- Компонент кнопка в корзину --------- */
+
+.tbComponent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.b_counter_btn {
+    display: flex;
+    background-color: #FFB400;
+    color: white;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.b_counter_btn span {
+    margin-right: 15px;
+
+}
+
+.b_counter_btn span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.b_counter_btn > *{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.b_counter_btn a{
+    color: white;
+}
+
+.b_counter_btn input {
+    background-color: transparent;
+    width:20px;
+    height: 20px;
+    min-height: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align:  center;
+    font-size: 14px;
+    border: none;
+}
+
+.b_counter_btn .btn_number_wrapper{
+    display: flex;
+}
+
+.btn_in_card span{
+    margin: auto 0;
+}
+
+.btn_in_card {
+    display: flex;
+    border: 1px solid #FFB400;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+.oform_wrapper {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b_counter_btn_oform span{
+    margin-right: 0;
+    min-height: 20px;
+    line-height: 20px;
+}
+
+/* --------- Компонент кнопка в корзину --------- */
+
+
+.empty_favorites:before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/icons/favorites-icon.svg);
+    background-size: contain;
+    background-repeat:  no-repeat;
+    position: absolute;
+    top:-220px;
+    left:calc( 50% - 100px);
+}
+
+.empty_favorites {
+    width: 300px;
+    margin:  250px auto 0 auto;
+    position: relative;
+    text-align: center;
+}
+
 
 .category_description {
     margin: 40px 0 30px 0;

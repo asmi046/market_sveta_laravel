@@ -48,7 +48,10 @@
                         @endforeach
                     </div>
 
-
+                    @php
+                        $inPage = isset($_REQUEST['page'])?(int)$_REQUEST['page'] * 48:48;
+                    @endphp
+                    <show-more route="/show_more_tovar" catid="{{$category->id}}" inpage="{{$inPage}}"></show-more>
                     {{$cat_product->links('parts.pagination');}}
 
                     @if ($cat_product->currentPage() == 1)

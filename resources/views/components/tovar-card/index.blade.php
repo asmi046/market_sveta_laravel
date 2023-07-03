@@ -4,7 +4,7 @@
             В корзине <span>1</span> шт
         </div>
         <a href="#quick_{{$minfo->id}}" class="quick_show"><span>Быстрый просмотр</span></a>
-        <x-favorit :sku="$minfo->sku"></x-favorit>
+        <to-favorites-btn sku="{{$minfo->sku}}"></to-favorites-btn>
         <a href="{{route('product', $minfo->slug)}}" class="prod-card__img">
             @if(Storage::disk('public')->exists($minfo->img))
                 <img loading="lazy" src="{{Storage::url($minfo->img)}}" alt="Купить {{$minfo->name}}">
@@ -29,9 +29,9 @@
 
         </div>
         <div class="prod-card__price-item d-flex">
-
-            <a href="#" data-prodid="{{$minfo->sku}}" class="card_to_bascet_btn btn to_bascet"><span class="nadp">В корзину</span><span class="btnLoader"></span> </a>
-            <a href="{{route('bascet')}}" class="card_bascet_btn btn">Оформить</a>
+            <to-bascet-btn bascet="{{route('bascet')}}"  sku="{{$minfo->sku}}"></to-bascet-btn>
+            {{-- <a href="#" data-prodid="{{$minfo->sku}}" class="card_to_bascet_btn btn to_bascet"><span class="nadp">В корзину</span><span class="btnLoader"></span> </a>
+            <a href="{{route('bascet')}}" class="card_bascet_btn btn">Оформить</a> --}}
         </div>
     </div>
 </div>

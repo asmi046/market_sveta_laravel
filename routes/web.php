@@ -15,6 +15,8 @@ use App\Http\Controllers\SenderController;
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\SearchController;
 
+use App\Http\Controllers\ShowMoreController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +27,8 @@ use App\Http\Controllers\SearchController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/show_more_tovar', [ShowMoreController::class, 'index'])->name('show_more_tovar');
 
 Route::get('/', [IndexController::class, "index"])->name("home");
 Route::get('/category/{slug}', [CategoryController::class, "index"])->name("category");

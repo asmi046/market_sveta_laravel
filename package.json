@@ -45,6 +45,7 @@
         "@vitejs/plugin-vue": "^3.0.3",
         "v-slim-mask": "^1.0.24",
         "vue": "^3.2.37",
-        "vue-axios": "^3.4.1"
+        "vue-axios": "^3.4.1",
+        "vuex": "^4.1.0"
     }
 }
