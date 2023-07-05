@@ -55,7 +55,8 @@ export default {
         addToBascet() {
             axios.post("/bascet/add", {
                 _token: this._token,
-                product_id:this.sku
+                product_id:this.sku,
+                addcount:1,
             })
             .then((response) => {
                 this.loaderShow = false
