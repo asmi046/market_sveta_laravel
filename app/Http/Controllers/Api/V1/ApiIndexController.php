@@ -45,6 +45,7 @@ class ApiIndexController extends Controller
 
         $requMain->query->add((array)json_decode($request->get('filter')));
 
+        $search_str = $request->get('search');
 
         $pf = new ProductFilter($requMain);
 
@@ -58,7 +59,7 @@ class ApiIndexController extends Controller
         else
         if ($mode == "search")
         {
-            $search_str = $request->get('search');
+
             $catProducts = Product::where("name", "LIKE", "%".$search_str."%")
                 ->orWhere("description", "LIKE", "%".$search_str."%")
                 ->orWhere("brand", "LIKE", "%".$search_str."%")
