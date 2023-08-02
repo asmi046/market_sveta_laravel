@@ -37,6 +37,7 @@ Route::get('/sales', [SalesController::class, "index"])->name("sales");
 Route::get('/place/{slug}', [PlaceController::class, "index"])->name("place");
 Route::get('/product/{slug}', [ProductController::class, "index"])->name("product");
 Route::get('/get_product_info/{id}', [ProductController::class, "getPriductById"])->name("get_product_info");
+Route::get('/get_products_info', [ProductController::class, "getPriductsById"])->name("get_products_info");
 Route::get('/contacts', [ContactsController::class, "index"])->name("contacts");
 Route::get('/opt', [TextPagesController::class, "opt_sotrudnihestvo"])->name("opt_sotrudnihestvo");
 Route::get('/pay', [TextPagesController::class, "pay"])->name("pay");

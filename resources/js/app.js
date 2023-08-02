@@ -58,7 +58,7 @@ const global_app = createApp({
 
         console.log(sku_list);
 
-        this.$store.dispatch('initialFavorites', JSON.stringify(sku_list));
+        this.$store.dispatch('createTovarsDigest', sku_list);
         localStorage.setItem("tovar_skus", JSON.stringify(sku_list));
 
     }
@@ -69,6 +69,8 @@ const store = new createStore({
     state: {
       cart_count: 0,
       cart_tovars: {},
+
+      in_page_tovars: {},
 
       favorites_count: 0,
       favorites_tovars: {}
@@ -81,6 +83,10 @@ const store = new createStore({
 
         setTovars (state, value) {
             state.cart_tovars = value
+        },
+
+        setInPageTovars (state, value) {
+            state.in_page_tovars = value
         },
 
 
@@ -100,12 +106,24 @@ const store = new createStore({
 
         favoritesCount: state => {
           return state.favorites_count
+        },
+
+        inPageTovar: state => {
+            return state.in_page_tovars
         }
     },
 
     actions: {
         createTovarsDigest(context, value) {
-
+            axios.get('/get_products_info',  {
+                params: {
+                  ids: value
+                }
+              })
+            .then((response) => {
+                context.commit('setInPageTovars', response.data)
+            })
+            .catch(error => console.log(error));
         },
 
         initialBascet(context, value) {

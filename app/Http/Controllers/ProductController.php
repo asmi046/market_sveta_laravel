@@ -22,6 +22,20 @@ class ProductController extends Controller
         return ["product" => $prosuct, "main_img" => $main_img];
     }
 
+    public function getPriductsById(Request $request) {
+        $ids_list = $request->input('ids');
+        $prosuct = Product::with("product_propertys")->whereIn('sku', $ids_list)->get();
+
+        $main_img = asset('img/no_photo.jpg');
+
+        foreach ($prosuct as $elem)
+            if (Storage::disk('public')->exists($elem->img))
+                $elem->img = Storage::url($elem->img);
+            else $elem->img =  $main_img;
+
+        return ["product" => $prosuct];
+    }
+
     public function index($slug) {
         $prosuct = Product::with(['product_propertys', 'product_images'])->where('slug', $slug)->first();
 

@@ -108,17 +108,26 @@ export default {
 
             if (this.tovarId == 0) return;
 
-            this.showLoader = true;
-            axios.get("/get_product_info/" + this.tovarId, {
-                _token: this._token,
-            })
-            .then((response) => {
-                this.showLoader = false
+            this.tovarInfo = this.$store.getters.inPageTovar.product.find(el => el.id == this.tovarId);
 
-                this.tovarInfo = response.data.product
-                this.tovarInfo.img = response.data.main_img
-            })
-            .catch( error => console.log(error));
+            if (this.tovarInfo != undefined)
+            {
+                this.showLoader = false
+            }
+
+
+            // this.showLoader = true;
+            // axios.get("/get_product_info/" + this.tovarId, {
+            //     _token: this._token,
+            // })
+            // .then((response) => {
+            //     this.showLoader = false
+
+            //     this.tovarInfo = response.data.product
+            //     this.tovarInfo.img = response.data.main_img
+            // })
+            // .catch( error => console.log(error));
+
         }
     },
 
