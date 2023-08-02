@@ -72,8 +72,11 @@
                 <a href="#ocbuy_{{$product->id}}" class="select-prod-info__price-block-buttons-btn btn btn_grey">Купить в 1 клик</a>
             </div>
 
-            <a href="" data-prodid="{{$product->sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>
-          </div>
+            <div class="share_btns">
+                <a href="" data-prodid="{{$product->sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>
+                <a href="#" onclick="navigator.share({'title': document.title, 'url':document.location.href}); return false;" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_share "></a>
+            </div>
+        </div>
         </div>
 
         <div class="select-prod-info__notification select-prod-info__column d-flex">
