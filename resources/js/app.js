@@ -43,8 +43,24 @@ const global_app = createApp({
        Favorites,
     },
     beforeCreate() {
+
+
         this.$store.dispatch('initialBascet');
         this.$store.dispatch('initialFavorites');
+    },
+
+    mounted() {
+        let elements = document.querySelectorAll(".main-prod-card__column[data-prodid]");
+        let sku_list = [];
+        for (let elem of elements) {
+            sku_list.push(elem.dataset.prodid)
+        }
+
+        console.log(sku_list);
+
+        this.$store.dispatch('initialFavorites', JSON.stringify(sku_list));
+        localStorage.setItem("tovar_skus", JSON.stringify(sku_list));
+
     }
 
 })
@@ -88,6 +104,9 @@ const store = new createStore({
     },
 
     actions: {
+        createTovarsDigest(context, value) {
+
+        },
 
         initialBascet(context, value) {
                 axios.get('/bascet/get')
