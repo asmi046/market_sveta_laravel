@@ -74,7 +74,17 @@
 
             <div class="share_btns">
                 <a href="" data-prodid="{{$product->sku}}" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_lice to_favorites"></a>
-                <a href="#" onclick="navigator.share({'title': document.title, 'url':document.location.href}); return false;" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_share "></a>
+                <a href="#" onclick="navigator.share({'title': document.title, 'url':document.location.href}); return false;" class="share_mobile select-prod-info__price-block-buttons-faw icon icon-ec_icon_share "></a>
+                <div class="share_desctop ">
+                    <a href="#" class="select-prod-info__price-block-buttons-faw icon icon-ec_icon_share "></a>
+
+                    <div class="sub_share_meny">
+                        <div class="share_btn_wrap">
+                            <a href="https://vk.com/share.php?url={{ Request::url() }}&title={{$product->name}}&utm_source=share" class="share_all  share_vk"></a>
+                            <a href="https://t.me/share/url?url={{ Request::url() }}&text={{$product->name}}&utm_source=share" class="share_all share_tg"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         </div>
@@ -139,19 +149,46 @@
         <section id="similar-products" class="similar-products">
           <div class="_container">
 
-        @if (!empty($upsale))
+            @if (!empty($upsale))
 
 
-          <h2 class="similar-products__title">Похожие товары</h2>
+            <h2 class="similar-products__title">Похожие товары</h2>
 
-            <div class="main-prod-card d-flex">
-              @foreach ($upsale as $item)
-                <x-tovar-card :minfo="$item"></x-tovar-card>
-              @endforeach
-            </div>
-        @endif
+                <div class="main-prod-card d-flex">
+                @foreach ($upsale as $item)
+                    <x-tovar-card :minfo="$item"></x-tovar-card>
+                @endforeach
+                </div>
+            @endif
 
           </div>
+        </section>
+
+        <section id="product_dopinfo" class="product_dopinfo">
+            <div class="_container">
+
+                <details>
+                    <summary>Оплата и доставка</summary>
+                    <div class="dcontent text_style">
+                        <x-simple-texts.oplata></x-simple-texts.oplata>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Обмен и возврат</summary>
+                    <div class="dcontent text_style">
+                        <x-simple-texts.vozvrat></x-simple-texts.vozvrat>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Гарантия</summary>
+                    <div class="dcontent text_style">
+                        <x-simple-texts.garantia></x-simple-texts.garantia>
+                    </div>
+                </details>
+
+            </div>
         </section>
 
 @endsection

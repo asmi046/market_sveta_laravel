@@ -42,6 +42,7 @@ class ProductController extends Controller
         else
             $up_sale = [];
 
+        // dd($prosuct, $images,$propertys,$categories_name,$up_sale);
 
         return view("product", ["product" => $prosuct, "images" => $images, "propertys" => $propertys, "catnames" =>  $categories_name, "upsale" => $up_sale]);
     }

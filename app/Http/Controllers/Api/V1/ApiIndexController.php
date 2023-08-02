@@ -67,6 +67,12 @@ class ApiIndexController extends Controller
                 ->orWhere("collection", "LIKE", "%".$search_str."%")
                 ->filter($pf)->get();
         }
+        else
+        if ($mode == "sales")
+        {
+            $catProducts = Product::where("price_old", "!=", 0)
+                ->filter($pf)->get();
+        }
         else{
             $categoryInfo = Category::where('id', $catid)->first();
             $catProducts = $categoryInfo->category_tovars()->filter($pf)->get();
@@ -162,6 +168,12 @@ class ApiIndexController extends Controller
                 ->orWhere("brand", "LIKE", "%".$search_str."%")
                 ->orWhere("sku", "LIKE", "%".$search_str."%")
                 ->orWhere("collection", "LIKE", "%".$search_str."%")
+                ->filter($pf)->get();
+        }
+        else
+        if ($mode == "sales")
+        {
+            $catProducts = Product::where("price_old", "!=", 0)
                 ->filter($pf)->get();
         }
         else{

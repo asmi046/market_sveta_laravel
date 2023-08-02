@@ -5,6 +5,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\SalesController;
 use App\Http\Controllers\PlaceController;
 use App\Http\Controllers\TextPagesController;
 use App\Http\Controllers\BascetController;
@@ -32,6 +33,7 @@ Route::get('/show_more_tovar', [ShowMoreController::class, 'index'])->name('show
 
 Route::get('/', [IndexController::class, "index"])->name("home");
 Route::get('/category/{slug}', [CategoryController::class, "index"])->name("category");
+Route::get('/sales', [SalesController::class, "index"])->name("sales");
 Route::get('/place/{slug}', [PlaceController::class, "index"])->name("place");
 Route::get('/product/{slug}', [ProductController::class, "index"])->name("product");
 Route::get('/get_product_info/{id}', [ProductController::class, "getPriductById"])->name("get_product_info");

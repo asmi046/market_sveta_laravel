@@ -36,7 +36,7 @@
                 <li><a href="{{route('category', "spoty-54")}}" class="menu__link">Споты</a></li>
                 <li><a href="{{route('category', "nastolnye-lampy-15")}}" class="menu__link">Настольные лампы</a></li>
 
-                <li class="menu__shares"><a href="{{route('aktsii')}}" class="menu__link animated_bg">Акции</a></li>
+                <li class="menu__shares"><a href="{{route('sales')}}" class="menu__link animated_bg">Распродажа</a></li>
 			</ul>
 		</div>
 
