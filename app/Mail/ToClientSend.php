@@ -33,7 +33,7 @@ class ToClientSend extends Mailable
      */
     public function build()
     {
-        return $this->from("asmi-work046@yandex.ru","Karta-sveta")
+        return $this->from("carta-sveta@yandex.ru","Karta-sveta")
             ->subject("Ваш заказ оформлен")
             ->replyTo('info@asmi-studio.ru', 'Магазин')
             ->view('mail.toclientmail')

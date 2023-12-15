@@ -38,7 +38,7 @@ class ProjectMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address("asmi-work046@yandex.ru", "Karta-sveta"),
+            from: new Address("carta-sveta@yandex.ru", "Karta-sveta"),
             subject: $this->formData["title"],
         );
     }

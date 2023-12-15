@@ -32,7 +32,7 @@ class BascetSend extends Mailable
      */
     public function build()
     {
-        return $this->from("asmi-work046@yandex.ru","Karta-sveta")
+        return $this->from("carta-sveta@yandex.ru","Karta-sveta")
             ->subject("Заказ с сайта")
             ->replyTo('info@asmi-studio.ru', 'Магазин')
             ->view('mail.bascetmail')
